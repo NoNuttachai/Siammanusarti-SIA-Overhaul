@@ -590,157 +590,157 @@ focus_tree = {
 
 		}
 	}
-#Air Force
-focus = {
-	id = SIA_air_force
-	icon = gfx_focus_unknown
-	x = 25 y = 0
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
+	#Air Force
+	focus = {
+		id = SIA_air_force
+		icon = gfx_focus_unknown
+		x = 25 y = 0
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
 
-	completion_reward = {
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_purchase_new_aircarft
-	icon = gfx_focus_unknown
-	relative_position_id = SIA_air_force
-	x = -1 y = 3
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_air_force }
-	mutually_exclusive = { focus = SIA_domestic_aircraft_production }
-	completion_reward = {
+	focus = {
+		id = SIA_purchase_new_aircarft
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_air_force
+		x = -1 y = 3
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_air_force }
+		mutually_exclusive = { focus = SIA_domestic_aircraft_production }
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_domestic_aircraft_production
-	icon = gfx_focus_unknown
-	relative_position_id = SIA_air_force
-	x = 1 y = 3
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_air_force }
-	mutually_exclusive = { focus = SIA_purchase_new_aircarft }
-	completion_reward = {
+	focus = {
+		id = SIA_domestic_aircraft_production
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_air_force
+		x = 1 y = 3
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_air_force }
+		mutually_exclusive = { focus = SIA_purchase_new_aircarft }
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_thai_fighters
-	icon = gfx_focus_unknown
-	relative_position_id = SIA_domestic_aircraft_production
-	x = 1 y = 1
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_purchase_new_aircarft focus = SIA_domestic_aircraft_production }
-	completion_reward = {
+	focus = {
+		id = SIA_thai_fighters
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_domestic_aircraft_production
+		x = 1 y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_purchase_new_aircarft focus = SIA_domestic_aircraft_production }
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_thai_bombers
-	icon = gfx_focus_unknown
-	relative_position_id = SIA_purchase_new_aircarft
-	x = -1 y = 1
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_purchase_new_aircarft focus = SIA_domestic_aircraft_production }
-	mutually_exclusive = { focus = SIA_thai_fighters }
-	completion_reward = {
+	focus = {
+		id = SIA_thai_bombers
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_purchase_new_aircarft
+		x = -1 y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_purchase_new_aircarft focus = SIA_domestic_aircraft_production }
+		mutually_exclusive = { focus = SIA_thai_fighters }
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_air_bang_fai
-	icon = GFX_focus_rocketry
-	relative_position_id = SIA_air_force
-	x = 0 y = 5
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_thai_bombers focus = SIA_thai_fighters }
-	completion_reward = {
+	focus = {
+		id = SIA_air_bang_fai
+		icon = GFX_focus_rocketry
+		relative_position_id = SIA_air_force
+		x = 0 y = 5
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_thai_bombers focus = SIA_thai_fighters }
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_aviation_studies
-	icon = gfx_focus_unknown
-	relative_position_id = SIA_air_force
-	x = 0 y = 1
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_air_force }
-	completion_reward = {
+	focus = {
+		id = SIA_aviation_studies
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_air_force
+		x = 0 y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_air_force }
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_air_tigers
-	icon = SIA_air_force
-	relative_position_id = SIA_aviation_studies
-	x = 0 y = 1
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_aviation_studies }
-	completion_reward = {
+	focus = {
+		id = SIA_air_tigers
+		icon = SIA_air_force
+		relative_position_id = SIA_aviation_studies
+		x = 0 y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_aviation_studies }
+		completion_reward = {
 
+		}
 	}
-}
-focus = {
-	id = SIA_expand_don_mueang_airport
-	icon = gfx_focus_unknown
-	relative_position_id = SIA_air_force
-	x = 2 y = 1
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	prerequisite = { focus = SIA_air_force }
-	completion_reward = {
+	focus = {
+		id = SIA_expand_don_mueang_airport
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_air_force
+		x = 2 y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_air_force }
+		completion_reward = {
 
+		}
 	}
-}
-#economy branch rework	
+	#economy branch rework	
 
-focus = {
-	id = SIA_revitalize_the_economy
-	icon = GFX_focus_Revitalized_the_Economy
-	x = 33 
-	y = 0
-	
-	cost = 2
-	ai_will_do = { factor = 10 }
-	completion_reward = { 
-		remove_ideas = SIA_lingering_depression
-	}
-	
+	focus = {
+		id = SIA_revitalize_the_economy
+		icon = GFX_focus_Revitalized_the_Economy
+		x = 33 
+		y = 0
+		
+		cost = 2
+		ai_will_do = { factor = 10 }
+		completion_reward = { 
+			remove_ideas = SIA_lingering_depression
+		}
+		
 	}
 			
 	focus = {
-				id = SIA_siam_cement_concession
-				icon = GFX_focus_Siam_Cement_Concession
-				x = 4	y = 1
-		
-				prerequisite = { focus = SIA_revitalize_the_economy }
-				relative_position_id = SIA_revitalize_the_economy
-		
-				cost = 2
-				ai_will_do = { factor = 1 }
-		
-			completion_reward = {
-				add_ideas = SIA_siam_cement_concession
-			}
+		id = SIA_siam_cement_concession
+		icon = GFX_focus_Siam_Cement_Concession
+		x = 4	y = 1
+
+		prerequisite = { focus = SIA_revitalize_the_economy }
+		relative_position_id = SIA_revitalize_the_economy
+
+		cost = 2
+		ai_will_do = { factor = 1 }
+	
+		completion_reward = {
+			add_ideas = SIA_siam_cement_concession
 		}
+	}
 		
 	focus = {
 		id = SIA_rural_provincial_development
@@ -750,134 +750,134 @@ focus = {
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		relative_position_id = SIA_revitalize_the_economy
 		
-				cost = 2
-				ai_will_do = { factor = 1 }
-				completion_reward = {
-					724 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
+			cost = 2
+			ai_will_do = { factor = 1 }
+		completion_reward = {
+			724 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
-					868 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
+			}
+			868 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
-					869 = {
-						add_extra_state_shared_building_slots = 1
-						add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
+			}
+			869 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
+	}
 	focus = {
-				id = SIA_bangkok_urbanization
-				icon = gfx_focus_unknown
-				x = 2	y = 1
-		
-				prerequisite = { focus = SIA_revitalize_the_economy }
-				relative_position_id = SIA_revitalize_the_economy
-		
-				cost = 2
-				ai_will_do = { factor = 1 }
-				completion_reward = {
-					289 = {
-						add_extra_state_shared_building_slots = 3
-						add_building_construction = {
-						type = industrial_complex
-						level = 3
-						instant_build = yes
-					}
+		id = SIA_bangkok_urbanization
+		icon = gfx_focus_unknown
+		x = 2	y = 1
+
+		prerequisite = { focus = SIA_revitalize_the_economy }
+		relative_position_id = SIA_revitalize_the_economy
+
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			289 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
 				}
 			}
 		}
+	}
 		
 		
 	focus = {
-				id = SIA_establish_the_national_bank
-				icon = GFX_focus_Establish_the_National_Bank
-				x = 0	y = 1
-				
-				prerequisite = { focus = SIA_revitalize_the_economy }
-				relative_position_id = SIA_revitalize_the_economy
-				
-				cost = 2
-				ai_will_do = { factor = 1 }
-				completion_reward = {
-						add_ideas = SIA_bank_of_siam
-						add_power_balance_value = {
-							id = SIA_Rep_House_BOP
-							value = 0.05
-							tooltip_side = SIA_RH_KHANA 
-						}
-				}
-					}
-	focus = {
-				id = SIA_encorage_rubber_plantations
-				icon = gfx_focus_unknown
-				x = 1	y = 2
-				prerequisite = { focus = SIA_rural_provincial_development }
-				relative_position_id = SIA_revitalize_the_economy
+		id = SIA_establish_the_national_bank
+		icon = GFX_focus_Establish_the_National_Bank
+		x = 0	y = 1
 		
-				cost = 2
-				ai_will_do = { factor = 1 }
-				completion_reward = {
-					add_resource = {
-					type = rubber
-					amount = 30
-					state = 724
-					}
-				}
+		prerequisite = { focus = SIA_revitalize_the_economy }
+		relative_position_id = SIA_revitalize_the_economy
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = SIA_bank_of_siam
+			add_power_balance_value = {
+				id = SIA_Rep_House_BOP
+				value = 0.05
+				tooltip_side = SIA_RH_KHANA 
 			}
+		}
+	}
 	focus = {
-				id = SIA_road_development_plan
-				icon = gfx_focus_unknown
-				x = 3	y = 1
-				prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
-				relative_position_id = SIA_bangkok_urbanization
-		
-				cost = 2
-				ai_will_do = { factor = 1 }
-				completion_reward = {
-					add_ideas = SIA_road_development_plan
-				}
+		id = SIA_encorage_rubber_plantations
+		icon = gfx_focus_unknown
+		x = 1	y = 2
+		prerequisite = { focus = SIA_rural_provincial_development }
+		relative_position_id = SIA_revitalize_the_economy
+
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_resource = {
+			type = rubber
+			amount = 30
+			state = 724
 			}
+		}
+	}
 	focus = {
-				id = SIA_railway_expansion
-				icon = gfx_focus_unknown
-				x = 1	y = 1
-				prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
-				relative_position_id = SIA_bangkok_urbanization
-		
-				cost = 2
-				ai_will_do = { factor = 1 }
-				completion_reward = {
-					add_ideas = SIA_railway_expansion
-				}
-			}
+		id = SIA_road_development_plan
+		icon = gfx_focus_unknown
+		x = 3	y = 1
+		prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
+		relative_position_id = SIA_bangkok_urbanization
+
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = SIA_road_development_plan
+		}
+	}
 	focus = {
-				id = SIA_mining_industry
-				icon = GFX_focus_generic_mining_industry
-				x = -1	y = 1
+		id = SIA_railway_expansion
+		icon = gfx_focus_unknown
+		x = 1	y = 1
+		prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
+		relative_position_id = SIA_bangkok_urbanization
+
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = SIA_railway_expansion
+		}
+	}
+	focus = {
+		id = SIA_mining_industry
+		icon = GFX_focus_generic_mining_industry
+		x = -1	y = 1
+
+		relative_position_id = SIA_rural_provincial_development
+		prerequisite = { focus = SIA_rural_provincial_development }
 		
-				relative_position_id = SIA_rural_provincial_development
-				prerequisite = { focus = SIA_rural_provincial_development }
-				
-				cost = 2
-				ai_will_do = { factor = 1 }
-		
-				completion_reward = {
-					
-				}
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = SIA_iron_buffalos
@@ -894,1123 +894,67 @@ focus = {
 		completion_reward = {
 			add_ideas = SIA_iron_buffalos
 		}
-}
-focus = {
-	id = SIA_major_agriculture_exporter
-	icon = gfx_focus_unknown
-	x = 1	y = 1
-
-	relative_position_id = SIA_iron_buffalos
-	prerequisite = { focus = SIA_iron_buffalos }
-	prerequisite = { focus = SIA_encorage_rubber_plantations }	
-	cost = 2
-	ai_will_do = { factor = 1 }
-
-	completion_reward = {
-		add_ideas = SIA_major_agriculture_exporter
 	}
-}
 	focus = {
-		id = SIA_survay_fang_oil_well
-		icon = GFX_goal_generic_oil_refinery
-		x = -3	y = 1
-		relative_position_id = SIA_rural_provincial_development
-		prerequisite = { focus = SIA_rural_provincial_development }
+		id = SIA_major_agriculture_exporter
+		icon = gfx_focus_unknown
+		x = 1	y = 1
+
+		relative_position_id = SIA_iron_buffalos
+		prerequisite = { focus = SIA_iron_buffalos }
+		prerequisite = { focus = SIA_encorage_rubber_plantations }	
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			add_ideas = SIA_major_agriculture_exporter
+		}
+	}
+		focus = {
+			id = SIA_survay_fang_oil_well
+			icon = GFX_goal_generic_oil_refinery
+			x = -3	y = 1
+			relative_position_id = SIA_rural_provincial_development
+			prerequisite = { focus = SIA_rural_provincial_development }
+			
+			cost = 2
+			ai_will_do = { factor = 1 }
+
+			completion_reward = {
+				add_resource = {
+					type = oil
+					amount = 3
+					state = 869
+				}
+			}
+		}
+	#Research_bonus
+	focus = {
+		id = SIA_education_for_all
+		icon = GFX_focus_Education_for_All
+		x = -3	y = 0
+		relative_position_id = SIA_revitalize_the_economy
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = SIA_education_for_all
+		}
+	}
+	focus = {
+		id = SIA_chula_uni
+		icon = GFX_focus_Chulalongkorn_University
+		x = -1	y = 1
+
+		relative_position_id = SIA_education_for_all
+		prerequisite = { focus = SIA_education_for_all }
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
 
 		completion_reward = {
-			add_resource = {
-				type = oil
-				amount = 3
-				state = 869
-			}
+			add_research_slot = 1
+			
 		}
 	}
-#Research_bonus
-focus = {
-	id = SIA_education_for_all
-	icon = GFX_focus_Education_for_All
-	x = -3	y = 0
-	relative_position_id = SIA_revitalize_the_economy
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-	completion_reward = {
-		add_ideas = SIA_education_for_all
-	}
-}
-focus = {
-	id = SIA_chula_uni
-	icon = GFX_focus_Chulalongkorn_University
-	x = -1	y = 1
-
-	relative_position_id = SIA_education_for_all
-	prerequisite = { focus = SIA_education_for_all }
-	
-	cost = 2
-	ai_will_do = { factor = 1 }
-
-	completion_reward = {
-		add_research_slot = 1
-		
-	}
-}
-#Khana Ratsadon Branch Phraya Phahon Adminstration
-focus = {
-	id = SIA_legacy_of_the_siamese_revolution
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 43 y = 0
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	mutually_exclusive = { focus = SIA_opposed_khana_ratsadon focus = SIA_siam_unthinkable_option } 
-}
-focus = {
-	id = SIA_crown_property_act
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_legacy_of_the_siamese_revolution }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-}
-	focus = {
-		id = SIA_six_principles_of_khana_ratsadon
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = -1 y = 1
-		completion_reward = {}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_legacy_of_the_siamese_revolution }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-	}
-focus = {
-	id = SIA_renegotiate_the_unequal_treaties
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 4
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_legacy_of_the_siamese_revolution focus = SIA_opposed_khana_ratsadon }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-}
-focus = {
-	id = SIA_send_volunteers_to_china
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 10
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_legacy_of_the_siamese_revolution }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-}
-
-focus = {
-	id = SIA_open_to_chinese_migration
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_send_volunteers_to_china }
-		relative_position_id =  SIA_send_volunteers_to_china
-} 
-
-focus = {
-	id = SIA_invite_chinese_industrialists
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_send_volunteers_to_china }
-		relative_position_id = SIA_send_volunteers_to_china
-} 
-
-focus = {
-	id = SIA_thai-chinese_identity
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0
-	y = 2
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_open_to_chinese_migration focus = SIA_invite_chinese_industrialists }
-		relative_position_id = SIA_send_volunteers_to_china
-}
-
-focus = {
-	id = SIA_honorary_aryan_status
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 15
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_legacy_of_the_siamese_revolution }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-}
-
-focus = {
-	id = SIA_prussian_military_academy
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_honorary_aryan_status }
-		relative_position_id = SIA_honorary_aryan_status
-}
-
-focus = {
-	id = SIA_follow_the_rising_sun
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 13
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_legacy_of_the_siamese_revolution }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-}
-
-focus = {
-	id = SIA_invite_the_japanese_zaibatsus
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_follow_the_rising_sun }
-		relative_position_id = SIA_follow_the_rising_sun
-}
-
-focus = {
-	id = SIA_closer_ties_with_the_european_colonial_powers
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
-		mutually_exclusive = { focus = SIA_thai_irredentalism }
-		relative_position_id = SIA_renegotiate_the_unequal_treaties
-}
-
-focus = {
-	id = SIA_resolve_disputes_with_france
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_closer_ties_with_the_european_colonial_powers }
-		relative_position_id = SIA_closer_ties_with_the_european_colonial_powers
-}
-
-focus = {
-	id = SIA_invite_american_investment
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 7
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_legacy_of_the_siamese_revolution }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-	}
-
-focus = {
-	id = SIA_american_military_advisors
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_invite_american_investment }
-		relative_position_id = SIA_invite_american_investment
-	}
-
-focus = {
-	id = SIA_thai_irredentalism
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
-		mutually_exclusive = { focus = SIA_closer_ties_with_the_european_colonial_powers }
-		relative_position_id = SIA_renegotiate_the_unequal_treaties
-}
-
-focus = {
-	id = SIA_invade_indochina
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0
-	y = 1
-		completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_thai_irredentalism }
-		relative_position_id = SIA_thai_irredentalism
-}
-	focus = {
-		id = SIA_reshuffle_the_ministers
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 0 y = 2
-		completion_reward = {}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_crown_property_act }
-		prerequisite = { focus = SIA_six_principles_of_khana_ratsadon }
-		relative_position_id = SIA_legacy_of_the_siamese_revolution
-	}
-	focus = {
-		id = SIA_phraya_phahon_step_down
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 0 y = 1
-		completion_reward = {}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_reshuffle_the_ministers }
-		relative_position_id = SIA_reshuffle_the_ministers
-	}
-	#Phibun Historical Path
-	focus = {
-		id = SIA_phibuns_ascension
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = -4 y = 1
-		completion_reward = {}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_phraya_phahon_step_down }
-		mutually_exclusive = { focus = SIA_civillian_faction_takeover }
-		relative_position_id = SIA_phraya_phahon_step_down
-	}
-	focus = {
-		id = SIA_enact_political_purge
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 0 y = 1
-		completion_reward = {}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_phibuns_ascension }
-		relative_position_id = SIA_phibuns_ascension
-	}
-	focus = {
-		id = SIA_thammasat_university
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 4 y = 1
-		completion_reward = {}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = SIA_phibuns_ascension }
-		prerequisite = { focus = SIA_strenghten_the_civilian_wing }
-		relative_position_id = SIA_phibuns_ascension
-	}
-	focus = {
-		id = SIA_beileve_in_the_leader
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 1
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_enact_political_purge }
-			relative_position_id = SIA_enact_political_purge
-	}
-	focus = {
-		id = SIA_rattaniyom_decrees
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = -1
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_enact_political_purge }
-			relative_position_id = SIA_enact_political_purge
-	}
-	focus = {
-		id = SIA_thai_ethnonationalism
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = -1
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_rattaniyom_decrees }
-			prerequisite = { focus = SIA_beileve_in_the_leader }
-			relative_position_id = SIA_rattaniyom_decrees
-	}
-	focus = {
-		id = SIA_irredentist_movement
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 1
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_rattaniyom_decrees focus = SIA_beileve_in_the_leader }
-			relative_position_id = SIA_rattaniyom_decrees
-	}
-	focus = {
-		id = SIA_strike_indochina
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 0
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_irredentist_movement }
-			relative_position_id = SIA_irredentist_movement
-	}
-	focus = {
-		id = SIA_maha_anachuck_thai
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = -1
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_strike_indochina }
-			mutually_exclusive = { focus = SIA_phibun_steps_down }
-			relative_position_id = SIA_strike_indochina
-	}
-	focus = {
-		id = SIA_phibun_steps_down
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 1
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_strike_indochina }
-			mutually_exclusive = { focus = SIA_maha_anachuck_thai }
-			relative_position_id = SIA_strike_indochina
-	}
-	focus = {
-		id = SIA_nation_building_programs
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 4
-		y = 0
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_rattaniyom_decrees }
-			prerequisite = { focus = SIA_beileve_in_the_leader }
-			relative_position_id = SIA_thai_ethnonationalism
-	}
-	focus = {
-		id = SIA_nation_building_programs
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 4
-		y = 0
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_rattaniyom_decrees }
-			prerequisite = { focus = SIA_beileve_in_the_leader }
-			relative_position_id = SIA_thai_ethnonationalism
-	}
-	focus = {
-		id = SIA_thai_use_thai_made_thai_prosper
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 1
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_nation_building_programs }
-			relative_position_id = SIA_nation_building_programs
-	}
-	focus = {
-		id = SIA_thai_cultural_revolution
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = -3
-		y = 1
-			completion_reward = {}
-			search_filters = { FOCUS_FILTER_POLITICAL }
-			prerequisite = { focus = SIA_rattaniyom_decrees }
-			relative_position_id = SIA_rattaniyom_decrees
-	}
-	focus = {
-		id = SIA_mass_media_propaganda
-		icon = gfx_focus_unknown
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}
-		x = 5
-		y = 1
-			completion_reward = {}
-				search_filters = { FOCUS_FILTER_POLITICAL }
-				prerequisite = { focus = SIA_rattaniyom_decrees }
-			relative_position_id = SIA_rattaniyom_decrees
-	}
-#Democratic Left Path
-focus = {
-	id = SIA_civillian_faction_takeover
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 5 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	prerequisite = { focus = SIA_phraya_phahon_step_down }
-	mutually_exclusive = {focus = SIA_phibuns_ascension}
-	relative_position_id = SIA_phraya_phahon_step_down
-}
-focus = {
-	id = SIA_aillgned_with_the_navy
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	prerequisite = { focus = SIA_civillian_faction_takeover }
-	relative_position_id = SIA_civillian_faction_takeover
-}
-focus = {
-	id = SIA_enact_constitution_reforms
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -2 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	prerequisite = { focus = SIA_civillian_faction_takeover }
-	relative_position_id = SIA_civillian_faction_takeover
-}
-focus = {
-	id = SIA_popular_democratic_awareness
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 2 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	prerequisite = { focus = SIA_civillian_faction_takeover }
-	relative_position_id = SIA_civillian_faction_takeover
-}
-focus = {
-	id = SIA_pardon_the_political_prisoners
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	prerequisite = { focus = SIA_enact_constitution_reforms }
-	relative_position_id = SIA_enact_constitution_reforms
-}
-#Opposed Khana Ratsadon
-focus = {
-	id = SIA_opposed_khana_ratsadon
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 62 y = 0
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	mutually_exclusive = { focus = SIA_legacy_of_the_siamese_revolution focus = SIA_siam_unthinkable_option }
-}
-focus = {
-	id = SIA_exposed_crown_property_thief
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_opposed_khana_ratsadon
-	prerequisite = { focus = SIA_opposed_khana_ratsadon }
-}
-focus = {
-	id = SIA_organized_the_opposition
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_opposed_khana_ratsadon
-	prerequisite = { focus = SIA_opposed_khana_ratsadon }
-}
-focus = {
-	id = SIA_motion_of_no_confidence
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_exposed_crown_property_thief
-	prerequisite = { focus = SIA_exposed_crown_property_thief }
-}
-focus = {
-	id = SIA_leak_scandal_to_the_press
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_motion_of_no_confidence
-	prerequisite = { focus = SIA_motion_of_no_confidence }
-}
-#Monarchist Branch
-focus = {
-	id = SIA_riled_up_the_royalists
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_motion_of_no_confidence
-	prerequisite = { focus = SIA_motion_of_no_confidence }
-}
-focus = {
-	id = SIA_return_to_absolutism
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_riled_up_the_royalists
-	prerequisite = { focus = SIA_riled_up_the_royalists }
-}
-focus = {
-	id = SIA_return_to_absolutism
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_riled_up_the_royalists
-	prerequisite = { focus = SIA_riled_up_the_royalists }
-}
-focus = {
-	id = SIA_annhilate_political_dissent
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_return_to_absolutism
-	prerequisite = { focus = SIA_return_to_absolutism }
-}
-focus = {
-	id = SIA_empower_the_nobility
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_annhilate_political_dissent
-	prerequisite = { focus = SIA_annhilate_political_dissent }
-}
-focus = {
-	id = SIA_fund_thammayuttika_nikai
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_empower_the_nobility
-	prerequisite = { focus = SIA_empower_the_nobility }
-}
-focus = {
-	id = SIA_establish_the_regency_council
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_return_to_absolutism
-	prerequisite = { focus = SIA_return_to_absolutism }
-}
-#ความหวังคืนมายังแผ่นดิน
-focus = {
-	id = SIA_hope_returns_to_the_land
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_establish_the_regency_council
-	prerequisite = { focus = SIA_establish_the_regency_council }
-}
-#enable kamikaze attacks 
-focus = {
-	id = SIA_total_devotion_to_the_monarchy
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_establish_the_regency_council
-	prerequisite = { focus = SIA_establish_the_regency_council }
-}
-#enable banzai charges
-focus = {
-	id = SIA_the_kings_guard
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_total_devotion_to_the_monarchy
-	prerequisite = { focus = SIA_total_devotion_to_the_monarchy }
-}
-focus = {
-	id = SIA_the_king_never_abandon_his_people
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_total_devotion_to_the_monarchy
-	prerequisite = { focus = SIA_total_devotion_to_the_monarchy focus = SIA_hope_returns_to_the_land}
-}
-focus = {
-	id = SIA_king_rama_8_coronation
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_the_king_never_abandon_his_people
-	prerequisite = { focus = SIA_the_king_never_abandon_his_people }
-}
-focus = {
-	id = SIA_remember_our_bitter_days
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 3 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_return_to_absolutism
-	prerequisite = { focus = SIA_return_to_absolutism }
-}
-focus = {
-	id = SIA_return_to_our_former_glory
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_remember_our_bitter_days
-	prerequisite = { focus = SIA_remember_our_bitter_days }
-}
-focus = {
-	id = SIA_cooperation_with_the_europeans
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 5 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_return_to_absolutism
-	prerequisite = { focus = SIA_return_to_absolutism }
-}
-focus = {
-	id = SIA_invite_king_rama_7_back
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -3 y = 1
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	relative_position_id = SIA_return_to_absolutism
-	prerequisite = { focus = SIA_return_to_absolutism }
-}
-#COMMIES REEEEEEEEEEEEEE
-focus = {
-	id = SIA_siam_unthinkable_option
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 72 y = 0
-	completion_reward = {}
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	mutually_exclusive = { focus = SIA_legacy_of_the_siamese_revolution focus = SIA_opposed_khana_ratsadon }
-}
-focus = {
-	id = SIA_approach_CCP_members
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	relative_position_id = SIA_siam_unthinkable_option
-	completion_reward = {}
-	prerequisite = { focus = SIA_siam_unthinkable_option }
-}
-focus = {
-	id = SIA_agitate_the_poletarient
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	relative_position_id = SIA_siam_unthinkable_option
-	completion_reward = {}
-	prerequisite = { focus = SIA_siam_unthinkable_option }
-}
-focus = {
-	id = SIA_peoples_liberation_war
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0 y = 2
-	relative_position_id = SIA_siam_unthinkable_option
-	completion_reward = {}
-	prerequisite = { focus = SIA_agitate_the_poletarient focus = SIA_approach_CCP_members }
-}
-focus = {
-	id = SIA_soviet_cooperation
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 2 y = -1
-	relative_position_id = SIA_the_politburo
-	completion_reward = {}
-	prerequisite = { focus = SIA_peoples_liberation_war }
-}
-focus = {
-	id = SIA_soviet_naval_base_phuket
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	relative_position_id = SIA_soviet_cooperation
-	completion_reward = {}
-	prerequisite = { focus = SIA_soviet_cooperation }
-}
-focus = {
-	id = SIA_destroy_the_old_world
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 4 y = -1
-	relative_position_id = SIA_the_politburo
-	completion_reward = {}
-	prerequisite = { focus = SIA_peoples_liberation_war }
-}
-focus = {
-	id = SIA_siamese_five_year_plan
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -2 y = -1
-	relative_position_id = SIA_the_politburo
-	completion_reward = {}
-	prerequisite = { focus = SIA_peoples_liberation_war }
-}
-focus = {
-	id = SIA_communal_farming
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	relative_position_id = SIA_siamese_five_year_plan
-	completion_reward = {}
-	prerequisite = { focus = SIA_siamese_five_year_plan }
-}
-focus = {
-	id = SIA_the_politburo
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0 y = 4
-	relative_position_id = SIA_siam_unthinkable_option
-	completion_reward = {}
-	prerequisite = { focus = SIA_peoples_liberation_war }
-}
-focus = {
-	id = SIA_nominate_ho_chi_minh
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -3 y = 1
-	relative_position_id = SIA_the_politburo
-	completion_reward = {}
-	prerequisite = { focus = SIA_the_politburo }
-}
-focus = {
-	id = SIA_sacred_war_against_fascism
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	relative_position_id = SIA_nominate_ho_chi_minh
-	completion_reward = {}
-	prerequisite = { focus = SIA_nominate_ho_chi_minh }
-}
-focus = {
-	id = SIA_loyalty_to_the_ccp
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 3 y = 1
-	relative_position_id = SIA_the_politburo
-	completion_reward = {}
-	prerequisite = { focus = SIA_the_politburo }
-}
-focus = {
-	id = SIA_south_seas_branch
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 1 y = 1
-	relative_position_id = SIA_loyalty_to_the_ccp
-	completion_reward = {}
-	prerequisite = { focus = SIA_loyalty_to_the_ccp }
-}
-focus = {
-	id = SIA_the_united_front
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = -1 y = 1
-	relative_position_id = SIA_loyalty_to_the_ccp
-	completion_reward = {}
-	prerequisite = { focus = SIA_loyalty_to_the_ccp }
-}
-focus = {
-	id = SIA_the_siamese_people_republic
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0 y = 1
-	relative_position_id = SIA_the_politburo
-	completion_reward = {}
-	prerequisite = { focus = SIA_the_politburo }
-}
-focus = {
-	id = SIA_strike_the_european_colonialists
-	icon = gfx_focus_unknown
-	cost = 10
-	ai_will_do = {
-		factor = 10
-	}
-	x = 0 y = 1
-	relative_position_id = SIA_the_siamese_people_republic
-	completion_reward = {}
-	prerequisite = { focus = SIA_the_siamese_people_republic }
-}
 }

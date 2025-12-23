@@ -18,7 +18,6 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
-	spriteType = {
 		name = "GFX_focus_legacy_of_the_siamese_revolution_shine"
 		texturefile = "gfx/interface/goals/focus_siam_revolution.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -49,7 +48,6 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-}
 	
 	SpriteType = {
 		name = "GFX_focus_Revitalized_the_Economy_shine"
