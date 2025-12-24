@@ -10,12 +10,402 @@ focus_tree = {
 	}
 	
 	default = no
+
+    focus = {
+        id = SIA_legacy_of_revolution
+        x = 9 
+        y = 0
+        cost = 10
+        available = { }
+        completion_reward = { }
+    }
+
+	focus = {
+		id = SIA_crown_property_act
+		relative_position_id = SIA_legacy_of_revolution
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_legacy_of_revolution }
+}
+
+	focus = {
+		id = SIA_propagandize_six_principles
+		relative_position_id = SIA_legacy_of_revolution
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_legacy_of_revolution }
+}
+
+	focus = {
+		id = SIA_constitutionalism
+		relative_position_id = SIA_legacy_of_revolution
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_legacy_of_revolution }
+}
+
+	focus = {
+		id = SIA_phraya_phanon_steps_down
+		relative_position_id = SIA_constitutionalism
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_constitutionalism }
+}
+
+	focus = {
+		id =SIA_civilian_faction_leadership
+		relative_position_id = SIA_phraya_phanon_steps_down
+		x = -5
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_phraya_phanon_steps_down }
+	mutually_exclusive = { focus = SIA_iron_boned_marshal }
+}
+
+	focus = {
+		id = SIA_a_democratic_constitution
+		relative_position_id = SIA_civilian_faction_leadership
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_civilian_faction_leadership }
+}
+
+	focus = {
+		id = SIA_subdue_army
+		relative_position_id = SIA_civilian_faction_leadership
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_civilian_faction_leadership }
+}
+
+	focus = {
+		id = SIA_align_with_navy
+		relative_position_id = SIA_civilian_faction_leadership
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_civilian_faction_leadership }
+}
+
+	focus = {
+		id = SIA_free_political_prisoners
+		relative_position_id = SIA_a_democratic_constitution
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_a_democratic_constitution }
+	prerequisite = { focus = SIA_subdue_army }
+}
+
+	focus = {
+		id = SIA_opposition
+		relative_position_id = SIA_a_democratic_constitution
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_a_democratic_constitution }
+	prerequisite = { focus = SIA_align_with_navy }
+}
+
+	focus = {
+		id = SIA_organize_a_free_election
+		relative_position_id = SIA_free_political_prisoners
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_free_political_prisoners }
+	prerequisite = { focus = SIA_opposition }
+}
+
+	focus = {
+		id = SIA_khana_rhatsadon
+		relative_position_id = SIA_organize_a_free_election
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_organize_a_free_election }
+}
+
+	focus = {
+		id = SIA_SEA
+		relative_position_id = SIA_civilian_faction_leadership
+		x = -5
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_civilian_faction_leadership }
+}
+
+	focus = {
+		id = SIA_secureed_british_guarantees
+		relative_position_id = SIA_civilian_faction_leadership
+		x = -7
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_civilian_faction_leadership }
+}
+
+	focus = {
+		id = SIA_association
+		relative_position_id = SIA_secureed_british_guarantees
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_secureed_british_guarantees }
+	prerequisite = { focus = SIA_SEA }
+}
+
+	focus = {
+		id = SIA_safeguard_indochina
+		relative_position_id = SIA_SEA
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_SEA }
+}
+
+	focus = {
+		id = SIA_look_us
+		relative_position_id = SIA_secureed_british_guarantees
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_secureed_british_guarantees }
+}
+
+	focus = {
+		id = SIA_ASIAN
+		relative_position_id = SIA_association
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_association }
+}
+
+	focus = {
+		id = SIA_iron_boned_marshal
+		relative_position_id = SIA_phraya_phanon_steps_down
+		x = 5
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_phraya_phanon_steps_down }
+	mutually_exclusive = { focus = SIA_civilian_faction_leadership }
+}
+
+	focus = {
+		id = SIA_purge
+		relative_position_id = SIA_iron_boned_marshal
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_iron_boned_marshal }
+}
+
+	focus = {
+		id = SIA_decrees
+		relative_position_id = SIA_purge
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_purge }
+}
+
+	focus = {
+		id = SIA_mass_media
+		relative_position_id = SIA_purge
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_purge }
+}
+
+	focus = {
+		id = SIA_believe_in_leader
+		relative_position_id = SIA_decrees
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_decrees }
+	prerequisite = { focus = SIA_mass_media }
+}
+
+	focus = {
+		id = SIA_cultural_revolution
+		relative_position_id = SIA_decrees
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_decrees }
+	prerequisite = { focus = SIA_mass_media }
+}
+
+	focus = {
+		id = SIA_promote_thai_ethno
+		relative_position_id = SIA_mass_media
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_mass_media }
+	prerequisite = { focus = SIA_decrees }
+}
+
+	focus = {
+		id = SIA_thai_use
+		relative_position_id = SIA_cultural_revolution
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_cultural_revolution }
+	prerequisite = { focus = SIA_believe_in_leader }
+}
+
+	focus = {
+		id = SIA_militarized_society
+		relative_position_id = SIA_promote_thai_ethno
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_promote_thai_ethno }
+	prerequisite = { focus = SIA_believe_in_leader }
+}
+
+	focus = {
+		id = SIA_phibun_resign
+		relative_position_id = SIA_thai_use
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_thai_use }
+}
+
+	focus = {
+		id = SIA_dictatorial_powers
+		relative_position_id = SIA_militarized_society
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_militarized_society }
+}
+
+	focus = {
+		id = SIA_abandon_neutrality
+		relative_position_id = SIA_purge
+		x = 4
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_purge }
+}
+
+	focus = {
+		id = SIA_thai_irredentism
+		relative_position_id = SIA_purge
+		x = 6
+		y = 2
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_purge }
+}
+
+	focus = {
+		id = SIA_strike_indochina
+		relative_position_id = SIA_thai_irredentism
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_thai_irredentism }
+}
+
+	focus = {
+		id = SIA_reclaim_malay
+		relative_position_id = SIA_thai_irredentism
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_thai_irredentism }
+}
+
+	focus = {
+		id = SIA_reclaim_kengtung
+		relative_position_id = SIA_thai_irredentism
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_thai_irredentism }
+}
+
+	focus = {
+		id = SIA_empire
+		relative_position_id = SIA_reclaim_kengtung
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_reclaim_kengtung }
+}
+
+	focus = {
+		id = SIA_university
+		relative_position_id = SIA_phraya_phanon_steps_down
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_phraya_phanon_steps_down }
+}
+
+	focus = {
+		id = SIA_agency
+		relative_position_id = SIA_phraya_phanon_steps_down
+		x = 2
+		y = 2
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_phraya_phanon_steps_down }
+}
 	
 	#Army Branch
 	focus = {
 		id = SIA_army
 		icon = GFX_focus_r56_goal_SIA_siamese_army
-		x = 5 y = 0
+		x = 23 y = 0
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -360,7 +750,7 @@ focus_tree = {
 	focus = {
 		id = SIA_navy
 		icon = gfx_focus_unknown
-		x = 15	y = 0
+		x = 33	y = 0
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -517,7 +907,8 @@ focus_tree = {
 		
 		}
 	}
-	focus = {
+
+focus = {
 		id = SIA_naval_academy
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_navy
@@ -594,7 +985,7 @@ focus_tree = {
 	focus = {
 		id = SIA_air_force
 		icon = gfx_focus_unknown
-		x = 25 y = 0
+		x = 43 y = 0
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -715,7 +1106,7 @@ focus_tree = {
 	focus = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
-		x = 33 
+		x = 52 
 		y = 0
 		
 		cost = 2
