@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			original_tag = SIA
-			add = 50
+			add = 50000
 		}
 	}
 	
