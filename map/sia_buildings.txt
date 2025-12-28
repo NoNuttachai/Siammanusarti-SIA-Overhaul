@@ -8,6 +8,6 @@
 		# Wat Arun'un haritadaki tam X, Y, Z konumunu, dönüşünü ve ölçeğini bulmalı ve bu değerleri güncellemelisiniz.
 		position = { 510.00 600.00 2000.00 }
 		rotation = { 0.00 0.00 0.00 }
-		scale = { 10.0 10.0 10.0 }
+		scale = { 10000.0 10000.0 10000.0 }
 	}
 }
