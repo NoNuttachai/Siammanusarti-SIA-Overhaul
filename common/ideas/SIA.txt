@@ -237,10 +237,10 @@ ideas = {
 			}
 		}
 		
-		SIA_ army_conscription_factor fascist_tendencies_army = {
+		SIA_fascist_tendencies_army = {
 			removal_cost = -1
 			
-			picture = SIA_fascist_tendencies
+			picture = SIA_Fascistic_Tendency_in_the_Army
 			
 			allowed = { NOT = { has_government = fascism } }
 			
@@ -462,6 +462,44 @@ ideas = {
 			}
 			
 			modifier = { air_superiority_efficiency = 0.1 }
+		}
+
+		SIA_japanese_economic_cooperation = {
+			removal_cost = -1
+			picture = generic_production_bonus
+			allowed = { always = yes }
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+
+		SIA_chinese_capital_influx = {
+			removal_cost = -1
+			picture = generic_production_bonus
+			allowed = { always = yes }
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}
+
+		SIA_military_industrialization = {
+			removal_cost = -1
+			picture = generic_production_bonus
+			allowed = { always = yes }
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+
+		SIA_domestic_arms_industry = {
+			removal_cost = -1
+			picture = generic_production_bonus
+			allowed = { always = yes }
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				equipment_conversion_speed = 0.1
+			}
 		}
 	}
 }
