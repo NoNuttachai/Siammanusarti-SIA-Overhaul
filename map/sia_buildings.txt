@@ -6,7 +6,7 @@
 		# ÖNEMLİ NOT: Aşağıdaki koordinatlar (position, rotation, scale) sadece yer tutucudur.
 		# Haritada doğru bir şekilde görünmesi için, oyun içi "Nudger" (Harita Düzenleyici) aracını kullanarak
 		# Wat Arun'un haritadaki tam X, Y, Z konumunu, dönüşünü ve ölçeğini bulmalı ve bu değerleri güncellemelisiniz.
-		position = { 510.00 600.00 2000.00 }
+		position = { 5100.00 600.00 2000.00 }
 		rotation = { 0.00 0.00 0.00 }
 		scale = { 10.0 10.0 10.0 }
 	}
