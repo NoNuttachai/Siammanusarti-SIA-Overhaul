@@ -61,7 +61,34 @@ country_event = { # Friendly fire will not be tolerated!
 		hidden_effect = { news_event = { id = N_SIA_NEWS.1 hours = 5 } }
 	}
 }
+country_event = {
+	id = N_SIA.3
+	title = N_SIA.3.t
+	desc = N_SIA.3.d
+	picture = GFX_report_event_generic_read_write
+	
+	trigger = {
+		tag = SIA
+		date > 1936.01.1
+		date < 1936.01.3
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+    fire_only_once = yes
 
+	option = {
+		name = N_SIA.3.a
+		add_political_power = 50
+		add_power_balance_value = {
+			id = SIA_Rep_House_BOP
+			value = 0.05
+            side = SIA_RH_KHANA
+		}
+	}
+}
 news_event = { # Thailand folds to Japan
 	id = N_SIA_NEWS.1
 	title = N_SIA_NEWS.1.t

@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
     SIA_GATHERING_STORM_DESC: "The only country in Southeast Asia to escape European colonialism, Siam stood at an uncertain crossroads. Absolute monarchy came to an end after a bloodless revolution in 1932, led by major members of the armed forces and the civilian sector, collectively known as the 'Khana Ratsadon.' \nThey succefully have King Prajadhipok (Rama VII) install a constitutional system. A pro-monarchist rebellion led by Prince Boworadej soon follow which was swiftly crushed. \n\nWith many within the Siamese government vying for power and the world preparing for war, it is clear that Siam cannot remain idle on the world stage for long."
     
     # Leader Traits
@@ -77,7 +77,7 @@ l_english:
     N_SIA_NEWS.1.d:0 "Japanese forces have launched a swift invasion into Thailand, The move followed an ultimatum issued by Japan requesting military access through Thai territory.\n\nThai military and police units mounted brief resistance in several regions, resulting in scattered clashes. However, within hours, the Thai government announced a ceasefire and agreed to Japan’s demands, permitting Japanese troops to pass through the country.\n\nThe decision appears to have been made by the government of Marshall Pleak Phibunsongkram in the interest of avoiding further bloodshed. With this development, Japan gains a strategic corridor for its operations in Southeast Asia."
     N_SIA_NEWS.1.a:0 "Thailand has chosen survival over destruction"
 
-    # New Event N_SIAM.3
-    N_SIAM.3.t:0 "Phraya Phahon Reelected"
-    N_SIAM.3.d:0 "The results of the 1937 Siamese general election are in. Unlike the previous election in 1933, which was indirect, this year’s election was directly decided by the people. Voter turnout was around 40% of eligible voters.\n\nDespite earlier plans to resign, Phraya Phahon has continued his tenure as prime minister."
-    N_SIAM.3.a:0 "A new mandate."
+    # New Event N_SIA.3
+    N_SIA.3.t:0 "Phraya Phahon Reelected"
+    N_SIA.3.d:0 "The results of the 1937 Siamese general election are in. Unlike the previous election in 1933, which was indirect, this year’s election was directly decided by the people. Voter turnout was around 40% of eligible voters.\n\nDespite earlier plans to resign, Phraya Phahon has continued his tenure as prime minister."
+    N_SIA.3.a:0 "Phrachatiphatai!."
