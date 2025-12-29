@@ -97,25 +97,28 @@ SIA_RH_CAT = {
 		
 		ai_will_do = {
 			factor = 1
+			# Avoid if opposition is strong (left side < -0.2)
 			modifier = {
 				factor = 0
-				has_variable = { name = SIA_Rep_House_BOP value = -20 }
+				power_balance_value = { id = SIA_Rep_House_BOP value < -0.2 }
 			}
+			# Avoid if khana ratsadon is already very strong (right side > 0.2)
 			modifier = {
 				factor = 0
-				has_variable = { name = SIA_Rep_House_BOP value = 20 }
+				power_balance_value = { id = SIA_Rep_House_BOP value > 0.2 }
 			}
+			# Do it less often if khana ratsadon is moderately strong (right side > 0.1)
 			modifier = {
 				factor = 0.5
-				has_variable = { name = SIA_Rep_House_BOP value = 10 }
+				power_balance_value = { id = SIA_Rep_House_BOP value > 0.1 }
 			}
 		}
 		
 		complete_effect = {
 			add_power_balance_value = {
 				id = SIA_Rep_House_BOP
-				value = 0.10 # Move Balance of Power 10% towards the "right" side (Opposition/King)
-				tooltip_side = SIA_RH_OPPOSITION
+				value = 0.10 # Move Balance of Power 10% towards Khana Ratsadon (Right)
+				tooltip_side = SIA_RH_KHANA
 			}
 			add_stability = -0.05
 			add_manpower = 20000

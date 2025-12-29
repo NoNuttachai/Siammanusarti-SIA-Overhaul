@@ -1,4 +1,4 @@
-﻿capital = 289
+capital = 289
 
 oob = "SIA_1936"
 if = {
@@ -40,9 +40,9 @@ if = {
 
 set_power_balance = {
     id = SIA_Rep_House_BOP
-    left_side = SIA_RH_OPPOS
-    right_side = SIA_RH_KHANA
+    value = 0.0
 }
+
 ## Leaders
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_plaek_phibunsongkhram

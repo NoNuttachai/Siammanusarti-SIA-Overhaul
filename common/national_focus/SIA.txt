@@ -26,10 +26,10 @@ focus_tree = {
             add_stability = 0.05
             
             # 3. Shifting the balance of power slightly towards the right.
-            # (Assuming 'SIA_balance_of_power' is the variable where positive is 'right')
-            change_variable = {
-                name = SIA_balance_of_power
-                value = 5
+            add_power_balance_value = {
+                id = SIA_Rep_House_BOP
+                value = 0.05
+                tooltip_side = SIA_RH_KHANA
             }
             
             # 4. Unlocking the Balance of Power decision to: “Entice the People” 
