@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_News_Thailand_Folded_to_Japan"
 		texturefile = "gfx/events/Thailand_Folded_to_Japan.png"
 	}
+	SpriteType = {
+		name = "report_event_phraya_phahon_reelected"
+		texturefile = "gfx/events/report_event_phraya_phahon_reelected"
+	}
 }
