@@ -373,7 +373,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_legacy_of_revolution
+				has_completed_focus = SIA_legacy_of_the_siamese_revolution
 				NOT = { has_government = communism }
 			}
 			traits = {skillful_diplomat }
@@ -393,7 +393,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_legacy_of_revolution
+				has_completed_focus = SIA_legacy_of_the_siamese_revolution
 				NOT = { has_government = communism }
 			}
 			traits = {
@@ -415,7 +415,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_total_dictatorial_powers
+				has_completed_focus = SIA_phibuns_ascension
 				NOT = { has_government = communism }
 			}
 			traits = {fascist_demagogue}
@@ -435,7 +435,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_total_dictatorial_powers
+				has_completed_focus = SIA_phibuns_ascension
 				NOT = { has_government = communism }
 			}
 			traits = {prince_of_terror}
@@ -455,8 +455,8 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_establish_the_field_police
-				has_completed_focus = SIA_legacy_of_revolution
+				has_completed_focus = SIA_police_force_paramilitarization
+				has_completed_focus = SIA_legacy_of_the_siamese_revolution
 				NOT = { has_government = communism }
 			}
 			traits = {police_chief}
@@ -476,7 +476,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_legacy_of_revolution
+				has_completed_focus = SIA_legacy_of_the_siamese_revolution
 				NOT = { has_government = communism }
 			}
 			traits = {captain_of_industry}
@@ -496,7 +496,10 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_legacy_of_revolution
+				OR = {
+					has_completed_focus = SIA_legacy_of_the_siamese_revolution
+					has_completed_focus = SIA_opposed_khana_ratsadon
+				}
 				NOT = { has_government = communism }
 			}
 			traits = {writer_film_director}
@@ -516,7 +519,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_civilian_faction_leadership
+				has_completed_focus = SIA_civillian_faction_takeover
 				NOT = { has_government = communism }
 			}
 			traits = {pro_democracy_journalist}

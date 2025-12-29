@@ -1,4 +1,4 @@
-capital = 289
+﻿capital = 289
 
 oob = "SIA_1936"
 if = {
@@ -81,7 +81,7 @@ recruit_character = SIA_pao_pienlert_boripanyutakit
 recruit_character = SIA_luang_wichiwathakan
 recruit_character = SIA_phao_siyanon
 recruit_character = SIA_adul_adulyadejchrat
-# recruit_character = SIA_direk_chaiyanam # Duplicate removed
+recruit_character = SIA_direk_chaiyanam
 recruit_character = SIA_sayuan_chudatemi
 recruit_character = SIA_khun_wichitmatra
 recruit_character = SIA_kulap_saipradit

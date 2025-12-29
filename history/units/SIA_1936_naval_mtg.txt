@@ -1,23 +1,24 @@
-units= {
+﻿units= {
 
 	######## NAVAL OOB ########
 	fleet = {
 		name = "Royal Siamese Navy"		
-		naval_base = 7408
+		naval_base = 4433
 		task_force = {				
 			name = "Royal Siamese Navy"			
-			location = 7408
+			location = 4433
 			ship = { name = "HTMS Phra Ruang" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SIA version_name = "Phra Ruang Class" } } }
 		}
 		task_force = {				
 			name = "Royal Siamese Navy"			
-			location = 7408
+			location = 4433
 			ship = { name = "HTMS Rattanakosin" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SIA version_name = "Rattanakosin Class" } } }
 		}
 		task_force = {				
 			name = "Royal Siamese Navy"			
-			location = 7408
+			location = 4433
 			ship = { name = "HTMS Sukhothai" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = SIA version_name = "Rattanakosin Class" } } }
 		}
 	}
 } 
+

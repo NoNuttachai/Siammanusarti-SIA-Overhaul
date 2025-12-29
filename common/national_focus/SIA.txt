@@ -165,6 +165,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_organize_a_free_election }
+		mutually_exclusive = { focus = SIA_ }
 }
 
 	focus = {
@@ -176,6 +177,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_rhatsadon_continue_reign }
+		mutually_exclusive = { focus = SIA_ }
 }
 	focus = {
 		id = SIA_thawan_thamrong_premiership
@@ -186,6 +188,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_rhatsadon_continue_reign }
+		mutually_exclusive = { focus = SIA_ }
 }
 	focus = {
 		id = SIA_thawee_bunyaket_premiership
@@ -196,6 +199,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_rhatsadon_continue_reign }
+		mutually_exclusive = { focus = SIA_ }
 }
 	focus = {
 		id = SIA_promote_labor_unions
@@ -206,6 +210,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_thawee_bunyaket_premiership }
+		mutually_exclusive = { focus = SIA_ }
 }
 	focus = {
 		id = SIA_phrachatiphat_victory
@@ -306,6 +311,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_join_the_aillies }
+		prerequisite = { focus = SIA_secured_american_garunteed }
 }
 
 
@@ -430,7 +436,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_thai_use_thai_made}
 		prerequisite = { focus = SIA_militarized_society}
-		mutually_exclusive = { focus = SIA_total_dictatorial_powers }
+		mutually_exclusive = { focus = SIA_phibun_resign }
 }
 
 	focus = {
@@ -780,6 +786,19 @@ focus_tree = {
 		prerequisite = { focus = SIA_expand_sattahip_naval_base }
 		completion_reward = {
 
+		}
+	}
+	focus = {
+		id = SIA_acquire_bangkok_dock_co
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_expand_sattahip_naval_base
+		x = 2	y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = {focus = SIA_expand_sattahip_naval_base}
+		completion_reward = {
+		
 		}
 	}
 	focus = {

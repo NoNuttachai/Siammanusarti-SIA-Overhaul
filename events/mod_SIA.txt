@@ -13,7 +13,7 @@ country_event = { # Japanese ultimatum to go through Siam
 		
 		JAP = {
 			if = {
-				limit = { is_in_faction = no }
+				limit = { has_faction = no }
 				set_rule = { can_create_factions = yes }
 				create_faction = JAP_greater_east_asian_co_prosperity_sphere
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -85,6 +85,7 @@ country_event = {
 		add_power_balance_value = {
 			id = SIA_Rep_House_BOP
 			value = 0.05
+            side = SIA_RH_KHANA
 		}
 	}
 }
