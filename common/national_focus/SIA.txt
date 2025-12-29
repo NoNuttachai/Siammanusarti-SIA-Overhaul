@@ -83,57 +83,15 @@ focus_tree = {
 }
 
 	focus = {
-		id = SIA_khana_ratsadon_legacy
+		id = SIA_renegotiate_the_unequal_treaties
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_legacy_of_revolution
 		x = 8
 		y = 1
 		cost = 10
-		completion_reward = {
-			add_political_power = 120
-		}
+		completion_reward = { }
 		prerequisite = { focus = SIA_legacy_of_revolution }
-	}
-
-	focus = {
-		id = SIA_ratify_constitution
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_khana_ratsadon_legacy
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = {
-			add_stability = 0.10
-		}
-		prerequisite = { focus = SIA_khana_ratsadon_legacy }
-	}
-
-	focus = {
-		id = SIA_promote_national_unity
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_ratify_constitution
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = {
-			add_political_power = 150
-		}
-		prerequisite = { focus = SIA_ratify_constitution }
-	}
-
-	focus = {
-		id = SIA_modernize_bureaucracy
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_promote_national_unity
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = {
-			add_research_slot = 1
-		}
-		prerequisite = { focus = SIA_promote_national_unity }
-	}
-
+}
 	focus = {
 		id = SIA_constitutionalism
 		icon = gfx_focus_unknown
@@ -1223,12 +1181,7 @@ focus = {
 		x = -1
 		y = 1
 		cost = 10
-		available = {
-			CHI = { has_war = yes }
-		}
-		completion_reward = { 
-			set_rule = { can_send_volunteers = yes }
-		}
+		completion_reward = { }
 		prerequisite = { focus = SIA_attract_chinese_capital }
 }
 	focus = {

@@ -46,31 +46,5 @@
         "type": "modified"
       }
     ]
-  },
-  {
-    "id": "1767034753127",
-    "role": "user",
-    "text": "1. Change SIA_renegotiate_the_unequal_treaties to something else that could better fit the starting situation of Siam in 1936, add 3 - 4 additional focuses in continuation from it.\n\n2. Code in the effects for SIA_send_volunteers_to_china, the effects are that Siam can send volunteers to China IF China is at war with another country.\n\n3. Disable the Intelligence agency of Siam, in the mod it is set to have already been created already by game start, change it.",
-    "timestamp": 1767034753127
-  },
-  {
-    "id": "1767034975525",
-    "role": "model",
-    "text": "The following changes have been made to the mod:\n\n1.  **Modified the Siam Focus Tree (`common/national_focus/SIA.txt`)**:\n    *   Replaced the focus `SIA_renegotiate_the_unequal_treaties` with a new starting focus **\"Legacy of Khana Ratsadon\"** (`SIA_khana_ratsadon_legacy`).\n    *   Added 3 continuation focuses:\n        *   **\"Ratify the Constitution\"** (`SIA_ratify_constitution`) - Grants stability.\n        *   **\"Promote National Unity\"** (`SIA_promote_national_unity`) - Grants political power.\n        *   **\"Modernize the Bureaucracy\"** (`SIA_modernize_bureaucracy`) - Grants a research slot.\n    *   Updated the focus `SIA_send_volunteer_forces_to_china`:\n        *   Added availability condition: `CHI = { has_war = yes }` (Siam can only take this if China is at war).\n        *   Added effect: `set_rule = { can_send_volunteers = yes }` (Enables sending volunteers globally, which allows sending them to China).\n\n2.  **Updated History File (`history/countries/SIA - Siam.txt`)**:\n    *   Removed the code that created the \"Special Branch Bureau\" intelligence agency at the 1936 start (La Resistance DLC block), effectively disabling it at game start.\n\n3.  **Updated Localisation (`localisation/english/mod_focuses_localisations_l_english.yml`)**:\n    *   Added English names and descriptions for the new focuses.\n    *   Updated the description for the volunteer focus.",
-    "timestamp": 1767034975526,
-    "diffs": [
-      {
-        "path": "common/national_focus/SIA.txt",
-        "type": "modified"
-      },
-      {
-        "path": "history/countries/SIA - Siam.txt",
-        "type": "modified"
-      },
-      {
-        "path": "localisation/english/mod_focuses_localisations_l_english.yml",
-        "type": "modified"
-      }
-    ]
   }
 ]
