@@ -76,4 +76,49 @@ SIA_RH_CAT = {
 			}
 		}
 	}
+	
+	# Decision unlocked by SIA_legacy_of_revolution focus - Copied from Finnish 'Entice the People' template
+	SIA_entice_the_people = {
+		name = SIA_entice_the_people
+		icon = generic_political_action
+		
+		available = {
+			has_country_flag = sia_balance_of_power_decisions_enabled
+			has_country_flag = sia_bop_decision_entice_the_people_unlocked
+			has_political_power = 50
+		}
+		
+		visible = {
+			has_country_flag = sia_balance_of_power_decisions_enabled
+		}
+
+		cost = 50
+		days_remove = 120
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_variable = { name = SIA_Rep_House_BOP value = -20 }
+			}
+			modifier = {
+				factor = 0
+				has_variable = { name = SIA_Rep_House_BOP value = 20 }
+			}
+			modifier = {
+				factor = 0.5
+				has_variable = { name = SIA_Rep_House_BOP value = 10 }
+			}
+		}
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_Rep_House_BOP
+				value = 0.10 # Move Balance of Power 10% towards the "right" side (Opposition/King)
+				tooltip_side = SIA_RH_OPPOSITION
+			}
+			add_stability = -0.05
+			add_manpower = 20000
+		}
+	}
 }

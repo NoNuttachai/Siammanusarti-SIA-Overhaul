@@ -17,8 +17,10 @@
     SIA_legacy_of_revolution_desc:0 "Our country belongs to the people, not to the monarch, as they have deceived us into believing. We shall ensure that the monarchy remains only as a head of state neutral in politics and prevent any who may wish to undermine the constitution."
     SIA_constitutionalism:0 "Constitutionalism"
     SIA_constitutionalism_desc:0 "The Siamese Revolution ended the absolute rule of the monarchy and established the Constitution as the highest authority in the land. With the Constitution, we, the common people, are the rulers of our nation."
+    
     SIA_crown_property_act:0 "Crown Property Act"
-    SIA_crown_property_act_desc:0 "The Siamese Revolution ended the absolutist rule of the monarch and, with it, made the Constitution the highest authority of the land. With the Constitution, we the common people are the rulers of the nation."
+    SIA_crown_property_act_desc:0 "The assets of the royal family constitute a vast portion of the nation's wealth, including swathes of land, profitable businesses, and significant capital. Passing the Crown Property Act allows us to place this wealth under the control of the state's Ministry of Finance, effectively nationalizing these assets for the benefit of the people and strengthening the revolutionary government's economic power."
+    
     SIA_renegotiate_the_unequal_treaties:0 "Renegotiate the Unequal Treaties"
     SIA_renegotiate_the_unequal_treaties_desc:0 "Our country is still bound by unequal treaties and subjected to extraterritorial rights imposed by foreign powers. In order for our nation to achieve true independence and sovereignty, we must renegotiate these agreements and assert our equal standing among the global community. "
     SIA_phraya_phanon_steps_down:0 "Phraya Phahon Steps Down"
@@ -40,13 +42,17 @@
     SIA_improved_supply_lines_desc:0 ""
     
     SIA_bofors_artillery:0 "Bofors Artillery"
-    SIA_bofors_artillery_desc:0 "To strengthen our artillery units, we will procure cutting-edge systems from the renowned Swedish manufacturer Bofors.\n\nThese weapons will form the backbone of our modern artillery forces, improving both firepower and reliability on the battlefield."
+    SIA_bofors_artillery_desc:0 "To strengthen our artillery units, we will procure cutting-edge systems from the renowned Swedish manufacturer Bofors.
+
+These weapons will form the backbone of our modern artillery forces, improving both firepower and reliability on the battlefield."
     
     JAP_alliance_with_siam_name:0 "Military Access Through Siam"
     JAP_alliance_with_siam_name2:0 "Invade Siam"
 
     SIA_purchase_new_arms:0 "Purchase New Arms"
-    SIA_purchase_new_arms_desc:0 "To bridge the gap in our military capabilities, we must seek out foreign suppliers and secure the best arms available on the international market.\n\nBy evaluating offers from established powers, we can quickly equip our forces with advanced weaponry while we build up our own industry."
+    SIA_purchase_new_arms_desc:0 "To bridge the gap in our military capabilities, we must seek out foreign suppliers and secure the best arms available on the international market.
+
+By evaluating offers from established powers, we can quickly equip our forces with advanced weaponry while we build up our own industry."
 
     SIA_purchase_trucks:0 "Purchase Trucks"
     SIA_purchase_trucks_desc:0 "In order to improve logistics and troop mobility, we must acquire modern motorized vehicles from abroad. This temporary reliance on foreign models will allow us to rapidly expand our mechanized forces while we develop domestic alternatives."
@@ -55,9 +61,18 @@
     SIA_purchase_tanks_desc:0 "Our armored forces are in their infancy. By purchasing foreign tank models, we can accelerate their development and ensure our divisions are equipped with the tools needed to compete on a modern battlefield."
 
     SIA_army_motorization:0 "Army Motorization"
-    SIA_army_motorization_desc:0 "To keep pace with modern warfare, we must transform our infantry divisions into mobile fighting forces.\n\nBy prioritizing speed, maneuverability, and doctrine reform, we will increase our military’s operational flexibility."
+    SIA_army_motorization_desc:0 "To keep pace with modern warfare, we must transform our infantry divisions into mobile fighting forces.
+
+By prioritizing speed, maneuverability, and doctrine reform, we will increase our military’s operational flexibility."
     
     SIA_military-led_industries:0 "Military-Led Industries"
     SIA_military-led_industries_desc:0 "Direct military oversight of industrial expansion ensures that our factories prioritize the needs of the armed forces above all else."
     SIA_modernize_bang_sue_arsenal:0 "Modernize Bang Sue Arsenal"
     SIA_modernize_bang_sue_arsenal_desc:0 "The Bang Sue Arsenal is the heart of our military production. We must upgrade its facilities to handle modern manufacturing techniques and increase output."
+    
+    # Balance of Power Decision Name
+    SIA_entice_the_people:0 "Entice the People"
+    
+    # Ideas Localisation
+    SIA_crown_property_act_benefit:0 "Centralized Crown Assets"
+    SIA_crown_property_act_benefit_desc:0 "The nationalization of the former Royal Property ensures the state has greater control over key sectors of the economy, boosting industrial growth and providing much-needed capital for the government."

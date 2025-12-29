@@ -18,7 +18,26 @@ focus_tree = {
         y = 0
         cost = 10
         available = { }
-        completion_reward = { }
+        completion_reward = { 
+            # 1. Gaining 50 Political Power
+            add_political_power = 50
+            
+            # 2. Slight increase in stability (5%)
+            add_stability = 0.05
+            
+            # 3. Shifting the balance of power slightly towards the right.
+            # (Assuming 'SIA_balance_of_power' is the variable where positive is 'right')
+            change_variable = {
+                name = SIA_balance_of_power
+                value = 5
+            }
+            
+            # 4. Unlocking the Balance of Power decision to: “Entice the People” 
+            # This flag is used to show the specific decision.
+            set_country_flag = sia_bop_decision_entice_the_people_unlocked
+            # This flag enables the Balance of Power decision category (standard practice)
+            set_country_flag = sia_balance_of_power_decisions_enabled
+        }
     }
 
 	focus = {
@@ -28,8 +47,28 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		completion_reward = { }
 		prerequisite = { focus = SIA_legacy_of_revolution }
+		completion_reward = { 
+            # Political Power boost for centralizing power
+            add_political_power = 100
+            
+            # Add a national spirit for economic/construction bonuses
+            add_ideas = SIA_crown_property_act_benefit
+            
+            # Immediate factory boost (Bangkok is state 289 in the existing code)
+            289 = {
+                add_building_construction = {
+                    type = civilian_factory
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		}
 }
 
 	focus = {

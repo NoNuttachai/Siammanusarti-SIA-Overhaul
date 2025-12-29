@@ -156,6 +156,19 @@ ideas = {
 				political_power_gain = -0.25
 			}
 		}
+		SIA_crown_property_act_benefit = {
+			name = SIA_crown_property_act_benefit
+			picture = generic_national_unity_bonus
+			
+			allowed = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05 # Lower consumer goods for state control
+				research_speed_factor = 0.05 # Minor research boost from centralisation
+				stability_factor = 0.05 # Slight stability boost
+			}
+		}
 		SIA_arms_production = {
 			removal_cost = -1
 			
