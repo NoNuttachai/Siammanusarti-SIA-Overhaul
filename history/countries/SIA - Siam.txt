@@ -24,20 +24,6 @@ if = {
 	}
 }
 
-#	if = {
-#		limit = { has_dlc = "La Resistance" }
-#	
-#		create_operative_leader = {
-#			name = "Khun Phan Tharakratchadech"
-#			GFX = GFX_portrait_khun_phan
-#			traits = { operative_tough operative_escape_artist operative_infiltrator }
-#			bypass_recruitment = no
-#			available_to_spy_master = no
-#			nationalities = { SIA }
-#			gender = male
-#		}
-#	}
-
 set_power_balance = {
     id = SIA_Rep_House_BOP
     value = 0.0
@@ -233,14 +219,6 @@ set_convoys = 15
 			early_ship_hull_cruiser = 1
 			basic_medium_battery = 1
 		}
-	}
-}
-
-if = {
-	limit = { has_dlc = "La Resistance" }
-	create_intelligence_agency = {
-		name = "Special Branch Bureau"
-		icon = "GFX_agency_special_branch_bureau"
 	}
 }
 
