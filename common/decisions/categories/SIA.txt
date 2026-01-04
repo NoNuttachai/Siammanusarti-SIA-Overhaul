@@ -1,18 +1,3 @@
-SIA_corruption_skill_issue = {
-	#icon = 
-
-	priority = 10
-
-	scripted_gui = SIA_corruption_issue_gui
-
-	allowed = {
-		original_tag = SIA
-	}
-
-	visible = {
-		NOT = { has_country_flag = eradicated_corruption }
-	}
-}
 
 SIA_RH_CAT = {
 	priority = 10

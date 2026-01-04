@@ -1,9 +1,0 @@
-scripted_gui = {
-
-	SIA_corruption_issue_gui = {
-		window_name = "SIA_corruption_o_meter_window"
-		context_type = decision_category
-		
-		visible = { original_tag = SIA }
-	}
-}

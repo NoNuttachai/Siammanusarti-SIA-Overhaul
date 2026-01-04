@@ -1,9 +1,5 @@
 SpriteTypes = {
 
-	SpriteType = {
-		name = "GFX_SGUI_SIA_scripted_gui_piece1"
-		texturefile = "gfx/interface/SIA_scripted_gui_piece1.dds"
-	}
 	#Portraits
 	SpriteType = {
 		name = "GFX_portrait_Pleak_Phibun"
