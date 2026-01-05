@@ -3,7 +3,7 @@ tags={
 	"Alternative History"
 	"Gameplay"
 }
-name="Siammanusarti"
+name="Siammanusarti: Siam Overhaul Mod"
 supported_version="1.17.*"
 replace_path="common/bookmarks"
 path="mod/Siammanusarti/"
