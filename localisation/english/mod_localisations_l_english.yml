@@ -5,6 +5,9 @@
     siamese_revolutionary_leader: "\nTiger Soldier of Khana Ratsadon"
     phraya_phahon_full_name: "§gPhraya Phahonphonphayuhasena\n(Phot Phahonyothin)§!"
     pridi_noble_title: "§gLuang Praditmanutham§!"
+
+    crown_property_scandal: "§RCrown Property Scandal§!"
+
     ratsadon_member: "Member of Khana Ratsadon"
     ratsadon_member_desc: "§LThis commander is a member of Khana Ratsadon, joining in the Siamese Revolution.§!"
     refused_promotion_trait: "Unwilling to be Promoted"
@@ -23,7 +26,7 @@
     locomotive_expert: "Locomotive Expert"
     silk_merchant: "Silk Merchant"
     
-    SIA_Rep_House_BOP: "Public Trust in Khana Ratsadon"
+    SIA_BOP: "Support for Khana Ratsadon"
     SIA_RH_BALANCE: "Medium Support"
     SIA_RH_KHANA_25_75: "High Support"
     SIA_RH_KHANA_75_100: "Very High Support"
@@ -32,14 +35,14 @@
     SIA_RH_OPPOS_75_100: "Very Low Support"
     SIA_RH_OPPOS: "Opposition"
     
-    SIA_siamese_nation: "§tNation§!\n\n[SIA.GetAdjective] Nationalism"
+    SIA_siamese_nation: "[SIA.GetAdjective] Nationalism"
     #SIA_siamese_nation_desc: ""
     SIA_absent_monarch_tt: "\n§YAbsent Monarch§!\n   §gKing Ananda Mahidol is currently residing and studying in§! @SWI [SWI.GetName]."
-    SIA_king_ananda_mahidol: "§2Monarchy§!\n\nKing Ananda Mahidol (Rama VIII)"
+    SIA_king_ananda_mahidol: "nKing Ananda Mahidol (Rama VIII)"
     SIA_king_ananda_mahidol_desc: "Following the 1932 revolution, King Prajadhipok (Rama VII) abdicated due to disagreements with the Khana Ratsadon government. As the king did not have a son, Mom Chao (Prince) Ananda Mahidol was crowned king by the government through the line of succession. Because the new king is still a child and resided abroad, regents are appointed to carry out his duties."
     SIA_legacy_of_revolution: "Legacy of the Siamese Revolution"
     SIA_legacy_of_revolution_desc: "The Siamese Revolution of 1932 transformed [THIS.GetNameDef] from an absolute monarchy into a constitutional monarchy. However, disagreements over key issues between the civilian and military factions have raised questions about its legacy for the country."
-    SIA_buddhism: "§gReligion§!\n\nBuddhist Country"
+    SIA_buddhism: "Buddhist Country"
     SIA_buddhism_desc: "With the majority of [THIS.GetNameDef] practicing some form of Buddhism, the de facto state religion, it has played a major role in the daily lives of the people and, to a certain extent, influences politics."
     SIA_fascist_tendencies_army: "Fascist Tendencies in the Army"
     SIA_fascist_tendencies_army_desc: "With the rise of fascism in [GER.GetNonIdeologyName] and [ITA.GetNonIdeologyName], many within the [THIS.GetAdjective] army and government, including figures like Plaek Phibunsongkhram, expressed interest in the ideology. This interest was further reinforced by the authoritarian, anti-communist, and nationalist policies already prevalent in the country."
@@ -64,6 +67,16 @@
     SL_Orange_color: "§O"
     
     # Events
+    sia_BOP_event.1.t:0 "Planting of Khana Ratsadon Plaque"
+    sia_BOP_event.1.d:0 "Today, a ceremony was held to place a memorial plaque at Dusit Palace Royal Plaza, at the exact location where Phraya Phahon addressed the revolutionary aims of governmental change to the assembled troops. \nThe plaque commemorates the Siamese Revolution and reads: \"Here, on the 24th of June 2475 BE (1932 AD) at dawn, Khana Ratsadon birthed the constitution for the nation's prosperity.\""
+    sia_BOP_event.1.a:0 "Chaiyo!"
+
+    sia_events.1.t:0 "Crown Property Scandal"
+    sia_events.1.d:0 "In Parliament, opposition MP Liean Chaiyakharn opened a session with a scathing criticism of the Crown Property Bureau, accusing it of widespread corruption. He listed numerous members of Khana Ratsadon, military officials, and even the King's regents as having purchased Crown Property at prices far below market value and profited immensely.
+    \n\nThough Phraya Phahon replied that he was not aware of any members of his party being involved in dealings over Crown Property lands, this has greatly affected his standing as prime minister. Many within his party as well as the opposition urged him to take responsibility by resigning from his position."
+    sia_events.1.d:0 "The scandal has greatly damaged Khana Ratsadon reputation."
+
+
     N_SIA.1.t:0 "Japanese Ultimatum"
     N_SIA.1.d:0 "We have received an ultimatum from the Japanese ambassador, demanding we grant them military access through our territory. We have also received reports that Japanese troops have begun planning an invasion of Thailand. It seems the Japanese will not take no for an answer."
     N_SIA.1.a:0 "We cannot resist their armies. We must grant them access."

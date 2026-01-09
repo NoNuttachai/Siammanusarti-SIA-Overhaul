@@ -1,5 +1,7 @@
 add_namespace = N_SIA
 add_namespace = N_SIA_NEWS
+add_namespace = sia_events
+add_namespace = sia_BOP_event
 
 country_event = { # Japanese ultimatum to go through Siam
 	id = N_SIA.1
@@ -72,5 +74,40 @@ news_event = { # Thailand folds to Japan
 	major = yes
 	option = {
 		name = N_SIA_NEWS.1.a
+	}
+}
+
+country_event = {
+	id = sia_events.1
+	title = sia_events.1.t
+	desc = sia_events.1.d
+	picture = report_event_crown_property_scandal
+	
+	is_triggered_only = yes
+	option = {
+		name = sia_events.1.a
+		add_trait = {
+     			character = SIA_phraya_phahon
+     			ideology = moderatism
+     			trait = crown_property_scandal
+					}
+            }
+	}
+}
+
+country_event = {
+	id = sia_BOP_event.1
+	title = sia_BOP_event.1.t
+	desc = sia_BOP_event.1.d
+	picture = report_event_khana_ratsadon_plaque
+	
+	is_triggered_only = yes
+	option = {
+		name = sia_BOP_event.1.a
+		    add_power_balance_value = {
+                id = SIA_BOP
+                value = 0.05
+                tooltip_side = SIA_RH_KHANA
+            }
 	}
 }

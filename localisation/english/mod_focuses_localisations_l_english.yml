@@ -14,12 +14,16 @@ l_english:
     SIA_air_bang_fai_desc:0 "The people of Northeastern Thailand have a merit-making ceremony called Bun Bang Fai, which includes firing homemade rockets into the sky. They believe this act alerts the angels and brings rainfall. While we use rockets for ceremonies, the world is at war, using rockets for warfare. The Germans are already researching and deploying rockets to support their war efforts. We must do the same."
 
     SIA_legacy_of_revolution:0 "Legacy of the Siamese Revolution"
-    SIA_legacy_of_revolution_desc:0 "Our country belongs to the people, not to the monarch, as they have deceived us into believing. We shall ensure that the monarchy remains only as a head of state neutral in politics and prevent any who may wish to undermine the constitution."
-    SIA_constitutionalism:0 "Constitutionalism"
-    SIA_constitutionalism_desc:0 "The Siamese Revolution ended the absolute rule of the monarchy and established the Constitution as the highest authority in the land. With the Constitution, we, the common people, are the rulers of our nation."
+    SIA_legacy_of_revolution_desc:0 "Our country belongs to the people, not to the monarch, as they have deceived us into believing. We revere His Majesty, but the monarchy must remain only as a head of state, neutral in political affairs. We must prevent anyone who might seek to undermine the Constitution, as we have done before."
     
+    SIA_constitutionalism:0 "Constitutionalism"
+    SIA_constitutionalism_desc:0 "The Siamese Revolution ended absolute monarchy and established the Constitution as the highest authority in the land. Through it, the people rule the nation, and it deserves our reverence "
+    
+    SIA_thammasat_university:0 "Thammasat University"
+    SIA_thammasat_university_desc:0 "Pridi Epic"
+
     SIA_crown_property_act:0 "Crown Property Act"
-    SIA_crown_property_act_desc:0 "The assets of the royal family constitute a vast portion of the nation's wealth, including swathes of land, profitable businesses, and significant capital. Passing the Crown Property Act allows us to place this wealth under the control of the state's Ministry of Finance, effectively nationalizing these assets for the benefit of the people and strengthening the revolutionary government's economic power."
+    SIA_crown_property_act_desc:0 "The assets of the royal family constitute a vast portion of the nation's wealth, including swathes of land and significant capital. Passing the Crown Property Act allows us to place this wealth under the control of the state's Ministry of Finance, nationalizing these assets for the benefit of the people"
     
     SIA_renegotiate_the_unequal_treaties:0 "Renegotiate the Unequal Treaties"
     SIA_renegotiate_the_unequal_treaties_desc:0 "Our country is still bound by unequal treaties and subjected to extraterritorial rights imposed by foreign powers. In order for our nation to achieve true independence and sovereignty, we must renegotiate these agreements and assert our equal standing among the global community. "

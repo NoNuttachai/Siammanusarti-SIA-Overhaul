@@ -1,4 +1,4 @@
-SIA_Rep_House_BOP = {
+SIA_BOP = {
 	left_side = SIA_RH_OPPOS
 	right_side = SIA_RH_KHANA 
 	decision_category = SIA_RH_CAT
@@ -12,12 +12,12 @@ SIA_Rep_House_BOP = {
 		
 		on_activate = {
 			set_power_balance_gfx = {
-				id = SIA_Rep_House_BOP
+				id = SIA_BOP
 				side = SIA_RH_OPPOS
 				gfx = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
 			}
 			set_power_balance_gfx = {
-				id = SIA_Rep_House_BOP
+				id = SIA_BOP
 				side = SIA_RH_KHANA
 				gfx = "GFX_SIA_KHA_RATSADON_SIDE"
 			}
@@ -42,7 +42,7 @@ SIA_Rep_House_BOP = {
 			
 			on_activate = {
 				set_power_balance_gfx = {
-					id = SIA_Rep_House_BOP
+					id = SIA_BOP
 					side = SIA_RH_KHANA
 					gfx = "GFX_SIA_KHA_RATSADON_SIDE"
 				}
@@ -63,7 +63,7 @@ SIA_Rep_House_BOP = {
 			
 			on_activate = {
 				set_power_balance_gfx = {
-					id = SIA_Rep_House_BOP
+					id = SIA_BOP
 					side = SIA_RH_KHANA
 					gfx = "GFX_SIA_KHA_RATSADON_IMPROVED_SIDE"
 				}
@@ -89,7 +89,7 @@ SIA_Rep_House_BOP = {
 			
 			on_activate = {
 				set_power_balance_gfx = {
-					id = SIA_Rep_House_BOP
+					id = SIA_BOP
 					side = SIA_RH_OPPOS
 					gfx = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
 				}
@@ -110,7 +110,7 @@ SIA_Rep_House_BOP = {
 			
 			on_activate = {
 				set_power_balance_gfx = {
-					id = SIA_Rep_House_BOP
+					id = SIA_BOP
 					side = SIA_RH_OPPOS
 					gfx = "GFX_SIA_KHA_RATSADON_VERY_BAD_SIDE"
 				}

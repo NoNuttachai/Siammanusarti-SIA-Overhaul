@@ -156,6 +156,20 @@ ideas = {
 				political_power_gain = -0.25
 			}
 		}
+		SIA_constitutionalism_idea = {
+			removal_cost = -1
+			picture = SIA_king_ananda_mahidol
+
+			allowed = { is_puppet = no }
+
+			modifier = {
+			power_balance_daily_change = {
+   			id = SIA_BOP
+    		value > 0.05
+			}
+			political_power_gain = 0.1
+			}
+		}
 		SIA_crown_property_act_benefit = {
 			name = SIA_crown_property_act_benefit
 			picture = generic_national_unity_bonus

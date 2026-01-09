@@ -8,7 +8,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_siam_air_force.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_legacy_of_the_siamese_revolution"
+		name = "GFX_focus_SIA_legacy_of_the_siamese_revolution"
 		texturefile = "gfx/interface/goals/focus_siam_revolution.dds"
 	}
 	SpriteType = {

@@ -32,15 +32,20 @@ leader_traits = {
         ai_will_do = {
             base = 2
         }
-		# command_cap =
-		# For the love of God press Tab to put spaces before writing your code
     }
 	pridi_noble_title = {
 		random = no
         ai_will_do = {
             base = 2
         }
-		# command_cap =
+    }
+	#Traits Gained
+	crown_property_scandal = {
+		random = no
+		power_balance_daily = -0.001
+        ai_will_do = {
+            base = 2
+        }
     }
 	chemist_concern = {
 		random = no

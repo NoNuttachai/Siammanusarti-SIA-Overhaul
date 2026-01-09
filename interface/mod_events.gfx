@@ -13,6 +13,14 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "report_event_phraya_phahon_reelected"
-		texturefile = "gfx/events/report_event_phraya_phahon_reelected"
+		texturefile = "gfx/events/report_event_phraya_phahon_reelected.dds"
+	}
+	SpriteType = {
+		name = "report_event_khana_ratsadon_plaque"
+		texturefile = "gfx/events/report_event_khana_ratsadon_plaque.dds"
+	}
+	SpriteType = {
+		name = "report_event_crown_property_scandal"
+		texturefile = "gfx/events/report_event_crown_property_scandal.dds"
 	}
 }

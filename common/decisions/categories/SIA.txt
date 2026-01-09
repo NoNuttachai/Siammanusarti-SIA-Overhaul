@@ -3,3 +3,10 @@ SIA_RH_CAT = {
 	priority = 10
 	allowed = { original_tag = SIA }
 }
+SIA_six_principles = {
+	icon = generic_propaganda
+	visible = {
+		original_tag = SIA
+		has_completed_focus = my_focus
+	}
+}

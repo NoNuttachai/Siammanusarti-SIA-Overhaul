@@ -39,7 +39,7 @@ if = {
 #	}
 
 set_power_balance = {
-    id = SIA_Rep_House_BOP
+    id = SIA_BOP
     value = 0.0
 }
 
