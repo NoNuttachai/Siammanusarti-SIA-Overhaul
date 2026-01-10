@@ -99,4 +99,5 @@ SIA_six_principles_desc:0 "Khana Ratsadon set out six national objectives, known
 # Decisions
 SIA_entice_masses_cost_tt: "The cost for §YEntice the Masses§! decisions will be §Rmultiplied§! by §Y[?SIA_bop_decision_cost_multiplier]§!"
 
-unlock_six_principles_tt: "Unlocks £decision_icon_small §YThe Six Principles§! mechanic"
+# Tooltip
+unlock_six_principles_tt: "Unlocks £decision_icon_small decisions to propagandized §YThe Six Principles§!"

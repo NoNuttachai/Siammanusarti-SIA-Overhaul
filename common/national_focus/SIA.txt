@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 48
+        x = 46
         y = 0
         cost = 10
         available = { }
@@ -99,20 +99,137 @@ focus_tree = {
 		prerequisite = { focus = SIA_legacy_of_revolution }
 }
 	focus = {
-		id = SIA_renegotiate_the_unequal_treaties
+		id = SIA_khana_ratsadon_architecture
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_legacy_of_revolution
-		x = 8
+		x = 4
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_legacy_of_revolution }
 }
+	focus = {
+		id = SIA_renegotiate_the_unequal_treaties
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_legacy_of_revolution
+		x = 11
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_legacy_of_revolution focus = SIA_opposed_khana_ratsadon }
+}
+#Pro-China
+	focus = {
+		id = SIA_attract_chinese_capital
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
+		mutually_exclusive = { focus = SIA_invite_japanese_zaibatsus }
+	}
+	focus = {
+		id = SIA_send_volunteer_forces_to_china
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_attract_chinese_capital
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_attract_chinese_capital }
+}
+	focus = {
+		id = SIA_let_in_chinese_immigrants
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_attract_chinese_capital
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_attract_chinese_capital }
+}
+	focus = {
+		id = SIA_the_siamese_melting_pot
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_attract_chinese_capital
+		x = 0
+		y = 2
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_let_in_chinese_immigrants focus = SIA_send_volunteer_forces_to_china  }
+}
+#Pro-Japan
+	focus = {
+		id = SIA_invite_japanese_zaibatsus
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
+		mutually_exclusive = { focus = SIA_attract_chinese_capital }
+	}
+	focus = {
+		id = SIA_send_naval_cadets_to_japan
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_invite_japanese_zaibatsus
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_invite_japanese_zaibatsus }
+}
+	focus = {
+		id = SIA_something_here_i_am_too_dumb
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_invite_japanese_zaibatsus
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_invite_japanese_zaibatsus }
+}
+	focus = {
+		id = SIA_something_here_i_am_too_dumb_2
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_something_here_i_am_too_dumb
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_something_here_i_am_too_dumb focus = SIA_send_naval_cadets_to_japan}
+}
+#Pro-Germany
+	focus = {
+		id = SIA_invite_german_investors
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
+		x = 4
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
+	}
+#Pro-USA
+	focus = {
+		id = SIA_invite_american_companies
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
+		x = -4
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
+	}
+
 #Research_bonus
 	focus = {
 		id = SIA_education_for_all
 		icon = GFX_focus_Education_for_All
-		x = 11	y = 1
+		x = -8	y = 1
 		relative_position_id = SIA_legacy_of_revolution
 		
 		cost = 2
@@ -159,16 +276,15 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_crown_property_act }
-		prerequisite = { focus = SIA_propagandize_six_principles }
-		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		prerequisite = { focus = SIA_constitutionalism }
+		prerequisite = { focus = SIA_propagandize_six_principles }
 }
 
 	focus = {
 		id = SIA_civilian_faction_leadership
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = -4
+		x = -5
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -191,62 +307,23 @@ focus_tree = {
 		id = SIA_subdue_army
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_civilian_faction_leadership
-		x = -2
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_civilian_faction_leadership }
+		mutually_exclusive = { focus = SIA_songsuradet_rebellion focus = SIA_purge }
 }
 
 	focus = {
 		id = SIA_align_with_navy
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_civilian_faction_leadership
-		x = 2
+		x = -2
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_civilian_faction_leadership }
-}
-	focus = {
-		id = SIA_attract_chinese_capital
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_civilian_faction_leadership
-		x = -4
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_civilian_faction_leadership }
-	}
-	focus = {
-		id = SIA_send_volunteer_forces_to_china
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_attract_chinese_capital
-		x = -1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_attract_chinese_capital }
-}
-focus = {
-		id = SIA_let_in_chinese_immigrants
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_attract_chinese_capital
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_attract_chinese_capital }
-}
-focus = {
-		id = SIA_the_siamese_melting_pot
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_attract_chinese_capital
-		x = 0
-		y = 2
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_let_in_chinese_immigrants }
 }
 	focus = {
 		id = SIA_free_political_prisoners
@@ -364,7 +441,7 @@ focus = {
 		id = SIA_iron_boned_marshal
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = 4
+		x = 5
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -381,6 +458,7 @@ focus = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_iron_boned_marshal }
+		mutually_exclusive = { focus = SIA_songsuradet_rebellion focus = SIA_subdue_army }
 }
 	focus = {
 		id = SIA_decrees
@@ -521,7 +599,7 @@ focus = {
 		id = SIA_thai_irredentism
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_purge
-		x = 8
+		x = 7
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -1157,16 +1235,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = SIA_invite_european_companies
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_revitalize_the_economy
-		x = 4
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_revitalize_the_economy }
-	}
-	focus = {
 		id = SIA_rural_provincial_development
 		icon = gfx_focus_unknown
 		x = -4	y = 1
@@ -1438,7 +1506,7 @@ focus = {
 			}
 		}
 		offset = {
-			x = -19
+			x = -25
 			trigger = {
 				has_completed_focus = SIA_opposed_khana_ratsadon
 			}
@@ -1522,6 +1590,16 @@ focus = {
 		prerequisite = { focus = SIA_second_boovaradet_rebellion }
 }
 	focus = {
+		id = SIA_empowered_the_nobility
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_second_boovaradet_rebellion
+		x = -3
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_second_boovaradet_rebellion }
+}
+	focus = {
 		id = SIA_a_loyalist_junta
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_second_boovaradet_rebellion
@@ -1560,5 +1638,68 @@ focus = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_pardon_some_khana_ratsadon_members focus = SIA_sweet_taste_of_vengence }
+}
+	
+#AHHHHHH
+	focus = {
+		id = SIA_songsuradet_rebellion
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_civilian_faction_leadership
+		x = 5
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_civilian_faction_leadership focus = SIA_iron_boned_marshal}
+		mutually_exclusive = { focus = SIA_subdue_army focus = SIA_purge}
+}
+	focus = {
+		id = SIA_suspend_the_constitution
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_songsuradet_rebellion
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_songsuradet_rebellion }
+}
+	focus = {
+		id = SIA_purge_the_ideological_evil
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_suspend_the_constitution
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_suspend_the_constitution }
+}
+	focus = {
+		id = SIA_purge_phibun_clique
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_songsuradet_rebellion
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_songsuradet_rebellion }
+}
+	focus = {
+		id = SIA_invite_back_the_exiles
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_purge_phibun_clique
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_purge_phibun_clique }
+}
+	focus = {
+		id = SIA_reappeal_the_loyalists
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_songsuradet_rebellion
+		x = 0
+		y = 3
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_songsuradet_rebellion }
 }
 }
