@@ -23,4 +23,8 @@ spriteTypes = {
 		name = "report_event_crown_property_scandal"
 		texturefile = "gfx/events/report_event_crown_property_scandal.dds"
 	}
+	SpriteType = {
+		name = "report_event_liean_chaiykharn_soaked"
+		texturefile = "gfx/events/report_event_liean_chaiykharn_soaked.dds"
+	}
 }

@@ -91,8 +91,25 @@ country_event = {
      			ideology = moderatism
      			trait = crown_property_scandal
 					}
+		country_event = { id = sia_events.2 days = 17 }
             }
 	}
+
+country_event = {
+    id = sia_events.2
+    title = sia_events.2.t
+    desc = sia_events.2.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.2.a
+        add_power_balance_value = {
+            id = SIA_BOP
+            value = -0.05
+        }
+    }
 }
 
 country_event = {

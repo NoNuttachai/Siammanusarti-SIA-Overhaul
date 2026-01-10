@@ -75,6 +75,9 @@
     sia_events.1.d:0 "In Parliament, opposition MP Liean Chaiyakharn opened a session with a scathing criticism of the Crown Property Bureau, accusing it of widespread corruption. He listed numerous members of Khana Ratsadon, military officials, and even the King's regents as having purchased Crown Property at prices far below market value and profited immensely \n\nThough Phraya Phahon replied that he was not aware of any members of his party being involved in dealings over Crown Property lands, this has greatly affected his standing as prime minister. Many within his party as well as the opposition urged him to take responsibility by resigning from his position."
     sia_events.1.a:0 "The scandal has greatly damaged Khana Ratsadon reputation."
 
+    sia_events.2.t:0 "An Incident at Parliment"
+    sia_events.2.d:0 "While opposition MP Lien Chaiyacharn was enjoying a drink after a parliamentary session, governmental MPs surround him then suddenly grabbed his chair pinning him to it, and paraded him outside the building before throwing both the chair and him into the pool near Parliament. He emerged completely soaked."
+    sia_events.2.a:0 "Very unprofessional of the MPs"
 
     N_SIA.1.t:0 "Japanese Ultimatum"
     N_SIA.1.d:0 "We have received an ultimatum from the Japanese ambassador, demanding we grant them military access through our territory. We have also received reports that Japanese troops have begun planning an invasion of Thailand. It seems the Japanese will not take no for an answer."
@@ -89,5 +92,6 @@
     N_SIA_NEWS.1.d:0 "Japanese forces have launched a swift invasion into Thailand, The move followed an ultimatum issued by Japan requesting military access through Thai territory.\n\nThai military and police units mounted brief resistance in several regions, resulting in scattered clashes. However, within hours, the Thai government announced a ceasefire and agreed to Japan’s demands, permitting Japanese troops to pass through the country.\n\nThe decision appears to have been made by the government of Marshall Pleak Phibunsongkram in the interest of avoiding further bloodshed. With this development, Japan gains a strategic corridor for its operations in Southeast Asia."
     N_SIA_NEWS.1.a:0 "Thailand has chosen survival over destruction"
 
+    # Decision Tab
     SIA_six_principles:0 "The Six Principles"
     SIA_six_principles_desc:0 "Khana Ratsadon set out six national objectives, known as the “Six Principles” Aiming at developing the country and improving the welfare of the people. These objectives were announced to the public following the Siamese Revolution through Khana Ratsadon's Proclamation No.1. \n\nIt is of upmost importance that our government and party promote The Six Principles to the general public"
