@@ -15,7 +15,12 @@ state={
 			air_base = 3
 			7408 = {
 				naval_base = 1
-
+				landmark_wat_arun = {
+                    level = 1
+					allowed = {
+						always = yes
+					}
+                }
 			}
 			4433 = {
 				naval_base = 3
