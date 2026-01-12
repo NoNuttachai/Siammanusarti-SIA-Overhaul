@@ -289,7 +289,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
-	mutually_exclusive = { focus = SIA_iron_boned_marshal }
+	mutually_exclusive = { focus = SIA_marshal_phibun_ascension }
 }
 
 	focus = {
@@ -438,8 +438,8 @@ focus_tree = {
 		prerequisite = { focus = SIA_phrachatiphat_victory focus = SIA_khana_rhatsadon_continue_reign}
 }
 	focus = {
-		id = SIA_iron_boned_marshal
-		icon = gfx_focus_unknown
+		id = SIA_marshal_phibun_ascension
+		icon = GFX_focus_SIA_marshal_phibun_ascension
 		relative_position_id = SIA_phraya_phanon_steps_down
 		x = 5
 		y = 1
@@ -452,12 +452,12 @@ focus_tree = {
 	focus = {
 		id = SIA_purge
 		icon = gfx_focus_unknown
-		relative_position_id = SIA_iron_boned_marshal
+		relative_position_id = SIA_marshal_phibun_ascension
 		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_iron_boned_marshal }
+		prerequisite = { focus = SIA_marshal_phibun_ascension }
 		mutually_exclusive = { focus = SIA_songsuradet_rebellion focus = SIA_subdue_army }
 }
 	focus = {
@@ -1649,7 +1649,7 @@ focus = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_civilian_faction_leadership focus = SIA_iron_boned_marshal}
+		prerequisite = { focus = SIA_civilian_faction_leadership focus = SIA_marshal_phibun_ascension}
 		mutually_exclusive = { focus = SIA_subdue_army focus = SIA_purge}
 }
 	focus = {

@@ -59,4 +59,8 @@ spriteTypes = {
 		name = "GFX_focus_Female_Corps"
 		texturefile = "gfx/interface/goals/Female_Corps.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_SIA_marshal_phibun_ascension"
+		texturefile = "gfx/interface/goals/focus_siam_marshal_phibun_ascension.dds"
+	}
 }
