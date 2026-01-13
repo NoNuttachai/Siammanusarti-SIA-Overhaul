@@ -249,7 +249,7 @@ focus_tree = {
 	prerequisite = { focus = SIA_promote_democratic_ideals }
 }
 	focus = {
-		id = SIA_add_something_here_5
+		id = SIA_independent_foreign_policy
 		icon = gfx_focus_unknown
 		relative_position_id =SIA_align_with_navy
 		x = 4
@@ -263,12 +263,12 @@ focus_tree = {
 	focus = {
 		id = SIA_rekindle_with_the_colonial_powers
 		icon = gfx_focus_unknown
-		relative_position_id = SIA_add_something_here_5
+		relative_position_id = SIA_independent_foreign_policy
 		x = -2
 		y = 1
 		cost = 10
 		completion_reward = { }
-	prerequisite = { focus =SIA_add_something_here_5 }
+	prerequisite = { focus =SIA_independent_foreign_policy }
 	mutually_exclusive = { focus = SIA_southeast_asian_self_determination }
 }
 	focus = {
@@ -284,12 +284,12 @@ focus_tree = {
 	focus = {
 		id = SIA_southeast_asian_self_determination #Funds Movements in SEA to rebel EXCEPT Vietnam
 		icon = gfx_focus_unknown
-		relative_position_id =SIA_add_something_here_5
+		relative_position_id =SIA_independent_foreign_policy
 		x = 2
 		y = 1
 		cost = 10
 		completion_reward = { }
-	prerequisite = { focus =SIA_add_something_here_5 }
+	prerequisite = { focus =SIA_independent_foreign_policy }
 	mutually_exclusive = { focus = SIA_rekindle_with_the_colonial_powers }
 }
 	focus = {
@@ -305,7 +305,7 @@ focus_tree = {
 	focus = {
 		id = SIA_american_siam_alliance #If the country is Fascist and refused to ceeded to Japan you can join the Allies even if you are Fascist
 		icon = gfx_focus_unknown
-		relative_position_id = SIA_add_something_here_5
+		relative_position_id = SIA_independent_foreign_policy
 		x = 6
 		y = 1
 		cost = 10
@@ -313,7 +313,7 @@ focus_tree = {
 	prerequisite = { focus = SIA_promote_democratic_ideals focus = SIA_rattaniyom_decrees focus = SIA_mass_media } #Country MUST be at war with Fascist or Non-Aligned Japan
 }
 	focus = {
-		id = SIA_thai_american_military_cooperation #also for post-phibun
+		id = SIA_american_military_advisors #also for post-phibun
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_american_siam_alliance
 		x = 1
@@ -341,10 +341,10 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 	prerequisite = { focus = SIA_southeast_asian_self_determination }
-	mutually_exclusive = { focus = SIA_backed_the_viet_cong }
+	mutually_exclusive = { focus = SIA_backed_ho_chi_minh }
 }
 	focus = {
-		id = SIA_backed_the_viet_cong #Pridi MUST be leader
+		id = SIA_backed_ho_chi_minh #Pridi MUST be leader
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_southeast_asian_self_determination
 		x = 1
@@ -362,14 +362,14 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = { }
-	prerequisite = { focus = SIA_liberate_indochina_from_imperialism focus = SIA_backed_the_viet_cong focus = SIA_guardian_of_southeast_asia}
+	prerequisite = { focus = SIA_liberate_indochina_from_imperialism focus = SIA_backed_ho_chi_minh focus = SIA_guardian_of_southeast_asia}
 }
 	focus = {
 		id = SIA_ASEAN_we_are_bounded_as_one #Country becomes United States of Southeast Asian Nations
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_the_bangkok_declaration
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 		completion_reward = { }
 	prerequisite = { focus = SIA_the_bangkok_declaration }
@@ -511,10 +511,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration}
+		prerequisite = { focus = SIA_the_pramoj_brothers focus = SIA_khung_aphaiwong_premiership }
 }
 	focus = {
-		id = SIA_add_something_here_4
+		id = SIA_mixed_economy_framework
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_add_something_here_3
 		x = 1
@@ -562,7 +562,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_add_something_here_4 focus = SIA_support_state_run_enterprizes }
+		prerequisite = { focus = SIA_mixed_economy_framework focus = SIA_support_state_run_enterprizes }
 }
 	focus = {
 		id = SIA_scientific_democratic_socialism
@@ -757,18 +757,9 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_purge }
+		prerequisite = { focus = SIA_purge focus = SIA_return_to_absolutism }
 }
-	focus = {
-		id = SIA_add_something_here_6
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_purge
-		x = 7
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_purge focus = SIA_return_to_absolutism}
-}
+
 	focus = {
 		id = SIA_thai_irredentism
 		icon = gfx_focus_unknown
@@ -863,7 +854,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_thai-japanese_aillance_shared_focus }
 }
 	focus = {
-		id = SIA_against_the_free_thai_movement
+		id = SIA_kenpeitai_cooperation
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_thai-japanese_aillance_shared_focus
 		x = -1
@@ -1593,25 +1584,6 @@ focus = {
 			}
 		}
 	}
-	focus = {
-		id = SIA_add_something_here_1
-		icon = GFX_focus_Establish_the_National_Bank
-		x = -1	y = 1
-		
-		prerequisite = { focus = SIA_military-led_industries }
-		relative_position_id = SIA_military-led_industries
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			add_ideas = SIA_bank_of_siam
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = 0.05
-				tooltip_side = SIA_RH_KHANA 
-			}
-		}
-	}
 		focus = {
 		id = SIA_invite_japanese_zaibatsus
 		icon = gfx_focus_unknown
@@ -1743,7 +1715,7 @@ focus = {
 		ai_will_do = { factor = 1 }
 	}
 	focus = {
-		id = SIA_add_something_here_2
+		id = SIA_modernize_arms_factories
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 0	y = 2
 
