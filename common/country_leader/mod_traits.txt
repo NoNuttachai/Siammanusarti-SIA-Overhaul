@@ -47,6 +47,13 @@ leader_traits = {
             base = 2
         }
     }
+	crown_property_scandal_1 = {
+		random = no
+		power_balance_daily = -0.0005
+        ai_will_do = {
+            base = 2
+        }
+    }
 	chemist_concern = {
 		random = no
 		base_fuel_gain_factor = 0.1

@@ -15,7 +15,7 @@ country_event = { # Japanese ultimatum to go through Siam
 		
 		JAP = {
 			if = {
-				limit = { has_faction = no }
+				limit = { is_in_faction = yes }
 				set_rule = { can_create_factions = yes }
 				create_faction = JAP_greater_east_asian_co_prosperity_sphere
 				custom_effect_tooltip = generic_skip_one_line_tt
@@ -87,13 +87,13 @@ country_event = {
 	option = {
 		name = sia_events.1.a
 		add_trait = {
-     			character = SIA_phraya_phahon
-     			ideology = moderatism
-     			trait = crown_property_scandal
-					}
+			character = SIA_phraya_phahon
+			ideology = moderatism
+			trait = crown_property_scandal
+		}
 		country_event = { id = sia_events.2 days = 17 }
-            }
 	}
+}
 
 country_event = {
     id = sia_events.2

@@ -6,7 +6,8 @@ siamese_revolutionary_leader: "\nTiger Soldier of Khana Ratsadon"
 phraya_phahon_full_name: "§gPhraya Phahonphonphayuhasena\n(Phot Phahonyothin)§!"
 pridi_noble_title: "§gLuang Praditmanutham§!"
 
-crown_property_scandal: "§RCrown Property Scandal§!"
+crown_property_scandal: "§RCrown Property Scandal§!\n§gThe Crown Property Scandal is severely undermining support for Khana Ratsadon. We must take decisions to mitigate its effects§!"
+crown_property_scandal_1: "§RCrown Property Scandal§!\n§gThe Crown Property Scandal is severely undermining support for Khana Ratsadon. We must take decisions to mitigate its effects§!"
 
 ratsadon_member: "Member of Khana Ratsadon"
 ratsadon_member_desc: "§LThis commander is a member of Khana Ratsadon, joining in the Siamese Revolution.§!"
@@ -67,37 +68,42 @@ SL_Grey_color: "§g"
 SL_Orange_color: "§O"
 
 # Events
-sia_BOP_event.1.t:0 "Planting of Khana Ratsadon Plaque"
-sia_BOP_event.1.d:0 "Today, a ceremony was held to place a memorial plaque at Dusit Palace Royal Plaza, at the exact location where Phraya Phahon addressed the revolutionary aims of governmental change to the assembled troops. \nThe plaque commemorates the Siamese Revolution and reads "Here, on the 24th of June 2475 BE (1932 AD) at dawn, Khana Ratsadon birthed the constitution for the nation's prosperity." "
-sia_BOP_event.1.a:0 "Chaiyo!"
+sia_BOP_event.1.t: "Planting of Khana Ratsadon Plaque"
+sia_BOP_event.1.d: "Today, a ceremony was held to place a memorial plaque at Dusit Palace Royal Plaza, at the exact location where Phraya Phahon addressed the revolutionary aims of governmental change to the assembled troops. \nThe plaque commemorates the Siamese Revolution and reads "Here, on the 24th of June 2475 BE (1932 AD) at dawn, Khana Ratsadon birthed the constitution for the nation's prosperity." "
+sia_BOP_event.1.a: "Chaiyo!"
 
-sia_events.1.t:0 "Crown Property Scandal"
-sia_events.1.d:0 "In Parliament, opposition MP Liean Chaiyakharn opened a session with a scathing criticism of the Crown Property Bureau, accusing it of widespread corruption. He listed numerous members of Khana Ratsadon, military officials, and even the King's regents as having purchased Crown Property at prices far below market value and profited immensely \n\nThough Phraya Phahon replied that he was not aware of any members of his party being involved in dealings over Crown Property lands, this has greatly affected his standing as prime minister. Many within his party as well as the opposition urged him to take responsibility by resigning from his position."
-sia_events.1.a:0 "The scandal has greatly damaged Khana Ratsadon reputation."
+sia_events.1.t: "Crown Property Scandal"
+sia_events.1.d: "In Parliament, opposition MP Liean Chaiyakharn opened a session with a scathing criticism of the Crown Property Bureau, accusing it of widespread corruption. He listed numerous members of Khana Ratsadon, military officials, and even the King's regents as having purchased Crown Property at prices far below market value and profited immensely \n\nThough Phraya Phahon replied that he was not aware of any members of his party being involved in dealings over Crown Property lands, this has greatly affected his standing as prime minister. Many within his party as well as the opposition urged him to take responsibility by resigning from his position."
+sia_events.1.a: "The scandal has greatly damaged Khana Ratsadon reputation."
 
-sia_events.2.t:0 "An Incident at Parliment"
-sia_events.2.d:0 "While opposition MP Lien Chaiyacharn was enjoying a drink after a parliamentary session, governmental MPs surround him then suddenly grabbed his chair pinning him to it, and paraded him outside the building before throwing both the chair and him into the pool near Parliament. He emerged completely soaked."
-sia_events.2.a:0 "Very unprofessional of the MPs"
+sia_events.2.t: "An Incident at Parliment"
+sia_events.2.d: "While opposition MP Lien Chaiyacharn was enjoying a drink after a parliamentary session, governmental MPs surround him then suddenly grabbed his chair pinning him to it, and paraded him outside the building before throwing both the chair and him into the pool near Parliament. He emerged completely soaked."
+sia_events.2.a: "Very unprofessional of the MPs"
 
-N_SIA.1.t:0 "Japanese Ultimatum"
-N_SIA.1.d:0 "We have received an ultimatum from the Japanese ambassador, demanding we grant them military access through our territory. We have also received reports that Japanese troops have begun planning an invasion of Thailand. It seems the Japanese will not take no for an answer."
-N_SIA.1.a:0 "We cannot resist their armies. We must grant them access."
-N_SIA.1.b:0 "Our sovereignty will not be threatened!"
+N_SIA.1.t: "Japanese Ultimatum"
+N_SIA.1.d: "We have received an ultimatum from the Japanese ambassador, demanding we grant them military access through our territory. We have also received reports that Japanese troops have begun planning an invasion of Thailand. It seems the Japanese will not take no for an answer."
+N_SIA.1.a: "We cannot resist their armies. We must grant them access."
+N_SIA.1.b: "Our sovereignty will not be threatened!"
 
-N_SIA.2.t:0 "Brief Fighting Between Thai and Japanese Troops"
-N_SIA.2.d:0 "After receiving Japan’s ultimatum demanding military access through Thailand, our government was unable to contact Marshal Phibunsongkhram in time to make a final decision. As a result, we failed to respond before Japan’s strict deadline of just two hours. Japanese forces, by land and sea, have begun their invasion of the country.\n\nOur soldiers, policemen, and Yuwachon Thahan (Junior Soldiers) resisted the might of the Japanese army with bravery, managing to stall their advance. Many perished in defense of our homeland.\n\nAfter several hours of fierce fighting, our government and Japan reached a ceasefire agreement, granting Japan access to our territory. The courage of our men and especially our young junior soldiers will be remembered forever."
-N_SIA.2.a:0 "“Junior Soldiers, Open Semester by Firefight”"
+N_SIA.2.t: "Brief Fighting Between Thai and Japanese Troops"
+N_SIA.2.d: "After receiving Japan’s ultimatum demanding military access through Thailand, our government was unable to contact Marshal Phibunsongkhram in time to make a final decision. As a result, we failed to respond before Japan’s strict deadline of just two hours. Japanese forces, by land and sea, have begun their invasion of the country.\n\nOur soldiers, policemen, and Yuwachon Thahan (Junior Soldiers) resisted the might of the Japanese army with bravery, managing to stall their advance. Many perished in defense of our homeland.\n\nAfter several hours of fierce fighting, our government and Japan reached a ceasefire agreement, granting Japan access to our territory. The courage of our men and especially our young junior soldiers will be remembered forever."
+N_SIA.2.a: "“Junior Soldiers, Open Semester by Firefight”"
 
-N_SIA_NEWS.1.t:0 "Thailand Folded to Japan"
-N_SIA_NEWS.1.d:0 "Japanese forces have launched a swift invasion into Thailand, The move followed an ultimatum issued by Japan requesting military access through Thai territory.\n\nThai military and police units mounted brief resistance in several regions, resulting in scattered clashes. However, within hours, the Thai government announced a ceasefire and agreed to Japan’s demands, permitting Japanese troops to pass through the country.\n\nThe decision appears to have been made by the government of Marshall Pleak Phibunsongkram in the interest of avoiding further bloodshed. With this development, Japan gains a strategic corridor for its operations in Southeast Asia."
-N_SIA_NEWS.1.a:0 "Thailand has chosen survival over destruction"
+N_SIA_NEWS.1.t: "Thailand Folded to Japan"
+N_SIA_NEWS.1.d: "Japanese forces have launched a swift invasion into Thailand, The move followed an ultimatum issued by Japan requesting military access through Thai territory.\n\nThai military and police units mounted brief resistance in several regions, resulting in scattered clashes. However, within hours, the Thai government announced a ceasefire and agreed to Japan’s demands, permitting Japanese troops to pass through the country.\n\nThe decision appears to have been made by the government of Marshall Pleak Phibunsongkram in the interest of avoiding further bloodshed. With this development, Japan gains a strategic corridor for its operations in Southeast Asia."
+N_SIA_NEWS.1.a: "Thailand has chosen survival over destruction"
 
 # Decision Tab
-SIA_six_principles:0 "The Six Principles"
-SIA_six_principles_desc:0 "Khana Ratsadon set out six national objectives, known as the “Six Principles” Aiming at developing the country and improving the welfare of the people. These objectives were announced to the public following the Siamese Revolution through Khana Ratsadon's Proclamation No.1. \n\nIt is of upmost importance that our government and party promote The Six Principles to the general public"
+SIA_six_principles: "The Six Principles"
+SIA_six_principles_desc: "Khana Ratsadon set out six national objectives, known as the “Six Principles” Aiming at developing the country and improving the welfare of the people. These objectives were announced to the public following the Siamese Revolution through Khana Ratsadon's Proclamation No.1. \n\nIt is of upmost importance that our government and party promote The Six Principles to the general public"
 
 # Decisions
 SIA_entice_masses_cost_tt: "The cost for §YEntice the Masses§! decisions will be §Rmultiplied§! by §Y[?SIA_bop_decision_cost_multiplier]§!"
 
+SIA_transfer_phibun_crown_property_back: "Transfer Phibun Crown Property Back"
+SIA_commission_an_indepedent_gov_investigation: "Commission an Independent Government Investigation"
+SIA_fire_officials_involved: "Fire Officials Involved in the Scandal"
+
 # Tooltip
 unlock_six_principles_tt: "Unlocks £decision_icon_small decisions to propagandized §YThe Six Principles§!"
+SIA_commission_an_indepedent_gov_investigation_done: "Has §YCommissioned an Independent Goverment Investigation§!"
