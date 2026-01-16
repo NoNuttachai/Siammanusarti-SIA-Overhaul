@@ -162,7 +162,7 @@ focus_tree = {
 		id = SIA_civilian_faction_leadership
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = -5
+		x = -6
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -195,7 +195,7 @@ focus_tree = {
 		id = SIA_thammasat_university #bonus for PP gain, no research bonus because the uni is focused only on political degrees then
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_civilian_faction_leadership
-		x = 5
+		x = 6
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -1702,7 +1702,7 @@ focus = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_focus_unknown
-		x = 67 #https://www.youtube.com/watch?v=6IgSCFzgGx8
+		x = 64
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
@@ -1765,7 +1765,7 @@ focus = {
 		id = SIA_overthrow_khana_ratsadon
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_plot_against_khana_ratsadon
-		x = -5
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -1962,15 +1962,5 @@ focus = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
-}
-	focus = {
-		id = SIA_repeal_the_anti-communist_act
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_plot_against_khana_ratsadon
-		x = 5
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_plot_against_khana_ratsadon focus = SIA_motion_of_no_confidence }
 }
 }
