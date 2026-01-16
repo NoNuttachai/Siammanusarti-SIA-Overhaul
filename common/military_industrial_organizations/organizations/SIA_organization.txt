@@ -1,0 +1,7 @@
+
+SIA_AERONAUTICAL_WORKSHOP_MIO = {
+    name = "Air Force's Aeronautical Workshop"
+    include = generic_light_aircraft_organization
+    icon = GFX_idea_hawker
+    allowed = { original_TAG = SIA }
+}
