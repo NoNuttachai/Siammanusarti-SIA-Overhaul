@@ -1510,7 +1510,7 @@ focus = {
 	focus = {
 		id = SIA_education_for_all
 		icon = GFX_focus_Education_for_All
-		x = 5	y = 1
+		x = 7	y = 1
 		prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
 		relative_position_id = SIA_bangkok_urbanization
 		
@@ -1575,6 +1575,40 @@ focus = {
 		}
 	}
 	focus = {
+		id = SIA_on_our_own
+		icon = GFX_goal_unknown
+		x = 0	
+		y = 1
+
+		relative_position_id = SIA_encorage_rubber_plantations
+		prerequisite = { focus = SIA_encorage_rubber_plantations }
+		mutually_exclusive = { focus = SIA_enticing_markets }
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_enticing_markets
+		icon = GFX_goal_unknown
+		x = 3	
+		y = 1
+
+		relative_position_id = SIA_encorage_rubber_plantations
+		prerequisite = { focus = SIA_encorage_rubber_plantations }
+		mutually_exclusive = { focus = SIA_on_our_own }
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 		id = SIA_mining_industry
 		icon = GFX_focus_generic_mining_industry
 		x = 1	y = 1
@@ -1606,23 +1640,44 @@ focus = {
 		}
 	}
 	focus = {
-			id = SIA_survay_fang_oil_well
-			icon = GFX_goal_generic_oil_refinery
-			x = -1	y = 1
-			relative_position_id = SIA_rural_provincial_development
-			prerequisite = { focus = SIA_rural_provincial_development}
-			
-			cost = 2
-			ai_will_do = { factor = 1 }
+		id = SIA_survay_fang_oil_well
+		icon = GFX_goal_generic_oil_refinery
+		x = -1	
+		y = 1
+		relative_position_id = SIA_rural_provincial_development
+		prerequisite = { focus = SIA_rural_provincial_development}
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
 
-			completion_reward = {
-				add_resource = {
-					type = oil
-					amount = 3
-					state = 869
-				}
+		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 3
+				state = 869
 			}
 		}
+	}
+	focus = {
+		id = SIA_expand_mae_moh_mine
+		icon = GFX_focus_generic_coal_mining
+		x = 1
+		y = 1
+		relative_position_id = SIA_survay_fang_oil_well
+		prerequisite = { focus = SIA_survay_fang_oil_well }
+		prerequisite = { focus = SIA_mining_industry }
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			add_resource = {
+				type = coal
+				amount = 5
+				state = 869
+			}
+		}
+	}
 	focus = {
 			id = SIA_military-led_industries
 			icon = GFX_focus_PRC_equipment_from_copper_coins
