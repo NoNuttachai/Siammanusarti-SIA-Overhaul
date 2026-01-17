@@ -1812,7 +1812,7 @@ focus = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_focus_unknown
-		x = 64
+		x = 61
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
@@ -1907,7 +1907,7 @@ focus = {
 		id = SIA_fund_thmmayuth_nikai
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_pardon_some_khana_ratsadon_members
-		x = -3
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -1957,7 +1957,7 @@ focus = {
 		id = SIA_return_power_to_the_nobility #Boovaradet and the King Mother as regents
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_overthrow_khana_ratsadon
-		x = 0
+		x = 2
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -1967,7 +1967,7 @@ focus = {
 		id = SIA_install_a_generic_prime_minister #Asian generic guy first PM of Siam
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_overthrow_khana_ratsadon
-		x = 3
+		x = 4
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -1977,7 +1977,7 @@ focus = {
 		id = SIA_monarchist_military_rule
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_overthrow_khana_ratsadon
-		x = -2
+		x = 0
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -2023,6 +2023,7 @@ focus = {
 		completion_reward = { }
 				prerequisite = { focus = SIA_monarchist_military_rule focus = SIA_return_power_to_the_nobility focus = SIA_install_a_generic_prime_minister }
 }
+	
 	focus = {
 		id = SIA_a_visit_to_chinatown
 		icon = gfx_focus_unknown
@@ -2034,20 +2035,10 @@ focus = {
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 }
 	focus = {
-		id = SIA_a_visit_to_chinatown
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_coronate_king_rama_8
-		x = -2
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_coronate_king_rama_8 }
-}
-	focus = {
 		id = SIA_add_something_here_7
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_coronate_king_rama_8
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
