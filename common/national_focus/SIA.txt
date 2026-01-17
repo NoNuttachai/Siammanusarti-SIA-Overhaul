@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 38
+        x = 36
         y = 0
         cost = 10
         available = { }
@@ -123,7 +123,7 @@ focus_tree = {
 	focus = {
 		id = SIA_chula_uni
 		icon = GFX_focus_Chulalongkorn_University
-		x = 2	y = 0
+		x = 3	y = 0
 		relative_position_id = SIA_revitalize_the_economy
 		
 		cost = 2
@@ -309,36 +309,6 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 	prerequisite = { focus = SIA_southeast_asian_self_determination focus = SIA_rekindle_with_the_colonial_powers }
-}
-	focus = {
-		id = SIA_american_siam_alliance #If the country is Fascist and refused to ceeded to Japan you can join the Allies even if you are Fascist
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_rattaniyom_decrees
-		x = 9
-		y = 1
-		cost = 10
-		completion_reward = { }
-	prerequisite = { focus = SIA_rattaniyom_decrees focus = SIA_mass_media } #Country MUST be at war with Fascist or Non-Aligned Japan
-}
-	focus = {
-		id = SIA_american_military_advisors #also for post-phibun
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_american_siam_alliance
-		x = 1
-		y = 2
-		cost = 10
-		completion_reward = { }
-	prerequisite = { focus = SIA_american_siam_alliance focus = SIA_phibun_resign }
-}
-	focus = {
-		id = SIA_joint_intellegence
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_american_siam_alliance
-		x = 0
-		y = 3
-		cost = 10
-		completion_reward = { }
-	prerequisite = { focus = SIA_american_siam_alliance }
 }
 	focus = {
 		id = SIA_liberate_indochina_from_imperialism
@@ -595,7 +565,7 @@ focus_tree = {
 }
 
 	focus = {
-		id = SIA_mass_media
+		id = SIA_country_name_change
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_purge
 		x = 1
@@ -613,7 +583,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_rattaniyom_decrees focus = SIA_mass_media}
+		prerequisite = { focus = SIA_rattaniyom_decrees focus = SIA_country_name_change}
 }
 
 	focus = {
@@ -624,35 +594,24 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_rattaniyom_decrees focus = SIA_mass_media}
+		prerequisite = { focus = SIA_rattaniyom_decrees focus = SIA_country_name_change}
 }
 
 	focus = {
 		id = SIA_promote_thai_ethnonationalism
 		icon = gfx_focus_unknown
-		relative_position_id = SIA_mass_media
+		relative_position_id = SIA_country_name_change
 		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_mass_media focus = SIA_rattaniyom_decrees }
-}
-
-	focus = {
-		id = SIA_thai_use_thai_made_pad_thai
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_cultural_revolution
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_rattaniyom_decrees }
+		prerequisite = { focus = SIA_country_name_change focus = SIA_rattaniyom_decrees }
 }
 	focus = {
 		id = SIA_language_reform
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_cultural_revolution
-		x = -1
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -667,28 +626,16 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_promote_thai_ethnonationalism }
-		prerequisite = { focus = SIA_believe_in_leader }
 }
-	focus = {
-		id = SIA_chinese_forced_assimilation
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_promote_thai_ethnonationalism
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_promote_thai_ethnonationalism }
-}
-
 	focus = {
 		id = SIA_phibun_resign
 		icon = gfx_focus_unknown
-		relative_position_id = SIA_thai_use_thai_made_pad_thai
+		relative_position_id = SIA_rattaniyom_decrees
 		x = -1
-		y = 1
+		y = 3
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_language_reform focus = SIA_thai_use_thai_made_pad_thai focus = SIA_militarized_society focus = SIA_chinese_forced_assimilation }
+		prerequisite = { focus = SIA_language_reform focus = SIA_militarized_society }
 		mutually_exclusive = { focus = SIA_phibun_resign }
 }
 
@@ -700,7 +647,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-				prerequisite = { focus = SIA_language_reform focus = SIA_thai_use_thai_made_pad_thai focus = SIA_militarized_society focus = SIA_chinese_forced_assimilation }
+		prerequisite = { focus = SIA_language_reform }
 		mutually_exclusive = { focus = SIA_phibun_resign }
 }
 
@@ -719,7 +666,7 @@ focus_tree = {
 		id = SIA_expand_the_special_branch
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_purge
-		x = 5
+		x = 3
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -730,7 +677,7 @@ focus_tree = {
 		id = SIA_thai_irredentism
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_purge
-		x = 6
+		x = 4
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -1384,7 +1331,7 @@ focus = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = 12
+		x = 14
 		y = 1
 		
 		cost = 2
@@ -1398,12 +1345,47 @@ focus = {
 		id = SIA_attract_chinese_capital
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_revitalize_the_economy
-		x = 4
+		x = 5
+		y = 0
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_legacy_of_revolution }
+		mutually_exclusive = { focus = SIA_curb_chinese_immigration }
+	}
+	focus = {
+		id = SIA_invite_japanese_zaibatsus
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_revitalize_the_economy
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { 
+		}
+		prerequisite = { focus = SIA_revitalize_the_economy }
+		mutually_exclusive = { focus = SIA_send_volunteer_forces_to_china }
+	}
+	focus = {
+		id = SIA_invite_western_companies
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_revitalize_the_economy
+		x = -4
+		y = 1
+		cost = 10
+		completion_reward = { 
+			unlock_military_industrial_organization_tooltip = mio:USA_ford_motor_company_organization 
+		}
+		prerequisite = { focus = SIA_revitalize_the_economy }
+	}
+	focus = {
+		id = SIA_the_siamese_melting_pot #Country is NOT Fascist
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_attract_chinese_capital
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_revitalize_the_economy }
-		mutually_exclusive = { focus = SIA_invite_japanese_zaibatsus }
+		prerequisite = { focus = SIA_attract_chinese_capital }
+		mutually_exclusive = { focus = SIA_chinese_assimilation_policy }
 	}
 	focus = {
 		id = SIA_send_volunteer_forces_to_china
@@ -1414,19 +1396,10 @@ focus = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_attract_chinese_capital }
+		mutually_exclusive = { focus = SIA_invite_japanese_zaibatsus }
 	}
 	focus = {
-		id = SIA_let_in_chinese_immigrants
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_attract_chinese_capital
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_attract_chinese_capital }
-	}
-	focus = {
-		id = SIA_invite_japanese_zaibatsus
+		id = SIA_curb_chinese_immigration
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_revitalize_the_economy
 		x = 2
@@ -1437,18 +1410,6 @@ focus = {
 		}
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		mutually_exclusive = { focus = SIA_attract_chinese_capital }
-	}
-	focus = {
-		id = SIA_invite_western_companies
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_revitalize_the_economy
-		x = 6
-		y = 1
-		cost = 10
-		completion_reward = { 
-			unlock_military_industrial_organization_tooltip = mio:USA_ford_motor_company_organization 
-		}
-		prerequisite = { focus = SIA_revitalize_the_economy }
 	}
 	focus = {
 		id = SIA_rural_provincial_development
@@ -1508,19 +1469,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = SIA_education_for_all
-		icon = GFX_focus_Education_for_All
-		x = 7	y = 1
-		prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
-		relative_position_id = SIA_bangkok_urbanization
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			add_ideas = SIA_education_for_all
-		}
-	}
-	focus = {
 		id = SIA_grants_to_siam_cement
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_revitalize_the_economy
@@ -1547,20 +1495,30 @@ focus = {
 		}
 	}
 	focus = {
-		id = SIA_invite_japanese_zaibatsus
+		id = SIA_curb_chinese_immigration
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_revitalize_the_economy
-		x = 2
+		x = 7
+		y = 0
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_legacy_of_revolution }
+		mutually_exclusive = { focus = SIA_attract_chinese_capital }
+	}
+	focus = {
+		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_curb_chinese_immigration
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_revitalize_the_economy }
-		mutually_exclusive = { focus = SIA_attract_chinese_capital }
+		prerequisite = { focus = SIA_curb_chinese_immigration focus = SIA_attract_chinese_capital }
 	}
 	focus = {
 		id = SIA_encorage_rubber_plantations
 		icon = GFX_focus_generic_rubber_plantations
-		x = 3	y = 1
+		x = 1	y = 1
 		prerequisite = { focus = SIA_rural_provincial_development }
 		relative_position_id = SIA_rural_provincial_development
 
@@ -1577,11 +1535,11 @@ focus = {
 	focus = {
 		id = SIA_on_our_own
 		icon = GFX_goal_unknown
-		x = 0	
+		x = -2	
 		y = 1
 
 		relative_position_id = SIA_encorage_rubber_plantations
-		prerequisite = { focus = SIA_encorage_rubber_plantations }
+		prerequisite = { focus = SIA_encorage_rubber_plantations focus = SIA_iron_buffalos }
 		mutually_exclusive = { focus = SIA_enticing_markets }
 		
 		cost = 2
@@ -1592,7 +1550,7 @@ focus = {
 		}
 	}
 	focus = {
-		id = SIA_economic_nationalism
+		id = SIA_economic_nationalism #Thai Use, Thai Made, Thai Prosper
 		icon = GFX_goal_unknown
 		x = 0	
 		y = 1
@@ -1641,29 +1599,13 @@ focus = {
 		}
 	}
 	focus = {
-		id = SIA_economic_self_reliance
-		icon = GFX_goal_unknown
-		x = 0	
-		y = 1
-
-		relative_position_id = SIA_rice_security
-		prerequisite = { focus = SIA_rice_security }
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = SIA_enticing_markets
 		icon = GFX_goal_unknown
-		x = 4	
+		x = 2	
 		y = 1
 
 		relative_position_id = SIA_encorage_rubber_plantations
-		prerequisite = { focus = SIA_encorage_rubber_plantations }
+		prerequisite = { focus = SIA_encorage_rubber_plantations focus = SIA_iron_buffalos }
 		mutually_exclusive = { focus = SIA_on_our_own }
 		
 		cost = 2
@@ -1706,25 +1648,9 @@ focus = {
 		}
 	}
 	focus = {
-		id = SIA_tiger_cub_economy
-		icon = GFX_goal_unknown
-		x = 0	
-		y = 1
-
-		relative_position_id = SIA_granary_of_the_orient
-		prerequisite = { focus = SIA_granary_of_the_orient }
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = SIA_mining_industry
 		icon = GFX_focus_generic_mining_industry
-		x = 1	y = 1
+		x = -2	y = 1
 
 		relative_position_id = SIA_rural_provincial_development
 		prerequisite = { focus = SIA_rural_provincial_development }
@@ -1740,7 +1666,7 @@ focus = {
 		id = SIA_iron_buffalos
 		icon = GFX_focus_Iron_Buffaloes
 		icon = gfx_focus_unknown
-		x = 5	y = 1
+		x = 4	y = 1
 
 		relative_position_id = SIA_rural_provincial_development
 		prerequisite = { focus = SIA_rural_provincial_development }
@@ -1755,7 +1681,7 @@ focus = {
 	focus = {
 		id = SIA_survay_fang_oil_well
 		icon = GFX_goal_generic_oil_refinery
-		x = -1	
+		x = -4	
 		y = 1
 		relative_position_id = SIA_rural_provincial_development
 		prerequisite = { focus = SIA_rural_provincial_development}
@@ -1794,7 +1720,7 @@ focus = {
 	focus = {
 			id = SIA_military-led_industries
 			icon = GFX_focus_PRC_equipment_from_copper_coins
-			x = -3	y = 1
+			x = -6	y = 1
 		
 			prerequisite = { focus = SIA_rural_provincial_development }
 			relative_position_id = SIA_rural_provincial_development
@@ -1802,6 +1728,19 @@ focus = {
 			cost = 2
 			ai_will_do = { factor = 1 }
 			completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_education_for_all
+		icon = GFX_focus_Education_for_All
+		x = 4	y = 1
+		prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
+		relative_position_id = SIA_bangkok_urbanization
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = SIA_education_for_all
 		}
 	}
 	#Military Production
