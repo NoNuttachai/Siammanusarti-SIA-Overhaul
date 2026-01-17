@@ -276,11 +276,32 @@ SIA_rural_provincial_development_desc: ""
 SIA_expand_mae_moh_mine: "Expand Mae Moh Mine"
 SIA_expand_mae_moh_mine_desc: "TBA"
 
-SIA_on_our_own: "On Our Own"
+SIA_on_our_own: "Rubber Resources Secured"
 SIA_on_our_own_desc: "The world has opted to tear itself apart once more. If we are to endure and come out stronger than ever, we must find ways to use our resources for our own purposes."
 
-SIA_enticing_markets: "Enticing Markets"
-SIA_enticing_markets_desc: "Rubber and its' derivatives are all too valuable in modern warfare. Even if it is difficult to export it with current conditions on the waves, perhaps we can profit off this."
+SIA_enticing_markets: "Expand Rubber Exports"
+SIA_enticing_markets_desc: "Rubber and its' derivatives are all too valuable in modern warfare. Even if it is difficult to export it with current conditions on the waves, perhaps we can profit off this and demand for other goods."
+
+SIA_economic_nationalism: "Economic Nationalism"
+SIA_economic_nationalism_desc: "Within Thailand, there is a sizable Sinitic population which forms a core piece of our economy. However, with our move towards self-reliance, we must now redetermine our economic ties with the Teochew."
+
+SIA_refine_our_rubber: "Alternative Oil Sources"
+SIA_refine_our_rubber_desc: "We can use our extensive rubber stockpile to create through artifical means a far larger oil stockpile than we would have otherwise. If we wish to fuel our industry internally, we must build on what we already have in this regard."
+
+SIA_rice_security: "Rice Security"
+SIA_rice_security_desc: "Thailand has long been built around the farming of rice, with a surplus having been heavily involved in national seciruty since at least the 1500s. If we wish to be truly self-reliant, we should lean on this resource of ours and use it for our own gain."
+
+SIA_economic_self_reliance: "Economic Self-Reliance"
+SIA_economic_self_reliance_desc: "TBA"
+
+SIA_to_new_markets: "To New Markets"
+SIA_to_new_markets_desc: "Demand is high, and so is our supply of rubber and other goods. We should pursue a more aggressive policy in regards to markets most in need of our goods so we can profit off it and use that profit to build Thailand up better than ever."
+
+SIA_granary_of_the_orient: "Granary of the Orient"
+SIA_granary_of_the_orient_desc: "TBA"
+
+SIA_tiger_cub_economy: "Tiger Cub Economy"
+SIA_tiger_cub_economy_desc: "TBA"
 
 # Balance of Power Decision Name
 SIA_entice_the_masses: "Entice the Masses"
