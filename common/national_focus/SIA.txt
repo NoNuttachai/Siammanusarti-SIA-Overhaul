@@ -85,18 +85,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_legacy_of_revolution }
-}
-			focus = {
-		id = SIA_khana_ratsadon_architecture
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_propagandize_six_principles
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_propagandize_six_principles }
-}
-
+	}
 	focus = {
 		id = SIA_propagandize_six_principles
 		icon = gfx_focus_unknown
@@ -109,31 +98,17 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_legacy_of_revolution }
 	}
-		focus = {
+	focus = {
 		id = SIA_khana_ratsadon_architecture
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_propagandize_six_principles
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_propagandize_six_principles }
-}
-#Research_bonus
-	focus = {
-		id = SIA_chula_uni
-		icon = GFX_focus_Chulalongkorn_University
-		x = 3	y = 0
-		relative_position_id = SIA_revitalize_the_economy
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-
-		completion_reward = {
-			add_research_slot = 1
-			
-		}
-	}
+	}	
+	
 	focus = {
 		id = SIA_constitutionalism
 		icon = gfx_focus_unknown
@@ -258,6 +233,28 @@ focus_tree = {
 	prerequisite = { focus = SIA_promote_democratic_ideals }
 }
 	focus = {
+		id = SIA_khana_ratsadon_reelected
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_organize_a_free_election
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_organize_a_free_election }
+		mutually_exclusive = { focus = SIA_phrachatiphat_victory }
+	}
+	focus = {
+		id = SIA_thawee_bunyaket_premiership
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_khana_ratsadon_reelected
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_khana_ratsadon_reelected }
+		mutually_exclusive = { focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
+	}
+	focus = {
 		id = SIA_independent_foreign_policy
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_thawee_bunyaket_premiership
@@ -266,7 +263,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_seni_pramoj_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
-}
+	}
 
 	focus = {
 		id = SIA_rekindle_with_the_colonial_powers
@@ -354,17 +351,7 @@ focus_tree = {
 		completion_reward = { }
 	prerequisite = { focus = SIA_the_bangkok_declaration }
 }
-	focus = {
-		id = SIA_khana_ratsadon_reelected
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_organize_a_free_election
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_organize_a_free_election }
-		mutually_exclusive = { focus = SIA_phrachatiphat_victory }
-}
+	
 
 	focus = {
 		id = SIA_continue_pridi_administration
@@ -375,7 +362,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
-		mutually_exclusive = { focus = SIA_ }
+		mutually_exclusive = { focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership }
 }
 	focus = {
 		id = SIA_thawan_thamrong_premiership
@@ -386,19 +373,9 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
-		mutually_exclusive = { focus = SIA_ }
+		mutually_exclusive = { focus = SIA_thawee_bunyaket_premiership focus = SIA_continue_pridi_administration }
 }
-	focus = {
-		id = SIA_thawee_bunyaket_premiership
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_khana_ratsadon_reelected
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_khana_ratsadon_reelected }
-		mutually_exclusive = { focus = SIA_ }
-}
+	
 	focus = {
 		id = SIA_phrachatiphat_victory
 		icon = gfx_focus_unknown
@@ -669,7 +646,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_language_reform focus = SIA_militarized_society }
-		mutually_exclusive = { focus = SIA_phibun_resign }
+		mutually_exclusive = { focus = SIA_total_dictatorial_powers }
 }
 
 	focus = {
@@ -683,18 +660,6 @@ focus_tree = {
 		prerequisite = { focus = SIA_language_reform }
 		mutually_exclusive = { focus = SIA_phibun_resign }
 }
-
-	focus = {
-		id = SIA_expand_the_special_branch
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_purge
-		x = 5
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_purge }
-}
-
 	focus = {
 		id = SIA_expand_the_special_branch
 		icon = gfx_focus_unknown
@@ -764,16 +729,6 @@ focus_tree = {
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_thai-japanese_aillance_shared_focus
 		x = 2
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_thai-japanese_aillance_shared_focus }
-}
-	focus = {
-		id = SIA_territorial_award_to_thailand
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_thai-japanese_aillance_shared_focus
-		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -1063,19 +1018,7 @@ focus_tree = {
 
 		}
 	}
-	focus = {
-		id = SIA_acquire_bangkok_dock_co
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_expand_sattahip_naval_base
-		x = 2	y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = {focus = SIA_expand_sattahip_naval_base}
-		completion_reward = {
-		
-		}
-	}
+	
 	focus = {
 		id = SIA_acquire_bangkok_dock_co
 		icon = gfx_focus_unknown
@@ -1128,19 +1071,7 @@ focus_tree = {
 		
 		}
 	}
-	focus = {
-		id = SIA_matchanu_class_sub
-		icon = GFX_goal_generic_navy_submarine
-		relative_position_id = SIA_commission_foreign_ships
-		x = -2	y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_commission_foreign_ships focus = SIA_acquire_bangkok_dock_co }
-		completion_reward = {
-		
-		}
-	}
+	
 	focus = {
 		id = SIA_commission_foreign_ships
 		icon = gfx_focus_unknown
@@ -1150,6 +1081,19 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = {focus = SIA_expand_sattahip_naval_base}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = SIA_matchanu_class_sub
+		icon = GFX_goal_generic_navy_submarine
+		relative_position_id = SIA_commission_foreign_ships
+		x = -2	y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_commission_foreign_ships focus = SIA_acquire_bangkok_dock_co }
 		completion_reward = {
 		
 		}
@@ -1289,7 +1233,7 @@ focus = {
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_the_boripatra_bomber focus = SIA_curtiss_hawk_license_production }
+		prerequisite = { focus = SIA_curtiss_hawk_license_production }
 		completion_reward = {
 
 		}
@@ -1434,15 +1378,28 @@ focus = {
 	focus = {
 		id = SIA_curb_chinese_immigration
 		icon = gfx_focus_unknown
-		relative_position_id = SIA_revitalize_the_economy
+		relative_position_id = SIA_attract_chinese_capital
 		x = 2
-		y = 1
+		y = 0
 		cost = 10
 		completion_reward = { 
 			unlock_military_industrial_organization_tooltip = mio:JAP_nissan_organization 
 		}
-		prerequisite = { focus = SIA_revitalize_the_economy }
+		prerequisite = { focus = SIA_opposed_khana_ratsadon }
 		mutually_exclusive = { focus = SIA_attract_chinese_capital }
+	}
+	focus = {
+		id = SIA_grants_to_siam_cement
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_revitalize_the_economy
+		x = 0 y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_revitalize_the_economy }
+		completion_reward = {
+
+		}
 	}
 	focus = {
 		id = SIA_rural_provincial_development
@@ -1501,19 +1458,7 @@ focus = {
 			}
 		}
 	}
-	focus = {
-		id = SIA_grants_to_siam_cement
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_revitalize_the_economy
-		x = 0 y = 1
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_revitalize_the_economy }
-		completion_reward = {
-
-		}
-	}
+	
 	focus = {
 		id = SIA_establish_the_national_bank
 		icon = gfx_focus_unknown
@@ -1528,17 +1473,6 @@ focus = {
 		}
 	}
 	focus = {
-		id = SIA_curb_chinese_immigration
-		icon = gfx_focus_unknown
-		relative_position_id = SIA_revitalize_the_economy
-		x = 7
-		y = 0
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_legacy_of_revolution }
-		mutually_exclusive = { focus = SIA_attract_chinese_capital }
-	}
-	focus = {
 		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_curb_chinese_immigration
@@ -1546,6 +1480,7 @@ focus = {
 		y = 1
 		cost = 10
 		completion_reward = { }
+		mutually_exclusive = { focus = SIA_the_siamese_melting_pot }
 		prerequisite = { focus = SIA_curb_chinese_immigration focus = SIA_attract_chinese_capital }
 	}
 	focus = {
@@ -1774,6 +1709,21 @@ focus = {
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_ideas = SIA_education_for_all
+		}
+	}
+	focus = {
+		id = SIA_chula_uni
+		icon = GFX_focus_Chulalongkorn_University
+		x = 0	y = 1
+		prerequisite = { focus = SIA_education_for_all }
+		relative_position_id = SIA_education_for_all
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = {
+			add_research_slot = 1
+			
 		}
 	}
 	#Military Production

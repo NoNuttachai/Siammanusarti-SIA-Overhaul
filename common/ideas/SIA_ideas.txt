@@ -1,5 +1,4 @@
 ideas = {
-
 	industrial_concern = {
 	
 		SIA_cement_group = {
@@ -51,12 +50,11 @@ ideas = {
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.15
 				factory_energy_consumption = 0.15
-		}
 			}
 			research_bonus = {
 				electronics = 0.05
 			}
-
+		}
 		
 		SIA_tuo_laphanu = {
 			picture = SIA_tuo_laphan
@@ -262,7 +260,7 @@ ideas = {
 			}
 		}
 		
-		SIA_ army_conscription_factor fascist_tendencies_army = {
+		SIA_fascist_tendencies_army = {
 			removal_cost = -1
 			
 			picture = SIA_fascist_tendencies
