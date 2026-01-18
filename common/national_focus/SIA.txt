@@ -831,7 +831,7 @@ focus_tree = {
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_improve_army_logistics
 		x = 0
-		y = 1
+		y = 2
 		
 		available = { has_political_power > 25 }
 		cancel_if_invalid = no
@@ -978,7 +978,7 @@ focus_tree = {
 		id = SIA_expand_sattahip_naval_base
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_navy
-		x = 0
+		x = -2
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -989,31 +989,33 @@ focus_tree = {
 		id = SIA_expand_naval_repair_facilities
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_expand_sattahip_naval_base
-		x = 0
+		x = 3
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_expand_sattahip_naval_base }
+		prerequisite = { focus = SIA_naval_academy }
 		completion_reward = { }
 	}
 	
 	focus = {
 		id = SIA_acquire_bangkok_dock_co
 		icon = gfx_focus_unknown
-		relative_position_id = SIA_expand_sattahip_naval_base
-		x = 2
+		relative_position_id = SIA_expand_dockyards
+		x = -2
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = {focus = SIA_expand_sattahip_naval_base}
+		prerequisite = { focus = SIA_expand_dockyards }
+		prerequisite = { focus = SIA_expand_naval_repair_facilities }
 		completion_reward = { }
 	}
 	focus = {
 		id = SIA_refit_civillian_ships
 		icon = GFX_focus_generic_refit_civilian_ships
 		relative_position_id = SIA_acquire_bangkok_dock_co
-		x = 2
+		x = 3
 		y = 1
 		
 		cost = 5
@@ -1025,24 +1027,39 @@ focus_tree = {
 		id = SIA_expand_the_merchant_fleet
 		icon = GFX_focus_generic_merchant_fleet
 		relative_position_id = SIA_acquire_bangkok_dock_co
-		x = 0
+		x = 1
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = {focus = SIA_acquire_bangkok_dock_co focus = SIA_commission_foreign_ships }
+		prerequisite = { focus = SIA_commission_foreign_ships }
+		prerequisite = { focus = SIA_acquire_bangkok_dock_co }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_modernized_escorts
+		icon = GFX_focus_generic_navy_research_bonus
+		relative_position_id = SIA_expand_the_merchant_fleet
+		x = 1
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_refit_civillian_ships }
+		prerequisite = { focus = SIA_expand_the_merchant_fleet }
 		completion_reward = { }
 	}
 	focus = {
 		id = SIA_expand_dockyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		relative_position_id = SIA_acquire_bangkok_dock_co
-		x = 1
-		y = 2
+		relative_position_id = SIA_expand_sattahip_naval_base
+		x = 5
+		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_acquire_bangkok_dock_co }
+		prerequisite = {focus = SIA_expand_sattahip_naval_base}
+		prerequisite = { focus = SIA_naval_academy }
 		completion_reward = { }
 	}
 	
@@ -1050,7 +1067,7 @@ focus_tree = {
 		id = SIA_commission_foreign_ships
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_expand_sattahip_naval_base
-		x = -2
+		x = 1
 		y = 1
 		
 		cost = 5
@@ -1059,39 +1076,70 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
-		id = SIA_matchanu_class_sub
-		icon = GFX_goal_generic_navy_submarine
-		relative_position_id = SIA_commission_foreign_ships
-		x = -2
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_commission_foreign_ships focus = SIA_acquire_bangkok_dock_co }
-		completion_reward = { }
-	}
-	focus = {
-		id = SIA_thonburi_class_ship
-		icon = gfx_focus_unknown
+		id = SIA_acquire_japanese_torpedos
+		icon = GFX_goal_generic_secret_weapon
 		relative_position_id = SIA_commission_foreign_ships
 		x = 0
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = {focus = SIA_commission_foreign_ships focus = SIA_acquire_bangkok_dock_co }
+		prerequisite = { focus = SIA_commission_foreign_ships }
+		prerequisite = { focus = SIA_thai_gulf_minelaying_operation }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_matchanu_class_sub
+		icon = GFX_goal_generic_navy_submarine
+		relative_position_id = SIA_acquire_japanese_torpedos
+		x = -3
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_acquire_japanese_torpedos }
+		prerequisite = { focus = SIA_acquire_bangkok_dock_co }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_thonburi_class_ship
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_commission_foreign_ships
+		x = -1
+		y = 2
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_commission_foreign_ships }
+		prerequisite = { focus = SIA_acquire_bangkok_dock_co }
 		completion_reward = { }
 	}
 	focus = {
 		id = SIA_naresuan_class_ship
 		icon = GFX_focus_SWE_italian_destroyers
 		relative_position_id = SIA_commission_foreign_ships
-		x = 2
+		x = 1
+		y = 2
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_commission_foreign_ships }
+		prerequisite = { focus = SIA_acquire_bangkok_dock_co }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_a_two_ocean_navy
+		icon = GFX_focus_generic_naval_discipline
+		relative_position_id = SIA_thonburi_class_ship
+		x = 1
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_commission_foreign_ships focus = SIA_acquire_bangkok_dock_co }
+		prerequisite = { focus = SIA_matchanu_class_sub }
+		prerequisite = { focus = SIA_thonburi_class_ship }
+		prerequisite = { focus = SIA_naresuan_class_ship }
+		prerequisite = { focus = SIA_expand_the_merchant_fleet }
 		completion_reward = { }
 	}
 	focus = {
@@ -1108,12 +1156,12 @@ focus_tree = {
 	focus = {
 		id = SIA_thai_gulf_minelaying_operation
 		icon = GFX_focus_generic_mine_warfare
-		relative_position_id = SIA_navy
-		x = -2
+		relative_position_id = SIA_naval_air_force
+		x = 2
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_navy }
+		prerequisite = { focus = SIA_naval_air_force }
 		completion_reward = { }
 	}
 	focus = {
@@ -1132,7 +1180,7 @@ focus_tree = {
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_marines
 		x = 0
-		y = 1
+		y = 2
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_marines }
@@ -1142,7 +1190,7 @@ focus_tree = {
 	focus = {
 		id = SIA_air_force
 		icon = gfx_focus_unknown
-		x = 0
+		x = -2
 		y = 0
 		
 		cost = 2
@@ -1239,7 +1287,7 @@ focus_tree = {
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_air_force
 		x = 3 
-		y = 1
+		y = 2
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1250,12 +1298,36 @@ focus_tree = {
 		id = SIA_naval_air_force
 		icon = gfx_focus_unknown
 		relative_position_id = SIA_air_force
-		x = 4 
-		y = 2
+		x = 5
+		y = 1
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_air_force focus = SIA_army}
+		prerequisite = { focus = SIA_air_force focus = SIA_navy }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_southern_bases
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_naval_air_force
+		x = 0
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_naval_air_force }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_incorporate_allied_radar
+		icon = gfx_focus_unknown
+		relative_position_id = SIA_southern_bases
+		x = 0
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_southern_bases }
 		completion_reward = { }
 	}
 	#economy branch rework
