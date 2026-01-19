@@ -1279,7 +1279,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_western_aviation_studies
 		x = 0 
-		y = 1
+		y = 2
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
