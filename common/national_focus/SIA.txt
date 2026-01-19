@@ -1021,7 +1021,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_expand_dockyards }
 		prerequisite = { focus = SIA_expand_naval_repair_facilities }
-		completion_reward = { }
+		completion_reward = { add_ideas = SIA_patrolling_our_coasts }
 	}
 	focus = {
 		id = SIA_refit_civillian_ships
@@ -1655,22 +1655,6 @@ focus_tree = {
 		relative_position_id = SIA_rice_security
 		prerequisite = { focus = SIA_rice_security focus = SIA_rubber_processing }
 		mutually_exclusive = { focus = SIA_to_new_markets }
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-
-		completion_reward = { }
-	}
-	
-	
-	focus = {
-		id = SIA_refine_our_rubber
-		icon = GFX_goal_unknown
-		x = 2	
-		y = 1
-
-		relative_position_id = SIA_rice_security
-		prerequisite = { focus = SIA_rice_security focus = SIA_rubber_processing  }
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
