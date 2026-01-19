@@ -1275,6 +1275,73 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
+		id = SIA_reinforce_five_combat_wings
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_western_aviation_studies
+		x = 0 
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_western_aviation_studies }
+		available = {
+			OR = {
+				is_in_faction_with = JAP
+				AND = {
+					date > 1942.1.1
+					NOT = {
+						has_war_with = JAP
+					}
+				}
+			}
+		}
+		continue_if_invalid = yes
+		completion_reward = { 
+
+			### give you a bunch of free planes
+
+		}
+	}
+
+	focus = {
+		id = SIA_increase_boripatra_production #ahitorical
+		mutually_exclusive = { focus = SIA_adopt_corsair }
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIA_air_force
+		}
+		x = -3
+		y = 1
+		relative_position_id = SIA_air_force
+		completion_reward = {
+
+			#national spirit which reduces CAS production cost but also makes it more accident prone. also has +5% political power factor
+
+		}
+
+	}
+	focus = {
+		id = SIA_adopt_corsair #historical
+		mutually_exclusive = { focus = SIA_increase_boripatra_production }
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = SIA_air_force
+		}
+		x = -5
+		y = 1
+		relative_position_id = SIA_air_force
+		completion_reward = {
+
+			#national spirit which increases CAS production cost but gives slightly better damage
+			
+		}
+
+	}
+
+
+	focus = {
 		id = SIA_train_new_pilots
 		icon = SIA_air_force
 		relative_position_id = SIA_western_aviation_studies
@@ -1303,7 +1370,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_air_force
 		x = 3 
-		y = 2
+		y = 1
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
