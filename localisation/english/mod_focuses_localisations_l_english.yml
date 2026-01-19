@@ -443,14 +443,17 @@ SIA_return_to_absolute_monarchy_desc: "TBA"
 
 SIA_build_small_patrol_boats: "Build Small Patrol Boats"
 SIA_build_small_patrol_boats_desc: "Note: Will add effects before long myself based off Nuttachai's idea."
+SIA_patrolling_our_coasts: "Patrolling our Coasts"
 
 #merf focuses :)
- SIA_increase_boripatra_production:0 "We have the Boripatra!"
- SIA_increase_boripatra_production_desc:0 "There are weaklings in the air force who are begging us to license foreign produced aircraft. There is no need! We should simply build more of our own domestic design, the Boripatra!"
- SIA_adopt_corsair:0 "Adopt the Corsair"
- SIA_adopt_corsair_desc:0 "As much prestige as there is to be had by keeping our own domestic design, the fact is that it just... isn't good. We should embrace the future- and foreign companies."
- SIA_reinforce_five_combat_wings:0 "Reinforce the Five Combat Wings"
- SIA_reinforce_five_combat_wings_desc:0 "Our air force is still hopelessly undersupplied, and as the world burns around us we need to hastily cobble together enough of a resistance to defend our skies above so our troops can defend the ground below."
+SIA_increase_boripatra_production: "We have the Boripatra!"
+SIA_increase_boripatra_production_desc: "There are weaklings in the air force who are begging us to license foreign produced aircraft. There is no need! We should simply build more of our own domestic design, the Boripatra!"
+SIA_adopt_corsair: "Adopt the Corsair"
+SIA_adopt_corsair_desc: "As much prestige as there is to be had by keeping our own domestic design, the fact is that it just... isn't good. We should embrace the future- and foreign companies."
+SIA_reinforce_five_combat_wings: "Reinforce the Five Combat Wings"
+SIA_reinforce_five_combat_wings_desc: "Our air force is still hopelessly undersupplied, and as the world burns around us we need to hastily cobble together enough of a resistance to defend our skies above so our troops can defend the ground below."
+SIA_rubber_processing: "Rubber Processing"
+SIA_rubber_processing_desc: "Forgot this one. :)"
 
 # Balance of Power Decision Name
 SIA_entice_the_masses: "Entice the Masses"
