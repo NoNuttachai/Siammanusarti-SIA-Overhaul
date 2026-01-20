@@ -157,7 +157,7 @@ SIA_thai_gulf_minelaying_operation: "Thai Gulf Minelaying Operation"
 SIA_marines: "Marines"
 SIA_amphibia: "Amphibia"
 SIA_air_force: "Air Force"
-SIA_purchase_foregin_aircraft: "Purchase Foregin Aircraft"
+SIA_purchase_foregin_aircraft: "Purchase Foriegn Aircraft"
 SIA_domestic_aircraft_production: "Domestic Aircraft Production"
 SIA_curtiss_hawk_license_production: "Curtiss Hawk License Production"
 SIA_western_aviation_studies: "Western Aviation Studies"
@@ -444,6 +444,21 @@ SIA_return_to_absolute_monarchy_desc: "TBA"
 SIA_build_small_patrol_boats: "Build Small Patrol Boats"
 SIA_build_small_patrol_boats_desc: "Note: Will add effects before long myself based off Nuttachai's idea."
 SIA_patrolling_our_coasts: "Patrolling our Coasts"
+
+SIA_small_yet_nimble: "Small Yet Nimble"
+SIA_small_yet_nimble_desc: "Note: Inspired by the tactics used by the pilots within Japanese planes during that one OTL US-Thai aerial battle."
+
+SIA_impromptu_bases: "Impromptu Bases"
+SIA_impromptu_bases_desc: "Note: Inspired by the impromptu nature of many of the landings in that one US-Thai aerial battle and is an easy focus for more air infrastructure."
+
+SIA_interbranch_operations: "Interbranch Operations"
+SIA_interbranch_operations_desc: "Note: Self-explainatory."
+
+SIA_modernized_designs: "Modernized Designs"
+SIA_modernized_designs_desc: "Note: Inspired largely by the 'modern X' focuses in the RT56 tree."
+
+SIA_parachute_battalions: "Parachute Battalions"
+SIA_parachute_battalions_desc: "Note: Self-explainatory."
 
 #merf focuses :)
 SIA_increase_boripatra_production: "We have the Boripatra!"
