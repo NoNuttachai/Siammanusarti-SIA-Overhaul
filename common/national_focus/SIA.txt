@@ -1158,7 +1158,7 @@ focus_tree = {
 	focus = {
 		id = SIA_air_force
 		icon = gfx_goal_unknown
-		x = -2
+		x = -3
 		y = 0
 		
 		cost = 2
@@ -1170,7 +1170,7 @@ focus_tree = {
 		id = SIA_naval_air_force
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_air_force
-		x = 5
+		x = 6
 		y = 1
 		
 		cost = 2
@@ -1217,56 +1217,90 @@ focus_tree = {
 	focus = {
 		id = SIA_purchase_foregin_aircraft
 		icon = GFX_focus_SMB_purchase_aircraft
-		relative_position_id = SIA_air_force
-		x = 2
-		y = 3
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_air_force }
-		completion_reward = { }
-	}
-	focus = {
-		id = SIA_domestic_aircraft_production
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_air_force
-		x = -2
-		y = 3
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_air_force }
-		completion_reward = { }
-	}
-	focus = {
-		id = SIA_curtiss_hawk_license_production
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_domestic_aircraft_production
-		x = 2
+		relative_position_id = SIA_western_aviation_studies
+		x = 4
 		y = 1
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_purchase_foregin_aircraft focus = SIA_domestic_aircraft_production }
+		prerequisite = { focus = SIA_western_aviation_studies }
 		completion_reward = { }
+	}
+	focus = {
+		id = SIA_adopt_corsair #historical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		mutually_exclusive = { focus = SIA_reinforce_five_combat_wings }
+		prerequisite = {
+			focus = SIA_purchase_foregin_aircraft
+		}
+		x = -1
+		y = 2
+		relative_position_id = SIA_purchase_foregin_aircraft
+		completion_reward = {
+
+			#national spirit which increases CAS production cost but gives slightly better damage
+		}
+	}
+	focus = {
+		id = SIA_domestic_aircraft_production
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_western_aviation_studies
+		x = -3
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_western_aviation_studies }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_increase_boripatra_production #ahitorical
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = { focus = SIA_domestic_aircraft_production }
+		x = 0
+		y = 2
+		relative_position_id = SIA_domestic_aircraft_production
+		completion_reward = {
+
+			#national spirit which reduces CAS production cost but also makes it more accident prone. also has +5% political power factor
+
+		}
 	}
 	focus = {
 		id = SIA_air_bang_fai
 		icon = GFX_focus_rocketry
-		relative_position_id = SIA_air_force
-		x = 0
-		y = 5
+		relative_position_id = SIA_adopt_corsair
+		x = -4
+		y = 1
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_curtiss_hawk_license_production }
+		prerequisite = { focus = SIA_adopt_corsair focus = SIA_reinforce_five_combat_wings focus = SIA_increase_boripatra_production }
+		prerequisite = { focus = SIA_interbranch_operations }
+		prerequisite = { focus = SIA_modernized_designs }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_parachute_battalions
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_adopt_corsair
+		x = -2
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_adopt_corsair focus = SIA_reinforce_five_combat_wings focus = SIA_increase_boripatra_production }
+		prerequisite = { focus = SIA_interbranch_operations }
+		prerequisite = { focus = SIA_modernized_designs }
 		completion_reward = { }
 	}
 	focus = {
 		id = SIA_western_aviation_studies
 		icon = GFX_SOV_expand_aviation_institutes_ccp_2d_sov_compatibility
 		relative_position_id = SIA_air_force
-		x = 0 
+		x = -2
 		y = 1
 		
 		cost = 2
@@ -1277,13 +1311,14 @@ focus_tree = {
 	focus = {
 		id = SIA_reinforce_five_combat_wings
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_western_aviation_studies
-		x = 0 
+		mutually_exclusive = { focus = SIA_adopt_corsair }
+		relative_position_id = SIA_purchase_foregin_aircraft
+		x = 1
 		y = 2
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_western_aviation_studies }
+		prerequisite = { focus = SIA_purchase_foregin_aircraft }
 		available = {
 			OR = {
 				is_in_faction_with = JAP
@@ -1302,45 +1337,6 @@ focus_tree = {
 
 		}
 	}
-
-	focus = {
-		id = SIA_increase_boripatra_production #ahitorical
-		mutually_exclusive = { focus = SIA_adopt_corsair }
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = SIA_air_force
-		}
-		x = -3
-		y = 1
-		relative_position_id = SIA_air_force
-		completion_reward = {
-
-			#national spirit which reduces CAS production cost but also makes it more accident prone. also has +5% political power factor
-
-		}
-
-	}
-	focus = {
-		id = SIA_adopt_corsair #historical
-		mutually_exclusive = { focus = SIA_increase_boripatra_production }
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = SIA_air_force
-		}
-		x = -5
-		y = 1
-		relative_position_id = SIA_air_force
-		completion_reward = {
-
-			#national spirit which increases CAS production cost but gives slightly better damage
-			
-		}
-
-	}
-
-
 	focus = {
 		id = SIA_train_new_pilots
 		icon = SIA_air_force
@@ -1351,6 +1347,19 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_western_aviation_studies }
+		prerequisite = { focus = SIA_expand_don_mueang_airport }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_modernized_designs
+		icon = SIA_air_force
+		relative_position_id = SIA_train_new_pilots
+		x = 0 
+		y = 2
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_train_new_pilots }
 		completion_reward = { }
 	}
 	focus = {
@@ -1366,15 +1375,52 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
+		id = SIA_small_yet_nimble
+		icon = SIA_air_force
+		relative_position_id = SIA_train_new_pilots
+		x = -1 
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_train_new_pilots focus = SIA_royal_air_force_academy }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_interbranch_operations
+		icon = SIA_air_force
+		relative_position_id = SIA_royal_air_force_academy
+		x = 0 
+		y = 2
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_royal_air_force_academy }
+		completion_reward = { }
+	}
+	focus = {
 		id = SIA_expand_don_mueang_airport
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_air_force
-		x = 3 
+		x = 4
 		y = 1
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_air_force }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_impromptu_bases
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_expand_don_mueang_airport
+		x = 0
+		y = 2
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_expand_don_mueang_airport }
+		prerequisite = { focus = SIA_southern_bases }
 		completion_reward = { }
 	}
 	
