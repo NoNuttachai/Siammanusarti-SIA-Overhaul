@@ -460,6 +460,39 @@ SIA_modernized_designs_desc: "Note: Inspired largely by the 'modern X' focuses i
 SIA_parachute_battalions: "Parachute Battalions"
 SIA_parachute_battalions_desc: "Note: Self-explainatory."
 
+SIA_something_here: "Terrain Mastery"
+SIA_something_here_desc: "Note: Inspired by the RT56 focus, essentially about combing combined arms warfare with jungle terrain."
+
+SIA_jungle_warfare_training: "Jungle Warfare Training"
+SIA_jungle_warfare_training_desc: "TBA"
+
+SIA_import_radio_technology: "Import Radio Technology"
+SIA_import_radio_technology_desc: "TBA"
+
+SIA_develop_combined_arms_warfare: "Develop Combined Arms Warfare"
+SIA_develop_combined_arms_warfare_desc: "TBA"
+
+SIA_police: "Police Force"
+SIA_police_desc: "TBA"
+
+SIA_incorporate_combat_engineers: "Incorporate Combat Engineers"
+SIA_incorporate_combat_engineers_desc: "Note: Inspired by the RT56 focus. Unsure on exact effects."
+
+SIA_domestic_tank_production: "Domestic Tank Production"
+SIA_domestic_tank_production_desc: "Note: Based off Chaiseri's later military production."
+
+SIA_prepare_defensive_infrastructure: "Prepare Defensive Infrastructure"
+SIA_prepare_defensive_infrastructure_desc: " "
+
+SIA_doctrine_rooted_in_tradition: "Doctrine Rooted in Tradition"
+SIA_doctrine_rooted_in_tradition_desc: "TBA"
+
+SIA_fortify_bangkok: "Fortify Bangkok"
+SIA_fortify_bangkok_desc: "As requested."
+
+SIA_offensive_doctrine: "Offensive Doctrine"
+SIA_offensive_doctrine_desc: "TBA"
+
 #merf focuses :)
 SIA_increase_boripatra_production: "We have the Boripatra!"
 SIA_increase_boripatra_production_desc: "There are weaklings in the air force who are begging us to license foreign produced aircraft. There is no need! We should simply build more of our own domestic design, the Boripatra!"

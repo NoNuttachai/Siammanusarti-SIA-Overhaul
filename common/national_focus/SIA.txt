@@ -743,6 +743,20 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SIA_fortify_bangkok
+		icon = GFX_goal_generic_fortify_city
+		relative_position_id = SIA_army
+		x = -2
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_army }
+
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = SIA_national_defence_college
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_army
@@ -767,6 +781,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
+		prerequisite = { focus = SIA_national_defence_college }
 		mutually_exclusive = { focus = SIA_doctrine_rooted_in_tradition }
 		completion_reward = { }
 	}
@@ -780,6 +795,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
+		prerequisite = { focus = SIA_national_defence_college }
 		mutually_exclusive = { focus = SIA_prussian_school_of_warfare }
 		completion_reward = { }
 	}
@@ -796,6 +812,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_prussian_school_of_warfare focus = SIA_import_foreign_tanks }
+		prerequisite = { focus = SIA_fortify_bangkok }
 		completion_reward = { }
 	}
 	focus = {
@@ -829,6 +846,23 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
+		id = SIA_prepare_defensive_infrastructure
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		relative_position_id = SIA_import_radio_technology
+		x = -1
+		y = 1
+		
+		available = { has_political_power > 25 }
+		cancel_if_invalid = no
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_import_radio_technology }
+		prerequisite = { focus = SIA_jungle_warfare_training }
+		mutually_exclusive = { focus = SIA_offensive_doctrine }
+		completion_reward = { }
+	}
+	focus = {
 		id = SIA_something_here
 		icon = GFX_focus_generic_reinforcing_the_supply_network
 		relative_position_id = SIA_army
@@ -841,6 +875,24 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_improve_army_logistics }
+		prerequisite = { focus = SIA_develop_combined_arms_warfare }
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_offensive_doctrine
+		icon = GFX_goal_unknown
+		relative_position_id = SIA_something_here
+		x = -1
+		y = 1
+		
+		available = { has_political_power > 25 }
+		cancel_if_invalid = no
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_something_here }
+		prerequisite = { focus = SIA_improve_army_logistics }
+		mutually_exclusive = { focus = SIA_prepare_defensive_infrastructure }
 		completion_reward = { }
 	}
 	focus = {
@@ -899,12 +951,13 @@ focus_tree = {
 		id = SIA_bicycle_infantry
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_yuwachon_thahan
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_yuwachon_thahan focus = SIA_develop_mobile_warfare}
+		prerequisite = { focus = SIA_yuwachon_thahan focus = SIA_establish_the_field_police }
+		prerequisite = { focus = SIA_army_science_department }
 		completion_reward = { }
 	}
 	focus = {
@@ -917,6 +970,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
+		prerequisite = { focus = SIA_police }
 		completion_reward = { }
 	}
 	focus = {
@@ -950,7 +1004,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_police
 		x = 2
-		y = 2
+		y = 3
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
@@ -1854,6 +1908,7 @@ focus_tree = {
 		y = 1
 
 		prerequisite = { focus = SIA_army }
+		prerequisite = { focus = SIA_police }
 		relative_position_id = SIA_army
 
 		cost = 2
@@ -1867,11 +1922,29 @@ focus_tree = {
 	focus = {
 		id = SIA_bofors_artillery
 		icon = GFX_focus_PER_swedish_artillery
-		x = -2	
+		x = -3	
 		y = 2
 
-		prerequisite = { focus = SIA_domestic_arms_production focus = SIA_purchase_new_arms }
+		prerequisite = { focus = SIA_purchase_new_arms }
+		prerequisite = { focus = SIA_domestic_arms_production }
 		relative_position_id = SIA_domestic_arms_production
+
+		cost = 2
+		ai_will_do = { factor = 1 }
+	
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_incorporate_combat_engineers
+		icon = GFX_goal_unknown
+		x = 0	
+		y = 2
+
+		prerequisite = { focus = SIA_bofors_artillery }
+		prerequisite = { focus = SIA_something_here }
+		prerequisite = { focus = SIA_bicycle_infantry }
+		prerequisite = { focus = SIA_domestic_tank_production }
+		relative_position_id = SIA_bofors_artillery
 
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1892,10 +1965,24 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
+		id = SIA_domestic_tank_production
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0	
+		y = 2
+
+		prerequisite = { focus = SIA_founded_chaiseri }
+		prerequisite = { focus = SIA_army_science_department }
+		relative_position_id = SIA_founded_chaiseri
+
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = { }
+	}
+	focus = {
 		id = SIA_army_science_department
 		icon = GFX_goal_generic_construct_mil_factory
 		x = 0	
-		y = 3
+		y = 2
 
 		prerequisite = { focus = SIA_domestic_arms_production }
 		relative_position_id = SIA_domestic_arms_production
