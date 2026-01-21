@@ -868,6 +868,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
+		prerequisite = { focus = SIA_police }
 		completion_reward = { }
 	}
 	focus = {
@@ -1163,7 +1164,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_naval_air_force
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_air_naval_bomber
 		relative_position_id = SIA_air_force
 		x = 4
 		y = 1
@@ -1466,7 +1467,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_invite_japanese_zaibatsus
-		icon = gfx_goal_unknown
+		icon = GFX_focus_jap_zaibatsu
 		relative_position_id = SIA_establish_the_national_bank
 		x = 1
 		y = 1
@@ -1536,7 +1537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_rural_provincial_development
-		icon = gfx_goal_unknown
+		icon = GFX_focus_sia_rural_provincial_development
 		x = -1
 		y = 1
 		prerequisite = { focus = SIA_grants_to_siam_cement }
@@ -1572,7 +1573,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_bangkok_urbanization
-		icon = gfx_goal_unknown
+		icon = GFX_focus_sia_bangkok_urbanization
 		x = 1	
 		y = 1
 
@@ -1663,7 +1664,7 @@ focus_tree = {
 		y = 2
 
 		relative_position_id = SIA_iron_buffalos
-		prerequisite = { focus = SIA_iron_buffalos }
+		prerequisite = { focus = SIA_iron_buffalos focus = SIA_rural_provincial_development }
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1704,12 +1705,26 @@ focus_tree = {
 	focus = {
 		id = SIA_granary_of_the_orient
 		icon = GFX_goal_unknown
-		x = -1	
+		x = -3	
 		y = 1
 
 		relative_position_id = SIA_to_new_markets
 		prerequisite = { focus = SIA_economic_nationalism focus = SIA_to_new_markets }
-		
+		mutually_exclusive = { focus = SIA_industrialized_the_nation }
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_industrialized_the_nation
+		icon = GFX_goal_unknown
+		x = 1	
+		y = 1
+
+		relative_position_id = SIA_to_new_markets
+		prerequisite = { focus = SIA_economic_nationalism focus = SIA_to_new_markets }
+		mutually_exclusive = { focus = SIA_industrialized_the_nation }
 		cost = 2
 		ai_will_do = { factor = 1 }
 
