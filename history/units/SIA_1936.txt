@@ -166,6 +166,18 @@ division_template = {
 		artillery = { x = 0 y = 0 }
 	}
 }
+division_template = {
+	name = "Navikayotin" #Marines
+	division_names_group = SIA_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+}
 
 units = {
 	######## LAND OOB ########
