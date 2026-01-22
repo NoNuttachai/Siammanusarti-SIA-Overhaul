@@ -837,6 +837,21 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
+		id = SIA_anti_air_defences
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		relative_position_id = SIA_improve_army_logistics
+		x = 0
+		y = 2
+		
+		available = { has_political_power > 25 }
+		cancel_if_invalid = no
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_improve_army_logistics }
+		completion_reward = { }
+	}
+	focus = {
 		id = SIA_import_radio_technology
 		icon = GFX_focus_generic_radio_communication
 		relative_position_id = SIA_army
