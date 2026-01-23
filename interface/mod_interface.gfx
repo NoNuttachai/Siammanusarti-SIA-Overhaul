@@ -158,4 +158,8 @@ SpriteTypes = {
 		name = "GFX_idea_Chaiseri"
 		texturefile = "gfx/interface/mios/MIO_Chaiseri.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_MIO_Curtiss_Aeroplane"
+		texturefile = "gfx/interface/mios/MIO_Curtiss_Aeroplane.dds"
+	}
 }
