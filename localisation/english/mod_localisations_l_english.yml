@@ -130,3 +130,7 @@ SIA_curtiss_aeroplane_organization: "Curtiss Aeroplane"
 SIA_towards_a_greater_thailand: "Towards a Greater Thailand"
 SIA_towards_a_greater_thailand_desc: "TBA"
 SIA_secure_pivotal_territories_in_indochina: "Secure Pivotal Territories in Indochina"
+
+sia_events.100.t: "A Peace Deal from the [SIA.GetName]"
+sia_events.100.d: "TBA"
+sia_events.100.a: "If we must..."
