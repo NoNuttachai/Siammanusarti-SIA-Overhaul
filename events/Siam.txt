@@ -140,6 +140,23 @@ country_event = { # Bangkok Floods
 }
 
 country_event = {
+    id = sia_events.100
+    title = sia_events.100.t # A Peace Deal from [SIA.GetName]
+    desc = sia_events.100.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.100.a # If we must...
+        1047 = { transfer_state_to = SIA }
+		1048 = { transfer_state_to = SIA }
+		1049 = { transfer_state_to = SIA }
+		white_peace = SIA
+    }
+}
+
+country_event = {
 	id = sia_BOP_event.1
 	title = sia_BOP_event.1.t
 	desc = sia_BOP_event.1.d
