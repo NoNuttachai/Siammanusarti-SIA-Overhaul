@@ -136,3 +136,51 @@ SIA_six_principles = {
 		}
 	}
 }
+
+SIA_towards_a_greater_thailand = {
+	SIA_secure_pivotal_territories_in_indochina = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1047
+				state = 1048
+				state = 1049
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				OR = {
+					owns_state = 1047
+					owns_state = 1048
+					owns_state = 1049
+				}
+			}
+		}
+		available = {
+			controls_state = 1047
+			controls_state = 1048
+			controls_state = 1049
+			if = {
+				limit = { 
+					1047 = { 
+						owner = { 
+							has_civil_war = no
+						} 
+					}
+				}
+				controls_province = 1464
+				controls_province = 7376
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			1047 = { owner = { country_event = sia_events.100 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}	
+}
