@@ -14,3 +14,19 @@ SIA_six_principles = {
 	}
 	allowed = { original_tag = SIA } 
 }
+
+SIA_towards_a_greater_thailand = {
+	priority = 10
+	visible = {
+		any_enemy_country = {
+			OR = {
+				owns_state = 993
+				owns_state = 1048
+				owns_state = 1049
+				owns_state = 1050
+				owns_state = 1051
+			}
+		}
+	}
+	allowed = { original_tag = SIA }
+}
