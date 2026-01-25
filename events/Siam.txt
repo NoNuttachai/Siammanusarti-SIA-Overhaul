@@ -112,6 +112,21 @@ country_event = {
     }
 }
 
+country_event = {
+    id = sia_events.3
+    title = sia_events.3.t # Matchanu-class Submarines Leave Kobe for Siam
+    desc = sia_events.3.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.3.a
+		hidden_effect = { set_country_flag = SIA_unlock_mitsubishi }
+		unlock_military_industrial_organization_tooltip = mio:JAP_mitsubishi_kobe_shipyard_organization
+    }
+}
+
 country_event = { # Bangkok Floods
     id = sia_events.66
     title = sia_events.66.t
