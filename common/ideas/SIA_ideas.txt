@@ -550,5 +550,71 @@ ideas = {
 				naval_coordination = 0.2
 			}
 		}
+
+		SIA_siamese_royal_navy = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				navy_anti_air_attack_factor = 0.05
+				navy_spirit_category_type_cost_factor = -0.1				
+			}
+		}
+		SIA_siamese_royal_navy_2 = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				navy_anti_air_attack_factor = 0.1
+				navy_spirit_category_type_cost_factor = -0.1	
+				spotting_chance	= 0.25		
+			}
+		}
+
+		SIA_mine_the_seas = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				mines_planting_by_fleets_factor	= 0.1
+				naval_mines_effect_reduction = 0.15
+			}
+		}
+
+		SIA_dockyard_expansion = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.25
+			}
+		}
+
+		SIA_maintaining_our_might = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				repair_speed_factor = 0.25
+				naval_defense_factor = 0.1
+			}
+		}
 	}
 }
