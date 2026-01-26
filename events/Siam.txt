@@ -158,6 +158,358 @@ country_event = { # Bangkok Floods
     }
 }
 
+# Ships leave Italian ports
+country_event = { 
+	id = sia_events.70
+	title = AAT_Sweden_flashpoints.70.t
+	desc = sia_events.70.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Great 
+	option = {
+		name = AAT_Sweden_flashpoints.70.a
+		ai_chance = {
+			base = 10
+		}
+		IF = {
+			limit = {
+				ENG = { 
+					exists = yes 
+					ITA = { 
+						exists = yes 
+						has_war_with = PREV
+					}
+					SIA = {
+						exists = yes
+						NOT = { has_war_with = PREV }
+					}
+					OR = {
+						337 = { is_controlled_by = PREV }
+						112 = { is_controlled_by = PREV }
+						135 = { is_controlled_by = PREV }
+					}
+				}
+			}
+			hidden_effect = {
+				ENG = {
+					country_event = {
+						id = sia_events.71
+						days = 14
+					}
+				}
+			}
+		}
+		ELSE = {
+			country_event = {
+				id = sia_events.77
+				days = 21
+			}
+		}
+	}
+}
+
+
+# Should we (UK) capture ships?
+country_event = { 
+	id = sia_events.71
+	title = sia_events.71.t
+	desc = sia_events.71.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Capture ships
+	option = {
+		name = AAT_Sweden_flashpoints.71.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = SIA
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 20 
+				has_opinion = {
+					target = SIA
+					value < 0
+				}
+			}
+			modifier = {
+				add = 10
+				has_war_with = ITA
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = SIA
+			}
+		}
+		SIA = {
+			country_event = {
+				id = sia_events.72
+				days = 3
+			}
+			add_opinion_modifier = {
+				modifier = SWE_ENG_seized_ships
+				target = ENG
+			}
+		}
+	}
+	# Respect neutrality of ships
+	option = {
+		trigger = {
+			NOT = {
+				has_war_with = SIA
+			}
+		}
+		name = sia_events.71.b
+		ai_chance = {
+			base = 1
+		}
+		SIA = {
+			country_event = {
+				id = sia_events.77
+				days = 7
+			}
+		}
+	}
+}
+
+# Uk has captured our ships
+country_event = { 
+	id = sia_events.72
+	title = AAT_Sweden_flashpoints.72.t
+	desc = AAT_Sweden_flashpoints.72.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Demand release - threaten war
+	option = {
+		name = AAT_Sweden_flashpoints.72.a
+		trigger = {
+			NOT = {
+				has_war_with = ENG
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+			}
+			modifier = {
+				add = 10
+				is_in_faction = yes
+			}
+		}
+		FROM = {
+			country_event = {
+				id = sia_events.73
+				days = 7
+			}
+		}
+	}
+	# Drop the issue
+	option = {
+		name = AAT_Sweden_flashpoints.72.b
+		ai_chance = {
+			base = 1
+		}
+		FROM = {
+			country_event = {
+				id = sia_events.74
+				days = 7
+			}
+		}
+	}
+}
+
+# UK event - Sweden demands release of ships
+country_event = { 
+	id = sia_events.73
+	title = sia_events.73.t
+	desc = sia_events.73.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Agree
+	option = {
+		name = AAT_Sweden_flashpoints.73.a
+		trigger = {
+			NOT = {
+				has_war_with = FROM
+			}
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				is_in_faction_with = FROM
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 20
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = sia_events.76
+				days = 1
+			}
+		}
+	}
+	# Refuse
+	option = {
+		name = AAT_Sweden_flashpoints.73.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10 
+				has_war_with = FROM
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM 
+					value < 0
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = sia_events.75
+				days = 1
+			}
+		}
+	}
+}
+
+# Sweden gives up ships - UK takes control of them
+country_event = { 
+	id = sia_events.74
+	title = sia_events.74.t
+	desc = sia_events.74.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = AAT_Sweden_flashpoints.74.a
+		ai_chance = {
+			base = 10
+		}
+		SIA_naresuan_fleet_creation = yes
+	}
+}
+
+# 
+country_event = { 
+	id = sia_events.75
+	title = AAT_Sweden_flashpoints.75.t
+	desc = AAT_Sweden_flashpoints.75.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Declare war
+	option = {
+		name = AAT_Sweden_flashpoints.75.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10 
+				is_in_faction = yes
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value < -30
+				}
+			}
+		}
+		IF = {
+			limit = {
+				NOT = { has_war_with = FROM }
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = FROM
+			}
+		}
+	}
+	# Drop issue
+	option = {
+		trigger = {
+			NOT = {
+				has_war_with = FROM
+			}
+		}
+		name = AAT_Sweden_flashpoints.75.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = 10
+				has_civil_war = yes
+			}
+			modifier = {
+				add = 10
+				has_opinion = {
+					target = FROM
+					value > 20
+				}
+			}
+		}
+		FROM = {
+			country_event = {
+				id = sia_events.74
+				days = 7
+			}
+		}
+	}
+}
+
+# UK releases ships, arrive in Sweden - Was going to add delay but don't want to spam players with events
+country_event = { 
+	id = sia_events.76
+	title = AAT_Sweden_flashpoints.76.t
+	desc = sia_events.76.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = AAT_Sweden_flashpoints.76.a
+		ai_chance = {
+			base = 10
+		}
+		SIA_naresuan_fleet_creation = yes
+	}
+}
+
+# Ships arrive without issue
+country_event = { 
+	id = sia_events.77
+	title = AAT_Sweden_flashpoints.77.t
+	desc = AAT_Sweden_flashpoints.77.desc
+	picture = GFX_report_event_SWE_psilander_affair
+	is_triggered_only = yes
+
+	# Great
+	option = {
+		name = AAT_Sweden_flashpoints.77.a
+		ai_chance = {
+			base = 10
+		}
+		SIA_naresuan_fleet_creation = yes
+	}
+}
+
 country_event = {
     id = sia_events.100
     title = sia_events.100.t # A Peace Deal from [SIA.GetName]
