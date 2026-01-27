@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 36
+        x = 38
         y = 0
         cost = 10
         available = { }
@@ -53,8 +53,8 @@ focus_tree = {
 		id = SIA_crown_property_act
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_legacy_of_revolution
-		x = -1
-		y = 2
+		x = -2
+		y = 1
 		cost = 10
 		prerequisite = { focus = SIA_legacy_of_revolution }
 		completion_reward = { 
@@ -77,16 +77,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SIA_reform_the_sangha
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_legacy_of_revolution
-		x = -2
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_legacy_of_revolution }
-	}
-	focus = {
 		id = SIA_propagandize_six_principles
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_legacy_of_revolution
@@ -98,17 +88,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_legacy_of_revolution }
 	}
-	focus = {
-		id = SIA_khana_ratsadon_architecture
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_propagandize_six_principles
-		x = -1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_legacy_of_revolution }
-	}	
-	
 	focus = {
 		id = SIA_constitutionalism
 		icon = gfx_goal_unknown
@@ -122,6 +101,38 @@ focus_tree = {
 		prerequisite = { focus = SIA_legacy_of_revolution }
 	}
 	focus = {
+		id = SIA_civil_service_reform
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_constitutionalism
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { 
+		}
+		prerequisite = { focus = SIA_constitutionalism }
+	}
+	focus = {
+		id = SIA_civil_service_reform
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_constitutionalism
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { 
+		}
+		prerequisite = { focus = SIA_constitutionalism }
+	}
+	focus = {
+		id = SIA_reform_the_sangha
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_constitutionalism
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_constitutionalism }
+	}
+	focus = {
 		id = SIA_phraya_phanon_steps_down
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_constitutionalism
@@ -131,13 +142,13 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_constitutionalism }
 		prerequisite = { focus = SIA_crown_property_act }
-		prerequisite = { focus = SIA_khana_ratsadon_architecture }
+		prerequisite = { focus = SIA_propagandize_six_principles }
 	}
 	focus = {
 		id = SIA_civilian_faction_leadership
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = -6
+		x = -5
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -168,21 +179,11 @@ focus_tree = {
 		id = SIA_thammasat_university #bonus for PP gain, no research bonus because the uni is focused only on political degrees then
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_civilian_faction_leadership
-		x = 6
+		x = 5
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_civilian_faction_leadership focus = SIA_marshal_phibun_ascension }
-	}
-	focus = {
-		id = SIA_bank_of_asia_for_industry_and_commerce
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_thammasat_university
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_thammasat_university }
 	}
 	focus = {
 		id = SIA_enable_free_speech
@@ -626,8 +627,8 @@ focus_tree = {
 		id = SIA_thai_irredentism
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_purge
-		x = 4
-		y = 2
+		x = 6
+		y = 3
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_purge }
@@ -666,7 +667,7 @@ focus_tree = {
 		id = SIA_thai-japanese_aillance_shared_focus
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_thai_irredentism
-		x = -3
+		x = 0
 		y = 3
 		cost = 10
 		completion_reward = { }
@@ -907,8 +908,22 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_prepare_defensive_infrastructure }
 		completion_reward = { }
 	}
-		focus = {
+	focus = {
 		id = SIA_fortify_bangkok
+		icon = GFX_goal_generic_fortify_city
+		relative_position_id = SIA_prepare_defensive_infrastructure
+		x = 2
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_prepare_defensive_infrastructure focus = SIA_offensive_doctrine }
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_paratroopers
 		icon = GFX_goal_generic_fortify_city
 		relative_position_id = SIA_prepare_defensive_infrastructure
 		x = 2
@@ -1075,7 +1090,7 @@ focus_tree = {
 		id = SIA_coastal_defense_stratergy
 		icon = GFX_focus_FIN_coastal_defense
 		relative_position_id = SIA_navy
-		x = -2
+		x = 0
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1096,9 +1111,9 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_expand_naval_repair_facilities
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_refit_civilian_ships
 		relative_position_id = SIA_coastal_defense_stratergy
-		x = 5
+		x = 4
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1108,13 +1123,13 @@ focus_tree = {
 	focus = {
 		id = SIA_expand_dockyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		relative_position_id = SIA_coastal_defense_stratergy
-		x = 3
+		relative_position_id = SIA_acquire_bangkok_dock_co
+		x = 0
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_coastal_defense_stratergy focus = SIA_acquire_bangkok_dock_co }
+		prerequisite = { focus = SIA_acquire_bangkok_dock_co }
 		completion_reward = { 
 			random_owned_state = {
 				limit = {
@@ -1162,7 +1177,7 @@ focus_tree = {
 		id = SIA_build_small_patrol_boats
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_expand_dockyards
-		x = 2
+		x = 1
 		y = 1
 		
 		cost = 5
@@ -1171,172 +1186,28 @@ focus_tree = {
 		completion_reward = { add_ideas = SIA_patrolling_our_coasts }
 	}
 	focus = {
-		id = SIA_refit_civillian_ships
-		icon = GFX_focus_generic_refit_civilian_ships
-		relative_position_id = SIA_expand_dockyards
-		x = 4
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = {focus = SIA_expand_dockyards }
-		completion_reward = {
-			mio:SIA_bangkok_dock_organization = {
-				add_mio_funds_gain_factor = 0.15
-			}
-	
-			unlock_decision_category_tooltip = generic_refit_civilian_ships_category
-			set_country_flag = refit_convoy_ships_flag #Necessary flag for unlocking Refit Civilian Ships decs 
-			#The variants created here replace the variants that can be created via decisions
-			set_country_flag = refit_to_destroyer_flag
-			set_country_flag = refit_to_cruiser_flag
-
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				# DESTROYER
-				create_equipment_variant = { #Made-up
-					name = "Refitted Destroyer Class" 		
-					type = ship_hull_light_1
-					name_group = "FIN_DD_HISTORICAL" #Note: Doesn't matter if ROOT is not DEN, the effect will grab the appropriate country-specific name list anyways
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_light_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = light_ship_engine_1
-						fixed_ship_torpedo_slot = ship_torpedo_1
-						mid_1_custom_slot = empty
-						rear_1_custom_slot = empty
-					}
-					obsolete = yes
-					design_team = mio:FIN_crichton_vulcan_organization
-				}
-
-				# Light Cruiser
-				create_equipment_variant = { #Made-up
-					name = "Refitted Cruiser Class"				
-					type = ship_hull_cruiser_1
-					name_group = FIN_CL_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_light_medium_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = cruiser_ship_engine_1
-						fixed_ship_armor_slot = ship_armor_cruiser_1
-						fixed_ship_secondaries_slot = dp_ship_secondaries_1
-						mid_1_custom_slot = empty
-						mid_2_custom_slot = empty
-						rear_1_custom_slot = empty
-					}
-					obsolete = yes
-					design_team = mio:FIN_crichton_vulcan_organization
-				}
-			}
-			#NO MTG
-			else = {
-				# DESTROYER	
-				create_equipment_variant = { #Made-up
-					name = "Refitted Destroyer Class"
-					type = destroyer_1
-					upgrades = {
-						ship_torpedo_upgrade = 0
-						destroyer_engine_upgrade = 0
-						ship_ASW_upgrade = 0
-						ship_anti_air_upgrade = 0
-					}
-					obsolete = yes
-					design_team = mio:FIN_crichton_vulcan_organization
-				}	
-
-				if = {
-					limit = {
-						NOT = { has_tech = early_light_cruiser }
-					}
-					hidden_effect = {
-						set_technology = {
-							early_light_cruiser = 1
-						}
-					}
-				}
-				# CRUISER
-				create_equipment_variant = { #Made-up
-					name = "Refitted Cruiser Class"
-					type = light_cruiser_1
-					upgrades = {
-						ship_reliability_upgrade = 0
-						ship_engine_upgrade = 0
-						ship_gun_upgrade = 0
-						ship_anti_air_upgrade = 0
-					}
-					obsolete = yes
-					design_team = mio:FIN_crichton_vulcan_organization
-				}
-			}
-
-			# COASTAL DEFENSE SHIP
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				create_equipment_variant = { #Made-up
-					name = "Refitted Coastal Defense Ship"
-					type = ship_hull_cruiser_coastal_defense_ship
-					name_group = FIN_BC_HISTORICAL
-					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
-					modules = {
-						front_1_custom_slot = ship_anti_air_1
-						mid_1_custom_slot = ship_anti_air_1
-						#mid_2_custom_slot = ship_anti_air_1
-						rear_1_custom_slot = ship_light_medium_battery_1
-						fixed_ship_battery_slot = ship_light_medium_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = cruiser_ship_engine_1
-						fixed_ship_secondaries_slot = ship_secondaries_1
-						fixed_ship_armor_slot = ship_armor_cruiser_1
-					}
-					design_team = mio:FIN_crichton_vulcan_organization
-				}
-			}
-		}
-	}
-	focus = {
 		id = SIA_expand_the_merchant_fleet
 		icon = GFX_focus_generic_merchant_fleet
 		relative_position_id = SIA_expand_dockyards
-		x = 0
+		x = -1
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_expand_dockyards }
-		completion_reward = { 
-			add_ideas = SIA_merchants_on_the_high_seas
-			add_equipment_to_stockpile = { 
-				type = convoy
-				amount = 50 
-				producer = ROOT
-			}
-		}
+		completion_reward = { }
 	}
 	
 	focus = {
 		id = SIA_commission_foreign_ships
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_coastal_defense_stratergy
-		x = 1
+		relative_position_id = SIA_navy
+		x = -2
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_coastal_defense_stratergy focus = SIA_acquire_bangkok_dock_co }
+		prerequisite = { focus = SIA_navy }
 		completion_reward = { 
 			unlock_military_industrial_organization_tooltip = mio:JAP_kawasaki_dockyards_organization
 			unlock_military_industrial_organization_tooltip = mio:ENG_yarrow_shipbuilders_organization
@@ -1354,143 +1225,20 @@ focus_tree = {
 	focus = {
 		id = SIA_matchanu_class_sub
 		icon = GFX_goal_generic_navy_submarine
-		relative_position_id = SIA_commission_foreign_ships
-		x = -4
+		relative_position_id = SIA_thonburi_class_ship
+		x = -1
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_commission_foreign_ships }
+		prerequisite = { focus = SIA_thonburi_class_ship }
 		completion_reward = { 
-			set_technology = { 
-				early_ship_hull_submarine = 1 
-			}
-			create_equipment_variant = {
-				name = "Matchanu Class"
-				type = ship_hull_cruiser_submarine
-				name_group = SIA_SS_HISTORICAL
-				show_position = no
-				allow_without_tech = yes
-				modules = {
-					fixed_ship_torpedo_slot = ship_torpedo_sub_2
-					fixed_ship_engine_slot = sub_ship_engine_2
-					front_1_custom_slot = ship_airplane_launcher_2
-					mid_1_custom_slot = empty
-					rear_1_custom_slot = ship_extra_fuel_tank
-				}
-			}
-			create_ship = {
-				type = ship_hull_submarine_1
-				equipment_variant = "Matchanu Class"
-				creator = JAP
-				name = "HTMS Matchanu"
-			}
-			create_ship = {
-				type = ship_hull_submarine_1
-				equipment_variant = "Matchanu Class"
-				creator = JAP
-				name = "HTMS Wirun"
-			}
-			create_ship = {
-				type = ship_hull_submarine_1
-				equipment_variant = "Matchanu Class"
-				creator = JAP
-				name = "HTMS Sinsamut"
-			}
-			create_ship = {
-				type = ship_hull_submarine_1
-				equipment_variant = "Matchanu Class"
-				creator = JAP
-				name = "HTMS Phlai-Chumphon"
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = SIA_matchanu_class_sub_fulfill_Japan_requirement
-			effect_tooltip = {
-				country_event = sia_events.3
-				unlock_military_industrial_organization_tooltip = mio:JAP_mitsubishi_kobe_shipyard_organization
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = SIA_matchanu_class_sub_notfulfill_Japan_requirement
-			effect_tooltip = {
-				add_tech_bonus = {
-					name = SIA_matchanu_class_sub
-					bonus = 0.5
-					uses = 2
-					category = ss_tech
-					category = cat_torpedoes
-				}	
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						JAP = { 
-							exists = yes 
-							has_opinion = {
-								target = ROOT
-								value = 10
-							}
-						}
-					}
-					country_event = sia_events.3
-				}
-				else = {
-					add_tech_bonus = {
-						name = SIA_matchanu_class_sub
-						bonus = 0.5
-						uses = 2
-						category = ss_tech
-						category = cat_torpedoes
-					}				
-				}
-			}
+			set_technology = { early_ship_hull_submarine = 1 }
 		}
 	}
 	focus = {
 		id = SIA_thonburi_class_ship
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_commission_foreign_ships
-		x = -2
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_commission_foreign_ships }
-		completion_reward = { 
-			create_equipment_variant = {
-				name = "Thonburi Class"
-				name_group = JAP_DD_HISTORICAL
-				allow_without_tech = yes
-				type = ship_hull_cruiser_1
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = dp_light_battery_2
-					fixed_ship_anti_air_slot = ship_anti_air_2
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-					fixed_ship_radar_slot = empty
-					fixed_ship_engine_slot = light_ship_engine_2
-					fixed_ship_torpedo_slot = ship_torpedo_1
-					mid_1_custom_slot = ship_anti_air_2
-					rear_1_custom_slot = ship_depth_charge_1
-					front_1_custom_slot = dp_light_battery_1
-				}
-			}
-			create_ship = {
-				type = ship_hull_cruiser_1
-				equipment_variant = "Thonburi Class"
-				creator = JAP
-				name = "HTMS Thonburi"
-			}
-			create_ship = {
-				type = ship_hull_cruiser_1
-				equipment_variant = "Thonburi Class"
-				creator = JAP
-				name = "HTMS Sri Ayudhya"
-			}
-		}
-	}
-	focus = {
-		id = SIA_naresuan_class_ship
-		icon = GFX_focus_SWE_italian_destroyers
 		relative_position_id = SIA_commission_foreign_ships
 		x = 0
 		y = 1
@@ -1498,24 +1246,19 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_commission_foreign_ships }
-		completion_reward = { 
-			unlock_military_industrial_organization_tooltip = mio:ITA_crda_organization
-			country_event = {
-				id = sia_events.70
-				hours = 1
-			}
-			custom_effect_tooltip = SWE_italian_ships_tt
-			effect_tooltip = {
-				SIA_naresuan_fleet_creation = yes
-			}
-			custom_effect_tooltip = SWE_italian_ships_tt_2
-			add_tech_bonus = {
-				name = SIA_matchanu_class_sub
-				bonus = 0.5
-				uses = 2
-				category = mio_cat_tech_all_cruiser_and_modules
-			}	
-		}
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_naresuan_class_ship
+		icon = GFX_focus_SWE_italian_destroyers
+		relative_position_id = SIA_thonburi_class_ship
+		x = 1
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_thonburi_class_ship }
+		completion_reward = { }
 	}
 	focus = {
 		id = SIA_phang-nga_naval_base #Andaman Sea naval base
@@ -1528,21 +1271,10 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_naresuan_class_ship }
 		prerequisite = { focus = SIA_expand_the_merchant_fleet }
-		prerequisite = { focus = SIA_thonburi_class_ship }
 		prerequisite = { focus = SIA_matchanu_class_sub }
 		prerequisite = { focus = SIA_build_small_patrol_boats }
 		prerequisite = { focus = SIA_refit_civillian_ships }
-		completion_reward = {
-			navy_experience = 50
-			724 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = naval_base
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
+		completion_reward = { }
 	}
 	focus = {
 		id = SIA_naval_science_department #naval research bonus and spawn naval research facility in Sattahip
@@ -1618,15 +1350,13 @@ focus_tree = {
 				}
 			}
 
-			mio:SIA_bangkok_dock_organization = {
-				add_mio_research_bonus = 0.1
-			}
+			# Add bonus here later
 		}
 	}
 	focus = {
 		id = SIA_air_force #add "siamese air force" as a NatSpirit
 		icon = gfx_goal_unknown
-		x = -1
+		x = 0
 		y = 0
 		
 		cost = 2
@@ -1649,12 +1379,12 @@ focus_tree = {
 	focus = {
 		id = SIA_thai_gulf_minelaying_operation
 		icon = GFX_focus_generic_mine_warfare
-		relative_position_id = SIA_naval_air_force
-		x = 2
+		relative_position_id = SIA_coastal_defense_stratergy
+		x = 0
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_coastal_defense_stratergy }
+		prerequisite = { focus = SIA_coastal_defense_stratergy focus = SIA_commission_foreign_ships }
 		completion_reward = { 
 			add_ideas = SIA_mine_the_seas
 			navy_experience = 25
@@ -1670,7 +1400,7 @@ focus_tree = {
 		id = SIA_marines
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_navy
-		x = 5
+		x = 6
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1914,7 +1644,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = 16
+		x = 14
 		y = 1
 		
 		cost = 2
@@ -1936,7 +1666,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_curb_chinese_immigration }
 	}
 	focus = {
-		id = SIA_establish_the_national_bank
+		id = SIA_establish_a_central_bank
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_revitalize_the_economy
 		x = -4
@@ -1950,29 +1680,29 @@ focus_tree = {
 	focus = {
 		id = SIA_invite_japanese_zaibatsus
 		icon = GFX_focus_jap_zaibatsu
-		relative_position_id = SIA_establish_the_national_bank
+		relative_position_id = SIA_establish_a_central_bank
 		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { unlock_military_industrial_organization_tooltip = mio:JAP_nissan_organization }
-		prerequisite = { focus = SIA_establish_the_national_bank }
+		prerequisite = { focus = SIA_establish_a_central_bank }
 		mutually_exclusive = { focus = SIA_invite_western_companies }
 	}
 	focus = {
 		id = SIA_invite_western_companies
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_establish_the_national_bank
+		relative_position_id = SIA_establish_a_central_bank
 		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { 
 			unlock_military_industrial_organization_tooltip = mio:USA_ford_motor_company_organization 
 		}
-		prerequisite = { focus = SIA_establish_the_national_bank }
+		prerequisite = { focus = SIA_establish_a_central_bank }
 		mutually_exclusive = { focus = SIA_invite_japanese_zaibatsus }
 	}
 	focus = {
-		id = SIA_the_siamese_melting_pot #Country is NOT Fascist
+		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_attract_chinese_capital
 		x = 1
@@ -2076,7 +1806,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย
+		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย #Country is NOT democratic #Phraya Phahon is NOT leader
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_curb_chinese_immigration
 		x = 1
@@ -2409,7 +2139,7 @@ focus_tree = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_goal_unknown
-		x = 64
+		x = 65
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
@@ -2473,7 +2203,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_plot_against_khana_ratsadon
 		x = -1
-		y = 1
+		y = 2
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_plot_against_khana_ratsadon focus = SIA_motion_of_no_confidence }
