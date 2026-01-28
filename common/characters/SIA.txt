@@ -525,4 +525,28 @@ characters={
 			traits = {pro_democracy_journalist}
 		}
 	}
+
+	SIA_sangad_chaloryu={
+		name="Sangad Chaloryu"
+		portraits={
+			army={
+				small = gfx/interface/ideas/advisors/idea_sangad_chaloryu.dds
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SIA_sangad_chaloryu_idea
+			ledger = army
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_anti_submarine_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 2
+			}
+		}
+	}
 }
