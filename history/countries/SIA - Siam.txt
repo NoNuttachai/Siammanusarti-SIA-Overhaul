@@ -129,6 +129,7 @@ recruit_character = SIA_pichit_kriangsakphichit
 recruit_character = SIA_luang_chartnuakrhub
 recruit_character = SIA_luang_senanarong
 recruit_character = SIA_jit_wichitsongkram
+recruit_character = SIA_sangad_chaloryu
 ## Political Advisors
 recruit_character = SIA_direk_chaiyanam
 recruit_character = SIA_pao_pienlert_boripanyutakit
