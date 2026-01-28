@@ -184,3 +184,37 @@ SIA_towards_a_greater_thailand = {
 		}
 	}	
 }
+
+foreign_politics = {
+	SIA_conmission_naresuan_ships = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = SIA_naresuan_class_ship
+		}
+		available = {
+			ITA = { exists = yes }
+			NOT = { has_war_with = ITA }
+		}
+		fire_only_once = yes
+		days_remove = 60
+			
+		cost = 0
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {	
+			country_event = {
+				id = sia_events.70
+				hours = 1
+			}
+			custom_effect_tooltip = SWE_italian_ships_tt
+			effect_tooltip = {
+				SIA_naresuan_fleet_creation = yes
+			}
+			custom_effect_tooltip = SWE_italian_ships_tt_2
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}		
+}
