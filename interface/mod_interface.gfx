@@ -111,14 +111,6 @@ SpriteTypes = {
 		name = "GFX_idea_SIA_CU_Engineering_Company"
 		texturefile = "gfx/interface/ideas/CU_Engineering_Company.dds"
 	}
-	SpriteType = {
-		name = "GFX_idea_sia_fuel_department"
-		texturefile = "gfx/interface/ideas/sia_fuel_department.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_international_engineering_public_company_limited"
-		texturefile = "gfx/interface/ideas/international_engineering_public_company_limited.dds"
-	}
 	
 	SpriteType = {
 		name = "GFX_SIA_KHA_RATSADON_IMPROVED_SIDE"

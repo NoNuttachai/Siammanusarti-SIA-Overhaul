@@ -20,7 +20,7 @@ ideas = {
 		}
 
 		sia_fuel_department = {
-			picture = sia_fuel_department
+			picture = SIA_cement_group
 
 			allowed = {
 				original_tag = SIA
@@ -76,7 +76,7 @@ ideas = {
 		}
 		
 		international_engineering_public_company_limited = {
-			picture = international_engineering_public_company_limited
+			picture = SIA_tuo_laphan
 
 			allowed = { original_tag = SIA }
 			
@@ -536,19 +536,6 @@ ideas = {
 			}
 			
 			modifier = { air_superiority_efficiency = 0.1 }
-		}
-
-		SIA_small_torpedo_boats = {
-			removal_cost = -1
-			
-			picture = generic_production_bonus
-			
-			allowed = { always = yes }
-			
-			modifier = {
-				screening_efficiency = 0.2
-				naval_coordination = 0.2
-			}
 		}
 
 		SIA_patrolling_our_coasts = {
