@@ -746,7 +746,7 @@ focus_tree = {
 	#Army Branch
 	focus = {
 		id = SIA_army
-		icon = GFX_focus_r56_goal_SIA_siamese_army
+		icon = GFX_focus_Royal_Thai_Army
 		x = 17
 		y = 0
 		
@@ -1054,7 +1054,7 @@ focus_tree = {
 	#Police Branch
 	focus = {
 		id = SIA_police
-		icon = gfx_goal_unknown
+		icon = GFX_focus_SIA_Police
 		x = 26
 		y = 0
 		
@@ -1091,7 +1091,7 @@ focus_tree = {
 	#Navy Branch
 	focus = {
 		id = SIA_navy
-		icon = gfx_goal_unknown
+		icon = GFX_focus_Royal_Thai_Navy
 		x = 8
 		y = 0
 		
@@ -1378,7 +1378,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_air_force #add "siamese air force" as a NatSpirit
-		icon = gfx_goal_unknown
+		icon = GFX_focus_Royal_Thai_Airforce
 		x = 0
 		y = 0
 		

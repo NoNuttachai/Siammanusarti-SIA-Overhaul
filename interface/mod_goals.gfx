@@ -44,10 +44,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/National_Defense_College.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_r56_goal_SIA_siamese_army"
-		texturefile = "gfx/interface/goals/r56_goal_SIA_siamese_army.dds"
-	}
-	SpriteType = {
 		name = "GFX_focus_r56_goal_generic_attack_siam"
 		texturefile = "gfx/interface/goals/r56_goal_generic_attack_siam.dds"
 	}
@@ -78,5 +74,21 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_sia_Founded_Chaiseri"
 		texturefile = "gfx/interface/goals/focus_Founded_Chaiseri.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Royal_Thai_Airforce"
+		texturefile = "gfx/interface/goals/Royal_Thai_Airforce.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Royal_Thai_Army"
+		texturefile = "gfx/interface/goals/Royal_Thai_Army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Royal_Thai_Navy"
+		texturefile = "gfx/interface/goals/Royal_Thai_Navy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_SIA_Police"
+		texturefile = "gfx/interface/goals/SIA_Police.dds"
 	}
 }
