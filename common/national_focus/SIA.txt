@@ -1077,6 +1077,18 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
+		id = SIA_construct_air_raid_shelters
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_establish_the_field_police
+		x = 0
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_establish_the_field_police }
+		completion_reward = { }
+	}
+	focus = {
 		id = SIA_special_branch_bureau
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_police
@@ -1701,28 +1713,16 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
-		id = SIA_invite_japanese_zaibatsus
-		icon = GFX_focus_jap_zaibatsu
-		relative_position_id = SIA_establish_a_central_bank
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { unlock_military_industrial_organization_tooltip = mio:JAP_nissan_organization }
-		prerequisite = { focus = SIA_establish_a_central_bank }
-		mutually_exclusive = { focus = SIA_invite_western_companies }
-	}
-	focus = {
 		id = SIA_invite_western_companies
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_establish_a_central_bank
-		x = -1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { 
 			unlock_military_industrial_organization_tooltip = mio:USA_ford_motor_company_organization 
 		}
 		prerequisite = { focus = SIA_establish_a_central_bank }
-		mutually_exclusive = { focus = SIA_invite_japanese_zaibatsus }
 	}
 	focus = {
 		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader

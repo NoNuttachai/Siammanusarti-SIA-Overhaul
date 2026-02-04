@@ -63,7 +63,7 @@ SIA_purchase_tanks_desc: "Our armored forces are in their infancy. By purchasing
 SIA_army_motorization: "Army Motorization"
 SIA_army_motorization_desc: "To keep pace with modern warfare, we must transform our infantry divisions into mobile fighting forces.By prioritizing speed, maneuverability, and doctrine reform, we will increase our military's operational flexibility."
 
-SIA_military-led_industries: "Military-Led Industries"
+SIA_military-led_industries: "National Defense Industry"
 SIA_military-led_industries_desc: "Direct military oversight of industrial expansion ensures that our factories prioritize the needs of the armed forces above all else."
 SIA_modernize_bang_sue_arsenal: "Modernize Bang Sue Arsenal"
 SIA_modernize_bang_sue_arsenal_desc: "The Bang Sue Arsenal is the heart of our military production. We must upgrade its facilities to handle modern manufacturing techniques and increase output."
@@ -184,7 +184,7 @@ SIA_attract_chinese_capital: "Attract Chinese Capital"
 SIA_send_volunteer_forces_to_china: "Send Volunteer Forces To China"
 SIA_let_in_chinese_immigrants: "Let In Chinese Immigrants"
 SIA_invite_japanese_zaibatsus: "Invite Japanese Zaibatsus"
-SIA_invite_western_companies: "Invite Western Companies"
+SIA_invite_western_companies: "Invite Foreign Investment"
 SIA_rural_provincial_development: "Rural Provincial Development"
 SIA_reform_the_sangha_desc: ""
 SIA_khana_ratsadon_architecture_desc: ""
@@ -511,6 +511,9 @@ SIA_offensive_doctrine_desc: "TBA"
 
 SIA_anti_air_defences: "Anti-Air Defences"
 SIA_anti_air_defences_desc: "As requested."
+
+SIA_construct_air_raid_shelters: "Construct Air Raid Shelters"
+SIA_construct_air_raid_shelters_desc: "TBA"
 
 #merf focuses :)
 SIA_increase_boripatra_production: "We have the Boripatra!"
