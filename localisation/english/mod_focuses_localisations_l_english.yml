@@ -515,6 +515,9 @@ SIA_anti_air_defences_desc: "As requested."
 SIA_construct_air_raid_shelters: "Construct Air Raid Shelters"
 SIA_construct_air_raid_shelters_desc: "TBA"
 
+SIA_phahonyothin_road: "Phahonyothin Road"
+SIA_phahonyothin_road_desc: "TBA"
+
 #merf focuses :)
 SIA_increase_boripatra_production: "We have the Boripatra!"
 SIA_increase_boripatra_production_desc: "There are weaklings in the air force who are begging us to license foreign produced aircraft. There is no need! We should simply build more of our own domestic design, the Boripatra!"
