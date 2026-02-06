@@ -162,4 +162,12 @@ SpriteTypes = {
 		name = "GFX_idea_MIO_Curtiss_Aeroplane"
 		texturefile = "gfx/interface/mios/MIO_Curtiss_Aeroplane.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Siam_Generic_land_1"
+		texturefile = "gfx/leaders/SIA/Portrait_Siam_Generic_land_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Siam_Generic_land_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_Siam_Generic_land_1.dds"
+	}
 }
