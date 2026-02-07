@@ -64,6 +64,9 @@ SIA_cyclers_idea: "Yuwachon Thahan (Youth Corps)"
 SIA_chinese_immigration_influx: "Chinese Immigration Influx"
 SIA_chinese_immigration_influx_desc: "Siam is home to millions of ethnic Chinese who each fled turmoil in their homeland. As China collapsed in warlordism and civil war, hardship drove unprecedented numbers of Chinese migrants overseas, with many finding refuge in Siam."
 
+SIA_air_force_idea: "Royal Siamese Air Force"
+SIA_air_force_idea_desc: ""
+
 # Miscellaneous
 SL_Green_color: "§G"
 SL_Red_color: "§R"
