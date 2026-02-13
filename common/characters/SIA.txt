@@ -304,6 +304,28 @@ characters={
 			coordination_skill = 3
 		}			
 	}	
+	SIA_sangad_chaloryu = {
+		advisor = {
+			slot = navy_chief
+			idea_token = idea_SIA_thawan_thamrongnawasawat
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				navy_anti_submarine_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		name = "Sangad Chaloryu"
+		portraits = {
+			army = {
+				small= "GFX_idea_sangad_chaloryu"
+			}
+		}	
+	}	
 	
 	#Generals
 	SIA_luang_chartnuakrhub={

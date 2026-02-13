@@ -49,6 +49,10 @@ SpriteTypes = {
 		name = "GFX_idea_minister_luang_sinthusongkhramchai"
 		texturefile = "gfx/interface/ideas/advisors/idea_Luang_Sinthusongkhramchai.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_sangad_chaloryu"
+		texturefile = "gfx/interface/ideas/advisors/idea_sangad_chaloryu.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_portrait_SIA_luang_senanarong"
