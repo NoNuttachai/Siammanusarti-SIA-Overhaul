@@ -20,7 +20,7 @@ ideas = {
 		}
 
 		sia_fuel_department = {
-			picture = SIA_cement_group
+			picture = Fuel_Department_MoD
 
 			allowed = {
 				original_tag = SIA
@@ -76,7 +76,7 @@ ideas = {
 		}
 		
 		international_engineering_public_company_limited = {
-			picture = SIA_tuo_laphan
+			picture = International_Engineering_Public_Company_Limited
 
 			allowed = { original_tag = SIA }
 			
