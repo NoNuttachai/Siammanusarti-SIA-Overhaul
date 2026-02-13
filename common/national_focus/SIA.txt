@@ -147,8 +147,8 @@ focus_tree = {
 		id = SIA_thammasat_university #bonus for PP gain, no research bonus because the uni is focused only on political degrees then
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_pridi_premiership
-		x = 5
-		y = 2
+		x = 4
+		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_pridi_premiership focus = SIA_marshal_phibun_ascension }
@@ -161,17 +161,6 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_marshal_phibun_ascension focus = SIA_pridi_premiership }
-	}
-	focus = {
-		id = SIA_civil_service_reform
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_phraya_phanon_steps_down
-		x = -1
-		y = 2
-		cost = 10
-		completion_reward = { 
-		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension focus = SIA_pridi_premiership }
 	}
 	focus = {
@@ -261,7 +250,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_southeast_asian_self_determination }
 	}
 	focus = {
-		id = SIA_anglo_thai_something
+		id = SIA_recognized_european_rule #maybe change this to something better, taking this will have you not support any indepedent movements in SEA
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_rekindle_with_the_colonial_powers
 		x = -1
@@ -269,6 +258,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_rekindle_with_the_colonial_powers }
+		mutually_exclusive = { focus = SIA_guardian_of_southeast_asia }
 	}
 	focus = {
 		id = SIA_southeast_asian_self_determination #Funds Movements in SEA to rebel EXCEPT Vietnam #https://en.wikipedia.org/wiki/South_East_Asia_League
@@ -290,9 +280,10 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_southeast_asian_self_determination focus = SIA_rekindle_with_the_colonial_powers }
+		mutually_exclusive = { focus = SIA_recognized_european_rule }
 	}
 	focus = {
-		id = SIA_liberate_indochina_from_imperialism
+		id = SIA_liberate_indochina_from_imperialism #War goal on whoever control Indochina
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_southeast_asian_self_determination
 		x = -1
@@ -303,7 +294,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_backed_ho_chi_minh }
 	}
 	focus = {
-		id = SIA_backed_ho_chi_minh #Pridi MUST be leader
+		id = SIA_backed_ho_chi_minh #Pridi MUST be leader #Funds the Viet Minh to rebel
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_southeast_asian_self_determination
 		x = 1
@@ -321,7 +312,7 @@ focus_tree = {
 		y = 3
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_anglo_thai_something }
+		prerequisite = { focus = SIA_recognized_european_rule }
 		prerequisite = { focus = SIA_guardian_of_southeast_asia }
 		prerequisite = { focus = SIA_liberate_indochina_from_imperialism focus = SIA_backed_ho_chi_minh }
 	}
@@ -514,8 +505,8 @@ focus_tree = {
 		id = SIA_install_pridi_as_economic_minister
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_marshal_phibun_ascension
-		x = -2
-		y = 1
+		x = -5
+		y = 2
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
@@ -746,7 +737,7 @@ focus_tree = {
 	#Army Branch
 	focus = {
 		id = SIA_army
-		icon = GFX_focus_Royal_Thai_Army
+		icon = GFX_focus_r56_goal_SIA_siamese_army
 		x = 17
 		y = 0
 		
@@ -1054,7 +1045,7 @@ focus_tree = {
 	#Police Branch
 	focus = {
 		id = SIA_police
-		icon = GFX_focus_SIA_Police
+		icon = gfx_goal_unknown
 		x = 26
 		y = 0
 		
@@ -1077,18 +1068,6 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
-		id = SIA_construct_air_raid_shelters
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_establish_the_field_police
-		x = 0
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_establish_the_field_police }
-		completion_reward = { }
-	}
-	focus = {
 		id = SIA_special_branch_bureau
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_police
@@ -1103,7 +1082,7 @@ focus_tree = {
 	#Navy Branch
 	focus = {
 		id = SIA_navy
-		icon = GFX_focus_Royal_Thai_Navy
+		icon = gfx_goal_unknown
 		x = 8
 		y = 0
 		
@@ -1390,7 +1369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_air_force #add "siamese air force" as a NatSpirit
-		icon = GFX_focus_Royal_Thai_Airforce
+		icon = gfx_goal_unknown
 		x = 0
 		y = 0
 		
@@ -1679,7 +1658,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = 15
+		x = 14
 		y = 1
 		
 		cost = 2
@@ -1693,7 +1672,7 @@ focus_tree = {
 		id = SIA_attract_chinese_capital
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_revitalize_the_economy
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -1704,7 +1683,7 @@ focus_tree = {
 		id = SIA_establish_a_central_bank
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_revitalize_the_economy
-		x = -5
+		x = -4
 		y = 1
 		
 		cost = 2
@@ -1713,16 +1692,28 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
+		id = SIA_invite_japanese_zaibatsus
+		icon = GFX_focus_jap_zaibatsu
+		relative_position_id = SIA_establish_a_central_bank
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { unlock_military_industrial_organization_tooltip = mio:JAP_nissan_organization }
+		prerequisite = { focus = SIA_establish_a_central_bank }
+		mutually_exclusive = { focus = SIA_invite_western_companies }
+	}
+	focus = {
 		id = SIA_invite_western_companies
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_establish_a_central_bank
-		x = 0
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { 
 			unlock_military_industrial_organization_tooltip = mio:USA_ford_motor_company_organization 
 		}
 		prerequisite = { focus = SIA_establish_a_central_bank }
+		mutually_exclusive = { focus = SIA_invite_japanese_zaibatsus }
 	}
 	focus = {
 		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader
@@ -1759,12 +1750,24 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_attract_chinese_capital }
 	}
 	focus = {
+		id = SIA_grants_to_siam_cement
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_revitalize_the_economy
+		x = 0 
+		y = 1
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_revitalize_the_economy }
+		completion_reward = { }
+	}
+	focus = {
 		id = SIA_rural_provincial_development
 		icon = GFX_focus_sia_rural_provincial_development
 		x = -1
 		y = 1
-		prerequisite = { focus = SIA_revitalize_the_economy }
-		relative_position_id = SIA_revitalize_the_economy
+		prerequisite = { focus = SIA_grants_to_siam_cement }
+		relative_position_id = SIA_grants_to_siam_cement
 		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -1800,8 +1803,8 @@ focus_tree = {
 		x = 1	
 		y = 1
 
-		prerequisite = { focus = SIA_revitalize_the_economy }
-		relative_position_id = SIA_revitalize_the_economy
+		prerequisite = { focus = SIA_grants_to_siam_cement }
+		relative_position_id = SIA_grants_to_siam_cement
 
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1830,10 +1833,10 @@ focus_tree = {
 	focus = {
 		id = SIA_encorage_rubber_plantations
 		icon = GFX_focus_generic_rubber_plantations
-		x = 1	
+		x = 2	
 		y = 1
-		prerequisite = { focus = SIA_bangkok_urbanization }
-		relative_position_id = SIA_bangkok_urbanization
+		prerequisite = { focus = SIA_revitalize_the_economy }
+		relative_position_id = SIA_revitalize_the_economy
 
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1846,29 +1849,32 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_rice_security #Thai Rice Company IF country is Fascist
-		icon = GFX_goal_unknown
-		x = -3	
-		y = 1
+		id = SIA_rubber_processing
+		icon = GFX_focus_generic_rubber_plantations
+		x = 0	
+		y = 2
+		prerequisite = { focus = SIA_encorage_rubber_plantations }
+		relative_position_id = SIA_encorage_rubber_plantations
 
-		relative_position_id = SIA_revitalize_the_economy
-		prerequisite = { focus = SIA_revitalize_the_economy }
-		
 		cost = 2
 		ai_will_do = { factor = 1 }
-
-		completion_reward = { }
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 30
+				state = 724
+			}
+		}
 	}
 	focus = {
 		id = SIA_iron_buffalos
 		icon = GFX_focus_Iron_Buffaloes
 		icon = gfx_goal_unknown
-		x = 1	
+		x = -2	
 		y = 1
 
-		relative_position_id = SIA_rice_security
-		prerequisite = { focus = SIA_rice_security }
-		prerequisite = { focus = SIA_rural_provincial_development }
+		relative_position_id = SIA_revitalize_the_economy
+		prerequisite = { focus = SIA_revitalize_the_economy }
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1878,13 +1884,58 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_granary_of_the_orient
+		id = SIA_rice_security #Thai Rice Company IF country is Fascist
+		icon = GFX_goal_unknown
+		x = 0	
+		y = 2
+
+		relative_position_id = SIA_iron_buffalos
+		prerequisite = { focus = SIA_iron_buffalos focus = SIA_rural_provincial_development }
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_economic_nationalism #Thai Use, Thai Made, Thai Prosper
 		icon = GFX_goal_unknown
 		x = 1	
 		y = 1
 
-		relative_position_id = SIA_iron_buffalos
-		prerequisite = { focus = SIA_iron_buffalos focus = SIA_encorage_rubber_plantations }
+		relative_position_id = SIA_rice_security
+		prerequisite = { focus = SIA_rice_security focus = SIA_rubber_processing }
+		mutually_exclusive = { focus = SIA_to_new_markets }
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = { }
+	}
+	
+	focus = {
+		id = SIA_to_new_markets
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+
+		relative_position_id = SIA_rubber_processing
+		prerequisite = { focus = SIA_rice_security focus = SIA_rubber_processing}
+		mutually_exclusive = { focus = SIA_economic_nationalism }
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+
+		completion_reward = { }
+	}
+	focus = {
+		id = SIA_granary_of_the_orient
+		icon = GFX_goal_unknown
+		x = -3	
+		y = 1
+
+		relative_position_id = SIA_to_new_markets
+		prerequisite = { focus = SIA_economic_nationalism focus = SIA_to_new_markets }
 		mutually_exclusive = { focus = SIA_industrialized_the_nation }
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1894,11 +1945,11 @@ focus_tree = {
 	focus = {
 		id = SIA_industrialized_the_nation
 		icon = GFX_goal_unknown
-		x = -1
+		x = 1	
 		y = 1
 
-		relative_position_id = SIA_encorage_rubber_plantations
-		prerequisite = { focus = SIA_iron_buffalos focus = SIA_encorage_rubber_plantations}
+		relative_position_id = SIA_to_new_markets
+		prerequisite = { focus = SIA_economic_nationalism focus = SIA_to_new_markets }
 		mutually_exclusive = { focus = SIA_granary_of_the_orient }
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1908,11 +1959,11 @@ focus_tree = {
 	focus = {
 		id = SIA_mining_industry #merge with mah moi mine to decrease amount of focuses
 		icon = GFX_focus_generic_mining_industry
-		x = -1
+		x = -3
 		y = 1
 
-		relative_position_id = SIA_iron_buffalos
-		prerequisite = { focus = SIA_iron_buffalos }
+		relative_position_id = SIA_rural_provincial_development
+		prerequisite = { focus = SIA_rural_provincial_development }
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1930,10 +1981,10 @@ focus_tree = {
 	focus = {
 		id = SIA_survay_fang_oil_well
 		icon = GFX_goal_generic_oil_refinery
-		x = -3
+		x = -5	
 		y = 1
-		relative_position_id = SIA_iron_buffalos
-		prerequisite = { focus = SIA_iron_buffalos}
+		relative_position_id = SIA_rural_provincial_development
+		prerequisite = { focus = SIA_rural_provincial_development}
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1962,7 +2013,7 @@ focus_tree = {
 	focus = {
 		id = SIA_chula_uni
 		icon = GFX_focus_Chulalongkorn_University
-		x = -7
+		x = -6
 		y = 1
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		relative_position_id = SIA_revitalize_the_economy
@@ -1988,28 +2039,14 @@ focus_tree = {
 			add_ideas = SIA_education_for_all
 		}
 	}
-	focus = {
-		id = SIA_phahonyothin_road
-		icon = GFX_goal_unknown
-		x = 2
-		y = 0
-		prerequisite = { focus = SIA_bangkok_urbanization }
-		relative_position_id = SIA_bangkok_urbanization
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-
-		completion_reward = {
-			
-		}
-	}
+	
 	focus = {
 		id = SIA_rail_expansion
 		icon = GFX_goal_unknown
-		x = 2
-		y = 2
-		prerequisite = { focus = SIA_phahonyothin_road }
-		relative_position_id = SIA_phahonyothin_road
+		x = 3	
+		y = 1
+		prerequisite = { focus = SIA_bangkok_urbanization }
+		relative_position_id = SIA_bangkok_urbanization
 		mutually_exclusive = { focus = SIA_road_construction }
 		
 		cost = 2
@@ -2022,10 +2059,10 @@ focus_tree = {
 	focus = {
 		id = SIA_road_construction
 		icon = GFX_goal_unknown
-		x = 0	
-		y = 2
-		prerequisite = { focus = SIA_phahonyothin_road }
-		relative_position_id = SIA_phahonyothin_road
+		x = 5	
+		y = 1
+		prerequisite = { focus = SIA_bangkok_urbanization }
+		relative_position_id = SIA_bangkok_urbanization
 		mutually_exclusive = { focus = SIA_rail_expansion }
 		
 		cost = 2

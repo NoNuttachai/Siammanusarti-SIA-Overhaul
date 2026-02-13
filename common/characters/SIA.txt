@@ -166,7 +166,7 @@ characters={
 		}
 	}
 
-	#Generals
+	#Admirals
 	SIA_luang_sinthusongkhramchai = {
 		advisor = {
 			slot = navy_chief
@@ -190,7 +190,7 @@ characters={
 			}
 		}
 		navy_leader = {
-			traits = { gunnery_expert naval_lineage}
+			traits = { ratsadon_member gunnery_expert naval_lineage}
 			skill = 4
 			attack_skill = 3
 			defense_skill = 2
@@ -222,7 +222,7 @@ characters={
 			}
 		}
 		navy_leader = {
-			traits = { bold blockade_runner naval_lineage }
+			traits = { ratsadon_member bold blockade_runner naval_lineage }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -231,7 +231,7 @@ characters={
 		}
 	}
 	
-
+	#Generals
 	SIA_luang_senanarong ={
 		name="Luang Senanarong"
 		portraits={
@@ -296,7 +296,7 @@ characters={
 			}
 		}
 		navy_leader = {
-			traits = { gentlemanly spotter }
+			traits = { ratsadon_member gentlemanly spotter }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
