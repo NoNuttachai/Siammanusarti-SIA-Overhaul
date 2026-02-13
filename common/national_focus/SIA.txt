@@ -387,7 +387,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_cooperate_with_khana_ratsadon }
+		prerequisite = { focus = SIA_seni_pramoj_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_thawee_bunyaket_premiership}
 	}
 	focus = {
 		id = SIA_anti-communist_rhetoric
@@ -692,16 +692,6 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_thai-japanese_aillance_shared_focus }
-	}
-	focus = {
-		id = SIA_kenpeitai_cooperation
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_thai-japanese_aillance_shared_focus
-		x = -1
-		y = 2
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_territorial_award_to_thailand }
 	}
 	focus = {
 		id = SIA_kenpeitai_cooperation
@@ -1124,6 +1114,47 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SIA_acquire_bangkok_dock_co
+		icon = GFX_focus_sia_Acquired_Bangkok_Company
+		relative_position_id = SIA_navy
+		x = 2
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_navy }
+		completion_reward = { 
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					NOT = { has_state_flag = SIA_dockyard_added }
+				}
+				set_state_flag = SIA_dockyard_added
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+					NOT = { has_state_flag = SIA_dockyard_added }
+				}
+				set_state_flag = SIA_dockyard_added
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			# Add bonus here later
+		}
+	}
+	focus = {
 		id = SIA_expand_naval_repair_facilities
 		icon = GFX_focus_generic_refit_civilian_ships
 		relative_position_id = SIA_coastal_defense_stratergy
@@ -1237,6 +1268,18 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SIA_thonburi_class_ship
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_commission_foreign_ships
+		x = 0
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_commission_foreign_ships }
+		completion_reward = { }
+	}
+	focus = {
 		id = SIA_matchanu_class_sub
 		icon = GFX_goal_generic_navy_submarine
 		relative_position_id = SIA_thonburi_class_ship
@@ -1250,18 +1293,7 @@ focus_tree = {
 			set_technology = { early_ship_hull_submarine = 1 }
 		}
 	}
-	focus = {
-		id = SIA_thonburi_class_ship
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_commission_foreign_ships
-		x = 0
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_commission_foreign_ships }
-		completion_reward = { }
-	}
+	
 	focus = {
 		id = SIA_naresuan_class_ship
 		icon = GFX_focus_SWE_italian_destroyers
@@ -1287,7 +1319,6 @@ focus_tree = {
 		prerequisite = { focus = SIA_expand_the_merchant_fleet }
 		prerequisite = { focus = SIA_matchanu_class_sub }
 		prerequisite = { focus = SIA_build_small_patrol_boats }
-		prerequisite = { focus = SIA_refit_civillian_ships }
 		completion_reward = { }
 	}
 	focus = {
@@ -1326,47 +1357,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SIA_acquire_bangkok_dock_co
-		icon = GFX_focus_sia_Acquired_Bangkok_Company
-		relative_position_id = SIA_navy
-		x = 2
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_navy }
-		completion_reward = { 
-			random_owned_state = {
-				limit = {
-					is_coastal = yes
-					NOT = { has_state_flag = SIA_dockyard_added }
-				}
-				set_state_flag = SIA_dockyard_added
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_coastal = yes
-					NOT = { has_state_flag = SIA_dockyard_added }
-				}
-				set_state_flag = SIA_dockyard_added
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			# Add bonus here later
-		}
-	}
+	
 	focus = {
 		id = SIA_air_force #add "siamese air force" as a NatSpirit
 		icon = gfx_goal_unknown
@@ -1376,7 +1367,9 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = SIA_air_force_idea
+		}
 	}
 	focus = {
 		id = SIA_naval_air_force
@@ -1443,10 +1436,17 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_air_force }
-		completion_reward = { }
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				name = SIA_western_aviation_studies
+				cost_reduction = 0.75
+				uses = 1
+				category = air_doctrine
+			}
+		}
 	}
 	focus = {
-		id = SIA_purchase_foregin_aircraft
+		id = SIA_purchase_foreign_aircraft
 		icon = GFX_focus_SMB_purchase_aircraft
 		relative_position_id = SIA_western_aviation_studies
 		x = 3
@@ -1455,23 +1455,10 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_western_aviation_studies }
+		prerequisite = { focus = SIA_build_eastern_air_bases }
 		completion_reward = {
 			#international arms market purchase bonus
 		 }
-	}
-	focus = {
-		id = SIA_purchase_curtiss_aircraft
-		icon = GFX_goal_unknown
-		relative_position_id = SIA_purchase_foregin_aircraft
-		x = 0
-		y = 1
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_western_aviation_studies } #country is NOT at war with the USA
-		completion_reward = { 
-			#-add the following to the stockpi
-		}
 	}
 	focus = {
 		id = SIA_adopt_japanese_aircraft #historical
@@ -1479,11 +1466,11 @@ focus_tree = {
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_adopt_western_aircraft }
 		prerequisite = {
-			focus = SIA_purchase_foregin_aircraft
+			focus = SIA_purchase_foreign_aircraft
 		}
 		x = -1
-		y = 2
-		relative_position_id = SIA_purchase_foregin_aircraft
+		y = 1
+		relative_position_id = SIA_purchase_foreign_aircraft
 		completion_reward = {
 
 			#national spirit which increases CAS production cost but gives slightly better damage
@@ -1495,9 +1482,9 @@ focus_tree = {
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_strategic_bombing }
 		prerequisite = { focus = SIA_adopt_japanese_aircraft focus = SIA_adopt_western_aircraft }
-		x = 0
-		y = 2
-		relative_position_id = SIA_purchase_curtiss_aircraft
+		x = 1
+		y = 1
+		relative_position_id = SIA_adopt_japanese_aircraft
 		completion_reward = {
 		}
 	}
@@ -1511,43 +1498,8 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_western_aviation_studies }
+		prerequisite = { focus = SIA_build_eastern_air_bases }
 		completion_reward = { }
-	}
-	focus = {
-		id = SIA_the_boripatra_bomber
-		icon = GFX_goal_unknown
-		cost = 5.00
-		mutually_exclusive = { focus = SIA_the_prajadhipok_fighter }
-		prerequisite = { focus = SIA_domestic_aircraft_production }
-		x = 1
-		y = 2
-		relative_position_id = SIA_domestic_aircraft_production
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SIA_curtiss_hawk_license_production
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = { focus = SIA_domestic_aircraft_production }
-		x = 0
-		y = 1
-		relative_position_id = SIA_domestic_aircraft_production
-		completion_reward = {
-
-		}
-	}
-	focus = {
-		id = SIA_strategic_bombing
-		icon = GFX_goal_unknown
-		cost = 5.00
-		mutually_exclusive = { focus = SIA_air_maneuverability }
-		prerequisite = { focus = SIA_the_prajadhipok_fighter focus = SIA_the_boripatra_bomber }
-		x = 0
-		y = 2
-		relative_position_id = SIA_curtiss_hawk_license_production
-		completion_reward = {
-		}
 	}
 	focus = {
 		id = SIA_the_prajadhipok_fighter
@@ -1556,12 +1508,37 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_the_boripatra_bomber }
 		prerequisite = { focus = SIA_domestic_aircraft_production }
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = SIA_domestic_aircraft_production
 		completion_reward = {
 
 		}
 	}
+	focus = {
+		id = SIA_the_boripatra_bomber
+		icon = GFX_goal_unknown
+		cost = 5.00
+		mutually_exclusive = { focus = SIA_the_prajadhipok_fighter }
+		prerequisite = { focus = SIA_domestic_aircraft_production }
+		x = 1
+		y = 1
+		relative_position_id = SIA_domestic_aircraft_production
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_strategic_bombing
+		icon = GFX_goal_unknown
+		cost = 5.00
+		mutually_exclusive = { focus = SIA_air_maneuverability }
+		prerequisite = { focus = SIA_the_prajadhipok_fighter focus = SIA_the_boripatra_bomber }
+		x = 1
+		y = 1
+		relative_position_id = SIA_the_prajadhipok_fighter
+		completion_reward = {
+		}
+	}
+	
 	
 	focus = {
 		id = SIA_air_bang_fai
@@ -1580,13 +1557,13 @@ focus_tree = {
 		id = SIA_adopt_western_aircraft
 		icon = gfx_goal_unknown
 		mutually_exclusive = { focus = SIA_adopt_japanese_aircraft }
-		relative_position_id = SIA_purchase_foregin_aircraft
+		relative_position_id = SIA_purchase_foreign_aircraft
 		x = 1
-		y = 2
+		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_purchase_foregin_aircraft }
+		prerequisite = { focus = SIA_purchase_foreign_aircraft }
 		available = {
 			OR = {
 				is_in_faction_with = JAP
@@ -1605,24 +1582,13 @@ focus_tree = {
 
 		}
 	}
-	focus = {
-		id = SIA_build_eastern_air_bases #For bombing French Indochina
-		icon = SIA_air_force
-		relative_position_id = SIA_air_force
-		x = 0 
-		y = 2
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_air_force }
-		completion_reward = { }
-	}
+	
 	focus = {
 		id = SIA_royal_air_force_academy
 		icon = SIA_air_force
-		relative_position_id = SIA_build_eastern_air_bases
-		x = 0
-		y = 4
+		relative_position_id = SIA_air_maneuverability
+		x = -2
+		y = 1
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -1642,8 +1608,8 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
-		id = SIA_expand_don_mueang_airport
-		icon = gfx_goal_unknown
+		id = SIA_build_eastern_air_bases #For bombing French Indochina
+		icon = SIA_air_force
 		relative_position_id = SIA_air_force
 		x = 1
 		y = 1
@@ -1651,8 +1617,17 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_air_force }
-		completion_reward = { }
+		completion_reward = { 
+			868 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
+	
 	#economy branch rework
 	focus = {
 		id = SIA_revitalize_the_economy
@@ -1733,7 +1708,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		available = { NOT = { has_completed_focus = SIA_invite_japanese_zaibatsus } }
+		available = {}
 		completion_reward = { }
 		prerequisite = { focus = SIA_attract_chinese_capital }
 		

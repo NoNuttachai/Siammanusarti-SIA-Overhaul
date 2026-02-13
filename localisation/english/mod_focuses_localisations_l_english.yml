@@ -6,6 +6,107 @@ SIA_bangkok_urbanization: "Bangkok Urbanization"
 SIA_don_airport: "Expand Don Mueang Airport"
 SIA_don_airport_desc: "Don Mueang Airport is the largest airport in the country; however, the need to accommodate larger air fleets warrants an expansion of the airport."
 
+SIA_build_eastern_air_bases: "Build Eastern Air Bases"
+SIA_build_eastern_air_bases_desc: ""
+
+SIA_the_prajadhipok_fighter: "The Prajadhipok Fighter"
+SIA_the_prajadhipok_fighter_desc: ""
+
+SIA_the_boripatra_bomber: "The Boripatra Bomber"
+SIA_the_boripatra_bomber_desc: ""
+
+SIA_strategic_bombing: "Strategic Bombing"
+SIA_strategic_bombing_desc: ""
+
+SIA_adopt_japanese_aircraft: "Adopt Japanese Aircraft"
+SIA_adopt_japanese_aircraft_desc: ""
+
+SIA_adopt_western_aircraft: "Adopt Western Aircraft"
+SIA_adopt_western_aircraft_desc: ""
+
+SIA_air_maneuverability: "Air Maneuverability"
+SIA_air_maneuverability_desc: ""
+
+SIA_siamese_airways_company_limited: "Siamese Airways Company Limited"
+SIA_siamese_airways_company_limited_desc: ""
+
+SIA_coastal_defense_stratergy: "Coastal Defense Strategy"
+SIA_coastal_defense_stratergy_desc: ""
+
+SIA_phang-nga_naval_base: "Phang-nga Naval Base"
+SIA_phang-nga_naval_base_desc: ""
+
+SIA_naval_science_department: "Naval Science Department"
+SIA_naval_science_department_desc: ""
+
+SIA_paratroopers: "Paratroopers"
+SIA_paratroopers_desc: ""
+
+SIA_import_radar_technology: "Import Radar Technology"
+SIA_import_radar_technology_desc: ""
+
+SIA_pridi_premiership: "Pridi Premiership"
+SIA_pridi_premiership_desc: ""
+
+SIA_amend_the_constitution: "Amend the Constitution"
+SIA_amend_the_constitution_desc: ""
+
+SIA_free_the_political_prisoners: "Free the Political Prisoners"
+SIA_free_the_political_prisoners_desc: ""
+
+SIA_curtail_the_army: "Curtail the Army"
+SIA_curtail_the_army_desc: ""
+
+SIA_reappoint_army_generals: "Reappoint Army Generals"
+SIA_reappoint_army_generals_desc: ""
+
+SIA_install_pridi_as_economic_minister: "Install Pridi as Economic Minister"
+SIA_install_pridi_as_economic_minister_desc: ""
+
+SIA_thai_national_anthem: "Thai National Anthem"
+SIA_thai_national_anthem_desc: ""
+
+SIA_mass_media_propaganda: "Mass Media Propaganda"
+SIA_mass_media_propaganda_desc: ""
+
+SIA_civil_service_reform: "Civil Service Reform"
+SIA_civil_service_reform_desc: ""
+
+SIA_wat_prachathipatai: "Wat Prachathipatai"
+SIA_wat_prachathipatai_desc: ""
+
+SIA_anti-communist_rhetoric: "Anti-Communist Rhetoric"
+SIA_anti-communist_rhetoric_desc: ""
+
+SIA_anti-fascist_rhetoric: "Anti-Fascist Rhetoric"
+SIA_anti-fascist_rhetoric_desc: ""
+
+SIA_tiger_economy: "Tiger Economy"
+SIA_tiger_economy_desc: ""
+
+SIA_peg_the_baht_to_the_yen: "Peg the Baht to the Yen"
+SIA_peg_the_baht_to_the_yen_desc: ""
+
+SIA_scientific_exchange: "Scientific Exchange"
+SIA_scientific_exchange_desc: ""
+
+SIA_establish_a_central_bank: "Establish a Central Bank"
+SIA_establish_a_central_bank_desc: ""
+
+SIA_road_construction: "Road Construction"
+SIA_road_construction_desc: ""
+
+SIA_industrialized_the_nation: "Industrialize the Nation"
+SIA_industrialized_the_nation_desc: ""
+
+SIA_rail_expansion: "Rail Expansion"
+SIA_rail_expansion_desc: ""
+
+SIA_iron_buffalos: "Iron Buffalos"
+SIA_iron_buffalos_desc: ""
+
+
+
 SIA_naval_academy: "Naval Academy"
 SIA_naval_academy_desc: "The Naval Academy is of utmost importance, providing programs in engineering and science, as well as naval professional training."
 SIA_navy: "Expand Sattahip Naval Base"
@@ -119,7 +220,7 @@ SIA_thai_use_thai_made_pad_thai: "Thai Use Thai Made Pad Thai"
 SIA_language_reform: "Language Reform"
 SIA_militarized_society: "Militarized Society"
 SIA_chinese_forced_assimilation: "Chinese Forced Assimilation"
-SIA_phibun_resign: "Phibun Resign"
+SIA_phibun_resigns: "Phibun Resign"
 SIA_total_dictatorial_powers: "Total Dictatorial Powers"
 SIA_expand_the_special_branch: "Expand The Special Branch"
 SIA_thai_irredentism: "Thai Irredentism"
@@ -173,7 +274,7 @@ SIA_thai_gulf_minelaying_operation: "Thai Gulf Minelaying Operation"
 SIA_marines: "Marines"
 SIA_amphibia: "Amphibia"
 SIA_air_force: "Air Force"
-SIA_purchase_foregin_aircraft: "Purchase Foriegn Aircraft"
+SIA_purchase_foreign_aircraft: "Purchase Foriegn Aircraft"
 SIA_domestic_aircraft_production: "Domestic Aircraft Production"
 SIA_curtiss_hawk_license_production: "Curtiss Hawk License Production"
 SIA_western_aviation_studies: "Western Aviation Studies"
@@ -237,7 +338,7 @@ SIA_thai_use_thai_made_pad_thai_desc: ""
 SIA_language_reform_desc: ""
 SIA_militarized_society_desc: ""
 SIA_chinese_forced_assimilation_desc: ""
-SIA_phibun_resign_desc: ""
+SIA_phibun_resigns_desc: ""
 SIA_total_dictatorial_powers_desc: ""
 SIA_expand_the_special_branch_desc: ""
 SIA_thai_irredentism_desc: ""

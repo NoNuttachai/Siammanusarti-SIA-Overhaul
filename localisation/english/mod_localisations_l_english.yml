@@ -62,6 +62,9 @@ SIA_arms_production: "[SIA.GetAdjective] Arms Production"
 SIA_por_tor_anti_air: "Por Tor Anti-Air Company"
 SIA_cyclers_idea: "Yuwachon Thahan (Youth Corps)"
 
+SIA_air_force_idea: "Royal Siamese Air Force"
+SIA_air_force_idea_desc: ""
+
 # Miscellaneous
 SL_Green_color: "§G"
 SL_Red_color: "§R"
