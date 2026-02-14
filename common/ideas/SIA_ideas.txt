@@ -5,6 +5,8 @@ ideas = {
 		sia_cement_group = {
 			picture = SIA_cement_group
 
+			name = SIA_cement_group
+
 			allowed = {
 				original_tag = SIA
 			}
@@ -22,6 +24,8 @@ ideas = {
 		sia_fuel_department = {
 			picture = Fuel_Department_MoD
 
+			name = sia_fuel_department
+
 			allowed = {
 				original_tag = SIA
 			}
@@ -38,6 +42,8 @@ ideas = {
 		
 		chula_uni_faculty_of_engineering = {
 			picture = SIA_CU_Engineering_Company
+
+			name = chula_uni_faculty_of_engineering
 
 			allowed = { original_tag = SIA }
 			
@@ -58,6 +64,8 @@ ideas = {
 		b_grimm_power = {
 			picture = SIA_grimm_power
 
+			name = SIA_B_Grimm_Power
+
 			allowed = { original_tag = SIA }
 			
 			cost = 150
@@ -77,6 +85,8 @@ ideas = {
 		
 		international_engineering_public_company_limited = {
 			picture = International_Engineering_Public_Company_Limited
+
+			name = international_engineering_public_company_limited
 
 			allowed = { original_tag = SIA }
 			
