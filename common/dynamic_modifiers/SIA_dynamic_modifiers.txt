@@ -24,4 +24,13 @@ SIA_army_of_siam = {
 	army_morale_factor = SIA_army_morale_factor_var
 	org_loss_when_moving = SIA_org_loss_when_moving_var
 	special_forces_cap_tt = SIA_special_forces_cap_var
+	coordination_bonus = SIA_coordination_bonus_var
+	breakthrough_factor = SIA_breakthrough_factor_var
+	army_org_factor = SIA_army_org_factor_var
+	dig_in_speed_factor = SIA_dig_in_speed_factor_var
+	initiative_factor = SIA_initiative_factor_var
+	terrain_penalty_reduction = SIA_terrain_penalty_reduction_var
+	army_defence_factor = SIA_army_defence_factor_var
+	army_speed_factor = SIA_army_speed_factor_var
+	max_dig_in_factor = SIA_max_dig_in_factor_var
 }
