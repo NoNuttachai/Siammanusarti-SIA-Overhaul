@@ -735,7 +735,20 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 
 		completion_reward = {
-			add_ideas = idea_SIA_army_of_siam
+			custom_effect_tooltip = USA_army_tt
+			add_to_variable = { 
+				SIA_production_speed_arms_factory_factor_var = 0.1
+				tooltip = production_speed_arms_factory_factor_tt 
+			}
+			add_to_variable = { 
+				SIA_supply_consumption_factor_var = -0.05
+				tooltip = supply_consumption_factor_tt 
+			}
+			add_to_variable = { 
+				SIA_supply_node_range_var = 0.1
+				tooltip = supply_node_range_tt 
+			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
@@ -752,13 +765,27 @@ focus_tree = {
 		x = 0
 		y = 1
 		
-		available = { has_political_power > 25 }
+		available = {}
 		cancel_if_invalid = no
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
-		completion_reward = { }
+		completion_reward = {
+			custom_effect_tooltip = USA_army_tt
+			add_to_variable = { 
+				SIA_planning_speed_var = 0.1
+				tooltip = planning_speed_tt 
+			}
+			add_to_variable = { 
+				SIA_max_planning_factor_var = 0.05
+				tooltip = max_planning_factor_tt 
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			army_experience = 25
+		}
 	}
 	focus = {
 		id = SIA_prussian_school_of_warfare
@@ -772,7 +799,27 @@ focus_tree = {
 		prerequisite = { focus = SIA_army }
 		prerequisite = { focus = SIA_national_defence_college }
 		mutually_exclusive = { focus = SIA_doctrine_rooted_in_tradition }
-		completion_reward = { }
+		completion_reward = {
+			custom_effect_tooltip = USA_army_tt
+			add_to_variable = { 
+				SIA_army_attack_factor_var = 0.05
+				tooltip = army_attack_factor_tt 
+			}
+			add_to_variable = { 
+				SIA_planning_speed_var = 0.1
+				tooltip = army_morale_factor_tt 
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_mastery_bonus = {
+                bonus = 0.5
+                days = 180
+                name = SIA_prussian_school_of_warfare
+                folder = land
+                grand_doctrine = grand_battleplan
+            }
+		}
 	}
 	focus = {
 		id = SIA_doctrine_rooted_in_tradition
@@ -786,7 +833,27 @@ focus_tree = {
 		prerequisite = { focus = SIA_army }
 		prerequisite = { focus = SIA_national_defence_college }
 		mutually_exclusive = { focus = SIA_prussian_school_of_warfare }
-		completion_reward = { }
+		completion_reward = {
+			custom_effect_tooltip = USA_army_tt
+			add_to_variable = { 
+				SIA_org_loss_when_moving_var = -0.15
+				tooltip = org_loss_when_moving_tt 
+			}
+			add_to_variable = { 
+				SIA_special_forces_cap_var = 0.1
+				tooltip = special_forces_cap_tt 
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_mastery_bonus = {
+                bonus = 0.5
+                days = 180
+                name = SIA_prussian_school_of_warfare
+                folder = land
+                grand_doctrine = mass_assault
+            }
+		}
 	}
 	focus = {
 		id = SIA_jungle_warfare_training
@@ -1533,18 +1600,26 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_navy focus = SIA_army }
-		completion_reward = { }
-	}
-	focus = {
-		id = SIA_amphibia
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_marines
-		x = 0
-		y = 1
-		cost = 2
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_marines }
-		completion_reward = { }
+		completion_reward = {
+			custom_effect_tooltip = USA_army_tt
+			add_to_variable = { 
+				SIA_naval_invasion_prep_speed_var = 0.05
+				tooltip = naval_invasion_prep_speed_tt 
+			}
+			add_to_variable = { 
+				SIA_naval_invasion_planning_bonus_speed_var = 0.1
+				tooltip = naval_invasion_planning_bonus_speed_tt 
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_tech_bonus = {
+                name = marine_bonus
+                bonus = 0.75
+                uses = 1
+                category = marine_tech
+            }
+		}
 	}
 	#Air Force
 	focus = {
@@ -2240,9 +2315,15 @@ focus_tree = {
 		prerequisite = { focus = SIA_domestic_arms_production }
 		relative_position_id = SIA_domestic_arms_production
 
+		available = {
+			num_of_factories > 20
+		}
+
 		cost = 2
 		ai_will_do = { factor = 1 }
-		completion_reward = { }
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	
 	#Monarchist Path

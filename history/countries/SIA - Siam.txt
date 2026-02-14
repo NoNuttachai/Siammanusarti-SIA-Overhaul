@@ -24,6 +24,10 @@ if = {
 	}
 }
 
+add_dynamic_modifier = {
+	modifier = SIA_army_of_siam
+}
+
 #	if = {
 #		limit = { has_dlc = "La Resistance" }
 #	
