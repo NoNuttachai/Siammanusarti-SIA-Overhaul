@@ -1151,7 +1151,9 @@ focus_tree = {
 				}
 			}
 
-			# Add bonus here later
+			mio:SIA_bangkok_dock_organization = {
+				add_mio_research_bonus = 0.1
+			}
 		}
 	}
 	focus = {
@@ -1240,7 +1242,14 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_expand_dockyards }
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = SIA_merchants_on_the_high_seas
+			add_equipment_to_stockpile = { 
+				type = convoy
+				amount = 50 
+				producer = ROOT
+			}
+		}
 	}
 	
 	focus = {
@@ -1256,6 +1265,7 @@ focus_tree = {
 		completion_reward = { 
 			unlock_military_industrial_organization_tooltip = mio:JAP_kawasaki_dockyards_organization
 			unlock_military_industrial_organization_tooltip = mio:ENG_yarrow_shipbuilders_organization
+			add_ideas = SIA_small_torpedo_boats
 			add_tech_bonus = {
 				name = SIA_commission_foreign_ships
 				bonus = 0.5
@@ -1277,7 +1287,38 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_commission_foreign_ships }
-		completion_reward = { }
+		completion_reward = { 
+			create_equipment_variant = {
+				name = "Thonburi Class"
+				name_group = JAP_DD_HISTORICAL
+				allow_without_tech = yes
+				type = ship_hull_cruiser_1
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = dp_light_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = cruiser_ship_engine_1
+					fixed_ship_torpedo_slot = ship_torpedo_1
+					mid_1_custom_slot = ship_anti_air_2
+					rear_1_custom_slot = ship_depth_charge_1
+					front_1_custom_slot = dp_light_battery_1
+				}
+			}
+			create_ship = {
+				type = ship_hull_cruiser_1
+				equipment_variant = "Thonburi Class"
+				creator = JAP
+				name = "HTMS Thonburi"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_1
+				equipment_variant = "Thonburi Class"
+				creator = JAP
+				name = "HTMS Sri Ayudhya"
+			}
+		}
 	}
 	focus = {
 		id = SIA_matchanu_class_sub
@@ -1290,7 +1331,68 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_thonburi_class_ship }
 		completion_reward = { 
-			set_technology = { early_ship_hull_submarine = 1 }
+			if = {
+				limit = {
+					JAP = { 
+						exists = yes 
+						has_opinion = {
+							target = ROOT
+							value = 10
+						}
+					}
+				}
+				country_event = sia_events.3
+			}
+			else = {
+				add_tech_bonus = {
+					name = SIA_matchanu_class_sub
+					bonus = 0.5
+					uses = 2
+					category = ss_tech
+					category = cat_torpedoes
+				}				
+			}
+			set_technology = { 
+				early_ship_hull_submarine = 1 
+			}
+			create_equipment_variant = {
+				name = "Matchanu Class"
+				type = ship_hull_cruiser_submarine
+				name_group = JAP_SS_HISTORICAL
+				show_position = no
+				allow_without_tech = yes
+				modules = {
+					fixed_ship_torpedo_slot = ship_torpedo_sub_2
+					fixed_ship_engine_slot = sub_ship_engine_2
+					front_1_custom_slot = ship_airplane_launcher_2
+					mid_1_custom_slot = empty
+					rear_1_custom_slot = ship_extra_fuel_tank
+				}
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Matchanu Class"
+				creator = JAP
+				name = "HTMS Matchanu"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Matchanu Class"
+				creator = JAP
+				name = "HTMS Wirun"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Matchanu Class"
+				creator = JAP
+				name = "HTMS Sinsamut"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Matchanu Class"
+				creator = JAP
+				name = "HTMS Phlai-Chumphon"
+			}
 		}
 	}
 	
@@ -1304,7 +1406,16 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_thonburi_class_ship }
-		completion_reward = { }
+		completion_reward = { 
+			unlock_military_industrial_organization_tooltip = mio:ITA_crda_organization
+			unlock_decision_tooltip = SIA_conmission_naresuan_ships
+			add_tech_bonus = {
+				name = SIA_matchanu_class_sub
+				bonus = 0.5
+				uses = 2
+				category = mio_cat_tech_all_cruiser_and_modules
+			}	
+		}
 	}
 	focus = {
 		id = SIA_phang-nga_naval_base #Andaman Sea naval base
@@ -1319,7 +1430,17 @@ focus_tree = {
 		prerequisite = { focus = SIA_expand_the_merchant_fleet }
 		prerequisite = { focus = SIA_matchanu_class_sub }
 		prerequisite = { focus = SIA_build_small_patrol_boats }
-		completion_reward = { }
+		completion_reward = {
+			navy_experience = 50
+			724 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = naval_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = SIA_naval_science_department #naval research bonus and spawn naval research facility in Sattahip
