@@ -65,12 +65,18 @@ SIA_cyclers_idea: "Yuwachon Thahan (Youth Corps)"
 SIA_air_force_idea: "Royal Siamese Air Force"
 SIA_air_force_idea_desc: ""
 
+USA_army_tt: "Modify §HArmy of Siam§! by"
+SIA_army_of_siam: "Army of Siam"
+
 # Miscellaneous
 SL_Green_color: "§G"
 SL_Red_color: "§R"
 SL_Yellow_color: "§Y"
 SL_Grey_color: "§g"
 SL_Orange_color: "§O"
+
+naval_invasion_planning_bonus_speed_tt: " Naval Invasion Planning Speed: §G+%10.0§!"
+planning_speed_tt: " Planning Speed: §G+%10.0§!"
 
 # Events
 sia_BOP_event.1.t: "Planting of Khana Ratsadon Plaque"

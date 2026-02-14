@@ -482,20 +482,6 @@ ideas = {
 			available = { always = yes }
 		}
 		
-		idea_SIA_army_of_siam_2 = {
-			name = idea_SIA_army_of_siam
-			picture = MEX_politicised_army_2
-			allowed_civil_war = { always = yes }
-
-			allowed = { original_tag = SIA }
-			removal_cost = -1
-			modifier = {
-				production_speed_arms_factory_factor = 0.15
-				supply_consumption_factor = -0.13
-				supply_node_range = 0.2
-			}
-		}
-		
 		SIA_railway_expansion = {
 			removal_cost = -1
 			
