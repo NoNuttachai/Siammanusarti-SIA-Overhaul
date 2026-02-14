@@ -12,7 +12,7 @@ SIA_curtiss_aeroplane_organization = {
     allowed = {
 		tag = SIA 
 	}
-	available = { SIA = { has_completed_focus = SIA_curtiss_hawk_license_production } }
+	available = { SIA = { has_completed_focus = SIA_domestic_aircraft_production } }
 }
 #Naval MIOs
 SIA_bangkok_dock_organization = {
