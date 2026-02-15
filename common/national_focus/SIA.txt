@@ -1684,7 +1684,14 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 
 		completion_reward = {
-			add_ideas = SIA_air_force_idea
+			add_ideas = SIA_air_force_idea_base
+			hidden_effect = {
+				remove_ideas = SIA_air_force_idea_base
+				set_variable = { SIA_experience_gain_air_factor = 0.1 }
+				set_variable = { SIA_air_mission_efficiency = 0.1 }
+				add_dynamic_modifier = { modifier = SIA_air_force_idea }
+			}
+			air_experience = 15		
 		}
 	}
 	focus = {
@@ -1697,7 +1704,21 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_air_force focus = SIA_navy }
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				name = SIA_naval_air_force
+				bonus = 0.5
+				uses = 1
+				category = cat_air_bombs
+			}
+			custom_effect_tooltip = SIA_modify_air_force_modifier_tt
+			add_to_variable = { 
+				SIA_air_nav_efficiency = 0.1
+				tooltip = air_nav_efficiency_tt
+			}
+			air_experience = 10
+			navy_experience = 10
+		}
 	}
 	focus = {
 		id = SIA_thai_gulf_minelaying_operation
@@ -1761,6 +1782,15 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_air_force }
 		completion_reward = { 
+			custom_effect_tooltip = SIA_modify_air_force_modifier_tt
+			add_to_variable = { 
+				SIA_air_range_factor = 0.05
+				tooltip = air_range_factor_tt
+			}
+			add_to_variable = { 
+				SIA_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}
 			add_doctrine_cost_reduction = {
 				name = SIA_western_aviation_studies
 				cost_reduction = 0.75
@@ -1810,6 +1840,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_adopt_japanese_aircraft
 		completion_reward = {
+			add_mastery_bonus = {
+				name = SIA_strategic_bombing
+				bonus = 0.15
+				days = 180
+				track = strike_aircraft
+			}
+			custom_effect_tooltip = SIA_modify_air_force_modifier_tt
+			add_to_variable = { 
+				SIA_air_range_factor = 0.05
+				tooltip = air_mission_efficiency_tt
+			}
+			add_to_variable = { 
+				SIA_air_agility_factor = 0.25
+				tooltip = air_agility_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -1823,7 +1868,19 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_western_aviation_studies }
 		prerequisite = { focus = SIA_build_eastern_air_bases }
-		completion_reward = { }
+		completion_reward = { 
+			mio:SIA_aeronautical_workshop_organization = {
+				add_mio_size = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = SIA_the_prajadhipok_fighter
@@ -1835,7 +1892,28 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_domestic_aircraft_production
 		completion_reward = {
-
+			custom_effect_tooltip = SIA_modify_air_force_modifier_tt
+			add_to_variable = { 
+				SIA_line_change_production_efficiency_factor = 0.1
+				tooltip = line_change_production_efficiency_factor_tt
+			}
+			add_to_variable = { 
+				SIA_production_factory_efficiency_gain_factor = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			create_equipment_variant = {
+				name = "Prajadhipok"
+				type = cv_small_plane_airframe_2
+				design_team = mio:SIA_aeronautical_workshop_organization
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = fuel_tanks_small
+				}
+			}
 		}
 	}
 	focus = {
@@ -1848,6 +1926,27 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_domestic_aircraft_production
 		completion_reward = {
+			air_experience = 30
+			add_command_power = 15
+			add_tech_bonus = {
+                name = SIA_the_boripatra_bomber
+                bonus = 0.75
+                uses = 1
+                category = light_air
+            }	
+			create_equipment_variant = {
+				name = "Bonipatra"
+				type = cv_small_plane_airframe_2
+				design_team = mio:SIA_aeronautical_workshop_organization
+				allow_without_tech = yes
+				modules = {
+					fixed_main_weapon_slot = light_mg_2x
+					fixed_auxiliary_weapon_slot_1 = bomb_locks
+					engine_type_slot = engine_3_1x
+					special_type_slot_1 = drop_tanks
+					special_type_slot_2 = fuel_tanks_small
+				}
+			}		
 		}
 	}
 	focus = {
@@ -1860,6 +1959,17 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_the_prajadhipok_fighter
 		completion_reward = {
+			add_mastery_bonus = {
+				name = SIA_strategic_bombing
+				bonus = 0.15
+				days = 180
+				grand_doctrine = new_battlefield_support
+			}
+			custom_effect_tooltip = SIA_modify_air_force_modifier_tt
+			add_to_variable = { 
+				SIA_air_mission_efficiency = 0.1
+				tooltip = air_mission_efficiency_tt
+			}
 		}
 	}
 	
@@ -1874,7 +1984,18 @@ focus_tree = {
 		
 		cost = 2
 		ai_will_do = { factor = 1 }
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				name = SIA_air_bang_fai
+				bonus = 0.5
+				uses = 1
+				category = rocketry
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
+		}
 	}
 	
 	focus = {
@@ -1917,7 +2038,25 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_strategic_bombing focus = SIA_air_maneuverability }
-		completion_reward = { }
+		completion_reward = { 
+			custom_effect_tooltip = SIA_modify_air_force_modifier_tt
+			add_to_variable = { 
+				SIA_air_mission_efficiency = 0.05
+				tooltip = air_mission_efficiency_tt
+			}			
+			add_to_variable = { 
+				SIA_air_range_factor = 0.05
+				tooltip = air_range_factor_tt
+			}	
+			add_to_variable = { 
+				SIA_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}	
+			add_to_variable = { 
+				SIA_research_speed_factor = 0.1
+				tooltip = research_speed_factor_tt
+			}	
+		}
 	}
 	focus = {
 		id = SIA_siamese_airways_company_limited
@@ -1929,7 +2068,17 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_strategic_bombing focus = SIA_air_maneuverability }
-		completion_reward = { }
+		completion_reward = { 
+			289 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = SIA_unlock_siamese_airways_company_limited
+			air_experience = 30
+		}
 	}
 	focus = {
 		id = SIA_build_eastern_air_bases #For bombing French Indochina
@@ -1942,6 +2091,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_air_force }
 		completion_reward = { 
+			air_experience = 30
 			868 = {
 				add_building_construction = {
 					type = air_base

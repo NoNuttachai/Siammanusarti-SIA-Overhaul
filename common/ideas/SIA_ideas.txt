@@ -645,7 +645,7 @@ ideas = {
 			}
 		}
 		
-		SIA_air_force_idea = {
+		SIA_air_force_idea_base = {
 			removal_cost = -1
 			
 			picture = generic_production_bonus
@@ -653,10 +653,9 @@ ideas = {
 			allowed = { always = yes }
 			
 			modifier = {
-				
+				experience_gain_air_factor = 0.1
+				air_mission_efficiency = 0.1
 			}
-
-			
 		}
 	}
 }
