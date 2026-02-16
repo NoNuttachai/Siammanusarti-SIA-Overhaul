@@ -49,4 +49,5 @@ SIA_air_force_idea = {
 	production_factory_efficiency_gain_factor = SIA_production_factory_efficiency_gain_factor
 	air_agility_factor = SIA_air_agility_factor
 	air_nav_efficiency = SIA_air_nav_efficiency
+	research_speed_factor = SIA_research_speed_factor
 }
