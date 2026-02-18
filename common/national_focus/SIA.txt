@@ -502,6 +502,36 @@ focus_tree = {
 		prerequisite = { focus = SIA_purge }
 	}
 	focus = {
+		id = SIA_security_of_the_nation
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_mass_media_propaganda
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_mass_media_propaganda }
+	}
+	focus = {
+		id = SIA_national_construction
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_mass_media_propaganda
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_mass_media_propaganda }
+	}
+	focus = {
+		id = SIA_economic_nationalism
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_mass_media_propaganda
+		x = 4
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_mass_media_propaganda }
+	}
+	focus = {
 		id = SIA_install_pridi_as_economic_minister
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_marshal_phibun_ascension
@@ -535,7 +565,7 @@ focus_tree = {
 		id = SIA_cultural_revolution
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_believe_in_leader
-		x = -1
+		x = -4
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -563,10 +593,54 @@ focus_tree = {
 		prerequisite = { focus = SIA_promote_thai_ethnonationalism }
 	}
 	focus = {
+		id = SIA_honor_the_flag
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_cultural_revolution
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_cultural_revolution }
+		prerequisite = { focus = SIA_promote_thai_ethnonationalism }
+	}
+	focus = {
+		id = SIA_uniform_clothing
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_cultural_revolution
+		x = 5
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_cultural_revolution }
+		prerequisite = { focus = SIA_promote_thai_ethnonationalism }
+	}
+	focus = {
+		id = SIA_enforce_work_schedules
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_cultural_revolution
+		x = 7
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_cultural_revolution }
+		prerequisite = { focus = SIA_promote_thai_ethnonationalism }
+	}
+	focus = {
+		id = SIA_protect_the_weak
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_cultural_revolution
+		x = 9
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_cultural_revolution }
+		prerequisite = { focus = SIA_promote_thai_ethnonationalism }
+	}
+	focus = {
 		id = SIA_promote_thai_ethnonationalism
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_country_name_change
-		x = -1
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -576,7 +650,7 @@ focus_tree = {
 		id = SIA_militarized_society
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_promote_thai_ethnonationalism
-		x = 1
+		x = 3
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -586,7 +660,7 @@ focus_tree = {
 		id = SIA_phibun_resigns
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_thai_national_anthem
-		x = -3
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -597,7 +671,7 @@ focus_tree = {
 		id = SIA_total_dictatorial_powers
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_thai_national_anthem
-		x = 3
+		x = 7
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -608,7 +682,7 @@ focus_tree = {
 		id = SIA_expand_the_special_branch
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_purge
-		x = 4
+		x = 6
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -618,7 +692,7 @@ focus_tree = {
 		id = SIA_thai_irredentism
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_purge
-		x = 6
+		x = 9
 		y = 3
 		cost = 10
 		completion_reward = { }
@@ -2347,44 +2421,13 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
-		id = SIA_economic_nationalism #Thai Use, Thai Made, Thai Prosper
+		id = SIA_granary_of_the_orient
 		icon = GFX_goal_unknown
 		x = 1	
 		y = 1
 
 		relative_position_id = SIA_rice_security
-		prerequisite = { focus = SIA_rice_security focus = SIA_rubber_processing }
-		mutually_exclusive = { focus = SIA_to_new_markets }
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-
-		completion_reward = { }
-	}
-	
-	focus = {
-		id = SIA_to_new_markets
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-
-		relative_position_id = SIA_rubber_processing
 		prerequisite = { focus = SIA_rice_security focus = SIA_rubber_processing}
-		mutually_exclusive = { focus = SIA_economic_nationalism }
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-
-		completion_reward = { }
-	}
-	focus = {
-		id = SIA_granary_of_the_orient
-		icon = GFX_goal_unknown
-		x = -3	
-		y = 1
-
-		relative_position_id = SIA_to_new_markets
-		prerequisite = { focus = SIA_economic_nationalism focus = SIA_to_new_markets }
 		mutually_exclusive = { focus = SIA_industrialized_the_nation }
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -2394,11 +2437,11 @@ focus_tree = {
 	focus = {
 		id = SIA_industrialized_the_nation
 		icon = GFX_goal_unknown
-		x = 1	
+		x = -1
 		y = 1
 
-		relative_position_id = SIA_to_new_markets
-		prerequisite = { focus = SIA_economic_nationalism focus = SIA_to_new_markets }
+		relative_position_id = SIA_rubber_processing
+		prerequisite = { focus = SIA_rice_security focus = SIA_rubber_processing}
 		mutually_exclusive = { focus = SIA_granary_of_the_orient }
 		cost = 2
 		ai_will_do = { factor = 1 }
