@@ -1924,15 +1924,14 @@ focus_tree = {
 			}
 			create_equipment_variant = {
 				name = "Prajadhipok"
-				type = cv_small_plane_airframe_2
+				type = small_plane_airframe_1
 				design_team = mio:SIA_aeronautical_workshop_organization
 				allow_without_tech = yes
 				modules = {
-					fixed_main_weapon_slot = light_mg_2x
+					fixed_main_weapon_slot = light_mg_4x
 					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-					engine_type_slot = engine_3_1x
+					engine_type_slot = engine_2_1x
 					special_type_slot_1 = drop_tanks
-					special_type_slot_2 = fuel_tanks_small
 				}
 			}
 		}
@@ -1957,15 +1956,16 @@ focus_tree = {
             }	
 			create_equipment_variant = {
 				name = "Bonipatra"
-				type = cv_small_plane_airframe_2
+				type = medium_plane_airframe_1
 				design_team = mio:SIA_aeronautical_workshop_organization
 				allow_without_tech = yes
 				modules = {
-					fixed_main_weapon_slot = light_mg_2x
-					fixed_auxiliary_weapon_slot_1 = bomb_locks
-					engine_type_slot = engine_3_1x
-					special_type_slot_1 = drop_tanks
-					special_type_slot_2 = fuel_tanks_small
+					fixed_main_weapon_slot = medium_bomb_bay
+					fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+					fixed_auxiliary_weapon_slot_2 = torpedo_mounting
+					fixed_auxiliary_weapon_slot_3 = bomb_locks
+					engine_type_slot = engine_3_2x
+					special_type_slot_1 = lmg_defense_turret_2x
 				}
 			}		
 		}
