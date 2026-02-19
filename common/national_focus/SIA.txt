@@ -1955,7 +1955,7 @@ focus_tree = {
                 category = light_air
             }	
 			create_equipment_variant = {
-				name = "Bonipatra"
+				name = "Boripatra"
 				type = medium_plane_airframe_1
 				design_team = mio:SIA_aeronautical_workshop_organization
 				allow_without_tech = yes
