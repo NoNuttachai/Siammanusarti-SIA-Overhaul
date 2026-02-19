@@ -2196,18 +2196,6 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_chinese_assimilation_policy }
 	}
 	focus = {
-		id = SIA_send_volunteer_forces_to_china
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_attract_chinese_capital
-		x = -1
-		y = 1
-		cost = 10
-		available = {}
-		completion_reward = { }
-		prerequisite = { focus = SIA_attract_chinese_capital }
-		
-	}
-	focus = {
 		id = SIA_curb_chinese_immigration
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_attract_chinese_capital
