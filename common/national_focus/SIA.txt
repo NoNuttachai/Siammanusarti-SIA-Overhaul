@@ -520,6 +520,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_cultural_revolution }
+		prerequisite = { focus = SIA_pan_thai_nationalism }
 	}
 	focus = {
 		id = SIA_install_pridi_as_economic_minister
@@ -565,22 +566,11 @@ focus_tree = {
 		id = SIA_language_reform
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_cultural_revolution
-		x = -1
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_cultural_revolution }
-	}
-	focus = {
-		id = SIA_protect_the_weak
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_cultural_revolution
-		x = 7
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_cultural_revolution }
-		prerequisite = { focus = SIA_pan_thai_nationalism }
 	}
 	focus = {
 		id = SIA_honor_the_flag
@@ -606,7 +596,7 @@ focus_tree = {
 		id = SIA_militarized_society
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_pan_thai_nationalism
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -627,7 +617,7 @@ focus_tree = {
 		id = SIA_total_dictatorial_powers
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_language_reform
-		x = 7
+		x = 3
 		y = 1
 		cost = 10
 		completion_reward = { }
