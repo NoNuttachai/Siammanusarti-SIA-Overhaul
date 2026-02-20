@@ -107,6 +107,12 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_constitutionalism }
 		prerequisite = { focus = SIA_crown_property_act }
@@ -119,6 +125,12 @@ focus_tree = {
 		x = -5
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_marshal_phibun_ascension }
@@ -477,6 +489,12 @@ focus_tree = {
 		x = 5
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_pridi_premiership }

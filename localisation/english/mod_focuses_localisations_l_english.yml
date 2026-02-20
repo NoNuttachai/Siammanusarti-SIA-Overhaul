@@ -666,3 +666,5 @@ SIA_protect_the_weak_desc: "TBA"
 
 SIA_pan_thai_nationalism: "Pan-Thai Nationalism"
 SIA_pan_thai_nationalism_desc: "TBA"
+
+cannot_be_completed_manually: "This focus cannot be completed manually."

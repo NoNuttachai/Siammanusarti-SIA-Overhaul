@@ -30,3 +30,15 @@ SIA_towards_a_greater_thailand = {
 	}
 	allowed = { original_tag = SIA }
 }
+
+SIA_succession_of_khana_ratsadon = {
+	icon = generic_propaganda
+	#picture = GFX_category_the_six_principles
+	priority = 10
+	visible_when_empty = yes
+	
+	visible = {
+  		has_country_flag = SIA_phraya_declares_intent
+	}
+	allowed = { original_tag = SIA } 
+}
