@@ -258,6 +258,16 @@ SIA_succession_of_khana_ratsadon = {
 					ruling_party = democratic
 					elections_allowed = yes
 				}
+				set_party_name = {
+					ideology = democratic
+					long_name = khana_ratsadon_main
+					name = khana_ratsadon_main
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = royal_thai_armed_forces_party
+					name = royal_thai_armed_forces_party
+				}
 				complete_national_focus = SIA_pridi_premiership				
 			}
 			custom_effect_tooltip = SIA_phraya_steps_down_fas_tt
