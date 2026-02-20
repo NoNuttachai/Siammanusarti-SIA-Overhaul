@@ -91,7 +91,7 @@ country_event = {
 			ideology = moderatism
 			trait = crown_property_scandal
 		}
-		country_event = { id = sia_events.2 days = 17 }
+		hidden_effect = { country_event = { id = sia_events.2 days = 17 } }
 	}
 }
 
@@ -105,10 +105,7 @@ country_event = {
 
     option = {
         name = sia_events.2.a
-        add_power_balance_value = {
-            id = SIA_BOP
-            value = -0.05
-        }
+		add_stability = -0.05
     }
 }
 
@@ -193,6 +190,7 @@ country_event = {
 			long_name = royal_thai_armed_forces_party
 			name = royal_thai_armed_forces_party
 		}
+		promote_character = SIA_phraya_songsuradet
 		complete_national_focus = SIA_pridi_premiership
     }
 }

@@ -368,6 +368,9 @@ characters={
 				small="gfx/interface/ideas/advisors/idea_phraya_songsuradet.dds"
 				large="gfx/leaders/SIA/Phraya_Songsuradet.dds"
 			}
+			civilian = {
+				large="gfx/leaders/SIA/Phraya_Songsuradet.dds"
+			}
 		}
 		corps_commander={
 			traits={ ratsadon_member }
@@ -377,6 +380,13 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			traits = { pridi_noble_title }
+			id=-1
 		}
 	}
 
@@ -437,7 +447,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_marshal_phibun_ascension
+				has_completed_focus = SIA_phraya_phanon_steps_down
 				NOT = { has_government = communism }
 			}
 			traits = {fascist_demagogue}
@@ -541,7 +551,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_civilian_faction_leadership
+				has_completed_focus = SIA_phraya_phanon_steps_down
 				NOT = { has_government = communism }
 			}
 			traits = {pro_democracy_journalist}

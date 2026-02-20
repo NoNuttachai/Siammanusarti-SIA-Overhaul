@@ -251,9 +251,9 @@ SIA_succession_of_khana_ratsadon = {
 
 		timeout_effect = {
 			custom_effect_tooltip = SIA_phraya_steps_down_tt
-			custom_effect_tooltip = newline_tt
+			custom_effect_tooltip = double_empty_line
 			custom_effect_tooltip = SIA_phraya_steps_down_dem_tt
-			tooltip = {
+			effect_tooltip = {
 				set_politics = {
 					ruling_party = democratic
 					elections_allowed = yes
@@ -268,10 +268,12 @@ SIA_succession_of_khana_ratsadon = {
 					long_name = royal_thai_armed_forces_party
 					name = royal_thai_armed_forces_party
 				}
-				complete_national_focus = SIA_pridi_premiership				
+				promote_character = SIA_phraya_songsuradet
+				complete_national_focus = SIA_pridi_premiership					
 			}
+			custom_effect_tooltip = double_empty_line
 			custom_effect_tooltip = SIA_phraya_steps_down_fas_tt
-			tooltip = {
+			effect_tooltip = {
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no

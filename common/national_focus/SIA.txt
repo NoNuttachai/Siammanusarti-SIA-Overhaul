@@ -36,11 +36,6 @@ focus_tree = {
         completion_reward = { 
             add_political_power = 50
             add_stability = 0.1
-            add_power_balance_value = {
-                id = SIA_BOP
-                value = 0.10
-                tooltip_side = SIA_RH_KHANA
-            }
             # Unlocking the Balance of Power decision to: “Entice the People” 
             # This flag is used to show the specific decision.
             set_country_flag = sia_bop_decision_entice_the_people_unlocked
