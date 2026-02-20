@@ -91,6 +91,10 @@ country_event = {
 			ideology = moderatism
 			trait = crown_property_scandal
 		}
+		remove_trait = {
+			character = SIA_phraya_phahon
+			trait = siamese_revolutionary_leader
+		}
 		hidden_effect = { country_event = { id = sia_events.2 days = 17 } }
 	}
 }
