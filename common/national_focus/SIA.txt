@@ -108,12 +108,13 @@ focus_tree = {
 		y = 2
 		cost = 10
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = cannot_be_completed_manually
-				always = no
+			SIA_phraya_phahon = {
+				has_trait = crown_property_scandal
 			}
 		}
-		completion_reward = { }
+		completion_reward = {
+			country_event = sia_events.4
+		}
 		prerequisite = { focus = SIA_constitutionalism }
 		prerequisite = { focus = SIA_crown_property_act }
 		prerequisite = { focus = SIA_propagandize_six_principles }

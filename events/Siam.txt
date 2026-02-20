@@ -109,7 +109,6 @@ country_event = {
             id = SIA_BOP
             value = -0.05
         }
-		country_event = { id = sia_events.4 days = 5 }
     }
 }
 
