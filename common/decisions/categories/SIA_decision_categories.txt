@@ -33,7 +33,7 @@ SIA_towards_a_greater_thailand = {
 
 SIA_succession_of_khana_ratsadon = {
 	icon = generic_propaganda
-	#picture = GFX_category_the_six_principles
+	picture = GFX_category_phibun_vs_pridi
 	priority = 10
 	visible_when_empty = yes
 	
