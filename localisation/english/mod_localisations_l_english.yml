@@ -103,7 +103,7 @@ SIA_phraya_steps_down: "Phraya Phahon Steps Down"
 SIA_debug_dem_pop: "Debug - Democratic Popularity +25%"
 SIA_debug_fas_pop: "Debug - Fascism Popularity +25%"
 SIA_phraya_steps_down_tt: "With a successor secured, §YPhraya Phahon§! resigns."
-SIA_phraya_steps_down_dem_tt: "If §YDemocratic§! party popularity is greater than §!Fascist§! party popularity:"
+SIA_phraya_steps_down_dem_tt: "If §YDemocratic§! support is greater than §!Fascist§! support:"
 SIA_phraya_steps_down_fas_tt: "Otherwise:"
 
 sia_events.5.t: "Phraya Phahon Resigns at Last"
