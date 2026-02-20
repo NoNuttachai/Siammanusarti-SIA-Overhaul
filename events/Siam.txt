@@ -137,8 +137,14 @@ country_event = {
 
     option = {
         name = sia_events.4.a
+		hidden_effect = {
+			set_variable = { days_until_resignation = global.num_days }
+			subtract_from_variable = { days_until_resignation = 706640 } # Start of the game is now Day 0
+			subtract_from_variable = { days_until_resignation = 1077 }
+			multiply_variable = { days_until_resignation = -1 }
+		}
 		unlock_decision_category_tooltip = SIA_succession_of_khana_ratsadon
-		hidden_effect = { set_country_flag = SIA_phraya_declares_intent }
+		hidden_effect = { set_country_flag = SIA_phraya_declares_intent activate_mission = SIA_phraya_steps_down }
     }
 }
 

@@ -230,12 +230,12 @@ SIA_succession_of_khana_ratsadon = {
 			hidden_trigger = { always = no }
 		}
 
-		days_mission_timeout = 1000
+		days_mission_timeout = days_until_resignation
 
 		fire_only_once = yes
 
 		activation = {
-			has_country_flag = SIA_phraya_declares_intent
+			always = no
 		}
 
 		visible = {
