@@ -57,7 +57,7 @@ focus_tree = {
             add_ideas = SIA_crown_property_act_benefit
             289 = {
                 add_building_construction = {
-                    type = civilian_factory
+                    type = industrial_complex
                     level = 1
                     instant_build = yes
                 }
@@ -178,7 +178,12 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.25
+			}
+		}
 		prerequisite = { focus = SIA_pridi_premiership }
 	}
 	focus = {
