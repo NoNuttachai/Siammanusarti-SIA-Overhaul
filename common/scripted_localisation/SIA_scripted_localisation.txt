@@ -58,3 +58,16 @@ defined_text = {
 	}
 	text = { localization_key = "JAP_alliance_with_siam_name" }
 }
+
+defined_text = {
+	name = SIA_phraya_successor
+	text = {
+		trigger = {
+			check_variable = {
+				party_popularity@fascism < party_popularity@democratic
+			}
+		}
+		localization_key = "Pridi Banomyong"
+	}
+	text = { localization_key = "Plaek Phibunsongkhram" }
+}

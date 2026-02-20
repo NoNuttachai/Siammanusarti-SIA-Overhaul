@@ -252,4 +252,48 @@ SIA_succession_of_khana_ratsadon = {
 		timeout_effect = {
 		}
 	}	
+	SIA_debug_dem_pop = {
+		icon = GFX_decision_icon_default
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {		
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.25
+			}
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	SIA_debug_fas_pop = {
+		icon = GFX_decision_icon_default
+		visible = {
+			is_ai = no
+			is_debug = yes
+		}
+		available = {		
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.25
+			}
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
 }
