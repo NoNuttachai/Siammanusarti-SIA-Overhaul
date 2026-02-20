@@ -148,6 +148,45 @@ country_event = {
     }
 }
 
+country_event = {
+    id = sia_events.5
+    title = sia_events.5.t
+    desc = sia_events.5.d
+    picture = report_event_crown_property_scandal
+
+    is_triggered_only = yes
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = SIA_phraya_declares_intent
+		}		
+	}
+
+    option = {
+        name = sia_events.5.a # The Marshal is ascendant.
+		trigger = {
+			OR = { check_variable = { party_popularity@fascism > party_popularity@democratic } check_variable = { party_popularity@fascism = party_popularity@democratic } }
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}	
+		complete_national_focus = SIA_marshal_phibun_ascension
+    }
+
+    option = {
+        name = sia_events.5.b # The regent wins out.
+		trigger = {
+			check_variable = { party_popularity@fascism < party_popularity@democratic }
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		complete_national_focus = SIA_pridi_premiership
+    }
+}
+
 country_event = { # Bangkok Floods
     id = sia_events.66
     title = sia_events.66.t

@@ -63,9 +63,7 @@ defined_text = {
 	name = SIA_phraya_successor
 	text = {
 		trigger = {
-			check_variable = {
-				party_popularity@fascism < party_popularity@democratic
-			}
+			check_variable = { party_popularity@fascism < party_popularity@democratic }
 		}
 		localization_key = "Pridi Banomyong"
 	}

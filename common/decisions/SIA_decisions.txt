@@ -250,6 +250,7 @@ SIA_succession_of_khana_ratsadon = {
 		is_good = yes
 
 		timeout_effect = {
+			country_event = sia_events.5
 		}
 	}	
 	SIA_debug_dem_pop = {
