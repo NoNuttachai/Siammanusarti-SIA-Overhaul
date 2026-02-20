@@ -251,6 +251,23 @@ SIA_succession_of_khana_ratsadon = {
 
 		timeout_effect = {
 			custom_effect_tooltip = SIA_phraya_steps_down_tt
+			custom_effect_tooltip = newline_tt
+			custom_effect_tooltip = SIA_phraya_steps_down_dem_tt
+			tooltip = {
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				complete_national_focus = SIA_pridi_premiership				
+			}
+			custom_effect_tooltip = SIA_phraya_steps_down_fas_tt
+			tooltip = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}	
+				complete_national_focus = SIA_marshal_phibun_ascension				
+			}
 			hidden_effect = { country_event = sia_events.5 }
 		}
 	}	
