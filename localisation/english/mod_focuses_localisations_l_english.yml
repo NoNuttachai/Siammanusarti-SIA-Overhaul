@@ -60,6 +60,7 @@ SIA_freed_royalist_political_prisoners: "Freed Royalist Political Prisoners"
 
 SIA_curtail_the_army: "Curtail the Army"
 SIA_curtail_the_army_desc: ""
+SIA_has_75_dem_support: "Have at least §Y75%§! Democratic support"
 
 SIA_reappoint_army_generals: "Reappoint Army Generals"
 SIA_reappoint_army_generals_desc: ""

@@ -144,7 +144,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_pridi_premiership }
 	}
 	focus = {
-		id = SIA_align_with_navy
+		id = SIA_promote_democratic_ideals
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_pridi_premiership
 		x = 2
@@ -203,12 +203,18 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIA_has_75_dem_support
+				check_variable = { party_popularity@democratic > 0.745 }
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_amend_the_constitution }
-		prerequisite = { focus = SIA_align_with_navy }
+		prerequisite = { focus = SIA_promote_democratic_ideals }
 	}
 	focus = {
-		id = SIA_promote_democratic_ideals
+		id = SIA_align_with_navy
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_amend_the_constitution
 		x = 1
@@ -227,7 +233,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus =SIA_curtail_the_army }
-		prerequisite = { focus = SIA_promote_democratic_ideals }
+		prerequisite = { focus = SIA_align_with_navy }
 	}
 	focus = {
 		id = SIA_khana_ratsadon_reelected
