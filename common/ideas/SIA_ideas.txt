@@ -243,6 +243,22 @@ ideas = {
 				stability_factor = 0.15
 			}
 		}
+		SIA_buddhism_2 = {
+			removal_cost = -1
+			
+			picture = SIA_buddhism
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				war_support_factor = -0.1
+				recruitable_population_factor = -0.05
+				stability_factor = 0.15
+				weekly_manpower = 500
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
 		
 		SIA_prepare_for_war_idea = {
 			name = SIA_prepare_for_war
@@ -694,6 +710,18 @@ ideas = {
 				justify_war_goal_time = 0.15
 				democratic_drift = 0.1
 			}
+		}
+
+		SIA_thammasat_university = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				political_power_gain = 0.25
+			}			
 		}
 	}
 }

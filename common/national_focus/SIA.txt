@@ -45,6 +45,33 @@ focus_tree = {
     }
 
 	focus = {
+		id = SIA_thammasat_university #bonus for PP gain, no research bonus because the uni is focused only on political degrees then
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_legacy_of_revolution
+		x = -2
+		y = 1
+		cost = 10
+		completion_reward = { add_ideas = SIA_thammasat_university }
+		prerequisite = { focus = SIA_legacy_of_revolution }
+	}
+
+	focus = {
+		id = SIA_reform_the_sangha
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_legacy_of_revolution
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = SIA_buddhism
+				add_idea = SIA_buddhism_2
+			}
+		}
+		prerequisite = { focus = SIA_legacy_of_revolution }
+	}
+
+	focus = {
 		id = SIA_crown_property_act
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_legacy_of_revolution
@@ -152,16 +179,6 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_pridi_premiership }
-	}
-	focus = {
-		id = SIA_thammasat_university #bonus for PP gain, no research bonus because the uni is focused only on political degrees then
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_pridi_premiership
-		x = 4
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_pridi_premiership focus = SIA_marshal_phibun_ascension }
 	}
 	focus = {
 		id = SIA_wat_prachathipatai
