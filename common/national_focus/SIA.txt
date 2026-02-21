@@ -138,7 +138,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = SIA_an_amended_constitution
+		}
 		prerequisite = { focus = SIA_pridi_premiership }
 	}
 	focus = {
@@ -182,6 +184,14 @@ focus_tree = {
 			add_popularity = {
 				ideology = democratic
 				popularity = 0.25
+			}
+			add_timed_idea = {
+				idea = SIA_anti_communist_act_revoked
+				days = 180
+			}
+			add_timed_idea = {
+				idea = SIA_freed_royalist_political_prisoners
+				days = 180
 			}
 		}
 		prerequisite = { focus = SIA_pridi_premiership }
