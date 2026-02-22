@@ -28,6 +28,10 @@ spriteTypes = {
 		texturefile = "gfx/events/report_event_liean_chaiykharn_soaked.dds"
 	}
 	SpriteType = {
+		name = "report_event_phraya_phahon_resigns"
+		texturefile = "gfx/events/report_event_phraya_phahon_resigns.dds"
+	}
+	SpriteType = {
 		name = "report_event_bangkok_flooding"
 		texturefile = "gfx/events/report_event_bangkok_Flooding.dds"
 	}

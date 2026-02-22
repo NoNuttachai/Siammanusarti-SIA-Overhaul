@@ -644,10 +644,13 @@ SIA_entice_the_masses: "Entice the Masses"
 SIA_crown_property_act_benefit: "Centralized Crown Assets"
 SIA_crown_property_act_benefit_desc: "The nationalization of the former Royal Property ensures the state has greater control over key sectors of the economy, boosting industrial growth and providing much-needed capital for the government."
 
+SIA_thammasat_university_natspirit: "Thammasat University"
+SIA_thammasat_university_natspirit_desc: ""I love Thammasat because Thammasat makes me love the people""
+
 SIA_modify_air_force_modifier_tt: "Modify §Y$SIA_air_force_idea_base$§! by:"
 SIA_unlock_siamese_airways_company_limited: "Unlock the '§YSiamese Airways Company Limited§!' Industrial Concern."
 
-SIA_country_name_change: "Nation Name Change"
+SIA_country_name_change: "Country Name Change"
 SIA_country_name_change_desc: "TBA"
 
 SIA_security_of_the_nation: "Security of the Nation"
@@ -656,7 +659,7 @@ SIA_security_of_the_nation_desc: "TBA"
 SIA_honor_the_flag: "National Anthem of Thailand"
 SIA_honor_the_flag_desc: "TBA"
 
-SIA_national_construction: "National Construction"
+SIA_national_construction: "National Construction Policy" 
 SIA_national_construction_desc: "TBA"
 
 SIA_uniform_clothing: "Uniform Clothing"

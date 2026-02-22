@@ -97,8 +97,9 @@ sia_events.2.d: "While opposition MP Lien Chaiyacharn was enjoying a drink after
 sia_events.2.a: "Very unprofessional of the MPs"
 
 sia_events.4.t: "Phraya Phahon Announces Intent to Resign"
-sia_events.4.d: "TBA"
-sia_events.4.a: "Storm clouds gather over Khana Ratsadon."
+sia_events.4.d: "Phraya Phahon has announced that he will be resigning from his post as Prime Minister and dissolving Parliament due to the Crown Property Scandal and heavy backlash from the opposition. \n\nHowever, the Regents reappointed Phraya Phahon and urged him to continue his office as caretaker Prime Minister until a successor from Khana Ratsadon could be chosen. Begrudgingly, Phraya Phahon accepted their appointment and continued his tenure as Prime Minister."
+sia_events.4.a: "The question is, who choose succeed?"
+
 SIA_succession_of_khana_ratsadon: "Succession of Khana Ratsadon"
 SIA_succession_of_khana_ratsadon_desc: "Although Phraya Phahon has announced his plans to resign, the regents to His Majesty reappointed him as caretaker prime minister until a suitable candidate could assume leadership of Khana Ratsadon.\n\nTwo major candidates are being considered: the para-fascist Plaek Phibunsongkhram and the leftist Pridi Banomyong. Though they are political opposites, both served together in the Siamese Revolution and currently hold ministerial positions in Phraya Phahon's cabinet.\n\nShould either rise to leadership, Siam could be steered in profoundly different directions.\n\nWith our current party popularityh, §Y[Root.SIA_phraya_successor]§! will succeed §YPhraya Phahon§! as leader."
 SIA_phraya_steps_down: "Phraya Phahon Steps Down"

@@ -132,7 +132,7 @@ country_event = {
     id = sia_events.4
     title = sia_events.4.t
     desc = sia_events.4.d
-    picture = report_event_crown_property_scandal
+    picture = report_event_phraya_phahon_resigns
 
     is_triggered_only = yes
 
@@ -153,7 +153,7 @@ country_event = {
     id = sia_events.5
     title = sia_events.5.t
     desc = sia_events.5.d
-    picture = report_event_crown_property_scandal
+    picture = report_event_phraya_phahon_resigns
 
     is_triggered_only = yes
 
