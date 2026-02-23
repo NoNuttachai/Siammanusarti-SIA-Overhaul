@@ -158,8 +158,7 @@ JAP_alliance_with_siam_name: "Military Access Through Siam"
 JAP_alliance_with_siam_name2: "Invade Siam"
 
 SIA_purchase_new_arms: "Purchase New Arms"
-SIA_purchase_new_arms_desc: "To bridge the gap in our military capabilities, we must seek out foreign suppliers and secure the best arms available on the international market.By evaluating offers from established powers, we can quickly equip our forces with advanced weaponry while we build up our own industry."
-
+SIA_purchase_new_arms_desc: "Thailand/Siam must acquire the latest weaponry available on the global stage, and that includes modern arms across all branches of the armed forces to ensure our military remains strong and capable, to face off any threat"
 SIA_purchase_trucks: "Purchase Trucks"
 SIA_purchase_trucks_desc: "In order to improve logistics and troop mobility, we must acquire modern motorized vehicles from abroad. This temporary reliance on foreign models will allow us to rapidly expand our mechanized forces while we develop domestic alternatives."
 
@@ -249,6 +248,8 @@ SIA_increase_the_reserve_force: "Increase The Reserve Force"
 SIA_yuwachon_thahan: "Yuwachon Thahan"
 SIA_yuwanaree: "Yuwanaree"
 SIA_bicycle_infantry: "Bicycle Infantry"
+SIA_motorized_infantry: "Motorized Infantry"
+SIA_mechanized_infantry: "Mechanized Infantry Investments"
 SIA_import_foreign_tanks: "Import Foreign Tanks"
 SIA_expand_naval_repair_facilities: "Expand Naval Repair Facilities"
 SIA_acquire_bangkok_dock_co: "Acquire Bangkok Dock Co"

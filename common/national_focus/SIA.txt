@@ -1065,6 +1065,9 @@ focus_tree = {
 				SIA_army_speed_factor_var = -0.1
 				tooltip = army_speed_factor_tt 
 			}
+			add_dynamic_modifier = {
+				modifier = FRA_maginot_line_dynamic_modifier
+			}
 		}
 	}
 	focus = {
@@ -1276,8 +1279,136 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_yuwachon_thahan }
-		completion_reward = { }
+		completion_reward = {
+			SIA = {
+				set_technology = {
+					bicycle_infantry = 1
+				}
+				add_unit_bonus = {
+					infantry = {
+						maximum_speed = 0.05
+					}
+				}
+			}
+		}
 	}
+
+	focus = {
+		id = SIA_motorized_infantry
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_bicycle_infantry
+		x = 0
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus =  SIA_bicycle_infantry }
+		completion_reward = { 
+			if = {
+				limit = {
+				OR = {
+					has_completed_focus = SIA_adopt_japanese_aircraft
+					is_ally_with = JAP
+					gives_military_access_to = JAP
+				}
+			}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 600
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 300
+				}
+				set_country_flag = SIA_jap_alliance
+			}
+			if = {
+				limit = {
+				OR = {
+					has_completed_focus = SIA_adopt_western_aircraft
+					is_ally_with = ENG
+					is_ally_with = USA
+					gives_military_access_to = USA
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 250
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+				}
+				add_fuel = 1500
+				set_country_flag = SIA_wst_alliance
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 300
+				}
+				add_fuel = 500
+			}
+		}
+
+	
+	focus = {
+		id = SIA_mechanized_infantry
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_motorized_infantry
+		x = 0
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_motorized_infantry }
+		completion_reward = { 
+			if = {
+				limit = {
+				OR = {
+					has_completed_focus = SIA_adopt_japanese_aircraft
+					is_ally_with = JAP
+					gives_military_access_to = JAP
+				}
+			}
+				add_equipment_to_stockpile = {
+					type = mechanized_equipment
+					amount = 200
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_destroyer_equipment_1
+					amount = 100
+				}
+			}
+			if = {
+				limit = {
+				OR = {
+					has_completed_focus = SIA_adopt_western_aircraft
+					is_ally_with = ENG
+					is_ally_with = USA
+					gives_military_access_to = USA
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = mechanized_equipment
+					amount = 100
+					producer = USA
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_aa_equipment_1
+					amount = 125
+					producer = USA
+				}
+				add_fuel = 1500
+			else_if = {
+				add_equipment_to_stockpile = {
+					type = mechanized_equipment
+					amount = 200
+				}
+				add_fuel = 500
+			}
+		}
+	}
+}
 	focus = {
 		id = SIA_purchase_new_arms
 		icon = gfx_goal_unknown
@@ -1889,8 +2020,13 @@ focus_tree = {
 		prerequisite = { focus = SIA_western_aviation_studies }
 		prerequisite = { focus = SIA_build_eastern_air_bases }
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 250
+			}
+			add_political_power = -50
 			#international arms market purchase bonus
-		 }
+		}
 	}
 	focus = {
 		id = SIA_adopt_japanese_aircraft #historical
@@ -1904,7 +2040,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_purchase_foreign_aircraft
 		completion_reward = {
-
+			#add_idea
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 50
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = CAS_equipment_1
+				amount = 25
+				producer = JAP
+			}
+			create_production_license = {
+				target = JAP
+				new_prioritised = yes
+				equipment = {
+					type = fighter_equipment_2
+				}
+			}
 			#national spirit which increases CAS production cost but gives slightly better damage
 		}
 	}
@@ -2100,7 +2253,16 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		completion_reward = { 
-
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 50
+				producer = ENG
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_2
+				amount = 75
+				producer = USA
+			}
 			### give you a bunch of free planes
 
 		}
@@ -2185,7 +2347,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = 14
+		x = 21
 		y = 1
 		
 		cost = 2
@@ -2200,7 +2362,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_revitalize_the_economy
 		x = 3
-		y = 1
+		y = 3
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_revitalize_the_economy }
@@ -2245,7 +2407,7 @@ focus_tree = {
 		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_attract_chinese_capital
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -2266,7 +2428,7 @@ focus_tree = {
 	focus = {
 		id = SIA_rural_provincial_development
 		icon = GFX_focus_sia_rural_provincial_development
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		relative_position_id = SIA_revitalize_the_economy
@@ -2302,8 +2464,8 @@ focus_tree = {
 	focus = {
 		id = SIA_bangkok_urbanization
 		icon = GFX_focus_sia_bangkok_urbanization
-		x = 1	
-		y = 1
+		x = 2
+		y = 2
 
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		relative_position_id = SIA_revitalize_the_economy
@@ -2325,7 +2487,7 @@ focus_tree = {
 		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย #Country is NOT democratic #Phraya Phahon is NOT leader
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_curb_chinese_immigration
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -2335,8 +2497,8 @@ focus_tree = {
 	focus = {
 		id = SIA_encorage_rubber_plantations
 		icon = GFX_focus_generic_rubber_plantations
-		x = 1	
-		y = 1
+		x = 3	
+		y = 2
 		prerequisite = { focus = SIA_bangkok_urbanization }
 		relative_position_id = SIA_bangkok_urbanization
 
@@ -2353,8 +2515,8 @@ focus_tree = {
 	focus = {
 		id = SIA_rice_security #Thai Rice Company IF country is Fascist
 		icon = GFX_goal_unknown
-		x = -3	
-		y = 1
+		x = -2
+		y = 2
 
 		relative_position_id = SIA_revitalize_the_economy
 		prerequisite = { focus = SIA_revitalize_the_economy }
@@ -2368,7 +2530,7 @@ focus_tree = {
 		id = SIA_iron_buffalos
 		icon = GFX_focus_Iron_Buffaloes
 		icon = gfx_goal_unknown
-		x = 1	
+		x = -1	
 		y = 1
 
 		relative_position_id = SIA_rice_security
@@ -2384,7 +2546,7 @@ focus_tree = {
 	focus = {
 		id = SIA_granary_of_the_orient
 		icon = GFX_goal_unknown
-		x = 1	
+		x = 3	
 		y = 1
 
 		relative_position_id = SIA_iron_buffalos
@@ -2398,7 +2560,7 @@ focus_tree = {
 	focus = {
 		id = SIA_industrialized_the_nation
 		icon = GFX_goal_unknown
-		x = 3
+		x = 6
 		y = 1
 
 		relative_position_id = SIA_iron_buffalos
@@ -2412,7 +2574,7 @@ focus_tree = {
 	focus = {
 		id = SIA_mining_industry #merge with mah moi mine to decrease amount of focuses
 		icon = GFX_focus_generic_mining_industry
-		x = -1
+		x = 1
 		y = 1
 
 		relative_position_id = SIA_iron_buffalos
@@ -2434,7 +2596,7 @@ focus_tree = {
 	focus = {
 		id = SIA_survay_fang_oil_well
 		icon = GFX_goal_generic_oil_refinery
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = SIA_iron_buffalos
 		prerequisite = { focus = SIA_iron_buffalos }
@@ -2453,7 +2615,7 @@ focus_tree = {
 	focus = {
 		id = SIA_military-led_industries
 		icon = GFX_focus_PRC_equipment_from_copper_coins
-		x = 1	
+		x = 0
 		y = 1
 	
 		prerequisite = { focus = SIA_rural_provincial_development focus = SIA_bangkok_urbanization }
@@ -2481,7 +2643,7 @@ focus_tree = {
 	focus = {
 		id = SIA_education_for_all
 		icon = GFX_focus_Education_for_All
-		x = -1	
+		x = 0
 		y = 1
 		prerequisite = { focus = SIA_chula_uni }
 		relative_position_id = SIA_chula_uni
@@ -2496,7 +2658,7 @@ focus_tree = {
 	focus = {
 		id = SIA_rail_expansion
 		icon = GFX_goal_unknown
-		x = 2	
+		x = 3
 		y = 2
 		prerequisite = { focus = SIA_phahonyothin_road }
 		prerequisite = { focus = SIA_encorage_rubber_plantations }
@@ -2513,8 +2675,8 @@ focus_tree = {
 	focus = {
 		id = SIA_road_construction
 		icon = GFX_goal_unknown
-		x = 0	
-		y = 2
+		x = 4
+		y = 1
 		prerequisite = { focus = SIA_phahonyothin_road }
 		prerequisite = { focus = SIA_encorage_rubber_plantations }
 		relative_position_id = SIA_phahonyothin_road
@@ -2620,7 +2782,7 @@ focus_tree = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_goal_unknown
-		x = 65
+		x = 74
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }

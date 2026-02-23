@@ -720,7 +720,18 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = 0.25
-			}			
+			}
+		}
+		SIA_fortification_boon = {
+			removal_cost = -1
+			picture = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
+			allowed = {
+				always = yes
+				has_completed_focus = SIA_prepare_defensive_infrastructure
+			}
+			modifier = {
+				production_speed_bunker_factor = 0.2
+			}
 		}
 	}
 }
