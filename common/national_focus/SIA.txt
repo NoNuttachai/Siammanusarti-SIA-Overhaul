@@ -1271,7 +1271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_bicycle_infantry
-		icon = gfx_goal_unknown
+		icon = GFX_focus_SWE_bicycle
 		relative_position_id = SIA_yuwachon_thahan
 		x = 0
 		y = 2
@@ -1295,7 +1295,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_motorized_infantry
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		relative_position_id = SIA_bicycle_infantry
 		x = 0
 		y = 1
@@ -1353,7 +1353,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_mechanized_infantry
-		icon = gfx_goal_unknown
+		icon = GFX_SOV_pc_of_mechanical_engineering_ccp_2d_sov_compatibility
 		relative_position_id = SIA_motorized_infantry
 		x = 0
 		y = 1
