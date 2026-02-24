@@ -1071,7 +1071,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_something_here
+		id = SIA_terrain_mastery
 		icon = GFX_focus_generic_reinforcing_the_supply_network
 		relative_position_id = SIA_army
 		x = 1
@@ -1103,7 +1103,7 @@ focus_tree = {
 	focus = {
 		id = SIA_offensive_doctrine
 		icon = GFX_goal_unknown
-		relative_position_id = SIA_something_here
+		relative_position_id = SIA_terrain_mastery
 		x = 1
 		y = 2
 		
@@ -1112,7 +1112,7 @@ focus_tree = {
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_something_here }
+		prerequisite = { focus = SIA_terrain_mastery }
 		prerequisite = { focus = SIA_improve_army_logistics }
 		mutually_exclusive = { focus = SIA_prepare_defensive_infrastructure }
 		completion_reward = {
@@ -2730,7 +2730,7 @@ focus_tree = {
 		y = 2
 
 		prerequisite = { focus = SIA_bofors_artillery }
-		prerequisite = { focus = SIA_something_here }
+		prerequisite = { focus = SIA_terrain_mastery }
 		prerequisite = { focus = SIA_bicycle_infantry }
 		relative_position_id = SIA_bofors_artillery
 

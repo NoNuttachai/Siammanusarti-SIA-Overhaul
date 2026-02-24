@@ -186,4 +186,16 @@ SpriteTypes = {
 		name = "GFX_idea_Siam_Generic_land_1"
 		texturefile = "gfx/interface/ideas/advisors/idea_Siam_Generic_land_1.dds"
 	}
+
+	#Texticons
+	spriteType = {
+		name = "GFX_democracy_texticon"
+		texturefile = "gfx/texticons/democracy_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_fascism_texticon"
+		texturefile = "gfx/texticons/fascism_texticon.dds"
+		legacy_lazy_load = no
+	}
 }
