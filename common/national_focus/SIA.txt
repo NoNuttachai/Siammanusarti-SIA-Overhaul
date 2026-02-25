@@ -1465,6 +1465,7 @@ focus_tree = {
 					has_dlc = "No Step Back"
 					has_country_flag = SIA_jap_alliance
 				}
+				hidden_effect = {
 				create_equipment_variant = {
 					type = light_tank_chassis_1
 					name = "Type-95 Ha-Go"
@@ -1480,6 +1481,7 @@ focus_tree = {
 						special_type_slot_4 = empty
 					}
 				}
+			}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					variant_name = "Type-95 Ha-Go"
@@ -1492,6 +1494,7 @@ focus_tree = {
 					has_dlc = "No Step Back"
 					has_country_flag = SIA_wst_alliance
 				}
+				hidden_effect = {
 				create_equipment_variant = {
 					type = light_tank_chassis_1
 					name = "M3 Stuart"
@@ -1506,7 +1509,8 @@ focus_tree = {
 								special_type_slot_3 = empty
 								special_type_slot_4 = empty
 							}
-				}
+						}
+					}
 				add_equipment_to_stockpile = {
 					type = light_tank_chassis_1
 					variant_name = "M3 Stuart"
@@ -1522,13 +1526,61 @@ focus_tree = {
 							has_country_flag = SIA_wst_alliance
 						}
 					}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_equipment_1
+					name = "Type-95 Ha-Go"
+					}
+				}
 					add_equipment_to_stockpile = {
 						type = light_tank_equipment_1
+						variant_name = "Type-95 Ha-Go"
 						amount = 200
 						}
 					}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+						has_country_flag = SIA_jap_alliance
+					}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_equipment_1
+					name = "Type-95 Ha-Go"
+					}
 				}
-			}	
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_1
+						amount = 200
+						variant_name = "Type-95 Ha-Go"
+						producer = JAP
+						}
+					}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+						has_country_flag = SIA_wst_alliance
+					}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_equipment_1
+					name = "M3 Stuart"
+					}
+				}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_1
+						variant_name = "M3 Stuart"
+						amount = 200
+						producer = USA
+						}
+					}
+				}
+			}
+
 	#Police Branch
 	focus = {
 		id = SIA_police
