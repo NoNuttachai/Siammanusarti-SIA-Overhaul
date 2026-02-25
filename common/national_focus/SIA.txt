@@ -1347,7 +1347,7 @@ focus_tree = {
 			if = {
 				limit = {
 				OR = {
-					has_completed_focus = SIA_adopt_western_aircraft
+					has_completed_focus = SIA_adopt_american_aircraft
 					is_ally_with = ENG
 					is_ally_with = USA
 					gives_military_access_to = USA
@@ -1391,6 +1391,7 @@ focus_tree = {
 					is_ally_with = JAP
 					gives_military_access_to = JAP
 				}
+			}
 				add_equipment_to_stockpile = {
 					type = mechanized_equipment
 					amount = 200
@@ -1399,10 +1400,11 @@ focus_tree = {
 					type = light_tank_destroyer_equipment_1
 					amount = 100
 				}
+			}
 			if = {
 				limit = {
 				OR = {
-					has_completed_focus = SIA_adopt_western_aircraft
+					has_completed_focus = SIA_adopt_american_aircraft
 					is_ally_with = ENG
 					is_ally_with = USA
 					gives_military_access_to = USA
@@ -1527,6 +1529,7 @@ focus_tree = {
 						}
 					}
 				}
+			}	
 	#Police Branch
 	focus = {
 		id = SIA_police
@@ -2123,7 +2126,7 @@ focus_tree = {
 		id = SIA_adopt_japanese_aircraft #historical
 		icon = GFX_goal_unknown
 		cost = 5.00
-		mutually_exclusive = { focus = SIA_adopt_western_aircraft }
+		mutually_exclusive = { focus = SIA_adopt_american_aircraft }
 		prerequisite = {
 			focus = SIA_purchase_foreign_aircraft
 		}
@@ -2157,7 +2160,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_strategic_bombing }
-		prerequisite = { focus = SIA_adopt_japanese_aircraft focus = SIA_adopt_western_aircraft }
+		prerequisite = { focus = SIA_adopt_japanese_aircraft focus = SIA_adopt_american_aircraft }
 		x = 1
 		y = 1
 		relative_position_id = SIA_adopt_japanese_aircraft
@@ -2321,7 +2324,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SIA_adopt_western_aircraft
+		id = SIA_adopt_american_aircraft
 		icon = gfx_goal_unknown
 		mutually_exclusive = { focus = SIA_adopt_japanese_aircraft }
 		relative_position_id = SIA_purchase_foreign_aircraft
@@ -2910,7 +2913,6 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
-	
 	focus = {
 		id = SIA_exposed_crown_property_theft
 		icon = gfx_goal_unknown
@@ -3127,8 +3129,5 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 		prerequisite = { focus = SIA_consolidate_absolutist_rule }
-				}
-			}
 		}
 	}
-}
