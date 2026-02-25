@@ -3131,5 +3131,5 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 		prerequisite = { focus = SIA_consolidate_absolutist_rule }
+		}
 	}
-}
