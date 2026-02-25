@@ -1243,8 +1243,29 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
 		prerequisite = { focus = SIA_police }
-		completion_reward = { }
-	}
+		
+		completion_reward = { 
+			add_manpower = 50000
+			add_unit_bonus = {
+				infantry = {
+					recovery = 0.08
+					casualty_trickleback = 0.05
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIA
+					is_controlled_by = SIA
+				}
+				create_unit = {
+				division = "name = \"Taharn Rarb Reserve\" division_template = \"Taharn Rarb\" start_manpower_factor = 1"
+				owner = SIA
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+				id = 1203
+				}	
+			}
+		}
 	focus = {
 		id = SIA_yuwachon_thahan
 		icon = gfx_goal_unknown
@@ -1399,16 +1420,15 @@ focus_tree = {
 					producer = USA
 				}
 				add_fuel = 1500
-			else_if = {
+			}
 				add_equipment_to_stockpile = {
 					type = mechanized_equipment
 					amount = 200
 				}
 				add_fuel = 500
-			}
+			
 		}
 	}
-}
 	focus = {
 		id = SIA_purchase_new_arms
 		icon = gfx_goal_unknown
@@ -1420,7 +1440,13 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
 		prerequisite = { focus = SIA_police }
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 3000
+			}
+		}
 	}
 	focus = {
 		id = SIA_import_foreign_tanks
@@ -1434,8 +1460,76 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 	
-		completion_reward = { }
-	}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_country_flag = SIA_jap_alliance
+				}
+				create_equipment_variant = {
+					type = light_tank_chassis_1
+					name = "Type-95 Ha-Go"
+					modules = {
+						main_armament_slot = tank_small_cannon
+						turret_type_slot = tank_light_one_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = additional_machine_guns
+						special_type_slot_2 = tank_radio_1
+						special_type_slot_3 = empty
+						special_type_slot_4 = empty
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					variant_name = "Type-95 Ha-Go"
+					amount = 250
+					producer = JAP
+						}
+					}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_country_flag = SIA_wst_alliance
+				}
+				create_equipment_variant = {
+					type = light_tank_chassis_1
+					name = "M3 Stuart"
+							modules = {
+								main_armament_slot = tank_small_cannon
+								turret_type_slot = tank_light_two_man_tank_turret
+								suspension_type_slot = tank_bogie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+								special_type_slot_1 = additional_machine_guns
+								special_type_slot_2 = additional_machine_guns
+								special_type_slot_3 = empty
+								special_type_slot_4 = empty
+							}
+				}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					variant_name = "M3 Stuart"
+					amount = 250
+					producer = USA
+						}
+					}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+							has_country_flag = SIA_jap_alliance
+							has_country_flag = SIA_wst_alliance
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_1
+						amount = 200
+						}
+					}
+				}
+			}	
 	#Police Branch
 	focus = {
 		id = SIA_police
@@ -2721,7 +2815,17 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 	
-		completion_reward = { }
+		completion_reward = { 
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment_2
+			amount = 800
+			}
+		add_unit_bonus = {
+			anti_air = {
+				reliability = 0.10
+				}
+			}
+		}
 	}
 	focus = {
 		id = SIA_incorporate_combat_engineers
