@@ -1421,14 +1421,13 @@ focus_tree = {
 					producer = USA
 				}
 				add_fuel = 1500
-			}
 				add_equipment_to_stockpile = {
 					type = mechanized_equipment
 					amount = 200
 				}
 				add_fuel = 500			
 		}
-	
+	}
 	focus = {
 		id = SIA_purchase_new_arms
 		icon = gfx_goal_unknown
@@ -2349,12 +2348,12 @@ focus_tree = {
 		completion_reward = { 
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_2
-				amount = 50
-				producer = ENG
+				amount = 150
+				producer = USA
 			}
 			add_equipment_to_stockpile = {
-				type = fighter_equipment_2
-				amount = 75
+				type = CAS_equipment_1
+				amount = 100
 				producer = USA
 			}
 			### give you a bunch of free planes
