@@ -1239,7 +1239,29 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
 		prerequisite = { focus = SIA_police }
-		completion_reward = { }
+		
+		completion_reward = { 
+			add_manpower = 50000
+			add_unit_bonus = {
+				infantry = {
+					recovery = 0.08
+					casualty_trickleback = 0.05
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIA
+					is_controlled_by = SIA
+				}
+				create_unit = {
+				division = "name = \"Taharn Rarb Reserve\" division_template = \"Taharn Rarb\" start_manpower_factor = 1"
+				owner = SIA
+				count = 1
+				allow_spawning_on_enemy_provs = yes
+				id = 1203
+				}	
+			}
+		}
 	}
 	focus = {
 		id = SIA_yuwachon_thahan
@@ -1292,13 +1314,13 @@ focus_tree = {
 	focus = {
 		id = SIA_motorized_infantry
 		icon = GFX_goal_generic_army_motorized
-		relative_position_id = SIA_bicycle_infantry
+		relative_position_id = SIA_develop_combined_arms_warfare
 		x = 0
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus =  SIA_bicycle_infantry }
+		prerequisite = { focus =  SIA_develop_combined_arms_warfare }
 		completion_reward = { 
 			if = {
 				limit = {
@@ -1321,7 +1343,7 @@ focus_tree = {
 			if = {
 				limit = {
 				OR = {
-					has_completed_focus = SIA_adopt_western_aircraft
+					has_completed_focus = SIA_adopt_american_aircraft
 					is_ally_with = ENG
 					is_ally_with = USA
 					gives_military_access_to = USA
@@ -1357,7 +1379,8 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_motorized_infantry }
-		completion_reward = { 
+		prerequisite = { focus = SIA_terrain_mastery }
+		completion_reward = {
 			if = {
 				limit = {
 				OR = {
@@ -1378,7 +1401,7 @@ focus_tree = {
 			if = {
 				limit = {
 				OR = {
-					has_completed_focus = SIA_adopt_western_aircraft
+					has_completed_focus = SIA_adopt_american_aircraft
 					is_ally_with = ENG
 					is_ally_with = USA
 					gives_military_access_to = USA
@@ -1395,16 +1418,14 @@ focus_tree = {
 					producer = USA
 				}
 				add_fuel = 1500
-			else_if = {
 				add_equipment_to_stockpile = {
 					type = mechanized_equipment
 					amount = 200
 				}
-				add_fuel = 500
+				add_fuel = 500			
 			}
 		}
 	}
-}
 	focus = {
 		id = SIA_purchase_new_arms
 		icon = gfx_goal_unknown
@@ -1416,7 +1437,13 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
 		prerequisite = { focus = SIA_police }
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = -50
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 3000
+			}
+		}
 	}
 	focus = {
 		id = SIA_import_foreign_tanks
@@ -1430,8 +1457,128 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 	
-		completion_reward = { }
-	}
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_country_flag = SIA_jap_alliance
+				}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_chassis_1
+					name = "Type-95 Ha-Go"
+					modules = {
+						main_armament_slot = tank_small_cannon
+						turret_type_slot = tank_light_one_man_tank_turret
+						suspension_type_slot = tank_bogie_suspension
+						armor_type_slot = tank_riveted_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = additional_machine_guns
+						special_type_slot_2 = tank_radio_1
+						special_type_slot_3 = empty
+						special_type_slot_4 = empty
+					}
+				}
+			}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					variant_name = "Type-95 Ha-Go"
+					amount = 250
+					producer = JAP
+						}
+					}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+					has_country_flag = SIA_wst_alliance
+				}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_chassis_1
+					name = "M3 Stuart"
+							modules = {
+								main_armament_slot = tank_small_cannon
+								turret_type_slot = tank_light_two_man_tank_turret
+								suspension_type_slot = tank_bogie_suspension
+								armor_type_slot = tank_riveted_armor
+								engine_type_slot = tank_gasoline_engine
+								special_type_slot_1 = additional_machine_guns
+								special_type_slot_2 = additional_machine_guns
+								special_type_slot_3 = empty
+								special_type_slot_4 = empty
+							}
+						}
+					}
+				add_equipment_to_stockpile = {
+					type = light_tank_chassis_1
+					variant_name = "M3 Stuart"
+					amount = 250
+					producer = USA
+						}
+					}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+							has_country_flag = SIA_jap_alliance
+							has_country_flag = SIA_wst_alliance
+						}
+					}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_equipment_1
+					name = "Type-95 Ha-Go"
+					}
+				}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_1
+						variant_name = "Type-95 Ha-Go"
+						amount = 200
+						}
+					}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+						has_country_flag = SIA_jap_alliance
+					}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_equipment_1
+					name = "Type-95 Ha-Go"
+					}
+				}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_1
+						amount = 200
+						variant_name = "Type-95 Ha-Go"
+						producer = JAP
+						}
+					}
+				if = {
+					limit = {
+						NOT = {
+							has_dlc = "No Step Back"
+						}
+						has_country_flag = SIA_wst_alliance
+					}
+				hidden_effect = {
+				create_equipment_variant = {
+					type = light_tank_equipment_1
+					name = "M3 Stuart"
+					}
+				}
+					add_equipment_to_stockpile = {
+						type = light_tank_equipment_1
+						variant_name = "M3 Stuart"
+						amount = 200
+						producer = USA
+						}
+					}
+				}
+			}
+
 	#Police Branch
 	focus = {
 		id = SIA_police
@@ -2028,7 +2175,7 @@ focus_tree = {
 		id = SIA_adopt_japanese_aircraft #historical
 		icon = GFX_goal_unknown
 		cost = 5.00
-		mutually_exclusive = { focus = SIA_adopt_western_aircraft }
+		mutually_exclusive = { focus = SIA_adopt_american_aircraft }
 		prerequisite = {
 			focus = SIA_purchase_foreign_aircraft
 		}
@@ -2062,7 +2209,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_strategic_bombing }
-		prerequisite = { focus = SIA_adopt_japanese_aircraft focus = SIA_adopt_western_aircraft }
+		prerequisite = { focus = SIA_adopt_japanese_aircraft focus = SIA_adopt_american_aircraft }
 		x = 1
 		y = 1
 		relative_position_id = SIA_adopt_japanese_aircraft
@@ -2226,7 +2373,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SIA_adopt_western_aircraft
+		id = SIA_adopt_american_aircraft
 		icon = gfx_goal_unknown
 		mutually_exclusive = { focus = SIA_adopt_japanese_aircraft }
 		relative_position_id = SIA_purchase_foreign_aircraft
@@ -2251,12 +2398,12 @@ focus_tree = {
 		completion_reward = { 
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_2
-				amount = 50
-				producer = ENG
+				amount = 150
+				producer = USA
 			}
 			add_equipment_to_stockpile = {
-				type = fighter_equipment_2
-				amount = 75
+				type = CAS_equipment_1
+				amount = 100
 				producer = USA
 			}
 			### give you a bunch of free planes
@@ -2717,17 +2864,25 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 	
-		completion_reward = { }
+		completion_reward = { 
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment_2
+			amount = 800
+			}
+		add_unit_bonus = {
+			anti_air = {
+				reliability = 0.10
+				}
+			}
+		}
 	}
 	focus = {
 		id = SIA_incorporate_combat_engineers
 		icon = GFX_goal_unknown
 		x = 0	
-		y = 2
+		y = 3
 
-		prerequisite = { focus = SIA_bofors_artillery }
-		prerequisite = { focus = SIA_terrain_mastery }
-		prerequisite = { focus = SIA_bicycle_infantry }
+		prerequisite = { focus = SIA_mechanized_infantry } 
 		relative_position_id = SIA_bofors_artillery
 
 		cost = 2
@@ -3023,5 +3178,5 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 		prerequisite = { focus = SIA_consolidate_absolutist_rule }
+		}
 	}
-}
