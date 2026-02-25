@@ -1385,6 +1385,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_motorized_infantry }
 		prerequisite = { focus = SIA_terrain_mastery }
 		completion_reward = {
+			if = {
 				limit = {
 				OR = {
 					has_completed_focus = SIA_adopt_japanese_aircraft
@@ -1426,6 +1427,7 @@ focus_tree = {
 					amount = 200
 				}
 				add_fuel = 500			
+			}
 		}
 	}
 	focus = {
