@@ -199,6 +199,20 @@ country_event = {
     }
 }
 
+country_event = {
+    id = sia_events.6
+    title = sia_events.6.t
+    desc = sia_events.6.d
+    picture = report_event_khana_ratsadon_plaque
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.6.a
+		add_stability = 0.1
+    }
+}
+
 country_event = { # Bangkok Floods
     id = sia_events.66
     title = sia_events.66.t

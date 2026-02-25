@@ -35,11 +35,7 @@ focus_tree = {
 		}
         completion_reward = { 
             add_political_power = 50
-            add_stability = 0.1
-            # Unlocking the Balance of Power decision to: “Entice the People” 
-            # This flag is used to show the specific decision.
-            set_country_flag = sia_bop_decision_entice_the_people_unlocked
-			set_country_flag = sia_plant_khana_ratsadon_plaque_decision
+			country_event = sia_events.6
 			mark_focus_tree_layout_dirty = yes
         }
     }
