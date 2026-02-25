@@ -1318,13 +1318,13 @@ focus_tree = {
 	focus = {
 		id = SIA_motorized_infantry
 		icon = GFX_goal_generic_army_motorized
-		relative_position_id = SIA_bicycle_infantry
+		relative_position_id = SIA_develop_combined_arms_warfare
 		x = 0
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus =  SIA_bicycle_infantry }
+		prerequisite = { focus =  SIA_develop_combined_arms_warfare }
 		completion_reward = { 
 			if = {
 				limit = {
@@ -1383,15 +1383,14 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_motorized_infantry }
-		completion_reward = { 
-			if = {
+		prerequisite = { focus = SIA_terrain_mastery }
+		completion_reward = {
 				limit = {
 				OR = {
 					has_completed_focus = SIA_adopt_japanese_aircraft
 					is_ally_with = JAP
 					gives_military_access_to = JAP
 				}
-			}
 				add_equipment_to_stockpile = {
 					type = mechanized_equipment
 					amount = 200
@@ -1400,7 +1399,6 @@ focus_tree = {
 					type = light_tank_destroyer_equipment_1
 					amount = 100
 				}
-			}
 			if = {
 				limit = {
 				OR = {
@@ -1426,10 +1424,9 @@ focus_tree = {
 					type = mechanized_equipment
 					amount = 200
 				}
-				add_fuel = 500
-			
+				add_fuel = 500			
 		}
-	}
+	
 	focus = {
 		id = SIA_purchase_new_arms
 		icon = gfx_goal_unknown
@@ -1530,7 +1527,6 @@ focus_tree = {
 						}
 					}
 				}
-			}	
 	#Police Branch
 	focus = {
 		id = SIA_police
@@ -2832,11 +2828,9 @@ focus_tree = {
 		id = SIA_incorporate_combat_engineers
 		icon = GFX_goal_unknown
 		x = 0	
-		y = 2
+		y = 3
 
-		prerequisite = { focus = SIA_bofors_artillery }
-		prerequisite = { focus = SIA_terrain_mastery }
-		prerequisite = { focus = SIA_bicycle_infantry }
+		prerequisite = { focus = SIA_mechanized_infantry } 
 		relative_position_id = SIA_bofors_artillery
 
 		cost = 2
@@ -2916,6 +2910,7 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
+	
 	focus = {
 		id = SIA_exposed_crown_property_theft
 		icon = gfx_goal_unknown
@@ -3132,5 +3127,8 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 		prerequisite = { focus = SIA_consolidate_absolutist_rule }
+				}
+			}
 		}
 	}
+}
