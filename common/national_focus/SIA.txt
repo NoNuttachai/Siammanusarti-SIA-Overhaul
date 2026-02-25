@@ -1266,6 +1266,7 @@ focus_tree = {
 				}	
 			}
 		}
+	}
 	focus = {
 		id = SIA_yuwachon_thahan
 		icon = gfx_goal_unknown
