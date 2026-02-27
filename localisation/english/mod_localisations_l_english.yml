@@ -84,10 +84,6 @@ planning_speed_tt: " Planning Speed: §G+%10.0§!"
 terrain_penalty_reduction_tt: " Terrain Penalty Reduction: §G-%10.0§!"
 
 # Events
-sia_events.6.t: "Planting of Khana Ratsadon Plaque"
-sia_events.6.d: "Today, a ceremony was held to place a memorial plaque at Dusit Palace Royal Plaza, at the exact location where Phraya Phahon addressed the revolutionary aims of governmental change to the assembled troops. \nThe plaque commemorates the Siamese Revolution and reads "Here, on the 24th of June 2475 BE (1932 AD) at dawn, Khana Ratsadon birthed the constitution for the nation's prosperity." "
-sia_events.6.a: "Chaiyo!"
-
 sia_events.1.t: "Crown Property Scandal"
 sia_events.1.d: "In Parliament, opposition MP Liean Chaiyakharn opened a session with a scathing criticism of the Crown Property Bureau, accusing it of widespread corruption. He listed numerous members of Khana Ratsadon, military officials, and even the King's regents as having purchased Crown Property at prices far below market value and profited immensely \n\nThough Phraya Phahon replied that he was not aware of any members of his party being involved in dealings over Crown Property lands, this has greatly affected his standing as prime minister. Many within his party as well as the opposition urged him to take responsibility by resigning from his position."
 sia_events.1.a: "The scandal has greatly damaged Khana Ratsadon reputation."
@@ -99,6 +95,14 @@ sia_events.2.a: "Very unprofessional of the MPs"
 sia_events.4.t: "Phraya Phahon Announces Intent to Resign"
 sia_events.4.d: "Phraya Phahon has announced that he will be resigning from his post as Prime Minister and dissolving Parliament due to the Crown Property Scandal and heavy backlash from the opposition. \n\nHowever, the Regents reappointed Phraya Phahon and urged him to continue his office as caretaker Prime Minister until a successor from Khana Ratsadon could be chosen. Begrudgingly, Phraya Phahon accepted their appointment and continued his tenure as Prime Minister."
 sia_events.4.a: "The question is, who choose succeed?"
+
+sia_events.6.t: "Planting of Khana Ratsadon Plaque"
+sia_events.6.d: "Today, a ceremony was held to place a memorial plaque at Dusit Palace Royal Plaza, at the exact location where Phraya Phahon addressed the revolutionary aims of governmental change to the assembled troops. \nThe plaque commemorates the Siamese Revolution and reads "Here, on the 24th of June 2475 BE (1932 AD) at dawn, Khana Ratsadon birthed the constitution for the nation's prosperity." "
+sia_events.6.a: "Chaiyo!"
+
+sia_events.7.t: "The King's Brief Visit to Thailand"
+sia_events.7.d: "His Majesty has accepted the government's invitation to pay a brief visit to Bangkok. This marks his first visit to Siam as its monarch. He is accompanied by his mother, Srinagarindra, and his younger brother, Prince Bhumibol Adulyadej. \nThe royal barge anchored at Koh Si Chang, where the government dispatched HTMS Sri Ayutthaya to receive the royal entourage and transport them to Samut Prakan Province. \nThey then proceeded aboard HTMS Sri Ayutthaya to Bangkok and took up residence at Chitralada Palace. \nHis Majesty will stay in Thailand for approximately two months to attend royal ceremonies and complete official preparations before returning to Switzerland to continue his studies."
+sia_events.7.a: "Throng Phra Charean!"
 
 #Khana Ratsadon Succession Decision Mechanic
 SIA_succession_of_khana_ratsadon: "Succession of Khana Ratsadon"
