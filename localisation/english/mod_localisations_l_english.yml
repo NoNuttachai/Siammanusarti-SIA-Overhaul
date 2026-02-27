@@ -104,6 +104,13 @@ sia_events.7.t: "The King's Brief Visit to Thailand"
 sia_events.7.d: "His Majesty has accepted the government's invitation to pay a brief visit to Bangkok. This marks his first visit to Siam as its monarch. He is accompanied by his mother, Srinagarindra, and his younger brother, Prince Bhumibol Adulyadej. \nThe royal barge anchored at Koh Si Chang, where the government dispatched HTMS Sri Ayutthaya to receive the royal entourage and transport them to Samut Prakan Province. \nThey then proceeded aboard HTMS Sri Ayutthaya to Bangkok and took up residence at Chitralada Palace. \nHis Majesty will stay in Thailand for approximately two months to attend royal ceremonies and complete official preparations before returning to Switzerland to continue his studies."
 sia_events.7.a: "Throng Phra Charean!"
 
+sia_events.8.t: "The King of the White Elephant Release in Theaters"
+sia_events.8.d: "Recently released in theaters, The King of the White Elephant is a historical epic directed, written, and produced by Pridi Banomyong for international audiences. \n\nIt is the first Thai film filmed entirely with English dialogue. Set in 16th-century Ayutthaya, the movie follows King Chakra, who is focused on his royal duties. Meanwhile, the King faces the threat of invasion by the King of Honsa. Initially seeking peace, King Chakra is forced into war after negotiations fail.\n\nThe film was submitted for the Nobel Peace Prize and screened in Singapore and New York. However, amid global conflicts and tensions, Pridi's pro-peace message seems to fell on deaf ears."
+sia_events.8.a: "ABSOLUTE CINEMA"
+
+#World Tension
+SIA_pridi_elephant_movie: "Pridi Banomyong's film "The King of the White Elephant" "
+
 #Khana Ratsadon Succession Decision Mechanic
 SIA_succession_of_khana_ratsadon: "Succession of Khana Ratsadon"
 SIA_succession_of_khana_ratsadon_desc: "Although Phraya Phahon has announced his plans to resign, the regents to His Majesty have reappointed him as caretaker prime minister until a suitable candidate can assume leadership of Khana Ratsadon.\n\nTwo major candidates are being considered: \n§8The ultranationalist Phibun§! and §2the democratic socialist Pridi.§! Though they are political opposites, both served side by side in the Siamese Revolution and currently hold ministerial positions in Phraya Phahon’s cabinet.\n\nShould either rise to leadership, Siam would be steered in profoundly different directions.\n\n§YCurrently the most popular figure within Khana Ratsadon is: \n§! [Root.SIA_phraya_successor] who will succeed Phraya Phahon as leader."
@@ -183,7 +190,6 @@ SIA_expel_the_colonizers_from_indochina: "Expel the Colonizers from Indochina"
 SIA_fortification_boon: "Fortification Projects"
 
 # Focuses
-
 SIA_revitalize_the_economy: "Revitalize The Economy"
 SIA_chula_uni: "Chulalongkorn University"
 SIA_bangkok_urbanization: "Bangkok Urbanization"

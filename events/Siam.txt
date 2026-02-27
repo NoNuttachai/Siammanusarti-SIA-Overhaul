@@ -241,6 +241,34 @@ country_event = {
     }
 }
 
+country_event = {
+    id = sia_events.8 #Pridi Movie
+    title = sia_events.8.t
+    desc = sia_events.8.d
+    picture = report_event_pridi_king_white_elephant_movie
+
+	fire_only_once = yes
+
+    trigger = {
+        tag = SIA
+		NOT = { has_government = communism }
+		NOT = { has_completed_focus = SIA_opposed_khana_ratsadon }
+        date > 1940.4.4
+    }
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = sia_events.8.a
+		add_named_threat = {
+    	threat = -1
+    	name = SIA_pridi_elephant_movie
+}
+    }
+}
+
 country_event = { # Bangkok Floods
     id = sia_events.66
     title = sia_events.66.t
