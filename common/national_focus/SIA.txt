@@ -1320,7 +1320,7 @@ focus_tree = {
 		id = SIA_motorized_infantry
 		icon = GFX_goal_generic_army_motorized
 		relative_position_id = SIA_develop_combined_arms_warfare
-		x = 0
+		x = 1
 		y = 1
 		
 		cost = 5
