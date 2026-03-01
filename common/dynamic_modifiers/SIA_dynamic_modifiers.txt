@@ -8,7 +8,7 @@ SIA_bangkok_floodings = {
 }
 
 SIA_army_of_siam = {
-	icon = GFX_idea_unknown
+	icon = GFX_idea_SIA_royal_siamese_army_natspirit
 	enable = {
 		always = yes
 	}
@@ -36,7 +36,7 @@ SIA_army_of_siam = {
 }
 
 SIA_air_force_idea = {
-	icon = GFX_idea_unknown
+	icon = GFX_idea_SIA_royal_siamese_airforce_natspirit
 	enable = {
 		always = yes
 	}

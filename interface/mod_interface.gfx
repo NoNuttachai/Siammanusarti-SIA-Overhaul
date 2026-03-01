@@ -85,6 +85,18 @@ SpriteTypes = {
 		name = "GFX_idea_SIA_Legacy_of_the_Siamese_Revolution"
 		texturefile = "gfx/interface/ideas/Legacy_of_the_Siamese_Revolution.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_SIA_royal_siamese_airforce_natspirit"
+		texturefile = "gfx/interface/ideas/royal_siamese_airforce_natspirit.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_royal_siamese_army_natspirit"
+		texturefile = "gfx/interface/ideas/royal_siamese_army_natspirit.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_royal_siamese_navy_natspirit"
+		texturefile = "gfx/interface/ideas/royal_siamese_navy_natspirit.dds"
+	}
 
 	# Miscellaneous
 	SpriteType = {

@@ -809,6 +809,11 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 
 		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = SIA_army_of_siam
+				}
+			}
 			custom_effect_tooltip = SIA_army_tt
 			add_to_variable = { 
 				SIA_production_speed_arms_factory_factor_var = 0.1
