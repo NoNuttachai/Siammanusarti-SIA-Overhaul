@@ -810,6 +810,11 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 
 		completion_reward = {
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = SIA_army_of_siam
+				}
+			}
 			custom_effect_tooltip = SIA_army_tt
 			add_to_variable = { 
 				SIA_production_speed_arms_factory_factor_var = 0.1
@@ -1316,7 +1321,7 @@ focus_tree = {
 		id = SIA_motorized_infantry
 		icon = GFX_goal_generic_army_motorized
 		relative_position_id = SIA_develop_combined_arms_warfare
-		x = 0
+		x = 1
 		y = 1
 		
 		cost = 5
