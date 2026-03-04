@@ -578,7 +578,7 @@ ideas = {
 		SIA_siamese_royal_navy = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = GFX_idea_royal_siamese_navy_natspirit
 			
 			allowed = { always = yes }
 			
@@ -591,7 +591,7 @@ ideas = {
 		SIA_siamese_royal_navy_2 = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = GFX_idea_royal_siamese_navy_natspirit
 			
 			allowed = { always = yes }
 			
@@ -606,7 +606,7 @@ ideas = {
 		SIA_mine_the_seas = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = SOV_mine_warfare
 			
 			allowed = { always = yes }
 			

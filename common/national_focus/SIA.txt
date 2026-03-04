@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 38
+        x = 50
         y = 0
         cost = 5
         available = { }
@@ -278,12 +278,12 @@ focus_tree = {
 	focus = {
 		id = SIA_independent_foreign_policy
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_thawee_bunyaket_premiership
-		x = 0
-		y = 2
+		relative_position_id = SIA_legacy_of_revolution
+		x = 14
+		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_seni_pramoj_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
+		prerequisite = { focus = SIA_legacy_of_revolution }
 	}
 	focus = {
 		id = SIA_rekindle_with_the_colonial_powers
@@ -691,12 +691,13 @@ focus_tree = {
 	focus = {
 		id = SIA_thai_irredentism
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_purge
-		x = 7
-		y = 3
+		relative_position_id = SIA_legacy_of_revolution
+		x = 8
+		y = 2
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_purge }
+		prerequisite = { focus = SIA_independent_foreign_policy }
+		mutually_exclusive = { focus = SIA_southeast_asian_self_determination }
 	}
 	focus = {
 		id = SIA_strike_indochina
@@ -733,7 +734,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_thai_irredentism
 		x = 0
-		y = 3
+		y = 8
 		cost = 10
 		completion_reward = { }
 	}
@@ -2490,7 +2491,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = 21
+		x = -15
 		y = 1
 		
 		cost = 2
@@ -2498,7 +2499,7 @@ focus_tree = {
 		completion_reward = { 
 			remove_ideas = SIA_lingering_depression
 		}
-		prerequisite = { focus = SIA_legacy_of_revolution focus = SIA_opposed_khana_ratsadon }
+		prerequisite = {  }
 	}
 	focus = {
 		id = SIA_phahonyothin_road
@@ -2933,7 +2934,7 @@ focus_tree = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_goal_unknown
-		x = 74
+		x = 75
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }

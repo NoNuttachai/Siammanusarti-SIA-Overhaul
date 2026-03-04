@@ -232,6 +232,25 @@ characters={
 	}
 	
 	#Generals
+	SIA_phraya_thepahatsadin ={
+		name="Phraya Thepahatsadin"
+		portraits={
+			army={
+				large = GFX_portrait_SIA_phraya_thepahatsadin
+				#small = GFX_portrait_SIA_phraya_thepahatsadin_small
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
 	SIA_luang_senanarong ={
 		name="Luang Senanarong"
 		portraits={

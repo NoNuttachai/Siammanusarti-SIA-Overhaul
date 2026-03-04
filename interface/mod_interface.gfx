@@ -64,6 +64,11 @@ SpriteTypes = {
 		texturefile = "gfx/leaders/SIA/Jit_Wichitsongkram.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_portrait_SIA_phraya_thepahatsadin"
+		texturefile = "gfx/leaders/SIA/Phraya_Thepahatsadin.dds"
+	}
+
 	# Ideas
 	SpriteType = {
 		name = "GFX_idea_SIA_anti_communism"
@@ -85,7 +90,10 @@ SpriteTypes = {
 		name = "GFX_idea_SIA_Legacy_of_the_Siamese_Revolution"
 		texturefile = "gfx/interface/ideas/Legacy_of_the_Siamese_Revolution.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_idea_royal_siamese_navy_natspirit"
+		texturefile = "gfx/interface/ideas/royal_siamese_navy_natspirit.dds"
+	}
 	# Miscellaneous
 	SpriteType = {
 		name = "GFX_agency_special_branch_bureau"

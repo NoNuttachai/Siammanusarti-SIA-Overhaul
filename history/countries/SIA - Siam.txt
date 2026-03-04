@@ -120,10 +120,10 @@ if = {
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_plaek_phibunsongkhram
 recruit_character = SIA_pridi_banomyong
-## Admiral and PM
 recruit_character = SIA_thawan_thamrongnawasawat
 recruit_character = SIA_luang_sinthusongkhramchai
 recruit_character = SIA_luang_yuthasastr_koson
+recruit_character = SIA_phraya_thepahatsadin
 recruit_character = SIA_phin_choonhavan
 recruit_character = SIA_mangkorn_phromyothi
 recruit_character = SIA_charun_rattanakun_seriroengrit
@@ -131,7 +131,6 @@ recruit_character = SIA_pichit_kriangsakphichit
 recruit_character = SIA_luang_chartnuakrhub
 recruit_character = SIA_luang_senanarong
 recruit_character = SIA_jit_wichitsongkram
-## Political Advisors
 recruit_character = SIA_direk_chaiyanam
 recruit_character = SIA_pao_pienlert_boripanyutakit
 recruit_character = SIA_luang_wichiwathakan
