@@ -219,7 +219,7 @@ ideas = {
 		SIA_legacy_of_revolution = {
 			removal_cost = -1
 			
-			picture = SIA_Legacy_of_the_Siamese_Revolution
+			picture = GFX_idea_SIA_Legacy_of_the_Siamese_Revolution
 			
 			allowed = { is_puppet = no }
 			
