@@ -185,7 +185,7 @@ ideas = {
 		}
 		SIA_constitutionalism_idea = {
 			removal_cost = -1
-			picture = GFX_idea_SIA_constitutionalism
+			picture = "GFX_idea_SIA_constitutionalism"
 			allowed = { is_puppet = no }
 
 			modifier = {
