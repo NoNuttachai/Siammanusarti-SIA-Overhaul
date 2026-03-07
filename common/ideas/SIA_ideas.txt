@@ -185,8 +185,7 @@ ideas = {
 		}
 		SIA_constitutionalism_idea = {
 			removal_cost = -1
-			picture = SIA_king_ananda_mahidol
-
+			picture = GFX_idea_SIA_constitutionalism
 			allowed = { is_puppet = no }
 
 			modifier = {
@@ -196,7 +195,7 @@ ideas = {
 		}
 		SIA_crown_property_act_benefit = {
 			name = SIA_crown_property_act_benefit
-			picture = generic_national_unity_bonus
+			picture = GFX_idea_SIA_crown_property_act_benefit
 			
 			allowed = { always = yes }
 			removal_cost = -1

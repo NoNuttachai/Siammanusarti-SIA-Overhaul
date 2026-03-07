@@ -71,6 +71,14 @@ SpriteTypes = {
 
 	# Ideas
 	SpriteType = {
+		name = "GFX_idea_SIA_constitutionalism"
+		texturefile = "gfx/interface/ideas/SIA_constitutionalism_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SIA_crown_property_act_benefit"
+		texturefile = "gfx/interface/ideas/SIA_crown_property_act_idea.dds"
+	}
+	SpriteType = {
 		name = "GFX_idea_SIA_anti_communism"
 		texturefile = "gfx/interface/ideas/Anti-Communist_Act.dds"
 	}
