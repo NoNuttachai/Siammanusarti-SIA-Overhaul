@@ -662,7 +662,7 @@ ideas = {
 		SIA_air_force_idea_base = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = GFX_idea_SIA_royal_siamese_airforce_natspirit
 			
 			allowed = { always = yes }
 			
