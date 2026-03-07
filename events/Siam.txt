@@ -93,6 +93,7 @@ country_event = {
 		}
 		remove_trait = {
 			character = SIA_phraya_phahon
+			ideology = moderatism
 			trait = siamese_revolutionary_leader
 		}
 		hidden_effect = { country_event = { id = sia_events.2 days = 17 } }
@@ -144,9 +145,11 @@ country_event = {
 			subtract_from_variable = { days_until_resignation = 1077 }
 			multiply_variable = { days_until_resignation = -1 }
 		}
-		swap_country_leader_traits = {
-			remove = crown_property_scandal
-			add = crown_property_scandal_1
+		SIA_phraya_phahon = {
+			swap_country_leader_traits = {
+				remove = crown_property_scandal
+				add = crown_property_scandal_1
+			}			
 		}
 		unlock_decision_category_tooltip = SIA_succession_of_khana_ratsadon
 		hidden_effect = { set_country_flag = SIA_phraya_declares_intent activate_mission = SIA_phraya_steps_down }
