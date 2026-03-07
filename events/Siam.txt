@@ -238,6 +238,19 @@ country_event = {
     option = {
         name = sia_events.7.a
 		add_stability = 0.15
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_king_ananda_mahidol
+				add_idea = SIA_king_ananda_mahidol_alt
+			}
+		}
+		hidden_effect = {
+			remove_ideas = SIA_king_ananda_mahidol
+			add_timed_idea = {
+				idea = SIA_king_ananda_mahidol_alt
+				months = 2
+			}
+		}
     }
 }
 

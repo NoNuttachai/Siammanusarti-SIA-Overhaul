@@ -183,6 +183,22 @@ ideas = {
 				political_power_gain = -0.25
 			}
 		}
+		SIA_king_ananda_mahidol_alt = {
+			removal_cost = -1
+
+			picture = SIA_king_ananda_mahidol
+
+			allowed = { is_puppet = no }
+
+			modifier = {
+				custom_modifier_tooltip = SIA_present_monarch_tt
+				stability_factor = 0.05
+				political_power_gain = 0.25
+			}
+			on_remove = {
+				add_ideas = SIA_king_ananda_mahidol
+			}
+		}
 		SIA_constitutionalism_idea = {
 			removal_cost = -1
 			picture = "GFX_idea_SIA_constitutionalism"
