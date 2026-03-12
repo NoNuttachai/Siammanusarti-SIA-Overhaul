@@ -1,0 +1,120 @@
+SIA_PHIBUN_BOP = {
+	left_side = SIA_phibun_weak
+	right_side = SIA_phibun_side 
+	decision_category = SIA_RH_CAT
+
+	range = {
+		id = SIA_PHIBUN_BALANCE
+		min = -0.25
+		max = 0.25
+		modifier = {
+		}
+		
+		on_activate = {
+			set_power_balance_gfx = {
+				id = SIA_PHIBUN_BOP
+				side = SIA_phibun_weak
+				gfx = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
+			}
+			set_power_balance_gfx = {
+				id = SIA_PHIBUN_BOP
+				side = SIA_phibun_side
+				gfx = "GFX_SIA_KHA_RATSADON_SIDE"
+			}
+		}
+	}
+
+	side = {
+		id = SIA_phibun_side
+		
+		range = {
+			id = SIA_phibun_side_25_75
+			min = 0.25
+			max = 0.75
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				political_advisor_cost_factor = -0.25
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+				experience_gain_air = 0.05
+			}
+			
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SIA_PHIBUN_BOP
+					side = SIA_phibun_side
+					gfx = "GFX_SIA_KHA_RATSADON_SIDE"
+				}
+			}
+		}
+		range = {
+			id = SIA_phibun_side_75_100
+			min = 0.75
+			max = 1.0
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.2
+				political_advisor_cost_factor = -0.5
+				experience_gain_army = 0.1
+				experience_gain_navy = 0.1
+				experience_gain_air = 0.1
+			}
+			
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SIA_PHIBUN_BOP
+					side = SIA_phibun_side
+					gfx = "GFX_SIA_KHA_RATSADON_IMPROVED_SIDE"
+				}
+			}
+		}
+	}
+	
+	side = {
+		id = SIA_phibun_weak
+		
+		range = {
+			id = SIA_phibun_weak_25_75
+			min = -0.75
+			max = -0.25
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.1
+				political_advisor_cost_factor = 0.25
+				experience_gain_army = -0.05
+				experience_gain_navy = -0.05
+				experience_gain_air = -0.05
+			}
+			
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SIA_PHIBUN_BOP
+					side = SIA_phibun_weak
+					gfx = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
+				}
+			}
+		}
+		range = {
+			id = SIA_phibun_weak_75_100
+			min = -1.0
+			max = -0.75
+			modifier = {
+				political_power_factor = -0.25
+				experience_gain_army = -0.1
+				experience_gain_navy = -0.1
+				experience_gain_air = -0.1
+				political_advisor_cost_factor = 0.5
+				stability_factor = -0.2
+			}
+			
+			on_activate = {
+				set_power_balance_gfx = {
+					id = SIA_PHIBUN_BOP
+					side = SIA_phibun_weak
+					gfx = "GFX_SIA_KHA_RATSADON_VERY_BAD_SIDE"
+				}
+			}
+		}
+	}
+}

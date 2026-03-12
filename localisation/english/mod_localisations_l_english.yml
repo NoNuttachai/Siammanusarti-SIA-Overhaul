@@ -38,6 +38,10 @@ SIA_RH_OPPOS_25_75: "Low Support"
 SIA_RH_OPPOS_75_100: "Very Low Support"
 SIA_RH_OPPOS: "Opposition"
 
+SIA_PHIBUN_BOP: "Phibun's Authority"
+SIA_phibun_weak: "Weak Authority"
+SIA_phibun_side: "Strong Authority"
+
 SIA_siamese_nation: "[SIA.GetAdjective] Nationalism"
 #SIA_siamese_nation_desc: ""
 SIA_absent_monarch_tt: "\n§YAbsent Monarch§!\n   §gKing Ananda Mahidol is currently residing and studying in§! @SWI [SWI.GetName]."
