@@ -575,6 +575,16 @@ focus_tree = {
 		prerequisite = { focus = SIA_purge }
 	}
 	focus = {
+		id = SIA_country_name_change
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_purge
+		x = 2
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_purge }
+	}
+	focus = {
 		id = SIA_cultural_revolution
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_believe_in_leader
@@ -584,16 +594,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_country_name_change}
 	}
-	focus = {
-		id = SIA_believe_in_leader
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_purge
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_purge }
-	}
+	
 	focus = {
 		id = SIA_install_pridi_as_economic_minister
 		icon = gfx_goal_unknown
