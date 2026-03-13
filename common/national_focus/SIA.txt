@@ -266,7 +266,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
 	}
 	focus = {
-		id = SIA_independent_foreign_policy
+		id = SIA_renegotiate_the_unequal_treaties
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_legacy_of_revolution
 		x = 14
@@ -278,12 +278,12 @@ focus_tree = {
 	focus = {
 		id = SIA_rekindle_with_the_colonial_powers
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_independent_foreign_policy
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
 		x = -2
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus =SIA_independent_foreign_policy }
+		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_southeast_asian_self_determination }
 	}
 	focus = {
@@ -300,13 +300,13 @@ focus_tree = {
 	focus = {
 		id = SIA_southeast_asian_self_determination #Funds Movements in SEA to rebel EXCEPT Vietnam #https://en.wikipedia.org/wiki/South_East_Asia_League
 		icon = gfx_goal_unknown #IF Conservatives are in power: ASEAN IF Khana Ratsadon in power: Southeast Asian League
-		relative_position_id =SIA_independent_foreign_policy
+		relative_position_id =SIA_renegotiate_the_unequal_treaties
 		x = 2
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus =SIA_independent_foreign_policy }
-		mutually_exclusive = { focus = SIA_rekindle_with_the_colonial_powers }
+		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
+		mutually_exclusive = { focus = SIA_rekindle_with_the_colonial_powers focus = SIA_thai_irredentism }
 	}
 	focus = {
 		id = SIA_guardian_of_southeast_asia #Unlock decisions to transfer British colonies and the Philippines as Siamese puppets
@@ -344,7 +344,7 @@ focus_tree = {
 	focus = {
 		id = SIA_one_vision_one_identity_one_community #Country becomes United States of Southeast Asian Nations #enable decisions to puppet SEA countries
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_independent_foreign_policy
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
 		x = 0
 		y = 3
 		cost = 10
@@ -521,13 +521,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
-			add_field_marshal_role = {
-  				character = SIA_plaek_phibunsongkhram
-  				skill = 4
-  				attack_skill = 2
-  				defense_skill = 3
-  				planning_skill = 4
-  				logistics_skill = 2
+			set_power_balance = {
+				id = SIA_PHIBUN_BOP
+				left_side = SIA_phibun_weak
+				right_side = SIA_phibun_side
 			}
 		}
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
@@ -568,37 +565,6 @@ focus_tree = {
 		prerequisite = { focus = SIA_mass_media_propaganda }
 	}
 	focus = {
-		id = SIA_economic_nationalism
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_cultural_revolution
-		x = 3
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_cultural_revolution }
-		prerequisite = { focus = SIA_pan_thai_nationalism }
-	}
-	focus = {
-		id = SIA_khana_ratsadon_economic_policy
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_marshal_phibun_ascension
-		x = -4
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_marshal_phibun_ascension focus = SIA_pridi_premiership }
-	}
-	focus = {
-		id = SIA_country_name_change
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_purge
-		x = 2
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_purge }
-	}
-	focus = {
 		id = SIA_believe_in_leader
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_purge
@@ -617,6 +583,37 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_country_name_change}
+	}
+	focus = {
+		id = SIA_believe_in_leader
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_purge
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_purge }
+	}
+	focus = {
+		id = SIA_install_pridi_as_economic_minister
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_marshal_phibun_ascension
+		x = -5
+		y = 2
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_marshal_phibun_ascension }
+	}
+	focus = {
+		id = SIA_economic_nationalism
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_cultural_revolution
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_cultural_revolution }
+		prerequisite = { focus = SIA_pan_thai_nationalism }
 	}
 	focus = {
 		id = SIA_language_reform
@@ -699,7 +696,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_independent_foreign_policy }
+		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_southeast_asian_self_determination }
 	}
 	focus = {
@@ -2514,7 +2511,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_revitalize_the_economy
 		x = 3
-		y = 3
+		y = 2
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_revitalize_the_economy }
@@ -2617,7 +2614,7 @@ focus_tree = {
 		id = SIA_bangkok_urbanization
 		icon = GFX_focus_sia_bangkok_urbanization
 		x = 2
-		y = 2
+		y = 1
 
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		relative_position_id = SIA_revitalize_the_economy
@@ -2649,7 +2646,7 @@ focus_tree = {
 	focus = {
 		id = SIA_encorage_rubber_plantations
 		icon = GFX_focus_generic_rubber_plantations
-		x = 3	
+		x = -1	
 		y = 2
 		prerequisite = { focus = SIA_bangkok_urbanization }
 		relative_position_id = SIA_bangkok_urbanization
@@ -2810,10 +2807,9 @@ focus_tree = {
 	focus = {
 		id = SIA_rail_expansion
 		icon = GFX_goal_unknown
-		x = 3
-		y = 2
+		x = 0
+		y = 1
 		prerequisite = { focus = SIA_phahonyothin_road }
-		prerequisite = { focus = SIA_encorage_rubber_plantations }
 		relative_position_id = SIA_phahonyothin_road
 		mutually_exclusive = { focus = SIA_road_construction }
 		
@@ -2827,10 +2823,9 @@ focus_tree = {
 	focus = {
 		id = SIA_road_construction
 		icon = GFX_goal_unknown
-		x = 4
+		x = 2
 		y = 1
 		prerequisite = { focus = SIA_phahonyothin_road }
-		prerequisite = { focus = SIA_encorage_rubber_plantations }
 		relative_position_id = SIA_phahonyothin_road
 		mutually_exclusive = { focus = SIA_rail_expansion }
 		

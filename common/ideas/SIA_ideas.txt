@@ -183,9 +183,25 @@ ideas = {
 				political_power_gain = -0.25
 			}
 		}
+		SIA_king_ananda_mahidol_alt = {
+			removal_cost = -1
+
+			picture = SIA_king_ananda_mahidol
+
+			allowed = { is_puppet = no }
+
+			modifier = {
+				custom_modifier_tooltip = SIA_present_monarch_tt
+				stability_factor = 0.05
+				political_power_gain = 0.25
+			}
+			on_remove = {
+				add_ideas = SIA_king_ananda_mahidol
+			}
+		}
 		SIA_constitutionalism_idea = {
 			removal_cost = -1
-			picture = GFX_idea_SIA_constitutionalism
+			picture = "GFX_idea_SIA_constitutionalism"
 			allowed = { is_puppet = no }
 
 			modifier = {
@@ -218,7 +234,7 @@ ideas = {
 		SIA_legacy_of_revolution = {
 			removal_cost = -1
 			
-			picture = SIA_Legacy_of_the_Siamese_Revolution
+			picture = GFX_idea_SIA_Legacy_of_the_Siamese_Revolution
 			
 			allowed = { is_puppet = no }
 			
@@ -661,7 +677,7 @@ ideas = {
 		SIA_air_force_idea_base = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = GFX_idea_SIA_royal_siamese_airforce_natspirit
 			
 			allowed = { always = yes }
 			
