@@ -664,7 +664,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_language_reform focus = SIA_militarized_society }
+		prerequisite = { focus = SIA_language_reform }
+		prerequisite = { focus = SIA_militarized_society }
 		mutually_exclusive = { focus = SIA_total_dictatorial_powers }
 	}
 	focus = {
