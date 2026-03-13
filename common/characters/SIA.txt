@@ -374,7 +374,7 @@ characters={
 				original_tag = SIA
 			}
 			traits = {
-				army_armored_2
+				army_armored_2 
 			}
 			cost = 100
 			ai_will_do = {
@@ -404,7 +404,7 @@ characters={
 			ideology=despotism
 			traits={  }
 			expire="1965.1.1.1"
-			traits = { pridi_noble_title }
+			traits = { }
 			id=-1
 		}
 	}
@@ -467,7 +467,8 @@ characters={
 			}
 			available = {
 				has_completed_focus = SIA_phraya_phanon_steps_down
-				NOT = { has_government = communism }
+				NOT = { has_government = communism 
+						has_government = democratic }
 			}
 			traits = {fascist_demagogue}
 		}

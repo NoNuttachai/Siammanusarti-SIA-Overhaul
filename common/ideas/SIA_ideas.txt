@@ -189,8 +189,7 @@ ideas = {
 			allowed = { is_puppet = no }
 
 			modifier = {
-			power_balance_weekly = 0.001
-			political_power_gain = 0.1
+			political_power_gain = 0.2
 			}
 		}
 		SIA_crown_property_act_benefit = {

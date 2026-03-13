@@ -20,6 +20,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_SIA_crown_property.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_SIA_propagandize_six_principles"
+		texturefile = "gfx/interface/goals/focus_SIA_propagandize_six_principles.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_Siam_Cement_Concession"
 		texturefile = "gfx/interface/goals/Siam_Cement_Concession.dds"
 	}

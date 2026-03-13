@@ -101,7 +101,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_propagandize_six_principles
-		icon = gfx_goal_unknown
+		icon = GFX_focus_SIA_propagandize_six_principles
 		relative_position_id = SIA_legacy_of_revolution
 		x = 1
 		y = 2
@@ -146,7 +146,7 @@ focus_tree = {
 		id = SIA_pridi_premiership
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = -5
+		x = -4
 		y = 1
 		cost = 10
 		available = {
@@ -182,16 +182,6 @@ focus_tree = {
 		prerequisite = { focus = SIA_pridi_premiership }
 	}
 	focus = {
-		id = SIA_wat_prachathipatai
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_phraya_phanon_steps_down
-		x = 1
-		y = 2
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_marshal_phibun_ascension focus = SIA_pridi_premiership }
-	}
-	focus = {
 		id = SIA_free_the_political_prisoners
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_pridi_premiership
@@ -201,7 +191,7 @@ focus_tree = {
 		completion_reward = { 
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.25
+				popularity = 0.20
 			}
 			add_timed_idea = {
 				idea = SIA_anti_communist_act_revoked
@@ -521,7 +511,7 @@ focus_tree = {
 		id = SIA_marshal_phibun_ascension
 		icon = GFX_focus_SIA_marshal_phibun_ascension
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 		available = {
@@ -530,7 +520,16 @@ focus_tree = {
 				always = no
 			}
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_field_marshal_role = {
+  				character = SIA_plaek_phibunsongkhram
+  				skill = 4
+  				attack_skill = 2
+  				defense_skill = 3
+  				planning_skill = 4
+  				logistics_skill = 2
+			}
+		}
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_pridi_premiership }
 	}
@@ -541,7 +540,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			country_event = sia_unit_leader_event.1
+		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
 	}
 	focus = {
@@ -551,7 +552,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			country_event = sia_events.4
+		}
 		prerequisite = { focus = SIA_purge }
 	}
 	focus = {
@@ -576,14 +579,14 @@ focus_tree = {
 		prerequisite = { focus = SIA_pan_thai_nationalism }
 	}
 	focus = {
-		id = SIA_install_pridi_as_economic_minister
+		id = SIA_khana_ratsadon_economic_policy
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_marshal_phibun_ascension
-		x = -5
-		y = 2
+		x = -4
+		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_marshal_phibun_ascension }
+		prerequisite = { focus = SIA_marshal_phibun_ascension focus = SIA_pridi_premiership }
 	}
 	focus = {
 		id = SIA_country_name_change

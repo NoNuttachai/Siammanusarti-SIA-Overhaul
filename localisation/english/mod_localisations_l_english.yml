@@ -108,6 +108,10 @@ sia_events.8.t: "The King of the White Elephant Release in Theaters"
 sia_events.8.d: "Recently released in theaters, The King of the White Elephant is a historical epic directed, written, and produced by Pridi Banomyong for international audiences. \n\nIt is the first Thai film filmed entirely with English dialogue. Set in 16th-century Ayutthaya, the movie follows King Chakra, who is focused on his royal duties. Meanwhile, the King faces the threat of invasion by the King of Honsa. Initially seeking peace, King Chakra is forced into war after negotiations fail.\n\nThe film was submitted for the Nobel Peace Prize and screened in Singapore and New York. However, amid global conflicts and tensions, Pridi's pro-peace message seems to fell on deaf ears."
 sia_events.8.a: "Absolute Cinema"
 
+sia_unit_leader_event.1.t: "Songsuradet Rebellion Crushed"
+sia_unit_leader_event.1.d: "Accused of plotting a rebellion and attempting to assassinate Plaek Phibunsongkhram, Phraya Songsuradet, a long-time rival of Phibun, has been stripped of his military duties and forced into exile.\n\nPoliticians, military officers, and aristocrats accused of aiding or participating in the alleged rebellion have been arrested.\nAmong them are Rangsit Prayurasakdi, General Phraya Thephatsadin and both of his sons, Lieutenant Colonel Nor Nean Talaluk, Phraya Udomphongphensawat, and more than twenty other individuals.\n\nHowever, the legitimacy of the alleged plot has been widely questioned. There is little evidence proving that Songsuradet was truly planning a rebellion against Phibun, and many believe that the claim of the "Songsuradet Rebellion" was in fact a purge by Phibun against his political opponents and perceived enemies of Khana Ratsadon." \n\nA special tribunal has been convened for the trial of the alleged conspirators. Eighteen are expected to face the death penalty, while the remaining defendants will receive prison sentences."
+sia_unit_leader_event.1.a: "A Rebellion of the Eighteen Corpses"
+
 #World Tension
 SIA_pridi_elephant_movie: "Pridi Banomyong's film "The King of the White Elephant" "
 
@@ -121,8 +125,8 @@ SIA_phraya_steps_down_tt: "With a successor secured, §YPhraya Phahon§! resigns
 SIA_phraya_steps_down_dem_tt: "If §YFascist§! support is greater than §!Democratic§! support:"
 SIA_phraya_steps_down_fas_tt: "Otherwise:"
 #Scripted Localization Khana Ratsadon Succession
-SIA_sucession_pridi: "£GFX_democracy_texticon §2Pridi Banomyong§!"
-SIA_sucession_phibun: "£GFX_fascism_texticon §8Plaek Phibunsongkhram§!"
+SIA_sucession_pridi: "£GFX_democracy_texticon  §2Pridi Banomyong§!"
+SIA_sucession_phibun: "£GFX_fascism_texticon  §8Plaek Phibunsongkhram§!"
 
 sia_events.5.t: "Phraya Phahon Resigns at Last"
 sia_events.5.d: "TBA"
@@ -176,7 +180,7 @@ SIA_siamese_army_ordnance_department: "Siamese Army Ordnance Department"
 SIA_curtiss_aeroplane_organization: "Curtiss Aeroplane"
 
 #Scripted Peace Decisions
-SIA_towards_a_greater_thailand: "Towards a Greater Thailand"
+SIA_towards_a_greater_thailand: "The Franco-[THIS.GetAdjective] War"
 SIA_towards_a_greater_thailand_desc: "TBA"
 SIA_secure_pivotal_territories_in_indochina: "Secure Pivotal Territories in Indochina"
 
