@@ -467,8 +467,10 @@ characters={
 			}
 			available = {
 				has_completed_focus = SIA_phraya_phanon_steps_down
-				NOT = { has_government = communism 
-						has_government = democratic }
+				NOT = { 
+					has_government = communism 
+					has_government = democratic 
+				}
 			}
 			traits = {fascist_demagogue}
 		}
