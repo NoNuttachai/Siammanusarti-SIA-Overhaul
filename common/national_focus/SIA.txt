@@ -538,7 +538,14 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { 
-			country_event = sia_unit_leader_event.1
+			hidden_effect = {
+				SIA_phraya_songsuradet = {
+					unit_leader_event = sia_unit_leader_event.1
+				}
+			}
+			effect_tooltip = {
+				country_event = sia_unit_leader_event.1
+			}
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
 	}
