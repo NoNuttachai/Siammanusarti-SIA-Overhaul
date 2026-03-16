@@ -141,7 +141,20 @@ recruit_character = SIA_Muni_Mahasandhana
 recruit_character = SIA_Cang_Ratnarat
 recruit_character = SIA_Nine_Arm
 recruit_character = SIA_Pun_Bunnag
-
+## Theorists
+recruit_character = SIA_Phraya_Thephatsadin
+recruit_character = SIA_Phra_Prasatphitthayayut
+## High Command
+recruit_character = SIA_Tasanai_Mitphakdee
+recruit_character = SIA_Thahan_Khamhiran
+recruit_character = SIA_Fuen_Ronnapakak_Ritthakanee
+recruit_character = SIA_Luang_Athuekthewadet
+recruit_character = SIA_Luang_Tevaritpanluek
+recruit_character = SIA_sangad_chaloryu
+## Air Chief
+recruit_character = SIA_Boonchu_Chandrubeksa
+recruit_character = SIA_Chalermkiat_Watanangura
+recruit_character = SIA_Tawee_Chulla_tsap
 add_ideas = {
 	SIA_siamese_nation
 	SIA_buddhism

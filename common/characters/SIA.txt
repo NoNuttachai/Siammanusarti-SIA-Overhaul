@@ -4,6 +4,7 @@ characters={
 		portraits={
 			civilian={
 				large=GFX_portrait_Phraya_Phahon
+				small = gfx/interface/ideas/advisors/idea_Phraya_Phahon.dds
 			}
 		}
 		country_leader={
@@ -20,12 +21,24 @@ characters={
 			planning_skill = 4
 			logistics_skill = 3
 		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_phraya_phahon
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_artillery_1}
+		}
 	}
 	SIA_plaek_phibunsongkhram={
 		name="Plaek Phibunsongkhram"
 		portraits={
 			civilian={
 				large=GFX_portrait_Pleak_Phibun
+				small = gfx/interface/ideas/advisors/idea_Plaek_Phibunsongkhram.dds
 			}
 		}
 		country_leader={
@@ -41,6 +54,17 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_plaek_phibunsongkhram
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_chief_offensive_2}
 		}
 	}
 	SIA_mangkorn_phromyothi = {
@@ -59,6 +83,17 @@ characters={
 			planning_skill = 3
 			logistics_skill = 2
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_plaek_phibunsongkhram
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_chief_organizational_1}
+		}
 	}
 	SIA_phin_choonhavan = {
 		name="Phin Choonhavan"
@@ -75,6 +110,17 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_phin_choonhavan
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_infantry_2}
 		}
 	}
 	SIA_charun_rattanakun_seriroengrit = {
@@ -93,6 +139,17 @@ characters={
 			planning_skill = 3
 			logistics_skill = 2
 		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_charun_rattanakun_seriroengrit
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_logistics_1}
+		}
 	}
 	SIA_pichit_kriangsakphichit = {
 		name="Pichit Kriangsakphichit"
@@ -109,6 +166,17 @@ characters={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 2
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_plaek_phibunsongkhram
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_national_defence_college
+			}
+			traits = {army_chief_planning_1}
 		}
 	}
 	SIA_pridi_banomyong={
@@ -131,11 +199,27 @@ characters={
 	#Scientists
 	SIA_Muni_Mahasandhana = {
 		name = "Muni Mahasandhana Vejyantrangsrit"
-		portraits = { army = { large = "gfx/leaders/SIA/MuniMahasandhanaVejyantrangsrit.jpg" } }
+		portraits = { 
+			army = { large = "gfx/leaders/SIA/MuniMahasandhanaVejyantrangsrit.jpg" } 
+			civilian = {
+				small="gfx/interface/ideas/advisors/idea_Muni_Mahasandhana_Vejyantrangsrit.dds"
+			}
+		}
 		
 		scientist = {
 			traits = { scientist_trait_rocketry_specialist }
 			skills = {	specialization_air = 2 }
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_Muni_Mahasandhana
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {air_chief_ground_support_1}
 		}
 	}
 	SIA_Pun_Bunnag = {
@@ -256,7 +340,7 @@ characters={
 		portraits={
 			army={
 				large = GFX_portrait_SIA_luang_senanarong
-				#small = GFX_portrait_SIA_luang_senanarong_small
+				small = gfx/interface/ideas/advisors/idea_Luang_Senanarong.dds
 			}
 		}
 		corps_commander={
@@ -267,6 +351,17 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_luang_senanarong
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_chief_defensive_1}
 		}
 	}
 	
@@ -275,7 +370,7 @@ characters={
 		portraits={
 			army={
 				large = GFX_portrait_SIA_jit_wichitsongkram
-				#small = GFX_portrait_SIA_jit_wichitsongkram_small
+				small="gfx/interface/ideas/advisors/idea_Jit_Wichitsongkram.dds"
 			}
 		}
 		corps_commander={
@@ -286,6 +381,17 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_charun_rattanakun_seriroengrit
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_regrouping_1}
 		}
 	}
 	
@@ -325,8 +431,8 @@ characters={
 	}	
 	SIA_sangad_chaloryu = {
 		advisor = {
-			slot = navy_chief
-			idea_token = idea_SIA_thawan_thamrongnawasawat
+			slot = high_command
+			idea_token = SIA_sangad_chaloryu
 			allowed = {
 				original_tag = SIA
 			}
@@ -577,6 +683,199 @@ characters={
 				NOT = { has_government = communism }
 			}
 			traits = {pro_democracy_journalist}
+		}
+	}
+	#Theorists
+	SIA_Phraya_Thephatsadin = {
+		name ="Phraya Thephatsadin"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Phraya_Thepahatsadin.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SIA_Phraya_Thephatsadin
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_doctrine_rooted_in_tradition
+			}
+			traits = {military_theorist}
+		}
+	}
+	SIA_Phra_Prasatphitthayayut = {
+		name ="Phra Prasatphitthayayut"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Phra_Prasatphitthayayut.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SIA_Phra_Prasatphitthayayut
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_prussian_school_of_warfare
+			}
+			traits = {mobile_warfare_expert}
+		}
+	}
+	SIA_Fuen_Ronnapakak_Ritthakanee = {
+		name ="Fuen Ronnapakak Ritthakanee"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Fuen_Ronnapakak_Ritthakanee.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_Fuen_Ronnapakak_Ritthakanee
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {air_close_air_support_1}
+		}
+	}
+	SIA_Luang_Athuekthewadet = {
+		name ="Luang Athuekthewadet"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Luang_Athuekthewadet.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_Luang_Athuekthewadet
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {air_air_superiority_1}
+		}
+	}
+	SIA_Luang_Tevaritpanluek = {
+		name ="Luang Tevaritpanluek"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Luang_Tevaritpanluek.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_Luang_Tevaritpanluek
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {air_bomber_interception_1}
+		}
+	}
+	#High Command
+	SIA_Tasanai_Mitphakdee = {
+		name ="Tasanai Mitphakdee"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Tasanai_Mitphakdee.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_Tasanai_Mitphakdee
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {army_cavalry_1}
+		}
+	}
+	SIA_Thahan_Khamhiran = {
+		name ="Thahan Khamhiran"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Thahan_Khamhiran.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_Thahan_Khamhiran
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_marines
+			}
+			traits = {navy_amphibious_assault_2}
+		}
+	}
+	#Airforce Chief
+	SIA_Boonchu_Chandrubeksa = {
+		name ="Boonchu Chandrubeksa"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Boonchu_Chandrubeksa.dds
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_Boonchu_Chandrubeksa
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {air_chief_all_weather_1}
+		}
+	}
+	SIA_Chalermkiat_Watanangura = {
+		name ="Chalermkiat Watanangura"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Chalermkiat_Watanangura.dds
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_Chalermkiat_Watanangura
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {air_chief_safety_1}
+		}
+	}
+	SIA_Tawee_Chulla_tsap = {
+		name ="Tawee Chulla-tsap"
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/advisors/idea_Tawee_Chulla-tsap.dds
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_Tawee_Chulla_tsap
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				
+			}
+			traits = {air_chief_reform_1}
 		}
 	}
 }
