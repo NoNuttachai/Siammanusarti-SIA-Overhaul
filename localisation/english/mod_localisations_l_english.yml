@@ -853,8 +853,8 @@ SIA_thammasat_university_natspirit_desc: ""I love Thammasat because Thammasat ma
 SIA_modify_air_force_modifier_tt: "Modify §Y$SIA_air_force_idea_base$§! by:"
 SIA_unlock_siamese_airways_company_limited: "Unlock the '§YSiamese Airways Company Limited§!' Industrial Concern."
 
-SIA_country_name_change: "Country Name Change"
-SIA_country_name_change_desc: "TBA"
+SIA_land_of_the_free: "The Land of the Free"
+SIA_land_of_the_free_desc: "TBA"
 
 SIA_security_of_the_nation: "Security of the Nation"
 SIA_security_of_the_nation_desc: "TBA"
@@ -878,3 +878,7 @@ SIA_pan_thai_nationalism: "Pan-Thai Nationalism"
 SIA_pan_thai_nationalism_desc: "TBA"
 
 cannot_be_completed_manually: "This focus cannot be completed manually."
+
+ #Cosmetic Names
+ SIA_fascism_kot: "Kingdom of Thailand"
+ SIA_fascism_kot_DEF: "the Kingdom of Thailand"

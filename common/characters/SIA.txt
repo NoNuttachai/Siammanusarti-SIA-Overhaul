@@ -64,6 +64,7 @@ characters={
 			available = {
 				
 			}
+			cost = 100
 			traits = {army_chief_offensive_2}
 		}
 	}
@@ -92,7 +93,8 @@ characters={
 			available = {
 				
 			}
-			traits = {army_chief_organizational_1}
+			cost = 100
+			traits = {army_chief_organizational_2}
 		}
 	}
 	SIA_phin_choonhavan = {
@@ -176,7 +178,8 @@ characters={
 			available = {
 				has_completed_focus = SIA_national_defence_college
 			}
-			traits = {army_chief_planning_1}
+			cost = 100
+			traits = {army_chief_planning_2}
 		}
 	}
 	SIA_pridi_banomyong={
@@ -219,7 +222,8 @@ characters={
 			available = {
 				
 			}
-			traits = {air_chief_ground_support_1}
+			cost = 100
+			traits = {air_chief_ground_support_2}
 		}
 	}
 	SIA_Pun_Bunnag = {
@@ -361,7 +365,8 @@ characters={
 			available = {
 				
 			}
-			traits = {army_chief_defensive_1}
+			cost = 100
+			traits = {army_chief_defensive_2}
 		}
 	}
 	
@@ -702,6 +707,7 @@ characters={
 			available = {
 				has_completed_focus = SIA_doctrine_rooted_in_tradition
 			}
+			cost = 100
 			traits = {military_theorist}
 		}
 	}
@@ -721,6 +727,7 @@ characters={
 			available = {
 				has_completed_focus = SIA_prussian_school_of_warfare
 			}
+			cost = 100
 			traits = {mobile_warfare_expert}
 		}
 	}
@@ -837,7 +844,8 @@ characters={
 			available = {
 				
 			}
-			traits = {air_chief_all_weather_1}
+			cost = 100
+			traits = {air_chief_all_weather_2}
 		}
 	}
 	SIA_Chalermkiat_Watanangura = {
@@ -856,7 +864,8 @@ characters={
 			available = {
 				
 			}
-			traits = {air_chief_safety_1}
+			cost = 100
+			traits = {air_chief_safety_2}
 		}
 	}
 	SIA_Tawee_Chulla_tsap = {
@@ -875,7 +884,8 @@ characters={
 			available = {
 				
 			}
-			traits = {air_chief_reform_1}
+			cost = 100
+			traits = {air_chief_reform_2}
 		}
 	}
 }

@@ -149,13 +149,34 @@ focus_tree = {
 		x = -4
 		y = 1
 		cost = 10
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = SIA_marshal_phibun_ascension
+				}
+			}
+		}
+		offset = {
+			x = 4
+			trigger = {
+				has_completed_focus = SIA_pridi_premiership
+			}
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = cannot_be_completed_manually
 				always = no
 			}
 		}
-		completion_reward = { }
+		completion_reward = { 
+			mark_focus_tree_layout_dirty = yes
+		}
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_marshal_phibun_ascension }
 	}
@@ -514,6 +535,25 @@ focus_tree = {
 		x = 4
 		y = 1
 		cost = 10
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = SIA_pridi_premiership
+				}
+			}
+		}
+		offset = {
+			x = -4
+			trigger = {
+				has_completed_focus = SIA_marshal_phibun_ascension
+			}
+		}
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = cannot_be_completed_manually
@@ -526,6 +566,7 @@ focus_tree = {
 				left_side = SIA_phibun_weak
 				right_side = SIA_phibun_side
 			}
+			mark_focus_tree_layout_dirty = yes
 		}
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_pridi_premiership }
@@ -557,7 +598,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { 
-			country_event = sia_events.4
+			
 		}
 		prerequisite = { focus = SIA_purge }
 	}
@@ -582,13 +623,15 @@ focus_tree = {
 		prerequisite = { focus = SIA_purge }
 	}
 	focus = {
-		id = SIA_country_name_change
+		id = SIA_land_of_the_free
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_purge
 		x = 2
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			set_cosmetic_tag = SIA_fascism_kot
+		}
 		prerequisite = { focus = SIA_purge }
 	}
 	focus = {
@@ -599,15 +642,15 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_country_name_change}
+		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_land_of_the_free}
 	}
 	
 	focus = {
 		id = SIA_install_pridi_as_economic_minister
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_marshal_phibun_ascension
-		x = -5
-		y = 2
+		x = -2
+		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
@@ -636,22 +679,22 @@ focus_tree = {
 	focus = {
 		id = SIA_honor_the_flag
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_country_name_change
+		relative_position_id = SIA_land_of_the_free
 		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_country_name_change focus = SIA_mass_media_propaganda }
+		prerequisite = { focus = SIA_land_of_the_free focus = SIA_mass_media_propaganda }
 	}
 	focus = {
 		id = SIA_pan_thai_nationalism
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_country_name_change
+		relative_position_id = SIA_land_of_the_free
 		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_country_name_change focus = SIA_mass_media_propaganda }
+		prerequisite = { focus = SIA_land_of_the_free focus = SIA_mass_media_propaganda }
 	}
 	focus = {
 		id = SIA_militarized_society
