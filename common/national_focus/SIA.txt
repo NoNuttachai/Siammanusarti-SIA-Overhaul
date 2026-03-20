@@ -42,7 +42,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_thammasat_university #bonus for PP gain, no research bonus because the uni is focused only on political degrees then
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_university_3
 		relative_position_id = SIA_legacy_of_revolution
 		x = -2
 		y = 1
@@ -58,7 +58,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_reform_the_sangha
-		icon = gfx_goal_unknown
+		icon = GFX_focus_smiling_buddha
 		relative_position_id = SIA_legacy_of_revolution
 		x = 2
 		y = 1
@@ -182,7 +182,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_amend_the_constitution
-		icon = gfx_goal_unknown
+		icon = GFX_focus_AUS_lawmaking_leniency
 		relative_position_id = SIA_pridi_premiership
 		x = 0
 		y = 1
@@ -194,7 +194,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_promote_democratic_ideals
-		icon = gfx_goal_unknown
+		icon = GFX_goal_support_democracy
 		relative_position_id = SIA_pridi_premiership
 		x = 2
 		y = 1
@@ -204,7 +204,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_free_the_political_prisoners
-		icon = gfx_goal_unknown
+		icon = GFX_focus_CHI_arrest_the_seven_gentlemen
 		relative_position_id = SIA_pridi_premiership
 		x = -2
 		y = 1
@@ -228,7 +228,7 @@ focus_tree = {
 	}
 	focus = {
 		id =SIA_curtail_the_army
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_crush_the_military
 		relative_position_id = SIA_amend_the_constitution
 		x = -1
 		y = 1
@@ -245,7 +245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_align_with_navy
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		relative_position_id = SIA_amend_the_constitution
 		x = 1
 		y = 1
@@ -256,7 +256,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_organize_a_free_election
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_election
 		relative_position_id =SIA_curtail_the_army
 		x = 1
 		y = 1
@@ -430,7 +430,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_royalist_conservativism
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_monarchy_2
 		relative_position_id = SIA_khung_aphaiwong_premiership
 		x = -3
 		y = 1
@@ -440,7 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_reappoint_army_generals #Any Military Generals that have been fired by Pridi will be reinstated
-		icon = gfx_goal_unknown
+		icon = GFX_focus_chi_army_reform
 		relative_position_id = SIA_seni_pramoj_premiership
 		x = 1
 		y = 1
@@ -450,7 +450,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_anti-communist_rhetoric
-		icon = gfx_goal_unknown
+		icon = GFX_focus_GER_end_european_communism
 		relative_position_id = SIA_royalist_conservativism
 		x = 1
 		y = 1
@@ -460,7 +460,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_pro_business_policies
-		icon = gfx_goal_unknown
+		icon = GFX_focus_RAJ_just_good_business
 		relative_position_id = SIA_khung_aphaiwong_premiership
 		x = 1
 		y = 1
@@ -470,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_tiger_economy
-		icon = gfx_goal_unknown
+		icon = GFX_focus_BEL_engine_of_the_economy
 		relative_position_id = SIA_pro_business_policies
 		x = -1
 		y = 1
@@ -481,7 +481,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_support_labor_unions
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_workers
 		relative_position_id = SIA_khana_ratsadon_reelected
 		x = 2
 		y = 2
@@ -491,7 +491,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_nationwide_land_reform
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_modernizing_agriculture
 		relative_position_id = SIA_thawan_thamrong_premiership
 		x = -1
 		y = 1
@@ -501,7 +501,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_scientific_democratic_socialism
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		relative_position_id = SIA_continue_pridi_administration
 		x = 1
 		y = 1
@@ -521,7 +521,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_anti-fascist_rhetoric #Enable War Justification on Fascist Countries
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		relative_position_id = SIA_scientific_democratic_socialism
 		x = -1
 		y = 1
@@ -574,7 +574,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_purge
-		icon = gfx_goal_unknown
+		icon = GFX_focus_SOV_military_purge
 		relative_position_id = SIA_marshal_phibun_ascension
 		x = 0
 		y = 1
@@ -594,7 +594,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_mass_media_propaganda
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		relative_position_id = SIA_purge
 		x = -2
 		y = 1
@@ -611,7 +611,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_national_construction
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_modernize_industry
 		relative_position_id = SIA_mass_media_propaganda
 		x = 1
 		y = 1
@@ -622,11 +622,11 @@ focus_tree = {
 				days = 200
 			}
 		}
-		prerequisite = { focus = SIA_mass_media_propaganda }
+		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_land_of_the_free }
 	}
 	focus = {
 		id = SIA_believe_in_leader
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_military_academy
 		relative_position_id = SIA_purge
 		x = 0
 		y = 1
@@ -689,7 +689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_economic_nationalism
-		icon = gfx_goal_unknown
+		icon = GFX_focus_DEN_heavy_regulations
 		relative_position_id = SIA_cultural_revolution
 		x = 3
 		y = 1
@@ -702,7 +702,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_language_reform
-		icon = gfx_goal_unknown
+		icon = GFX_focus_CHI_registry_of_property
 		relative_position_id = SIA_cultural_revolution
 		x = 1
 		y = 1
@@ -732,7 +732,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_pan_thai_nationalism
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_national_unity
 		relative_position_id = SIA_land_of_the_free
 		x = 1
 		y = 1
@@ -749,7 +749,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_militarized_society
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_military_mission
 		relative_position_id = SIA_pan_thai_nationalism
 		x = -1
 		y = 1
@@ -768,7 +768,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_phibun_resigns
-		icon = gfx_goal_unknown
+		icon = GFX_focus_BEL_government_resigns
 		relative_position_id = SIA_language_reform
 		x = 1
 		y = 1
@@ -791,7 +791,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_total_dictatorial_powers
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_military_dictatorship
 		relative_position_id = SIA_language_reform
 		x = 3
 		y = 1
@@ -813,7 +813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_expand_the_special_branch
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_secret_service_agency
 		relative_position_id = SIA_purge
 		x = 5
 		y = 1
@@ -2182,7 +2182,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_air_force #add "siamese air force" as a NatSpirit
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_air_fighter
 		x = 0
 		y = 0
 		
@@ -2327,7 +2327,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_adopt_japanese_aircraft #historical
-		icon = GFX_goal_unknown
+		icon = GFX_focus_jap_zero
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_adopt_american_aircraft }
 		prerequisite = {
@@ -2360,7 +2360,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_air_maneuverability #add air aces and air superiority bonuses
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_copy_plane_designs
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_strategic_bombing }
 		prerequisite = { focus = SIA_adopt_japanese_aircraft focus = SIA_adopt_american_aircraft }
@@ -2387,7 +2387,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_domestic_aircraft_production 
-		icon = gfx_goal_unknown
+		icon = GFX_goal_continuous_air_production
 		relative_position_id = SIA_western_aviation_studies
 		x = -1
 		y = 1
@@ -2412,7 +2412,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_the_prajadhipok_fighter
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_the_boripatra_bomber }
 		prerequisite = { focus = SIA_domestic_aircraft_production }
@@ -2445,7 +2445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_the_boripatra_bomber
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_the_prajadhipok_fighter }
 		prerequisite = { focus = SIA_domestic_aircraft_production }
@@ -2479,7 +2479,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_strategic_bombing
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWE_marauder_bombers
 		cost = 5.00
 		mutually_exclusive = { focus = SIA_air_maneuverability }
 		prerequisite = { focus = SIA_the_prajadhipok_fighter focus = SIA_the_boripatra_bomber }
@@ -2528,7 +2528,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_adopt_american_aircraft
-		icon = gfx_goal_unknown
+		icon = GFX_focus_usa_escort_fighters
 		mutually_exclusive = { focus = SIA_adopt_japanese_aircraft }
 		relative_position_id = SIA_purchase_foreign_aircraft
 		x = 1
@@ -2567,7 +2567,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_royal_air_force_academy
-		icon = SIA_air_force
+		icon = GFX_focus_generic_air_research_boost
 		relative_position_id = SIA_air_maneuverability
 		x = -2
 		y = 1
@@ -2597,7 +2597,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_siamese_airways_company_limited
-		icon = SIA_air_force
+		icon = GFX_goal_generic_air_production
 		relative_position_id = SIA_air_maneuverability
 		x = 1 
 		y = 1
@@ -2619,7 +2619,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_build_eastern_air_bases #For bombing French Indochina
-		icon = SIA_air_force
+		icon = GFX_goal_generic_build_airforce
 		relative_position_id = SIA_air_force
 		x = 1
 		y = 1
