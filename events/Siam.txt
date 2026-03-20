@@ -287,6 +287,24 @@ country_event = {
 }
 
 country_event = {
+    id = sia_events.9 # Discontent Within the Ranks
+    title = sia_events.9.t
+    desc = sia_events.9.desc
+    picture = report_event_phraya_phahon_reelected
+
+	is_triggered_only = yes
+
+    option = {
+        name = sia_events.9.a # Keep an eye on them.
+		unlock_decision_category_tooltip = SIA_discontent_within_the_ranks
+		set_country_flag = SIA_military_discontent
+		hidden_effect = {
+			# Add starting alignments here
+		}
+    }
+}
+
+country_event = {
 	id = sia_unit_leader_event.0
 	hidden = yes
 	fire_only_once = yes
