@@ -16,4 +16,49 @@ leader_traits = {
 		
 		new_commander_weight = { factor = 0 }
 	}
+
+	SIA_general_supportive = {
+		type = land
+		trait_type = status_trait
+		allowed = {
+			FROM = {
+				tag = SIA
+			}
+		}
+		field_marshal_modifier = {
+			land_reinforce_rate = 0.025
+		}
+		modifier = {
+			army_morale_factor = 0.10
+			naval_morale_factor = 0.10
+			promote_cost_factor = -0.25
+		}		
+	}
+	SIA_general_neutral = {
+		type = land
+		trait_type = status_trait
+		allowed = {
+			FROM = {
+				tag = SIA
+			}
+		}	
+	}
+	SIA_general_hostile = {
+		type = land
+		trait_type = status_trait
+		allowed = {
+			FROM = {
+				tag = SIA
+			}
+		}
+		field_marshal_modifier = {
+			land_reinforce_rate = -0.05
+		}
+		modifier = {
+			reassignment_duration_factor = 0.25
+			army_morale_factor = -0.10
+			naval_morale_factor = -0.10
+			promote_cost_factor = 1.0
+		}	
+	}
 }
