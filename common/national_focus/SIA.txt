@@ -945,7 +945,7 @@ focus_tree = {
 	#Army Branch
 	focus = {
 		id = SIA_army
-		icon = GFX_focus_r56_goal_SIA_siamese_army
+		icon = GFX_goal_generic_army_doctrines
 		x = 17
 		y = 0
 		
@@ -983,7 +983,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_national_defence_college
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		relative_position_id = SIA_army
 		x = 0
 		y = 1
@@ -1012,7 +1012,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_prussian_school_of_warfare
-		icon = gfx_goal_unknown
+		icon = GFX_focus_GER_prussian_legacy
 		relative_position_id = SIA_army
 		x = 1
 		y = 2
@@ -1080,7 +1080,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_jungle_warfare_training
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_jungle_training
 		relative_position_id = SIA_prussian_school_of_warfare
 		x = -3
 		y = 1
@@ -1135,7 +1135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_anti_air_defences
-		icon = GFX_focus_generic_reinforcing_the_supply_network
+		icon = GFX_focus_PRC_anti_air_effort
 		relative_position_id = SIA_improve_army_logistics
 		x = 0
 		y = 2
@@ -1187,7 +1187,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_prepare_defensive_infrastructure
-		icon = GFX_focus_generic_reinforcing_the_supply_network
+		icon = GFX_goal_generic_fortify_city
 		relative_position_id = SIA_import_radio_technology
 		x = -1
 		y = 2
@@ -1217,7 +1217,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_terrain_mastery
-		icon = GFX_focus_generic_reinforcing_the_supply_network
+		icon = GFX_focus_FIN_weapon_caches
 		relative_position_id = SIA_army
 		x = 1
 		y = 4
@@ -1247,7 +1247,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_offensive_doctrine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_major_war
 		relative_position_id = SIA_terrain_mastery
 		x = 1
 		y = 2
@@ -1379,7 +1379,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_increase_the_reserve_force
-		icon = gfx_goal_unknown
+		icon = GFX_focus_CHI_tongzi_jun
 		relative_position_id = SIA_army
 		x = 8
 		y = 1
@@ -1414,7 +1414,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_yuwachon_thahan
-		icon = gfx_goal_unknown
+		icon = GFX_focus_CHI_military_mission
 		relative_position_id = SIA_increase_the_reserve_force
 		x = 1
 		y = 1
@@ -1577,7 +1577,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_purchase_new_arms
-		icon = gfx_goal_unknown
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		relative_position_id = SIA_army
 		x = 4
 		y = 1
@@ -1596,7 +1596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_import_foreign_tanks
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_army_tanks
 		x = -1
 		y = 1
 
@@ -1731,7 +1731,7 @@ focus_tree = {
 	#Police Branch
 	focus = {
 		id = SIA_police
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_national_security
 		x = 26
 		y = 0
 		
@@ -1755,7 +1755,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_special_branch_bureau
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_whispers
 		relative_position_id = SIA_police
 		x = 1
 		y = 1
@@ -1773,7 +1773,7 @@ focus_tree = {
 	#Navy Branch
 	focus = {
 		id = SIA_navy
-		icon = gfx_goal_unknown
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 		x = 8
 		y = 0
 		
@@ -1923,7 +1923,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_build_small_patrol_boats
-		icon = gfx_goal_unknown
+		icon = GFX_focus_POL_develop_polish_shipbuilding
 		relative_position_id = SIA_expand_dockyards
 		x = 1
 		y = 1
@@ -1955,7 +1955,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_commission_foreign_ships
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_refit_civilian_ships
 		relative_position_id = SIA_navy
 		x = -2
 		y = 1
@@ -1980,7 +1980,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_thonburi_class_ship
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_cruiser2
 		relative_position_id = SIA_commission_foreign_ships
 		x = 0
 		y = 1
@@ -2145,7 +2145,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_naval_science_department #naval research bonus and spawn naval research facility in Sattahip
-		icon = GFX_focus_unknown
+		icon = GFX_focus_generic_navy_research_bonus
 		relative_position_id = SIA_phang-nga_naval_base
 		x = 0
 		y = 2
@@ -2248,7 +2248,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_marines
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_naval_invasion
 		relative_position_id = SIA_navy
 		x = 6
 		y = 1
@@ -2656,7 +2656,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_phahonyothin_road
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_road_investment
 		relative_position_id = SIA_revitalize_the_economy
 		x = 3
 		y = 2
@@ -2666,7 +2666,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_attract_chinese_capital
-		icon = gfx_goal_unknown
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
 		relative_position_id = SIA_revitalize_the_economy
 		x = 5
 		y = 1
@@ -2677,7 +2677,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_establish_a_central_bank
-		icon = gfx_goal_unknown
+		icon = GFX_focus_PER_national_bank
 		relative_position_id = SIA_revitalize_the_economy
 		x = -5
 		y = 1
@@ -2689,7 +2689,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_invite_western_companies
-		icon = gfx_goal_unknown
+		icon = GFX_goal_generic_intelligence_exchange
 		relative_position_id = SIA_establish_a_central_bank
 		x = 0
 		y = 1
@@ -2702,7 +2702,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_workers
 		relative_position_id = SIA_attract_chinese_capital
 		x = 0
 		y = 1
@@ -2713,7 +2713,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_curb_chinese_immigration
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_limited_social_mobilization
 		relative_position_id = SIA_attract_chinese_capital
 		x = 2
 		y = 0
@@ -2782,7 +2782,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย #Country is NOT democratic #Phraya Phahon is NOT leader
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_immigration
 		relative_position_id = SIA_curb_chinese_immigration
 		x = 0
 		y = 1
@@ -2811,7 +2811,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_rice_security #Thai Rice Company IF country is Fascist
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_farmland
 		x = -2
 		y = 2
 
@@ -2842,7 +2842,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_granary_of_the_orient
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_modernizing_agriculture
 		x = 3	
 		y = 1
 
@@ -2856,7 +2856,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_industrialized_the_nation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		x = 6
 		y = 1
 
@@ -2954,7 +2954,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_rail_expansion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_railroad
 		x = 0
 		y = 1
 		prerequisite = { focus = SIA_phahonyothin_road }
@@ -2970,7 +2970,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_road_construction
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_improve_roads
 		x = 2
 		y = 1
 		prerequisite = { focus = SIA_phahonyothin_road }
@@ -3030,7 +3030,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_incorporate_combat_engineers
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_position_armies
 		x = 0	
 		y = 3
 
