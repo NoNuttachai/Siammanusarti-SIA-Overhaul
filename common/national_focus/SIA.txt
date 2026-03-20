@@ -222,6 +222,7 @@ focus_tree = {
 				idea = SIA_freed_royalist_political_prisoners
 				days = 180
 			}
+			hidden_effect = { country_event = { id = sia_events.9 days = 30 } }
 		}
 		prerequisite = { focus = SIA_pridi_premiership }
 	}
