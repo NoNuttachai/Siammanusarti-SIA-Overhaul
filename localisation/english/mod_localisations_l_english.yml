@@ -268,6 +268,8 @@ SIA_discontent_within_the_ranks_desc: "Many senior officers within the armed for
 SIA_general_supportive: "Supportive of Government"
 SIA_general_neutral: "Neutral Towards Government"
 SIA_general_hostile: "Hostile Towards Government"
+SIA_hostile_generals_take_action: "Hostile Generals Take Action!"
+SIA_neutral_leader_goes_hostile: "One neutral General or Admiral will §Rdefect!§!"
 
 SIA_curtail_the_army: "Curtail the Army"
 SIA_curtail_the_army_desc: ""
