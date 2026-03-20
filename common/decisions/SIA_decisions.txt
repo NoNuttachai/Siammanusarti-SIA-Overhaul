@@ -328,3 +328,50 @@ SIA_succession_of_khana_ratsadon = {
 		}
 	}
 }
+
+SIA_discontent_within_the_ranks = {
+	SIA_hostile_generals_take_action = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 25
+
+		fire_only_once = yes
+
+		activation = {
+			always = no
+		}
+
+		visible = {
+			hidden_trigger = {
+				tag = SIA
+				has_country_flag = SIA_military_discontent
+				check_variable = { SIA_neutral_leaders > 0 }
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			activate_mission = SIA_hostile_generals_take_action
+			custom_effect_tooltip = SIA_neutral_leader_goes_hostile
+			hidden_effect = {
+				random_character = {
+					limit = { has_trait = SIA_general_neutral }
+					remove_unit_leader_trait = SIA_general_neutral
+					add_unit_leader_trait = SIA_general_hostile
+				}
+				add_to_variable = { SIA_hostile_leaders = 1 }
+				subtract_from_variable = { SIA_neutral_leaders = 1 }
+			}
+		}
+	}		
+}
