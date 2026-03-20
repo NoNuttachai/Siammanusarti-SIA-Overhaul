@@ -299,7 +299,28 @@ country_event = {
 		unlock_decision_category_tooltip = SIA_discontent_within_the_ranks
 		set_country_flag = SIA_military_discontent
 		hidden_effect = {
-			# Add starting alignments here
+			every_army_leader = {
+				add_unit_leader_trait = SIA_general_neutral
+			}
+			every_navy_leader = {
+				add_unit_leader_trait = SIA_general_neutral
+			}
+			SIA_phraya_phahon = {
+				remove_unit_leader_trait = SIA_general_neutral
+				add_unit_leader_trait = SIA_general_supportive
+			}
+			SIA_thawan_thamrongnawasawat = {
+				remove_unit_leader_trait = SIA_general_neutral
+				add_unit_leader_trait = SIA_general_supportive
+			}
+			SIA_phraya_songsuradet = {
+				remove_unit_leader_trait = SIA_general_neutral
+				add_unit_leader_trait = SIA_general_hostile
+			}
+			SIA_phin_choonhavan = {
+				remove_unit_leader_trait = SIA_general_neutral
+				add_unit_leader_trait = SIA_general_hostile
+			}
 		}
     }
 }
