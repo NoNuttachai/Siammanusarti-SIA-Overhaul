@@ -171,6 +171,21 @@ SpriteTypes = {
 		texturefile = "gfx/interface/traits/Khana_Ratsadon_Commander_Trait.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_trait_SIA_general_supportive"
+		texturefile = "gfx/interface/traits/general_supportive.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_SIA_general_neutral"
+		texturefile = "gfx/interface/traits/general_neutral.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_SIA_general_hostile"
+		texturefile = "gfx/interface/traits/general_hostile.png"
+		legacy_lazy_load = no
+	}
 
 	#Decision Pictures
 	spriteType = {
