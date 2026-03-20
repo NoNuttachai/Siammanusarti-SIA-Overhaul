@@ -275,6 +275,10 @@ SIA_appeal_to_the_unaligned: "Appeal to the Unaligned"
 SIA_any_neutral_leaders: "Any Generals or Admirals are §YNeutral§!."
 SIA_neutral_leader_goes_supportive: "One neutral General or Admiral will become §Gsupportive§!."
 
+SIA_reach_out_to_the_dissidents: "Reach Out to the Dissidents"
+SIA_any_hostile_leaders: "Any Generals or Admirals are §RHostile§!."
+SIA_hostile_leader_goes_neutral: "One hostile General or Admiral will become §Yneutral§!."
+
 SIA_curtail_the_army: "Curtail the Army"
 SIA_curtail_the_army_desc: ""
 SIA_has_75_dem_support: "Have at least §Y75%§! Democratic support"
