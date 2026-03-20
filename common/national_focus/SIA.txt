@@ -584,6 +584,7 @@ focus_tree = {
 					unit_leader_event = sia_unit_leader_event.1
 				}
 			}
+			add_stability = -0.1
 			effect_tooltip = {
 				country_event = sia_unit_leader_event.1
 			}
@@ -598,7 +599,12 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { 
-			
+			add_war_support = 0.03
+			add_political_power = 75
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 		prerequisite = { focus = SIA_purge }
 	}
@@ -609,7 +615,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_timed_idea = { 
+				idea = SIA_national_construction_idea
+				days = 200
+			}
+		}
 		prerequisite = { focus = SIA_mass_media_propaganda }
 	}
 	focus = {
@@ -619,7 +630,14 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_political_power = 100
+			add_power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value = 0.15
+				tooltip_side = SIA_phibun_side
+			}
+		}
 		prerequisite = { focus = SIA_purge }
 	}
 	focus = {
@@ -630,6 +648,10 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { 
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.15
+			}
 			set_cosmetic_tag = SIA_fascism_kot
 		}
 		prerequisite = { focus = SIA_purge }
@@ -641,7 +663,9 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = SIA_new_thai_society
+		}
 		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_land_of_the_free}
 	}
 	
@@ -652,7 +676,14 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = 0.05
+			add_power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value = -0.15
+				tooltip_side = SIA_phibun_weak
+			}
+		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
 	}
 	focus = {
@@ -662,7 +693,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = SIA_economic_nationalism_idea
+		}
 		prerequisite = { focus = SIA_cultural_revolution }
 		prerequisite = { focus = SIA_pan_thai_nationalism }
 	}
@@ -673,7 +706,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = SIA_new_thai_society
+				add_idea = SIA_new_thai_society_1
+			}
+		}
 		prerequisite = { focus = SIA_cultural_revolution }
 	}
 	focus = {
@@ -683,7 +721,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_timed_idea = {
+				idea = SIA_new_anthem
+				days = 100
+			}
+		}
 		prerequisite = { focus = SIA_land_of_the_free focus = SIA_mass_media_propaganda }
 	}
 	focus = {
@@ -693,7 +736,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = SIA_pan_thai_nationalism
+			add_power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value = 0.1
+				tooltip_side = SIA_phibun_side
+			}
+		}
 		prerequisite = { focus = SIA_land_of_the_free focus = SIA_mass_media_propaganda }
 	}
 	focus = {
@@ -703,7 +753,16 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_manpower = 25000
+			add_war_support = 0.1
+			swap_ideas = {
+				remove_idea = SIA_pan_thai_nationalism
+				add_idea = SIA_pan_thai_nationalism_1
+			}
+			add_ideas  = war_economy
+			
+		}
 		prerequisite = { focus = SIA_pan_thai_nationalism }
 	}
 	focus = {
@@ -713,7 +772,18 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		available = {
+			power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value < -0.3
+			}
+		}
+		completion_reward = {
+			remove_country_leader_role = {
+				character = SIA_plaek_phibunsongkhram
+				ideology = fascism_ideology
+			}
+		}
 		prerequisite = { focus = SIA_language_reform }
 		prerequisite = { focus = SIA_militarized_society }
 		mutually_exclusive = { focus = SIA_total_dictatorial_powers }
@@ -725,7 +795,17 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 10
-		completion_reward = { }
+		available = {
+			power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value > 0.7
+			}
+		}
+		completion_reward = { 
+			SIA_plaek_phibunsongkhram = {
+				add_country_leader_trait = dictator
+			}
+		}
 		prerequisite = { focus = SIA_language_reform }
 		prerequisite = { focus = SIA_militarized_society }
 		mutually_exclusive = { focus = SIA_phibun_resigns }
@@ -737,7 +817,17 @@ focus_tree = {
 		x = 5
 		y = 1
 		cost = 10
-		completion_reward = { }
+		available = {
+			OR = {
+				has_completed_focus = SIA_special_branch_bureau
+				has_intelligence_agency = yes
+			}
+		}
+		completion_reward = { 
+			upgrade_intelligence_agency = upgrade_passive_defense
+			upgrade_intelligence_agency = upgrade_crypto_strength
+			upgrade_intelligence_agency = upgrade_form_department
+		}
 		prerequisite = { focus = SIA_purge }
 	}
 	focus = {
@@ -1672,7 +1762,12 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_police }
-		completion_reward = { }
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Special Branch Bureau"
+				icon = GFX_intelligence_agency_logo_agency
+			}
+		}
 	}
 	#Navy Branch
 	focus = {

@@ -747,5 +747,95 @@ ideas = {
 				production_speed_bunker_factor = 0.2
 			}
 		}
+		SIA_national_construction_idea = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		SIA_economic_nationalism_idea = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05				
+			}
+		}
+		SIA_new_anthem = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_weekly = 0.003		
+				war_support_weekly = 0.004		
+				fascism_drift = 0.02
+			}
+		}
+		SIA_pan_thai_nationalism = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.15
+			}
+		}
+		SIA_pan_thai_nationalism_1 = {
+			name = SIA_pan_thai_nationalism
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				war_support_factor = 0.1
+				production_speed_arms_factory_factor = 0.15 
+				industrial_capacity_factory = 0.10
+				conscription_factor = 0.15
+			}
+		}
+		SIA_new_thai_society = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		SIA_new_thai_society_1 = {
+			name = SIA_new_thai_society
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.1
+				fascism_drift = 0.05
+			}
+		}
 	}
 }

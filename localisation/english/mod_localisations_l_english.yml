@@ -877,6 +877,18 @@ SIA_protect_the_weak_desc: "TBA"
 SIA_pan_thai_nationalism: "Pan-Thai Nationalism"
 SIA_pan_thai_nationalism_desc: "TBA"
 
+SIA_national_construction_idea: "National Construction Policy"
+SIA_national_construction_idea_desc: "TBA"
+
+SIA_new_thai_society: "New Thai Society"
+SIA_new_thai_society_desc: "TBA"
+
+SIA_new_anthem: "Promoting National Anthem"
+SIA_new_anthem_desc: "TBA"
+
+SIA_economic_nationalism_idea: "Economic Nationalism"
+SIA_economic_nationalism_idea_desc: "TBA"
+
 cannot_be_completed_manually: "This focus cannot be completed manually."
 
  #Cosmetic Names
