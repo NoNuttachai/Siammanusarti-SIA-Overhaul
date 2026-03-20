@@ -299,27 +299,36 @@ country_event = {
 		unlock_decision_category_tooltip = SIA_discontent_within_the_ranks
 		set_country_flag = SIA_military_discontent
 		hidden_effect = {
+			set_variable = { SIA_neutral_leaders = 0 }
+			set_variable = { SIA_supportive_leaders = 0 }
+			set_variable = { SIA_hostile_leaders = 0 }
 			every_army_leader = {
 				add_unit_leader_trait = SIA_general_neutral
+				ROOT = { add_to_variable = { SIA_neutral_leaders = 1 } }
 			}
 			every_navy_leader = {
 				add_unit_leader_trait = SIA_general_neutral
+				ROOT = { add_to_variable = { SIA_neutral_leaders = 1 } }
 			}
 			SIA_phraya_phahon = {
 				remove_unit_leader_trait = SIA_general_neutral
 				add_unit_leader_trait = SIA_general_supportive
+				ROOT = { add_to_variable = { SIA_supportive_leaders = 1 } subtract_from_variable = { SIA_neutral_leaders = 1 } }
 			}
 			SIA_thawan_thamrongnawasawat = {
 				remove_unit_leader_trait = SIA_general_neutral
 				add_unit_leader_trait = SIA_general_supportive
+				ROOT = { add_to_variable = { SIA_supportive_leaders = 1 } subtract_from_variable = { SIA_neutral_leaders = 1 } }
 			}
 			SIA_phraya_songsuradet = {
 				remove_unit_leader_trait = SIA_general_neutral
 				add_unit_leader_trait = SIA_general_hostile
+				ROOT = { add_to_variable = { SIA_hostile_leaders = 1 } subtract_from_variable = { SIA_neutral_leaders = 1 } }
 			}
 			SIA_phin_choonhavan = {
 				remove_unit_leader_trait = SIA_general_neutral
 				add_unit_leader_trait = SIA_general_hostile
+				ROOT = { add_to_variable = { SIA_hostile_leaders = 1 } subtract_from_variable = { SIA_neutral_leaders = 1 } }
 			}
 		}
     }
