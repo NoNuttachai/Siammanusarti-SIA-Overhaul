@@ -373,5 +373,36 @@ SIA_discontent_within_the_ranks = {
 				subtract_from_variable = { SIA_neutral_leaders = 1 }
 			}
 		}
-	}		
+	}
+	
+	SIA_appeal_to_the_unaligned = {
+		icon = GFX_decision_icon_default
+		visible = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIA_any_neutral_leaders
+				check_variable = { SIA_neutral_leaders > 0 }
+			}			
+		}
+		days_remove = 20
+			
+		cost = 50
+		remove_effect = {	
+			custom_effect_tooltip = SIA_neutral_leader_goes_supportive
+			hidden_effect = {
+				random_character = {
+					limit = { has_trait = SIA_general_neutral }
+					remove_unit_leader_trait = SIA_general_neutral
+					add_unit_leader_trait = SIA_general_supportive
+				}
+				add_to_variable = { SIA_supportive_leaders = 1 }
+				subtract_from_variable = { SIA_neutral_leaders = 1 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}	
 }
