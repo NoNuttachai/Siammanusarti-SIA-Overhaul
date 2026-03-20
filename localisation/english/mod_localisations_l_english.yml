@@ -259,6 +259,12 @@ SIA_free_the_political_prisoners: "Free the Political Prisoners"
 SIA_free_the_political_prisoners_desc: ""
 SIA_anti_communist_act_revoked: "Anti-Communist Act Revoked"
 SIA_freed_royalist_political_prisoners: "Freed Royalist Political Prisoners"
+sia_events.9.t: "Discontent within the Ranks"
+sia_events.9.desc: "TBA"
+sia_events.9.a: "Keep an eye on them."
+
+SIA_discontent_within_the_ranks: "Discontent within the Ranks"
+SIA_discontent_within_the_ranks_desc: "Many senior officers within the armed forces have smeared Pridi Banomyong as being a communist and have grown increasingly hostile towards jos administration. While figures such as Phraya Phahon and Thawan Thamrongnawasawat remain firmly supportive, other sincluding Phraya Songsuradet and Phin Choonhavan are hostile to Pridi's leadership.\n\nWe can secure the loyalty of the armed forces either by retiring the hostile officers from key military positions or by persuading neutral commanders to align with our government. Otherwise, there is a serious risk that hostile elements could convince them to join their side instead.\n\nArmy generals and Navy admirals' current support:\n(TBA) are §Gsupportive§! of Pridi's government.\n(TBA) are §Yneutral§! regarding Pridi's government.\n(TBA) are §Rhostile§! to Pridi's government.\n\n§RIf too much of our military leadership is hostile to the government, they might attempt a military coup.§R"
 
 SIA_curtail_the_army: "Curtail the Army"
 SIA_curtail_the_army_desc: ""
