@@ -405,4 +405,35 @@ SIA_discontent_within_the_ranks = {
 			factor = 100			
 		}
 	}	
+
+	SIA_reach_out_to_the_dissidents = {
+		icon = GFX_decision_icon_default
+		visible = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIA_any_hostile_leaders
+				check_variable = { SIA_hostile_leaders > 0 }
+			}			
+		}
+		days_remove = 40
+			
+		cost = 75
+		remove_effect = {	
+			custom_effect_tooltip = SIA_hostile_leader_goes_neutral
+			hidden_effect = {
+				random_character = {
+					limit = { has_trait = SIA_general_hostile }
+					remove_unit_leader_trait = SIA_general_hostile
+					add_unit_leader_trait = SIA_general_neutral
+				}
+				add_to_variable = { SIA_neutral_leaders = 1 }
+				subtract_from_variable = { SIA_hostile_leaders = 1 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
 }
