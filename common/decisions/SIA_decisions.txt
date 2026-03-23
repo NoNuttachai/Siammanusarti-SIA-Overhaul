@@ -346,6 +346,7 @@ SIA_discontent_within_the_ranks = {
 
 		activation = {
 			check_variable = { SIA_neutral_leaders > 0 }
+			hidden_trigger = { has_country_flag = SIA_military_discontent }
 		}
 
 		visible = {
@@ -452,6 +453,7 @@ SIA_discontent_within_the_ranks = {
 
 		activation = {
 			check_variable = { SIA_neutral_leaders < 1 }
+			hidden_trigger = { has_country_flag = SIA_military_discontent }
 		}
 
 		visible = {
