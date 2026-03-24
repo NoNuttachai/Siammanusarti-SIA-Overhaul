@@ -309,43 +309,20 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
-		mutually_exclusive = { focus = SIA_southeast_asian_self_determination }
-	}
-	focus = {
-		id = SIA_recognized_european_rule #maybe change this to something better, taking this will have you not support any indepedent movements in SEA
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_rekindle_with_the_colonial_powers
-		x = -1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_rekindle_with_the_colonial_powers }
-		mutually_exclusive = { focus = SIA_guardian_of_southeast_asia }
+		mutually_exclusive = { focus = SIA_thai_irredentism }
 	}
 	focus = {
 		id = SIA_southeast_asian_self_determination #Funds Movements in SEA to rebel EXCEPT Vietnam #https://en.wikipedia.org/wiki/South_East_Asia_League
-		icon = gfx_goal_unknown #IF Conservatives are in power: ASEAN IF Khana Ratsadon in power: Southeast Asian League
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade #IF Conservatives are in power: ASEAN IF Khana Ratsadon in power: Southeast Asian League
 		relative_position_id =SIA_renegotiate_the_unequal_treaties
-		x = 2
+		x = -6
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
-		mutually_exclusive = { focus = SIA_rekindle_with_the_colonial_powers focus = SIA_thai_irredentism }
 	}
 	focus = {
-		id = SIA_guardian_of_southeast_asia #Unlock decisions to transfer British colonies and the Philippines as Siamese puppets
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_southeast_asian_self_determination
-		x = -3
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_southeast_asian_self_determination focus = SIA_rekindle_with_the_colonial_powers }
-		mutually_exclusive = { focus = SIA_recognized_european_rule }
-	}
-	focus = {
-		id = SIA_liberate_indochina_from_imperialism #War goal on whoever control Indochina
+		id = SIA_back_the_viet_minh #Pridi MUST be leader #Funds the Viet Minh to rebel
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_southeast_asian_self_determination
 		x = -1
@@ -353,30 +330,118 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_southeast_asian_self_determination }
-		mutually_exclusive = { focus = SIA_backed_ho_chi_minh }
-	}
-	focus = {
-		id = SIA_backed_ho_chi_minh #Pridi MUST be leader #Funds the Viet Minh to rebel
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_southeast_asian_self_determination
-		x = 1
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_southeast_asian_self_determination }
-		mutually_exclusive = { focus = SIA_liberate_indochina_from_imperialism }
+		mutually_exclusive = { focus = SIA_strike_indochina }
 	}
 	focus = {
 		id = SIA_one_vision_one_identity_one_community #Country becomes United States of Southeast Asian Nations #enable decisions to puppet SEA countries
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_renegotiate_the_unequal_treaties
-		x = 0
-		y = 3
+		relative_position_id = SIA_back_the_viet_minh
+		x = 1
+		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_recognized_european_rule }
-		prerequisite = { focus = SIA_guardian_of_southeast_asia }
-		prerequisite = { focus = SIA_liberate_indochina_from_imperialism focus = SIA_backed_ho_chi_minh }
+		prerequisite = { focus = SIA_strike_indochina }
+		prerequisite = { focus = SIA_back_the_viet_minh }
+	}
+	focus = {
+		id = SIA_expand_rubber_exports
+		icon = gfx_goal_unknown
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
+	}
+	focus = {
+		id = SIA_follow_the_rising_sun
+		icon = GFX_focus_PER_fascist_reach_out_to_japan
+		relative_position_id = SIA_expand_rubber_exports
+		x = -1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus =SIA_expand_rubber_exports }
+		mutually_exclusive = { focus = SIA_the_red_white_and_blue }
+	}
+	focus = {
+		id = SIA_the_red_white_and_blue
+		icon = GFX_focus_generic_china1
+		relative_position_id = SIA_expand_rubber_exports
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus =SIA_expand_rubber_exports }
+		mutually_exclusive = { focus = SIA_follow_the_rising_sun }
+	}
+	focus = {
+		id = SIA_invite_western_companies
+		icon = GFX_goal_generic_intelligence_exchange
+		relative_position_id = SIA_follow_the_rising_sun
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { 
+			unlock_military_industrial_organization_tooltip = mio:USA_ford_motor_company_organization 
+			unlock_military_industrial_organization_tooltip = mio:JAP_nissan_organization
+		}
+		prerequisite = { focus = SIA_follow_the_rising_sun focus = SIA_the_red_white_and_blue }
+	}
+	focus = {
+		id = SIA_attract_chinese_capital
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
+		mutually_exclusive = { focus = SIA_curb_chinese_immigration }
+	}
+	focus = {
+		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader
+		icon = GFX_focus_generic_workers
+		relative_position_id = SIA_attract_chinese_capital
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_attract_chinese_capital }
+		mutually_exclusive = { focus = SIA_chinese_assimilation_policy }
+	}
+	focus = {
+		id = SIA_curb_chinese_immigration
+		icon = GFX_focus_generic_limited_social_mobilization
+		relative_position_id = SIA_attract_chinese_capital
+		x = 2
+		y = 0
+		cost = 10
+		completion_reward = { }
+		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
+		mutually_exclusive = { focus = SIA_attract_chinese_capital }
+	}
+	focus = {
+		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย #Country is NOT democratic #Phraya Phahon is NOT leader
+		icon = GFX_focus_generic_immigration
+		relative_position_id = SIA_curb_chinese_immigration
+		x = 0
+		y = 1
+		cost = 10
+		completion_reward = { }
+		mutually_exclusive = { focus = SIA_the_siamese_melting_pot }
+		prerequisite = { focus = SIA_curb_chinese_immigration focus = SIA_attract_chinese_capital }
+	}
+	focus = {
+		id = SIA_volunteers_to_china 
+		icon = GFX_focus_generic_china1
+		relative_position_id = SIA_the_siamese_melting_pot
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = { }
+		mutually_exclusive = { focus = SIA_the_siamese_melting_pot }
+		prerequisite = { focus = SIA_the_siamese_melting_pot focus = SIA_chinese_assimilation_policy }
 	}
 	focus = {
 		id = SIA_continue_pridi_administration
@@ -842,26 +907,28 @@ focus_tree = {
 		id = SIA_thai_irredentism
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_legacy_of_revolution
-		x = 8
+		x = 10
 		y = 2
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
-		mutually_exclusive = { focus = SIA_southeast_asian_self_determination }
+		mutually_exclusive = { focus = SIA_rekindle_with_the_colonial_powers }
 	}
 	focus = {
 		id = SIA_strike_indochina
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_thai_irredentism
-		x = -1
+		relative_position_id = SIA_southeast_asian_self_determination
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_thai_irredentism }
+		prerequisite = { focus = SIA_southeast_asian_self_determination }
+		mutually_exclusive = { focus = SIA_back_the_viet_minh }
 	}
 	focus = {
-		id = SIA_burma_campaign
-		icon = gfx_goal_unknown
+		id = SIA_strike_at_the_british_colonies
+		icon = GFX_focus_attack_britain
 		relative_position_id = SIA_thai_irredentism
 		x = 1
 		y = 1
@@ -870,7 +937,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_thai_irredentism }
 	}
 	focus = {
-		id = SIA_strike_south
+		id = SIA_a_greater_siam
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_thai_irredentism
 		x = 0
@@ -2665,23 +2732,13 @@ focus_tree = {
 		id = SIA_phahonyothin_road
 		icon = GFX_focus_generic_road_investment
 		relative_position_id = SIA_revitalize_the_economy
-		x = 4
-		y = 2
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_revitalize_the_economy }
-	}
-	focus = {
-		id = SIA_attract_chinese_capital
-		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
-		relative_position_id = SIA_revitalize_the_economy
-		x = 6
+		x = 5
 		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_revitalize_the_economy }
-		mutually_exclusive = { focus = SIA_curb_chinese_immigration }
 	}
+	
 	focus = {
 		id = SIA_establish_a_central_bank
 		icon = GFX_focus_Establish_the_National_Bank
@@ -2693,41 +2750,6 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		completion_reward = { }
-	}
-	focus = {
-		id = SIA_invite_western_companies
-		icon = GFX_goal_generic_intelligence_exchange
-		relative_position_id = SIA_establish_a_central_bank
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = { 
-			unlock_military_industrial_organization_tooltip = mio:USA_ford_motor_company_organization 
-			unlock_military_industrial_organization_tooltip = mio:JAP_nissan_organization
-		}
-		prerequisite = { focus = SIA_establish_a_central_bank }
-	}
-	focus = {
-		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader
-		icon = GFX_focus_generic_workers
-		relative_position_id = SIA_attract_chinese_capital
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_attract_chinese_capital }
-		mutually_exclusive = { focus = SIA_chinese_assimilation_policy }
-	}
-	focus = {
-		id = SIA_curb_chinese_immigration
-		icon = GFX_focus_generic_limited_social_mobilization
-		relative_position_id = SIA_attract_chinese_capital
-		x = 2
-		y = 0
-		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_revitalize_the_economy }
-		mutually_exclusive = { focus = SIA_attract_chinese_capital }
 	}
 	focus = {
 		id = SIA_rural_provincial_development
@@ -2787,17 +2809,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย #Country is NOT democratic #Phraya Phahon is NOT leader
-		icon = GFX_focus_generic_immigration
-		relative_position_id = SIA_curb_chinese_immigration
-		x = 0
-		y = 1
-		cost = 10
-		completion_reward = { }
-		mutually_exclusive = { focus = SIA_the_siamese_melting_pot }
-		prerequisite = { focus = SIA_curb_chinese_immigration focus = SIA_attract_chinese_capital }
-	}
+	
 	focus = {
 		id = SIA_encorage_rubber_plantations
 		icon = GFX_focus_generic_rubber_plantations
@@ -2964,7 +2976,7 @@ focus_tree = {
 	focus = {
 		id = SIA_rail_expansion
 		icon = GFX_focus_generic_railroad
-		x = 1
+		x = -1
 		y = 1
 		prerequisite = { focus = SIA_phahonyothin_road }
 		relative_position_id = SIA_phahonyothin_road
@@ -2980,7 +2992,7 @@ focus_tree = {
 	focus = {
 		id = SIA_prioritized_road_expansion
 		icon = GFX_focus_generic_improve_roads
-		x = 3
+		x = 1
 		y = 1
 		prerequisite = { focus = SIA_phahonyothin_road }
 		relative_position_id = SIA_phahonyothin_road
@@ -3094,7 +3106,7 @@ focus_tree = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_goal_unknown
-		x = 75
+		x = 77
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
