@@ -3,7 +3,7 @@ bookmarks = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
-		#picture = "GFX_select_date_1936"
+		picture = "GFX_select_date_1936"
 		default_country = "SIA"
 		default = yes
 
@@ -16,7 +16,9 @@ bookmarks = {
 				SIA_lingering_depression
 			}
 			focuses = {
-				
+				SIA_revitalize_the_economy
+				SIA_legacy_of_revolution
+				SIA_marshal_phibun_ascension
 			}
 		}
 

@@ -199,7 +199,10 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SIA_kulap_saipradit
+		}	
 		prerequisite = { focus = SIA_pridi_premiership }
 	}
 	focus = {
@@ -825,9 +828,13 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = SIA_phao_siyanon
+			custom_effect_tooltip = generic_skip_one_line_tt
 			upgrade_intelligence_agency = upgrade_passive_defense
 			upgrade_intelligence_agency = upgrade_crypto_strength
 			upgrade_intelligence_agency = upgrade_form_department
+			
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
 	}
@@ -983,7 +990,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_national_defence_college
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_focus_National_Defense_College
 		relative_position_id = SIA_army
 		x = 0
 		y = 1
@@ -2677,7 +2684,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_establish_a_central_bank
-		icon = GFX_focus_PER_national_bank
+		icon = GFX_focus_Establish_the_National_Bank
 		relative_position_id = SIA_revitalize_the_economy
 		x = -4
 		y = 1

@@ -77,7 +77,7 @@ SIA_air_force_idea: "Royal [THIS.GetAdjective] Air Force"
 SIA_air_force_idea_desc: ""
 SIA_siamese_royal_navy: "Royal [THIS.GetAdjective] Navy"
 
-SIA_army_tt: "Modify §HRoyal [THIS.GetAdjective] Army§! by"
+SIA_army_tt: "Add §HRoyal [THIS.GetAdjective] Army§!, which grants"
 SIA_army_of_siam: "Royal [THIS.GetAdjective] Army"
 
 # Miscellaneous
@@ -172,6 +172,13 @@ SIA_entice_masses_cost_tt: "The cost for §YEntice the Masses§! decisions will 
 SIA_transfer_phibun_crown_property_back: "Transfer Phibun Crown Property Back"
 SIA_commission_an_indepedent_gov_investigation: "Commission an Independent Government Investigation"
 SIA_fire_officials_involved: "Fire Officials Involved in the Scandal"
+
+SIA_principle_1_national_independence: "Promote Principle I: National Independence"
+SIA_principle_2_public_safety: "Promote Principle II: Public Safety"
+SIA_principle_3_economic_welfare: "Promote Principle III: Economic Welfare"
+SIA_principle_4_equality: "Promote Principle IV: Equality"
+SIA_principle_5_liberty: "Promote Principle V: Liberty"
+SIA_principle_6_freedom: "Promote Principle VI: Freedom"
 
 # Tooltip
 unlock_six_principles_tt: "Unlocks £decision_icon_small decisions to propagandized §YThe Six Principles§!"

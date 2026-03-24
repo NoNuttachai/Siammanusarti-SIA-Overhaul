@@ -30,7 +30,8 @@ characters={
 			available = {
 				
 			}
-			traits = {army_artillery_1}
+			cost = 100
+			traits = {army_artillery_2}
 		}
 	}
 	SIA_plaek_phibunsongkhram={
@@ -122,6 +123,7 @@ characters={
 			available = {
 				
 			}
+			cost = 100
 			traits = {army_infantry_2}
 		}
 	}
@@ -150,7 +152,8 @@ characters={
 			available = {
 				
 			}
-			traits = {army_logistics_1}
+			cost = 100
+			traits = {army_logistics_2}
 		}
 	}
 	SIA_pichit_kriangsakphichit = {
@@ -396,7 +399,8 @@ characters={
 			available = {
 				
 			}
-			traits = {army_regrouping_1}
+			cost = 100
+			traits = {army_regrouping_2}
 		}
 	}
 	
@@ -747,7 +751,8 @@ characters={
 			available = {
 				
 			}
-			traits = {air_close_air_support_1}
+			cost = 100
+			traits = {air_close_air_support_2}
 		}
 	}
 	SIA_Luang_Athuekthewadet = {
@@ -766,7 +771,8 @@ characters={
 			available = {
 				
 			}
-			traits = {air_air_superiority_1}
+			cost = 100
+			traits = {air_air_superiority_2}
 		}
 	}
 	SIA_Luang_Tevaritpanluek = {
@@ -785,7 +791,8 @@ characters={
 			available = {
 				
 			}
-			traits = {air_bomber_interception_1}
+			cost = 100
+			traits = {air_bomber_interception_2}
 		}
 	}
 	#High Command
@@ -805,7 +812,8 @@ characters={
 			available = {
 				
 			}
-			traits = {army_cavalry_1}
+			cost = 100
+			traits = {army_cavalry_2}
 		}
 	}
 	SIA_Thahan_Khamhiran = {
@@ -824,6 +832,7 @@ characters={
 			available = {
 				has_completed_focus = SIA_marines
 			}
+			cost = 100
 			traits = {navy_amphibious_assault_2}
 		}
 	}
