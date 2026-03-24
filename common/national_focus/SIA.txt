@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 52
+        x = 54
         y = 0
         cost = 5
         available = { }
@@ -146,7 +146,7 @@ focus_tree = {
 		id = SIA_pridi_premiership
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = -4
+		x = -5
 		y = 1
 		cost = 10
 		allow_branch = {
@@ -533,7 +533,7 @@ focus_tree = {
 		id = SIA_marshal_phibun_ascension
 		icon = GFX_focus_SIA_marshal_phibun_ascension
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = 4
+		x = 5
 		y = 1
 		cost = 10
 		allow_branch = {
@@ -596,7 +596,7 @@ focus_tree = {
 		id = SIA_mass_media_propaganda
 		icon = GFX_goal_generic_propaganda
 		relative_position_id = SIA_purge
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 		completion_reward = { 
@@ -613,7 +613,7 @@ focus_tree = {
 		id = SIA_national_construction
 		icon = GFX_focus_generic_modernize_industry
 		relative_position_id = SIA_mass_media_propaganda
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { 
@@ -622,13 +622,13 @@ focus_tree = {
 				days = 200
 			}
 		}
-		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_land_of_the_free }
+		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
 	}
 	focus = {
 		id = SIA_believe_in_leader
 		icon = GFX_focus_generic_military_academy
 		relative_position_id = SIA_purge
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { 
@@ -644,37 +644,37 @@ focus_tree = {
 	focus = {
 		id = SIA_land_of_the_free
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_purge
-		x = 2
+		relative_position_id = SIA_marshal_phibun_ascension
+		x = -2
 		y = 1
 		cost = 10
 		completion_reward = { 
 			add_popularity = {
 				ideology = fascism
-				popularity = 0.15
+				popularity = 0.1
 			}
 			set_cosmetic_tag = SIA_fascism_kot
 		}
-		prerequisite = { focus = SIA_purge }
+		prerequisite = { focus = SIA_marshal_phibun_ascension }
 	}
 	focus = {
 		id = SIA_cultural_revolution
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_believe_in_leader
-		x = -3
+		x = -4
 		y = 1
 		cost = 10
 		completion_reward = { 
 			add_ideas = SIA_new_thai_society
 		}
-		prerequisite = { focus = SIA_mass_media_propaganda focus = SIA_land_of_the_free}
+		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
 	}
 	
 	focus = {
 		id = SIA_install_pridi_as_economic_minister
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_marshal_phibun_ascension
-		x = -2
+		x = -5
 		y = 1
 		cost = 10
 		completion_reward = { 
@@ -718,8 +718,8 @@ focus_tree = {
 	focus = {
 		id = SIA_honor_the_flag
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_land_of_the_free
-		x = -1
+		relative_position_id = SIA_believe_in_leader
+		x = 0
 		y = 1
 		cost = 10
 		completion_reward = { 
@@ -728,13 +728,13 @@ focus_tree = {
 				days = 100
 			}
 		}
-		prerequisite = { focus = SIA_land_of_the_free focus = SIA_mass_media_propaganda }
+		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
 	}
 	focus = {
 		id = SIA_pan_thai_nationalism
 		icon = GFX_goal_generic_national_unity
-		relative_position_id = SIA_land_of_the_free
-		x = 1
+		relative_position_id = SIA_believe_in_leader
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = { 
@@ -745,14 +745,14 @@ focus_tree = {
 				tooltip_side = SIA_phibun_side
 			}
 		}
-		prerequisite = { focus = SIA_land_of_the_free focus = SIA_mass_media_propaganda }
+		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
 	}
 	focus = {
 		id = SIA_militarized_society
 		icon = GFX_focus_generic_military_mission
-		relative_position_id = SIA_pan_thai_nationalism
-		x = -1
-		y = 1
+		relative_position_id = SIA_believe_in_leader
+		x = 1
+		y = 2
 		cost = 10
 		completion_reward = { 
 			add_manpower = 25000
@@ -814,8 +814,8 @@ focus_tree = {
 	focus = {
 		id = SIA_expand_the_special_branch
 		icon = GFX_focus_generic_secret_service_agency
-		relative_position_id = SIA_purge
-		x = 5
+		relative_position_id = SIA_marshal_phibun_ascension
+		x = 2
 		y = 1
 		cost = 10
 		available = {
@@ -829,7 +829,7 @@ focus_tree = {
 			upgrade_intelligence_agency = upgrade_crypto_strength
 			upgrade_intelligence_agency = upgrade_form_department
 		}
-		prerequisite = { focus = SIA_purge }
+		prerequisite = { focus = SIA_marshal_phibun_ascension }
 	}
 	focus = {
 		id = SIA_thai_irredentism
@@ -875,9 +875,9 @@ focus_tree = {
 	focus = {
 		id = SIA_thai-japanese_aillance_shared_focus
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_thai_irredentism
+		relative_position_id = SIA_marshal_phibun_ascension
 		x = 0
-		y = 8
+		y = 6
 		cost = 10
 		completion_reward = { }
 	}
@@ -2644,7 +2644,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = -15
+		x = -17
 		y = 1
 		
 		cost = 2
