@@ -1862,7 +1862,13 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_ideas = SIA_siamese_royal_navy
+			effect_tooltip = { add_ideas = SIA_siamese_royal_navy_base }
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = SIA_siamese_royal_navy }
+				set_variable = { SIA_experience_gain_navy_factor = 0.05 }
+				set_variable = { SIA_navy_anti_air_attack_factor = 0.05 }
+				set_variable = { SIA_navy_spirit_category_type_cost_factor = -0.1 }
+			}
 		}
 	}
 	focus = {
@@ -1881,10 +1887,20 @@ focus_tree = {
 				cost_reduction = 0.75
 				uses = 1
 				category = naval_doctrine
-			}		
-			swap_ideas = {
-				add_idea = SIA_siamese_royal_navy_2
-				remove_idea = SIA_siamese_royal_navy
+			}	
+		
+			custom_effect_tooltip = SIA_navy_tt
+			add_to_variable = { 
+				SIA_experience_gain_navy_factor = 0.05
+				tooltip = experience_gain_navy_factor_tt 
+			}
+			add_to_variable = { 
+				SIA_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tt 
+			}
+			add_to_variable = { 
+				SIA_spotting_chance = 0.25
+				tooltip = spotting_chance_tt 
 			}
 		}
 	}
@@ -2005,7 +2021,17 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_expand_dockyards }
-		completion_reward = { add_ideas = SIA_patrolling_our_coasts }
+		completion_reward = { 
+			custom_effect_tooltip = SIA_navy_tt
+			add_to_variable = { 
+				SIA_screening_efficiency = 0.2
+				tooltip = screening_efficiency_tt 
+			}
+			add_to_variable = { 
+				SIA_naval_coordination = 0.2
+				tooltip = naval_coordination_tt 
+			}
+		}
 	}
 	focus = {
 		id = SIA_expand_the_merchant_fleet
@@ -2018,7 +2044,11 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_expand_dockyards }
 		completion_reward = { 
-			add_ideas = SIA_merchants_on_the_high_seas
+			custom_effect_tooltip = SIA_navy_tt
+			add_to_variable = { 
+				SIA_convoy_retreat_speed = 0.1
+				tooltip = convoy_retreat_speed_tt 
+			}
 			add_equipment_to_stockpile = { 
 				type = convoy
 				amount = 50 
@@ -2330,7 +2360,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_navy focus = SIA_army }
 		completion_reward = {
-			custom_effect_tooltip = SIA_army_tt
+			custom_effect_tooltip = SIA_navy_tt
 			add_to_variable = { 
 				SIA_naval_invasion_prep_speed_var = 0.05
 				tooltip = naval_invasion_prep_speed_tt 
