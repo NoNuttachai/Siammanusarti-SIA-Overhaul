@@ -75,7 +75,12 @@ SIA_cyclers_idea: "Yuwachon Thahan (Youth Corps)"
 
 SIA_air_force_idea: "Royal [THIS.GetAdjective] Air Force"
 SIA_air_force_idea_desc: ""
+
 SIA_siamese_royal_navy: "Royal [THIS.GetAdjective] Navy"
+SIA_siamese_royal_navy_desc: ""
+SIA_siamese_royal_navy_base: "$SIA_siamese_royal_navy$"
+SIA_siamese_royal_navy_base_desc: "$SIA_siamese_royal_navy_desc$"
+SIA_navy_tt: "Modify §H$SIA_siamese_royal_navy$§! by:"
 
 SIA_army_tt: "Add §HRoyal [THIS.GetAdjective] Army§!, which grants"
 SIA_army_of_siam: "Royal [THIS.GetAdjective] Army"
