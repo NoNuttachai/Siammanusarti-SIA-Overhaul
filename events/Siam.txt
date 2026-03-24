@@ -199,8 +199,8 @@ country_event = {
 		}
 		set_party_name = {
 			ideology = neutrality
-			long_name = royal_thai_armed_forces_party
-			name = royal_thai_armed_forces_party
+			long_name = royal_siamese_armed_forces_party_long
+			name = royal_siamese_armed_forces_party
 		}
 		promote_character = SIA_phraya_songsuradet
 		complete_national_focus = SIA_pridi_premiership

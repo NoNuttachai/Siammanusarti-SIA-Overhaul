@@ -600,7 +600,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_marshal_phibun_ascension
+				has_completed_focus = SIA_expand_the_special_branch
 				NOT = { has_government = communism }
 			}
 			traits = {prince_of_terror}
@@ -684,7 +684,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_phraya_phanon_steps_down
+				has_completed_focus = SIA_promote_democratic_ideals
 				NOT = { has_government = communism }
 			}
 			traits = {pro_democracy_journalist}
