@@ -163,7 +163,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = 4
+			x = 5
 			trigger = {
 				has_completed_focus = SIA_pridi_premiership
 			}
@@ -298,7 +298,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_legacy_of_revolution }
+		prerequisite = { focus = SIA_legacy_of_revolution focus = SIA_opposed_khana_ratsadon }
 	}
 	focus = {
 		id = SIA_rekindle_with_the_colonial_powers
@@ -406,7 +406,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = SIA_chinese_immigration_influx
+				add_idea = SIA_chinese_immigration_influx_0
+			}
+		}
 		prerequisite = { focus = SIA_attract_chinese_capital }
 		mutually_exclusive = { focus = SIA_chinese_assimilation_policy }
 	}
@@ -417,7 +422,12 @@ focus_tree = {
 		x = 2
 		y = 0
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = SIA_chinese_immigration_influx
+				add_idea = SIA_chinese_immigration_influx_1
+			}
+		}
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_attract_chinese_capital }
 	}
@@ -617,7 +627,7 @@ focus_tree = {
 			}
 		}
 		offset = {
-			x = -4
+			x = -5
 			trigger = {
 				has_completed_focus = SIA_marshal_phibun_ascension
 			}
@@ -1163,7 +1173,7 @@ focus_tree = {
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_prussian_school_of_warfare focus = SIA_import_foreign_tanks }
+		prerequisite = { focus = SIA_doctrine_rooted_in_tradition focus = SIA_import_foreign_tanks }
 
 		completion_reward = {
 			custom_effect_tooltip = SIA_army_tt
@@ -1859,6 +1869,7 @@ focus_tree = {
 					type = naval_base
 					level = 1
 					instant_build = yes
+					province = 7408
 				}
 			}
 			effect_tooltip = { add_ideas = SIA_siamese_royal_navy_base }
@@ -3067,15 +3078,16 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 	
 		completion_reward = { 
-		add_equipment_to_stockpile = {
-			type = anti_air_equipment_2
-			amount = 800
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_2
+				amount = 800
 			}
-		add_unit_bonus = {
-			anti_air = {
-				reliability = 0.10
+			add_unit_bonus = {
+				anti_air = {
+					reliability = 0.10
 				}
 			}
+			unlock_military_industrial_organization_tooltip = mio:SWE_bofors_organization
 		}
 	}
 	focus = {

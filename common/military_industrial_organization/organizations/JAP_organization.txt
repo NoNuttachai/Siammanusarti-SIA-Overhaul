@@ -2678,7 +2678,7 @@ JAP_nissan_organization = {
 			limit = {
 				FROM = { original_tag = SIA }
 			}
-			FROM = { has_completed_focus = SIA_invite_japanese_zaibatsus }
+			FROM = { has_completed_focus = SIA_invite_western_companies }
 		}
 		IF = {
 			limit = {

@@ -602,23 +602,10 @@ ideas = {
 			}
 		}
 
-		SIA_patrolling_our_coasts = {
+		SIA_siamese_royal_navy_base  = {
 			removal_cost = -1
 			
-			picture = generic_sea_focused_navy
-			
-			allowed = { always = yes }
-			
-			modifier = {
-				screening_efficiency = 0.2
-				naval_coordination = 0.2
-			}
-		}
-
-		SIA_siamese_royal_navy = {
-			removal_cost = -1
-			
-			picture = GFX_idea_royal_siamese_navy_natspirit
+			picture = royal_siamese_navy_natspirit
 			
 			allowed = { always = yes }
 			
@@ -626,20 +613,6 @@ ideas = {
 				experience_gain_navy_factor = 0.05
 				navy_anti_air_attack_factor = 0.05
 				navy_spirit_category_type_cost_factor = -0.1				
-			}
-		}
-		SIA_siamese_royal_navy_2 = {
-			removal_cost = -1
-			
-			picture = GFX_idea_royal_siamese_navy_natspirit
-			
-			allowed = { always = yes }
-			
-			modifier = {
-				experience_gain_navy_factor = 0.1
-				navy_anti_air_attack_factor = 0.1
-				navy_spirit_category_type_cost_factor = -0.1	
-				spotting_chance	= 0.25		
 			}
 		}
 
@@ -678,25 +651,6 @@ ideas = {
 			modifier = {
 				repair_speed_factor = 0.25
 				naval_defense_factor = 0.1
-			}
-		}
-
-		SIA_merchants_on_the_high_seas = {
-			removal_cost = -1
-			
-			picture = generic_convoys
-			
-			allowed = { always = yes }
-			
-			modifier = {
-				convoy_retreat_speed = 0.1
-			}
-
-			equipment_bonus = {
-				convoy = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
 			}
 		}
 		
