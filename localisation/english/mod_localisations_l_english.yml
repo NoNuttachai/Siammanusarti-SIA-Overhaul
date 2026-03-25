@@ -776,11 +776,11 @@ SIA_fund_thmmayuth_nikai_desc: "TBA"
 SIA_state_buddhism: "Thammayuth Nikai State Buddhism"
 SIA_state_buddhism_desc: "TBA"
 
-SIA_pan_aillience__with_buddhist_nations: "Multisect Buddhism"
-SIA_pan_aillience__with_buddhist_nations_desc: "TBA"
+SIA_multisect_buddhism: "Multisect Buddhism"
+SIA_multisect_buddhism_desc: "TBA"
 
-SIA_alligned_sri_lanka: "Influence in Sri Lanka"
-SIA_alligned_sri_lanka_desc: "TBA"
+SIA_align_sri_lanka: "Influence in Sri Lanka"
+SIA_align_sri_lanka_desc: "TBA"
 
 SIA_land_of_the_buddha: "Land of the Buddha"
 SIA_land_of_the_buddha_desc: "TBA"
