@@ -40,7 +40,15 @@ spriteTypes = {
 		texturefile = "gfx/events/report_event_pridi_king_white_elephant_movie.dds"
 	}
 	SpriteType = {
+		name = "report_event_thai_language_reform_event"
+		texturefile = "gfx/events/report_event_thai_language_reform_event.dds"
+	}
+	SpriteType = {
 		name = "report_event_bangkok_flooding"
 		texturefile = "gfx/events/report_event_bangkok_Flooding.dds"
+	}
+	SpriteType = {
+		name = "GFX_news_event_siam_to_thailand"
+		texturefile = "gfx/events/news_event_siam_to_thailand.dds"
 	}
 }

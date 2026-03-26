@@ -1,6 +1,7 @@
 add_namespace = N_SIA
 add_namespace = N_SIA_NEWS
 add_namespace = sia_events
+add_namespace = sia_global_events
 add_namespace = sia_BOP_event
 add_namespace = sia_unit_leader_event
 
@@ -332,6 +333,33 @@ country_event = {
 			}
 		}
     }
+}
+
+country_event = {
+    id = sia_events.10 #Langauge Reform
+    title = sia_events.10.t
+    desc = sia_events.10.d
+    picture = report_event_thai_language_reform_event
+
+	fire_only_once = yes
+    
+    option = {
+        name = sia_events.10.a
+    }
+}
+
+news_event = {
+	id = sia_global_events.1
+	title = sia_global_events.1.t
+	desc = sia_global_events.1.d
+	picture = GFX_news_event_siam_to_thailand
+	
+	is_triggered_only = yes
+
+	major = yes
+	option = {
+		name = sia_global_events.1.a
+	}
 }
 
 country_event = {

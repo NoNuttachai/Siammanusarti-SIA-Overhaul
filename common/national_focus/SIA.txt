@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 54
+        x = 47
         y = 0
         cost = 5
         available = { }
@@ -128,7 +128,7 @@ focus_tree = {
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_constitutionalism
 		x = 0
-		y = 2
+		y = 3
 		cost = 5
 		available = {
 			SIA_phraya_phahon = {
@@ -294,17 +294,17 @@ focus_tree = {
 		id = SIA_renegotiate_the_unequal_treaties
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_legacy_of_revolution
-		x = 14
+		x = 10
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_legacy_of_revolution }
+		prerequisite = { focus = SIA_legacy_of_revolution focus = SIA_opposed_khana_ratsadon }
 	}
 	focus = {
 		id = SIA_rekindle_with_the_colonial_powers
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_renegotiate_the_unequal_treaties
-		x = -2
+		x = 2
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -315,7 +315,7 @@ focus_tree = {
 		id = SIA_southeast_asian_self_determination #Funds Movements in SEA to rebel EXCEPT Vietnam #https://en.wikipedia.org/wiki/South_East_Asia_League
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade #IF Conservatives are in power: ASEAN IF Khana Ratsadon in power: Southeast Asian League
 		relative_position_id =SIA_renegotiate_the_unequal_treaties
-		x = -6
+		x = -2
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -347,7 +347,7 @@ focus_tree = {
 		id = SIA_expand_rubber_exports
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_renegotiate_the_unequal_treaties
-		x = 0
+		x = 4
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -392,7 +392,7 @@ focus_tree = {
 		id = SIA_attract_chinese_capital
 		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
 		relative_position_id = SIA_renegotiate_the_unequal_treaties
-		x = 3
+		x = -7
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -440,7 +440,6 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		mutually_exclusive = { focus = SIA_the_siamese_melting_pot }
 		prerequisite = { focus = SIA_the_siamese_melting_pot focus = SIA_chinese_assimilation_policy }
 	}
 	focus = {
@@ -721,6 +720,9 @@ focus_tree = {
 				ideology = fascism
 				popularity = 0.1
 			}
+			country_event = {
+				Id = sia_global_events.1
+			}
 			set_cosmetic_tag = SIA_fascism_kot
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
@@ -780,6 +782,10 @@ focus_tree = {
 				remove_idea = SIA_new_thai_society
 				add_idea = SIA_new_thai_society_1
 			}
+			country_event = {
+					Id = sia_events.10
+					days = 5
+				}
 		}
 		prerequisite = { focus = SIA_cultural_revolution }
 	}
@@ -906,9 +912,9 @@ focus_tree = {
 	focus = {
 		id = SIA_thai_irredentism
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_legacy_of_revolution
-		x = 10
-		y = 2
+		relative_position_id = SIA_renegotiate_the_unequal_treaties
+		x = 0
+		y = 1
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
@@ -1020,7 +1026,7 @@ focus_tree = {
 	focus = {
 		id = SIA_army
 		icon = GFX_focus_Royal_Thai_Army
-		x = 17
+		x = 16
 		y = 0
 		
 		cost = 2
@@ -1519,7 +1525,7 @@ focus_tree = {
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_yuwachon_thahan }
+		prerequisite = { focus = SIA_yuwachon_thahan focus = SIA_develop_combined_arms_warfare }
 		completion_reward = {
 			SIA = {
 				set_technology = {
@@ -1538,12 +1544,13 @@ focus_tree = {
 		id = SIA_motorized_infantry
 		icon = GFX_goal_generic_army_motorized
 		relative_position_id = SIA_develop_combined_arms_warfare
-		x = 1
+		x = 3
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus =  SIA_develop_combined_arms_warfare }
+		prerequisite = { focus =  SIA_develop_combined_arms_warfare focus = SIA_founded_chaiseri }
+		mutually_exclusive = { focus = SIA_mechanized_infantry }
 		completion_reward = { 
 			if = {
 				limit = {
@@ -1595,14 +1602,14 @@ focus_tree = {
 	focus = {
 		id = SIA_mechanized_infantry
 		icon = GFX_SOV_pc_of_mechanical_engineering_ccp_2d_sov_compatibility
-		relative_position_id = SIA_motorized_infantry
-		x = 0
+		relative_position_id = SIA_develop_combined_arms_warfare
+		x = 1
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_motorized_infantry }
-		prerequisite = { focus = SIA_terrain_mastery }
+		prerequisite = { focus = SIA_develop_combined_arms_warfare }
+		mutually_exclusive = { focus = SIA_motorized_infantry }
 		completion_reward = {
 			if = {
 				limit = {
@@ -1806,7 +1813,7 @@ focus_tree = {
 	focus = {
 		id = SIA_police
 		icon = GFX_focus_SIA_Police
-		x = 26
+		x = 25
 		y = 0
 		
 		cost = 5
@@ -2322,9 +2329,9 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_marines
-		icon = GFX_focus_generic_naval_invasion
+		icon = GFX_SOV_naval_infantry_ccp_2d_sov_compatibility
 		relative_position_id = SIA_navy
-		x = 6
+		x = 5
 		y = 1
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -2718,8 +2725,8 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = -17
-		y = 1
+		x = -12
+		y = 0
 		
 		cost = 2
 		ai_will_do = { factor = 10 }
@@ -2743,7 +2750,7 @@ focus_tree = {
 		id = SIA_establish_a_central_bank
 		icon = GFX_focus_Establish_the_National_Bank
 		relative_position_id = SIA_revitalize_the_economy
-		x = -4
+		x = 0
 		y = 1
 		
 		cost = 2
@@ -2814,7 +2821,7 @@ focus_tree = {
 		id = SIA_encorage_rubber_plantations
 		icon = GFX_focus_generic_rubber_plantations
 		x = 1	
-		y = 2
+		y = 1
 		prerequisite = { focus = SIA_bangkok_urbanization }
 		relative_position_id = SIA_bangkok_urbanization
 
@@ -2832,7 +2839,7 @@ focus_tree = {
 		id = SIA_rice_security #Thai Rice Company IF country is Fascist
 		icon = GFX_focus_generic_farmland
 		x = 1
-		y = 2
+		y = 1
 
 		relative_position_id = SIA_rural_provincial_development
 		prerequisite = { focus = SIA_rural_provincial_development }
@@ -2946,7 +2953,7 @@ focus_tree = {
 	focus = {
 		id = SIA_chula_uni
 		icon = GFX_focus_Chulalongkorn_University
-		x = -6
+		x = -4
 		y = 1
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		relative_position_id = SIA_revitalize_the_economy
@@ -2961,7 +2968,7 @@ focus_tree = {
 	focus = {
 		id = SIA_education_for_all
 		icon = GFX_focus_Education_for_All
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = { focus = SIA_chula_uni }
 		relative_position_id = SIA_chula_uni
@@ -2977,7 +2984,7 @@ focus_tree = {
 		id = SIA_rail_expansion
 		icon = GFX_focus_generic_railroad
 		x = -1
-		y = 1
+		y = 2
 		prerequisite = { focus = SIA_phahonyothin_road }
 		relative_position_id = SIA_phahonyothin_road
 		mutually_exclusive = { focus = SIA_prioritized_road_expansion }
@@ -2993,7 +3000,7 @@ focus_tree = {
 		id = SIA_prioritized_road_expansion
 		icon = GFX_focus_generic_improve_roads
 		x = 1
-		y = 1
+		y = 2
 		prerequisite = { focus = SIA_phahonyothin_road }
 		relative_position_id = SIA_phahonyothin_road
 		mutually_exclusive = { focus = SIA_rail_expansion }
@@ -3052,11 +3059,11 @@ focus_tree = {
 	focus = {
 		id = SIA_incorporate_combat_engineers
 		icon = GFX_goal_generic_position_armies
-		x = 0	
-		y = 3
+		x = 5	
+		y = 1
 
-		prerequisite = { focus = SIA_mechanized_infantry } 
-		relative_position_id = SIA_bofors_artillery
+		prerequisite = { focus = SIA_develop_combined_arms_warfare } 
+		relative_position_id = SIA_develop_combined_arms_warfare
 
 		cost = 2
 		ai_will_do = { factor = 1 }
@@ -3106,7 +3113,7 @@ focus_tree = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_goal_unknown
-		x = 77
+		x = 64
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
