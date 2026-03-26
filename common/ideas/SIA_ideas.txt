@@ -817,5 +817,59 @@ ideas = {
 				fascism_drift = 0.05
 			}
 		}
+		SIA_rice_security_idea = {
+			removal_cost = -1
+			
+			picture = LIT_invested_in_farms
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				monthly_population = 0.1
+				local_resources_factor = 0.05
+			}
+		}
+		SIA_granary_of_the_orient = {
+			removal_cost = -1
+			
+			picture = LIT_invested_in_farms
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				monthly_population = 0.2
+				local_resources_factor = 0.15
+				compliance_growth_on_our_occupied_states = -0.1
+				supply_consumption_factor = -0.15
+				production_lack_of_resource_penalty_factor = -0.15 
+			}
+		}
+		SIA_national_defense_industry_idea = {
+			removal_cost = -1
+			
+			picture = generic_license_production
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1 
+			}
+		}
+		SIA_workshop_of_southeast_asia = {
+			removal_cost = -1
+			
+			picture = ARG_public_works_investment
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.2
+				production_factory_max_efficiency_factor = 0.2 
+			}
+		}
 	}
 }
