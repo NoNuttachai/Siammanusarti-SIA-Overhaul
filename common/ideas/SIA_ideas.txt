@@ -201,7 +201,7 @@ ideas = {
 		}
 		SIA_constitutionalism_idea = {
 			removal_cost = -1
-			picture = "GFX_idea_SIA_constitutionalism"
+			picture = SIA_constitutionalism
 			allowed = { is_puppet = no }
 
 			modifier = {
@@ -223,7 +223,7 @@ ideas = {
 		}
 		SIA_arms_production = {
 			removal_cost = -1
-			
+			picture = FRA_factory_strikes
 			allowed = { always = yes }
 			
 			modifier = {
@@ -375,7 +375,7 @@ ideas = {
 		SIA_rubber_economy = {
 			removal_cost = -1
 			
-			picture = SIA_rubber_economy
+			picture = can_wartime_prices_and_trade_board
 			
 			allowed = { always = yes }
 			
@@ -388,11 +388,24 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 			}
 		}
-
+		SIA_chinese_immigration_influx_0 = {
+			removal_cost = -1
+			
+			picture = prc_low_popular_support3
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				monthly_population = 0.25
+				stability_factor = -0.2
+				political_power_factor = -0.2
+				research_speed_factor = 0.1
+			}
+		}
 		SIA_chinese_immigration_influx = {
 			removal_cost = -1
 			
-			picture = generic_migration_blue
+			picture = prc_low_popular_support2
 			
 			allowed = { always = yes }
 			
@@ -400,7 +413,20 @@ ideas = {
 				monthly_population = 0.1
 				stability_factor = -0.1
 				political_power_factor = -0.1
-				research_speed_factor = 0.03
+				research_speed_factor = 0.025
+			}
+		}
+		SIA_chinese_immigration_influx_1 = {
+			removal_cost = -1
+			
+			picture = prc_low_popular_support
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				monthly_population = 0.05
+				stability_factor = 0.05
+				research_speed_factor = -0.05
 			}
 		}
 
@@ -448,7 +474,7 @@ ideas = {
 		SIA_education_for_all = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_research_bonus
 			
 			allowed = { always = yes }
 			
@@ -484,7 +510,7 @@ ideas = {
 		SIA_iron_buffalos = {
 					removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = LIT_invested_in_farms
 			
 			allowed = { always = yes }
 			
@@ -566,7 +592,7 @@ ideas = {
 		SIA_small_torpedo_boats = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = hol_naval_heritage
 			
 			allowed = { always = yes }
 			
@@ -576,23 +602,10 @@ ideas = {
 			}
 		}
 
-		SIA_patrolling_our_coasts = {
+		SIA_siamese_royal_navy_base  = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
-			
-			allowed = { always = yes }
-			
-			modifier = {
-				screening_efficiency = 0.2
-				naval_coordination = 0.2
-			}
-		}
-
-		SIA_siamese_royal_navy = {
-			removal_cost = -1
-			
-			picture = GFX_idea_royal_siamese_navy_natspirit
+			picture = royal_siamese_navy_natspirit
 			
 			allowed = { always = yes }
 			
@@ -600,20 +613,6 @@ ideas = {
 				experience_gain_navy_factor = 0.05
 				navy_anti_air_attack_factor = 0.05
 				navy_spirit_category_type_cost_factor = -0.1				
-			}
-		}
-		SIA_siamese_royal_navy_2 = {
-			removal_cost = -1
-			
-			picture = GFX_idea_royal_siamese_navy_natspirit
-			
-			allowed = { always = yes }
-			
-			modifier = {
-				experience_gain_navy_factor = 0.1
-				navy_anti_air_attack_factor = 0.1
-				navy_spirit_category_type_cost_factor = -0.1	
-				spotting_chance	= 0.25		
 			}
 		}
 
@@ -633,7 +632,7 @@ ideas = {
 		SIA_dockyard_expansion = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_the_london_naval_treaty
 			
 			allowed = { always = yes }
 			
@@ -645,32 +644,13 @@ ideas = {
 		SIA_maintaining_our_might = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = AUS_naval_efficiency_idea
 			
 			allowed = { always = yes }
 			
 			modifier = {
 				repair_speed_factor = 0.25
 				naval_defense_factor = 0.1
-			}
-		}
-
-		SIA_merchants_on_the_high_seas = {
-			removal_cost = -1
-			
-			picture = generic_production_bonus
-			
-			allowed = { always = yes }
-			
-			modifier = {
-				convoy_retreat_speed = 0.1
-			}
-
-			equipment_bonus = {
-				convoy = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
 			}
 		}
 		
@@ -728,7 +708,7 @@ ideas = {
 		SIA_thammasat_university_natspirit = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_army_war_college
 			
 			allowed = { always = yes }
 			
@@ -750,7 +730,7 @@ ideas = {
 		SIA_national_construction_idea = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = ARG_construction_guilds
 			
 			allowed = { always = yes }
 			
@@ -761,7 +741,7 @@ ideas = {
 		SIA_economic_nationalism_idea = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_economic_increase
 			
 			allowed = { always = yes }
 			
@@ -774,7 +754,7 @@ ideas = {
 		SIA_new_anthem = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = FRA_national_mobilization_focus
 			
 			allowed = { always = yes }
 			
@@ -787,7 +767,7 @@ ideas = {
 		SIA_pan_thai_nationalism = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_intel_bonus
 			
 			allowed = { always = yes }
 			
@@ -801,7 +781,7 @@ ideas = {
 			name = SIA_pan_thai_nationalism
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_intel_bonus
 			
 			allowed = { always = yes }
 			
@@ -815,7 +795,7 @@ ideas = {
 		SIA_new_thai_society = {
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_fascism_drift_bonus
 			
 			allowed = { always = yes }
 			
@@ -827,7 +807,7 @@ ideas = {
 			name = SIA_new_thai_society
 			removal_cost = -1
 			
-			picture = generic_production_bonus
+			picture = generic_fascism_drift_bonus
 			
 			allowed = { always = yes }
 			

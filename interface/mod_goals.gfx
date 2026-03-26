@@ -103,4 +103,12 @@ spriteTypes = {
 		name = "GFX_focus_SIA_Police"
 		texturefile = "gfx/interface/goals/SIA_Police.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_pro_business_policies"
+		texturefile = "gfx/interface/goals/focus_pro_business_policies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_tiger_economy"
+		texturefile = "gfx/interface/goals/focus_tiger_economy.dds"
+	}
 }
