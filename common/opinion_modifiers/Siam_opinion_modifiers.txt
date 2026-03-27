@@ -1,0 +1,4 @@
+opinion_modifiers = {
+	business_partners = { value = 20 }
+	sent_aid = { value = 30 }
+}

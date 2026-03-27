@@ -68,7 +68,7 @@ SIA_chinese_immigration_influx: "Chinese Immigration Influx"
 SIA_chinese_immigration_influx_desc: "[THIS.GetNonIdeologyName] is home to millions of ethnic Chinese who each fled turmoil in their homeland. As China collapsed in warlords and civil war following the death of Yuan Shikai, hardship drove unprecedented numbers of Chinese migrants overseas, with many finding refuge in Siam."
 SIA_chinese_immigration_influx_0: "The Siamese Melting Pot"
 SIA_chinese_immigration_influx_0_desc: "TBA"
-SIA_chinese_immigration_influx_1: "Curbed Chinese Immigration"
+SIA_chinese_immigration_influx_1: "Chinese Assimilation Policy"
 SIA_constitutionalism_idea: "Constitutionalism"
 SIA_constitutionalism_idea_desc: "TBA"
 SIA_chinese_immigration_influx_1_desc: "TBA"
@@ -195,6 +195,15 @@ SIA_principle_3_economic_welfare: "Promote Principle III: Economic Welfare"
 SIA_principle_4_equality: "Promote Principle IV: Equality"
 SIA_principle_5_liberty: "Promote Principle V: Liberty"
 SIA_principle_6_freedom: "Promote Principle VI: Freedom"
+
+SIA_diplomacy_with_the_chinese: "Diplomatic Actions with China"
+SIA_attract_chinese_civilian_investment: "Attract Chinese Investment for Civilian Sector"
+SIA_attract_chinese_military_investment: "Attract Chinese Investment for Military Sector"
+SIA_allow_more_chinese_immigrants: "Allow More Chinese Immigrants"
+SIA_send_advisers_to_china: "Send Advisers to China"
+SIA_send_weapons_to_china: "Send Weapons to China"
+SIA_send_volunteers_to_china: "Send Volunteers to China"
+
 
 # Tooltip
 unlock_six_principles_tt: "Unlocks £decision_icon_small decisions to propagandized §YThe Six Principles§!"
@@ -965,3 +974,7 @@ cannot_be_completed_manually: "This focus cannot be completed manually."
  #Cosmetic Names
  SIA_fascism_kot: "Kingdom of Thailand"
  SIA_fascism_kot_DEF: "the Kingdom of Thailand"
+ 
+ #Opinion Modifiers
+ business_partners: "Business Partners"
+ sent_aid: "Sent Aid"

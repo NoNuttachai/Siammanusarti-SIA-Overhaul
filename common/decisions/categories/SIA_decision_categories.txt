@@ -14,6 +14,18 @@ SIA_six_principles = {
 	}
 	allowed = { original_tag = SIA } 
 }
+SIA_diplomacy_with_the_chinese = {
+	icon = generic_propaganda
+	priority = 9
+	
+	visible = {
+		#OR = {
+		#	has_completed_focus = SIA_attract_chinese_capital
+		#	has_completed_focus = SIA_curb_chinese_immigration
+		#}
+	}
+	allowed = { original_tag = SIA } 
+}
 
 SIA_towards_a_greater_thailand = {
 	priority = 10

@@ -394,8 +394,16 @@ focus_tree = {
 		relative_position_id = SIA_renegotiate_the_unequal_treaties
 		x = -7
 		y = 1
-		cost = 10
-		completion_reward = { }
+		cost = 4
+		completion_reward = { 
+			add_opinion_modifier = {
+				target = CHI
+				modifier = business_partners
+			}
+			unlock_decision_tooltip = SIA_attract_chinese_civilian_investment
+			unlock_decision_tooltip = SIA_attract_chinese_military_investment
+			
+		}
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_curb_chinese_immigration }
 	}
@@ -405,11 +413,15 @@ focus_tree = {
 		relative_position_id = SIA_attract_chinese_capital
 		x = 0
 		y = 1
-		cost = 10
+		cost = 4
 		completion_reward = { 
 			swap_ideas = {
 				remove_idea = SIA_chinese_immigration_influx
 				add_idea = SIA_chinese_immigration_influx_0
+			}
+			unlock_decision_tooltip = {
+				decision = SIA_allow_more_chinese_immigrants
+				show_effect_tooltip = yes
 			}
 		}
 		prerequisite = { focus = SIA_attract_chinese_capital }
@@ -421,12 +433,10 @@ focus_tree = {
 		relative_position_id = SIA_attract_chinese_capital
 		x = 2
 		y = 0
-		cost = 10
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = SIA_chinese_immigration_influx
-				add_idea = SIA_chinese_immigration_influx_1
-			}
+		cost = 4
+		completion_reward = {
+			add_political_power = 150
+			remove_ideas = SIA_chinese_immigration_influx
 		}
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_attract_chinese_capital }
@@ -437,8 +447,20 @@ focus_tree = {
 		relative_position_id = SIA_curb_chinese_immigration
 		x = 0
 		y = 1
-		cost = 10
-		completion_reward = { }
+		cost = 4
+		completion_reward = { 
+			if = {
+				limit = { has_idea = SIA_chinese_immigration_influx }
+				swap_ideas = {
+					remove_idea = SIA_chinese_immigration_influx
+					add_idea = SIA_chinese_immigration_influx_1
+				}
+			}
+			else = {
+				add_ideas = SIA_chinese_immigration_influx_1
+			}
+			add_stability = 0.15
+		}
 		mutually_exclusive = { focus = SIA_the_siamese_melting_pot }
 		prerequisite = { focus = SIA_curb_chinese_immigration focus = SIA_attract_chinese_capital }
 	}
@@ -448,8 +470,18 @@ focus_tree = {
 		relative_position_id = SIA_the_siamese_melting_pot
 		x = 1
 		y = 1
-		cost = 10
-		completion_reward = { }
+		cost = 3
+		completion_reward = { 
+			add_opinion_modifier = {
+				target = CHI
+				modifier = sent_aid
+			}
+			add_command_power = 15
+			army_experience = 20
+			unlock_decision_tooltip = SIA_send_advisers_to_china
+			unlock_decision_tooltip = SIA_send_weapons_to_china
+			unlock_decision_tooltip = SIA_send_volunteers_to_china
+		}
 		prerequisite = { focus = SIA_the_siamese_melting_pot focus = SIA_chinese_assimilation_policy }
 	}
 	focus = {
@@ -926,7 +958,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			1047 = {
+				add_claim_by = SIA
+			}
+			1048 = {
+				add_claim_by = SIA
+			}
+			1049 = {
+				add_claim_by = SIA
+			}
+		}
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_rekindle_with_the_colonial_powers }
 	}
@@ -937,7 +979,42 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		available = {
+			OR = {
+				has_army_manpower = { size > 299999 }
+				AND = {
+					670 = {
+						is_controlled_by = FRA
+					}
+					OR = {
+						FRA = {
+							NOT = {
+								owns_state = 16
+							}
+						}
+						FRA = { 
+							has_war_with = GER
+							has_capitulated = yes
+						}
+					}
+				}
+				
+			}
+			
+		}
+		completion_reward = { 
+			671 = {
+				controller = {
+					SIA = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 671 670 1017 286 741 }
+						}
+					}
+				}
+			}
+		}
 		prerequisite = { focus = SIA_thai_irredentism }
 		prerequisite = { focus = SIA_southeast_asian_self_determination }
 		mutually_exclusive = { focus = SIA_back_the_viet_minh }

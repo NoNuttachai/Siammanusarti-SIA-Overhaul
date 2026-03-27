@@ -136,7 +136,207 @@ SIA_six_principles = {
 		}
 	}
 }
-
+SIA_diplomacy_with_the_chinese = {
+	SIA_attract_chinese_civilian_investment = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = SIA_attract_chinese_capital
+		}
+		available = {
+			country_exists = CHI
+			NOT = {
+				has_war_with = CHI
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 5
+		days_remove = 40
+		cost = 20
+		complete_effect = {	
+			
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	SIA_attract_chinese_military_investment = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = SIA_attract_chinese_capital
+		}
+		available = {
+			country_exists = CHI
+			NOT = {
+				has_war_with = CHI
+			}
+		}
+		days_re_enable = 5
+		days_remove = 40
+		cost = 20
+		complete_effect = {	
+			
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	SIA_allow_more_chinese_immigrants = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = SIA_the_siamese_melting_pot
+		}
+		available = {
+			country_exists = CHI
+			NOT = {
+				has_war_with = CHI
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 5
+		days_remove = 60
+		cost = 30
+		complete_effect = {	
+			
+		}
+		modifier = {
+			stability_weekly = -0.002
+			consumer_goods_factor = 0.15
+			monthly_population = 0.15
+			production_factory_efficiency_gain_factor = 0.10
+			industrial_capacity_factory = 0.1
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	SIA_send_advisers_to_china = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = SIA_volunteers_to_china
+		}
+		available = {
+			country_exists = CHI
+			NOT = {
+				has_war_with = CHI
+			}
+			has_war = no
+		}
+		fire_only_once = yes
+		days_re_enable = 5
+		days_remove = 100
+		cost = 0
+		custom_cost_text = decision_cost_CP_15
+		custom_cost_trigger = {
+			NOT = { command_power < 15 }
+		}
+		complete_effect = {	
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+		modifier = {
+			command_power_gain = 0.15
+			experience_gain_army_factor = 0.15
+			experience_gain_air_factor = 0.15
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	SIA_send_weapons_to_china = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = SIA_volunteers_to_china
+		}
+		available = {
+			country_exists = CHI
+			NOT = {
+				has_war_with = CHI
+			}
+			has_war = no
+			has_equipment = {
+				infantry_equipment > 449
+			}	
+		}
+		days_re_enable = 5
+		days_remove = 50
+		cost = 0
+		
+		complete_effect = {	
+			hidden_effect = {
+				add_command_power = -15
+			}
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 450
+				target = CHI
+			}
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+	SIA_send_volunteers_to_china = {
+		icon = GFX_decision_icon_default
+		visible = {
+			has_completed_focus = SIA_volunteers_to_china
+		}
+		available = {	
+			country_exists = CHI
+			NOT = {
+				has_war_with = CHI
+			}
+			has_war = no
+		}
+		fire_only_once = no
+		days_re_enable = 5
+		days_remove = 180
+		cost = 0
+		custom_cost_text = decision_cost_CP_15
+		custom_cost_trigger = {
+			NOT = { command_power < 15 }
+		}
+		complete_effect = {	
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+		modifier = {
+			send_volunteer_size = 3
+			army_attack_factor = 0.10
+		}
+		ai_will_do = {	
+			factor = 0			
+		}
+	}
+}
 SIA_towards_a_greater_thailand = {
 	SIA_secure_pivotal_territories_in_indochina = {
 		icon = GFX_decision_icon_default
@@ -478,6 +678,55 @@ SIA_discontent_within_the_ranks = {
 				}
 				add_to_variable = { SIA_neutral_leaders = 1 }
 				subtract_from_variable = { SIA_supportive_leaders = 1 }
+			}
+		}
+	}
+}
+form_rattanakosin_kingdom_category = {
+
+	form_rattanakosin_kingdom = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			# Siam
+			controls_state = 289
+			controls_state = 868
+			controls_state = 869
+			controls_state = 724
+			# Cambodia
+			controls_state = 741
+			# Laos
+			controls_state = 670
+		}
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = SIA_a_greater_siam
+			NOT = { has_global_flag = form_rattanakosin_kingdom_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = RAT_UNIFIED
+			741 = { add_core_of = ROOT }
+			670 = { add_core_of = ROOT }
+			hidden_effect = {
+				news_event = { id = wtt_news.69 hours = 6 }
+				set_global_flag = form_rattanakosin_kingdom_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
 			}
 		}
 	}
