@@ -57,7 +57,7 @@ SIA_succession_of_khana_ratsadon = {
 
 SIA_discontent_within_the_ranks = {
 	icon = generic_propaganda
-	#picture = GFX_category_phibun_vs_pridi
+	picture = GFX_category_Military_VS_Pridi
 	priority = 10
 	visible_when_empty = yes
 	
