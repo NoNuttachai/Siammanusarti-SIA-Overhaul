@@ -196,6 +196,10 @@ SpriteTypes = {
 		name = "GFX_category_phibun_vs_pridi"
 		texturefile = "gfx/interface/decisions/GFX_phibun_vs_pridi.dds"
 	}
+	spriteType = {
+		name = "GFX_category_Military_VS_Pridi"
+		texturefile = "gfx/interface/decisions/GFX_Military_VS_Pridi.dds"
+	}
 	
 	#MIOs
 	spriteType = {
