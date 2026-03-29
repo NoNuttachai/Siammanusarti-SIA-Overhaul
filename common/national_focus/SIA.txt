@@ -38,6 +38,7 @@ focus_tree = {
 			country_event = sia_events.6
 			mark_focus_tree_layout_dirty = yes
         }
+		search_filters = {FOCUS_FILTER_POLITICAL}
     }
 
 	focus = {
@@ -54,6 +55,7 @@ focus_tree = {
 				popularity = 0.05
 			}}
 		prerequisite = { focus = SIA_legacy_of_revolution }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 
 	focus = {
@@ -70,6 +72,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_legacy_of_revolution }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 
 	focus = {
@@ -97,6 +100,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 
 	focus = {
@@ -110,6 +114,7 @@ focus_tree = {
 			custom_effect_tooltip = unlock_six_principles_tt
 		}
 		prerequisite = { focus = SIA_legacy_of_revolution }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_constitutionalism
@@ -122,6 +127,7 @@ focus_tree = {
 			add_ideas = { SIA_constitutionalism_idea }
 		}
 		prerequisite = { focus = SIA_legacy_of_revolution }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_phraya_phanon_steps_down
@@ -141,6 +147,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_constitutionalism }
 		prerequisite = { focus = SIA_crown_property_act }
 		prerequisite = { focus = SIA_propagandize_six_principles }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_pridi_premiership
@@ -179,6 +186,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_marshal_phibun_ascension }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_amend_the_constitution
@@ -191,6 +199,7 @@ focus_tree = {
 			add_ideas = SIA_an_amended_constitution
 		}
 		prerequisite = { focus = SIA_pridi_premiership }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_promote_democratic_ideals
@@ -204,6 +213,7 @@ focus_tree = {
 			show_ideas_tooltip = SIA_kulap_saipradit
 		}	
 		prerequisite = { focus = SIA_pridi_premiership }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_free_the_political_prisoners
@@ -228,6 +238,7 @@ focus_tree = {
 			hidden_effect = { country_event = { id = sia_events.9 days = 30 } }
 		}
 		prerequisite = { focus = SIA_pridi_premiership }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id =SIA_curtail_the_army
@@ -245,6 +256,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_amend_the_constitution }
 		prerequisite = { focus = SIA_promote_democratic_ideals }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_align_with_navy
@@ -256,6 +268,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_amend_the_constitution }
 		prerequisite = { focus = SIA_free_the_political_prisoners }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_organize_a_free_election
@@ -267,6 +280,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus =SIA_curtail_the_army }
 		prerequisite = { focus = SIA_align_with_navy }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_khana_ratsadon_reelected
@@ -278,6 +292,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_organize_a_free_election }
 		mutually_exclusive = { focus = SIA_phrachatiphat_victory }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_thawee_bunyaket_premiership
@@ -289,6 +304,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
 		mutually_exclusive = { focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_renegotiate_the_unequal_treaties
@@ -299,6 +315,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_legacy_of_revolution focus = SIA_opposed_khana_ratsadon }
+		search_filters = { FOCUS_FILTER_POLITICAL } # ???
 	}
 	focus = {
 		id = SIA_rekindle_with_the_colonial_powers
@@ -310,6 +327,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_thai_irredentism }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_southeast_asian_self_determination #Funds Movements in SEA to rebel EXCEPT Vietnam #https://en.wikipedia.org/wiki/South_East_Asia_League
@@ -320,6 +338,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_back_the_viet_minh #Pridi MUST be leader #Funds the Viet Minh to rebel
@@ -331,6 +350,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_southeast_asian_self_determination }
 		mutually_exclusive = { focus = SIA_strike_indochina }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_one_vision_one_identity_one_community #Country becomes United States of Southeast Asian Nations #enable decisions to puppet SEA countries
@@ -342,6 +362,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_strike_indochina }
 		prerequisite = { focus = SIA_back_the_viet_minh }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = SIA_expand_rubber_exports
@@ -352,6 +373,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_follow_the_rising_sun
@@ -363,6 +385,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus =SIA_expand_rubber_exports }
 		mutually_exclusive = { focus = SIA_the_red_white_and_blue }
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_the_red_white_and_blue
@@ -374,6 +397,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus =SIA_expand_rubber_exports }
 		mutually_exclusive = { focus = SIA_follow_the_rising_sun }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_invite_western_companies
@@ -387,6 +411,7 @@ focus_tree = {
 			unlock_military_industrial_organization_tooltip = mio:JAP_nissan_organization
 		}
 		prerequisite = { focus = SIA_follow_the_rising_sun focus = SIA_the_red_white_and_blue }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_attract_chinese_capital
@@ -406,6 +431,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_curb_chinese_immigration }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_the_siamese_melting_pot #Country is NOT Fascist #Phraya Phahon is NOT leader
@@ -426,6 +452,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_attract_chinese_capital }
 		mutually_exclusive = { focus = SIA_chinese_assimilation_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_curb_chinese_immigration
@@ -440,6 +467,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_attract_chinese_capital }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_chinese_assimilation_policy #กลืนจีนเป็นไทย #Country is NOT democratic #Phraya Phahon is NOT leader
@@ -463,6 +491,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = SIA_the_siamese_melting_pot }
 		prerequisite = { focus = SIA_curb_chinese_immigration focus = SIA_attract_chinese_capital }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_volunteers_to_china 
@@ -483,6 +512,7 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_send_volunteers_to_china
 		}
 		prerequisite = { focus = SIA_the_siamese_melting_pot focus = SIA_chinese_assimilation_policy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_continue_pridi_administration
@@ -494,6 +524,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
 		mutually_exclusive = { focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_thawan_thamrong_premiership
@@ -505,6 +536,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
 		mutually_exclusive = { focus = SIA_thawee_bunyaket_premiership focus = SIA_continue_pridi_administration }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_phrachatiphat_victory
@@ -516,6 +548,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_organize_a_free_election }
 		mutually_exclusive = { focus = SIA_khana_ratsadon_reelected }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_seni_pramoj_premiership
@@ -526,6 +559,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_phrachatiphat_victory }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_khung_aphaiwong_premiership
@@ -536,6 +570,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_phrachatiphat_victory focus = SIA_khana_ratsadon_reelected}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_royalist_conservativism
@@ -546,6 +581,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khung_aphaiwong_premiership focus = SIA_seni_pramoj_premiership }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_reappoint_army_generals #Any Military Generals that have been fired by Pridi will be reinstated
@@ -556,6 +592,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_seni_pramoj_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_thawee_bunyaket_premiership}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_anti-communist_rhetoric
@@ -566,6 +603,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_royalist_conservativism }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_pro_business_policies
@@ -576,6 +614,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_seni_pramoj_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_thawee_bunyaket_premiership }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_tiger_economy
@@ -587,6 +626,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_pro_business_policies }
 		prerequisite = { focus = SIA_royalist_conservativism }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_support_labor_unions
@@ -597,6 +637,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_nationwide_land_reform
@@ -607,6 +648,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration}
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_scientific_democratic_socialism
@@ -617,6 +659,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_continue_pridi_administration }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_welfare_state
@@ -627,6 +670,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_nationwide_land_reform focus = SIA_scientific_democratic_socialism }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_anti-fascist_rhetoric #Enable War Justification on Fascist Countries
@@ -637,6 +681,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_nationwide_land_reform focus = SIA_scientific_democratic_socialism }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_marshal_phibun_ascension
@@ -680,6 +725,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_pridi_premiership }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_purge
@@ -700,6 +746,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_mass_media_propaganda
@@ -717,6 +764,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_purge }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_national_construction
@@ -732,6 +780,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_believe_in_leader
@@ -749,6 +798,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_purge }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_land_of_the_free
@@ -768,6 +818,7 @@ focus_tree = {
 			set_cosmetic_tag = SIA_fascism_kot
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_cultural_revolution
@@ -780,6 +831,7 @@ focus_tree = {
 			add_ideas = SIA_new_thai_society
 		}
 		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	
 	focus = {
@@ -798,6 +850,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
+		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
 		id = SIA_economic_nationalism
@@ -811,6 +864,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_cultural_revolution }
 		prerequisite = { focus = SIA_pan_thai_nationalism }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_language_reform
@@ -830,6 +884,7 @@ focus_tree = {
 				}
 		}
 		prerequisite = { focus = SIA_cultural_revolution }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_honor_the_flag
@@ -845,6 +900,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_pan_thai_nationalism
@@ -862,6 +918,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_militarized_society
@@ -881,6 +938,7 @@ focus_tree = {
 			
 		}
 		prerequisite = { focus = SIA_pan_thai_nationalism }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_phibun_resigns
@@ -904,6 +962,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_language_reform }
 		prerequisite = { focus = SIA_militarized_society }
 		mutually_exclusive = { focus = SIA_total_dictatorial_powers }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_total_dictatorial_powers
@@ -926,6 +985,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_language_reform }
 		prerequisite = { focus = SIA_militarized_society }
 		mutually_exclusive = { focus = SIA_phibun_resigns }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_expand_the_special_branch
@@ -950,6 +1010,7 @@ focus_tree = {
 			
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
 		id = SIA_thai_irredentism
@@ -971,6 +1032,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_renegotiate_the_unequal_treaties }
 		mutually_exclusive = { focus = SIA_rekindle_with_the_colonial_powers }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = SIA_strike_indochina
@@ -1018,6 +1080,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_thai_irredentism }
 		prerequisite = { focus = SIA_southeast_asian_self_determination }
 		mutually_exclusive = { focus = SIA_back_the_viet_minh }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = SIA_strike_at_the_british_colonies
@@ -1028,6 +1091,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_thai_irredentism }
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = SIA_a_greater_siam
@@ -1038,6 +1102,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_thai_irredentism }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = SIA_thai-japanese_aillance_shared_focus
@@ -2860,6 +2925,7 @@ focus_tree = {
 			remove_ideas = SIA_lingering_depression
 		}
 		prerequisite = {  }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_phahonyothin_road
@@ -2885,6 +2951,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_revitalize_the_economy }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	
 	focus = {
@@ -2898,6 +2965,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		completion_reward = { }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_rural_provincial_development
@@ -2934,6 +3002,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_bangkok_urbanization
@@ -2956,6 +3025,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	
 	focus = {
@@ -2975,6 +3045,7 @@ focus_tree = {
 				state = 724
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_rice_security #Thai Rice Company IF country is Fascist
@@ -2991,6 +3062,7 @@ focus_tree = {
 		completion_reward = { 
 			add_ideas = SIA_rice_security_idea
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_iron_buffalos
@@ -3008,6 +3080,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SIA_iron_buffalos
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_granary_of_the_orient
@@ -3028,6 +3101,7 @@ focus_tree = {
 				add_idea = SIA_granary_of_the_orient
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_industrialized_the_nation
@@ -3048,6 +3122,7 @@ focus_tree = {
 				add_idea = SIA_workshop_of_southeast_asia
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_mining_industry #merge with mah moi mine to decrease amount of focuses
@@ -3068,6 +3143,7 @@ focus_tree = {
 				state = 869
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	
 	
@@ -3089,6 +3165,7 @@ focus_tree = {
 				state = 869
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_military-led_industries
@@ -3107,6 +3184,7 @@ focus_tree = {
 				add_mio_funds = 1000
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_chula_uni
@@ -3122,6 +3200,7 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
 		id = SIA_education_for_all
@@ -3136,6 +3215,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = SIA_education_for_all
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	
 	focus = {
@@ -3168,6 +3248,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
 		id = SIA_prioritized_road_expansion
@@ -3191,6 +3272,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	#Military Production
 	focus = {
@@ -3336,6 +3418,8 @@ focus_tree = {
 		completion_reward = { 
 			mark_focus_tree_layout_dirty = yes
 		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_exposed_crown_property_theft
@@ -3346,6 +3430,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_opposed_khana_ratsadon}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_motion_of_no_confidence
@@ -3356,6 +3441,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_exposed_crown_property_theft}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}	
 	focus = {
 		id = SIA_plot_against_khana_ratsadon
@@ -3366,6 +3452,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_exposed_crown_property_theft}
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_overthrow_khana_ratsadon
@@ -3376,6 +3463,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_plot_against_khana_ratsadon focus = SIA_motion_of_no_confidence }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_sweet_taste_of_vengence #autocratic monarchy which gives Fascist allignment
@@ -3387,6 +3475,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_overthrow_khana_ratsadon }
 		mutually_exclusive = { focus = SIA_pardon_some_khana_ratsadon_members }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_pardon_some_khana_ratsadon_members #democratic allignment
@@ -3398,6 +3487,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_overthrow_khana_ratsadon }
 		mutually_exclusive = { focus = SIA_sweet_taste_of_vengence }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_fund_thmmayuth_nikai
@@ -3408,6 +3498,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_pardon_some_khana_ratsadon_members focus = SIA_sweet_taste_of_vengence }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_state_buddhism #Basically Japanese State Shintoism but Thai
@@ -3419,6 +3510,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_fund_thmmayuth_nikai }
 		mutually_exclusive = { focus = SIA_multisect_buddhism }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_multisect_buddhism #Ability to create faction with Tibet, Bhutan and Nepal
@@ -3430,6 +3522,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_fund_thmmayuth_nikai }
 		mutually_exclusive = { focus = SIA_state_buddhism }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_align_sri_lanka #fund rebellion in British control Sri Lanka or gain decision to invite to faction
@@ -3440,6 +3533,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_multisect_buddhism }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_land_of_the_buddha #Gain ability to core all of India (clearly not OP)
@@ -3450,6 +3544,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_state_buddhism focus = SIA_multisect_buddhism }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
 		id = SIA_return_power_to_the_nobility #Boovaradet and the King Mother as regents
@@ -3461,6 +3556,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_pardon_some_khana_ratsadon_members focus = SIA_sweet_taste_of_vengence }
 		mutually_exclusive = { focus = SIA_monarchist_military_rule focus = SIA_install_a_generic_prime_minister }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_install_a_generic_prime_minister #Asian generic guy first PM of Siam
@@ -3472,6 +3568,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_pardon_some_khana_ratsadon_members focus = SIA_sweet_taste_of_vengence }
 		mutually_exclusive = { focus = SIA_monarchist_military_rule focus = SIA_return_power_to_the_nobility }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_monarchist_military_rule
@@ -3483,6 +3580,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_pardon_some_khana_ratsadon_members focus = SIA_sweet_taste_of_vengence }
 		mutually_exclusive = { focus = SIA_install_a_generic_prime_minister focus = SIA_return_power_to_the_nobility }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_coronate_king_rama_8
@@ -3493,6 +3591,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_monarchist_military_rule focus = SIA_return_power_to_the_nobility focus = SIA_install_a_generic_prime_minister }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	
 	focus = {
@@ -3505,6 +3604,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 		mutually_exclusive = { focus = SIA_enact_a_meiji_style_constitution }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_may_I_forever_serve_your_majesty #enable kamikzaze attacks and banzai charges
@@ -3515,6 +3615,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_consolidate_absolutist_rule }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
 		id = SIA_enact_a_meiji_style_constitution
@@ -3526,6 +3627,7 @@ focus_tree = {
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 		mutually_exclusive = { focus = SIA_consolidate_absolutist_rule }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_a_visit_to_chinatown
@@ -3536,6 +3638,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SIA_add_something_here_7
@@ -3586,5 +3689,6 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_consolidate_absolutist_rule }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 }
