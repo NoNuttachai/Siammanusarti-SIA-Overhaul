@@ -545,7 +545,13 @@ SIA_discontent_within_the_ranks = {
 		fire_only_once = no
 
 		activation = {
-			check_variable = { SIA_neutral_leaders > 0 }
+			any_character = {
+				has_character_flag = SIA_armed_forces_character
+				NOT = {
+					has_trait = SIA_general_supportive
+					has_trait = SIA_general_hostile					
+				}
+			}
 			hidden_trigger = { has_country_flag = SIA_military_discontent }
 		}
 
@@ -565,12 +571,16 @@ SIA_discontent_within_the_ranks = {
 			custom_effect_tooltip = SIA_neutral_leader_goes_hostile
 			hidden_effect = {
 				random_character = {
-					limit = { has_trait = SIA_general_neutral }
-					remove_unit_leader_trait = SIA_general_neutral
+					limit = { 
+						has_character_flag = SIA_armed_forces_character
+						NOT = {
+							has_trait = SIA_general_supportive
+							has_trait = SIA_general_hostile					
+						}
+					}
 					add_unit_leader_trait = SIA_general_hostile
 				}
 				add_to_variable = { SIA_hostile_leaders = 1 }
-				subtract_from_variable = { SIA_neutral_leaders = 1 }
 			}
 		}
 	}
@@ -583,7 +593,13 @@ SIA_discontent_within_the_ranks = {
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = SIA_any_neutral_leaders
-				check_variable = { SIA_neutral_leaders > 0 }
+				any_character = {
+					has_character_flag = SIA_armed_forces_character
+					NOT = {
+						has_trait = SIA_general_supportive
+						has_trait = SIA_general_hostile					
+					}
+				}
 			}			
 		}
 		days_remove = 20
@@ -593,94 +609,22 @@ SIA_discontent_within_the_ranks = {
 			custom_effect_tooltip = SIA_neutral_leader_goes_supportive
 			hidden_effect = {
 				random_character = {
-					limit = { has_trait = SIA_general_neutral }
-					remove_unit_leader_trait = SIA_general_neutral
+					limit = { 
+						has_character_flag = SIA_armed_forces_character
+						NOT = {
+							has_trait = SIA_general_supportive
+							has_trait = SIA_general_hostile					
+						}
+					}
 					add_unit_leader_trait = SIA_general_supportive
 				}
 				add_to_variable = { SIA_supportive_leaders = 1 }
-				subtract_from_variable = { SIA_neutral_leaders = 1 }
 			}
 		}
 		ai_will_do = {	
 			factor = 100			
 		}
 	}	
-
-	SIA_reach_out_to_the_dissidents = {
-		icon = GFX_decision_icon_default
-		visible = {
-			always = yes
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = SIA_any_hostile_leaders
-				check_variable = { SIA_hostile_leaders > 0 }
-			}			
-		}
-		days_remove = 40
-			
-		cost = 75
-		remove_effect = {	
-			custom_effect_tooltip = SIA_hostile_leader_goes_neutral
-			hidden_effect = {
-				random_character = {
-					limit = { has_trait = SIA_general_hostile }
-					remove_unit_leader_trait = SIA_general_hostile
-					add_unit_leader_trait = SIA_general_neutral
-				}
-				add_to_variable = { SIA_neutral_leaders = 1 }
-				subtract_from_variable = { SIA_hostile_leaders = 1 }
-			}
-		}
-		ai_will_do = {	
-			factor = 100			
-		}
-	}
-
-	SIA_hostile_generals_target_supporters = {
-
-		priority = 10
-
-		icon = generic_ignite_civil_war
-
-		available = {
-			hidden_trigger = { always = no }
-		}
-
-		days_mission_timeout = 50
-
-		fire_only_once = no
-
-		activation = {
-			check_variable = { SIA_neutral_leaders < 1 }
-			hidden_trigger = { has_country_flag = SIA_military_discontent }
-		}
-
-		visible = {
-			hidden_trigger = {
-				tag = SIA
-				has_country_flag = SIA_military_discontent
-			}
-		}
-
-		cancel_if_not_visible = yes
-
-		is_good = yes
-
-		timeout_effect = {
-			#activate_mission = SIA_hostile_generals_take_action
-			custom_effect_tooltip = SIA_supportive_leader_goes_neutral
-			hidden_effect = {
-				random_character = {
-					limit = { has_trait = SIA_general_supportive }
-					remove_unit_leader_trait = SIA_general_supportive
-					add_unit_leader_trait = SIA_general_neutral
-				}
-				add_to_variable = { SIA_neutral_leaders = 1 }
-				subtract_from_variable = { SIA_supportive_leaders = 1 }
-			}
-		}
-	}
 }
 form_rattanakosin_kingdom_category = {
 
