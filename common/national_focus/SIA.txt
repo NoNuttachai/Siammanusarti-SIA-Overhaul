@@ -265,8 +265,7 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus =SIA_curtail_the_army }
-		prerequisite = { focus = SIA_align_with_navy }
+		prerequisite = { focus = SIA_amend_the_constitution }
 	}
 	focus = {
 		id = SIA_khana_ratsadon_reelected
