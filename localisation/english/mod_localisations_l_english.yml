@@ -299,9 +299,8 @@ sia_events.9.desc: "TBA"
 sia_events.9.a: "Keep an eye on them."
 
 SIA_discontent_within_the_ranks: "Discontent within the Ranks"
-SIA_discontent_within_the_ranks_desc: "Many senior officers within the armed forces view Pridi Banomyong as being a communist and have grown increasingly hostile towards his administration. While figures such as Phraya Phahon and Thawan Thamrongnawasawat remain firmly supportive, others including Phraya Songsuradet and Phin Choonhavan are hostile to Pridi's leadership.\n\nWe can secure the loyalty of the armed forces either by retiring the hostile officers from key military positions or by persuading neutral commanders to align with our government. Otherwise, there is a serious risk that hostile elements could convince them to join their side instead.\n\nArmy generals and Navy admirals' current support:\n[?SIA.SIA_supportive_leaders|.0Y] are §Gsupportive§! of Pridi's government.\n[?SIA.SIA_neutral_leaders|.0Y] are §Yneutral§! regarding Pridi's government.\n[?SIA.SIA_hostile_leaders|.0Y] are §Rhostile§! to Pridi's government.\n\n§RIf too much of our military leadership is hostile to the government, they might attempt a military coup.§R"
+SIA_discontent_within_the_ranks_desc: "Many senior officers within the armed forces view Pridi Banomyong as being a communist and have grown increasingly hostile towards his administration. While figures such as Phraya Phahon and Thawan Thamrongnawasawat remain firmly supportive, others including Phraya Songsuradet and Phin Choonhavan are hostile to Pridi's leadership.\n\nWe can secure the loyalty of the armed forces either by retiring the hostile officers from key military positions or by persuading neutral commanders to align with our government. Otherwise, there is a serious risk that hostile elements could convince them to join their side instead.\n\nArmy generals and Navy admirals' current support:\n[?SIA.SIA_supportive_leaders|.0Y] are §Gsupportive§! of Pridi's government.\n[?SIA.SIA_hostile_leaders|.0Y] are §Rhostile§! to Pridi's government.\n\n§RIf too much of our military leadership is hostile to the government, they might attempt a military coup.§R"
 SIA_general_supportive: "Supportive of Government"
-SIA_general_neutral: "Neutral Towards Government"
 SIA_general_hostile: "Hostile Towards Government"
 SIA_hostile_generals_take_action: "Hostile Generals Take Action!"
 SIA_neutral_leader_goes_hostile: "One neutral General or Admiral will §Rdefect!§!"
@@ -309,13 +308,6 @@ SIA_neutral_leader_goes_hostile: "One neutral General or Admiral will §Rdefect!
 SIA_appeal_to_the_unaligned: "Appeal to the Unaligned"
 SIA_any_neutral_leaders: "Any Generals or Admirals are §YNeutral§!."
 SIA_neutral_leader_goes_supportive: "One neutral General or Admiral will become §Gsupportive§!."
-
-SIA_reach_out_to_the_dissidents: "Reach Out to the Dissidents"
-SIA_any_hostile_leaders: "Any Generals or Admirals are §RHostile§!."
-SIA_hostile_leader_goes_neutral: "One hostile General or Admiral will become §Yneutral§!."
-
-SIA_hostile_generals_target_supporters: "Hostile Generals Target Supporters!"
-SIA_supportive_leader_goes_neutral: "One supportive General or Admiral will become §Yneutral§!."
 
 SIA_curtail_the_army: "Curtail the Army"
 SIA_curtail_the_army_desc: ""
