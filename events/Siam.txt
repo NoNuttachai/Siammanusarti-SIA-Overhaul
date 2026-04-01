@@ -861,6 +861,95 @@ country_event = {
     }
 }
 
+country_event = { #ask western power for their colony to be independent
+    id = sia_events.104
+    title = sia_events.104.t 
+    desc = sia_events.104.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {# accept
+        name = sia_events.104.a 
+		SIA = {
+			country_event = sia_events.105
+		}
+		end_puppet = FROM.FROM
+		FROM.FROM = {
+			drop_cosmetic_tag = yes
+			leave_faction = yes
+		}
+		ai_chance = {
+			base = 10
+		}
+		set_temp_variable = { SIA.temp_country = FROM.FROM}
+		SIA = {
+			
+		}
+    }
+	 option = { #refuse
+        name = sia_events.104.b 
+		SIA = {
+			country_event = sia_events.106
+		}
+    }
+}
+country_event = { #They accept
+    id = sia_events.105
+    title = sia_events.105.t 
+    desc = sia_events.105.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.105.a
+		effect_tooltip = {
+			FROM = {
+				end_puppet = temp_country
+			}
+		}
+    }
+}
+country_event = { #they refuse
+    id = sia_events.106
+    title = sia_events.106.t 
+    desc = sia_events.106.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.106.a 
+		
+    }
+}
+country_event = { #Siam invites X to ASEAN
+    id = sia_events.107
+    title = sia_events.107.t 
+    desc = sia_events.107.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.107.a 
+		SIA = {
+			country_event = sia_events.108
+		}
+    }
+}
+country_event = { #yes
+    id = sia_events.108
+    title = sia_events.108.t 
+    desc = sia_events.108.d
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.108.a 
+		SIA = {
+			add_to_faction = FROM
+		}
+    }
+}
 country_event = {
 	id = sia_BOP_event.1
 	title = sia_BOP_event.1.t

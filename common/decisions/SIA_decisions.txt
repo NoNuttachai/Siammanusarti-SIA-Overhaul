@@ -337,6 +337,397 @@ SIA_diplomacy_with_the_chinese = {
 		}
 	}
 }
+SIA_SEA_self_determination = {
+	SIA_fund_independence_movements_in_BRM = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				is_puppet = yes
+			}
+		}
+		targets = {
+			BRM
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			FROM = {
+				add_stability = -0.3
+				add_war_support = -0.25
+			}
+			set_country_flag = SIA_funded_indep_brm
+		}
+	}
+	SIA_send_arms_to_anti_colonial_forces_BRM = {
+		icon = generic_construction
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 1299
+			}
+			FROM = {
+				is_puppet = yes
+			}
+			
+		}
+		visible = {
+			has_country_flag = SIA_funded_indep_brm
+		}
+		targets = {
+			BRM
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			
+			set_country_flag = SIA_sent_equip_brm
+		}
+	}
+	SIA_agitate_an_anti_colonial_uprising_in_BRM = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				is_puppet = yes
+			}
+			
+		}
+		visible = {
+			has_country_flag = SIA_sent_equip_brm
+		}
+		targets = {
+			BRM
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			FROM = {
+				
+				start_civil_war = {
+					ideology = democratic
+					size = 0.5
+					states = all
+					states_filter = {
+						is_on_continent = asia
+						is_capital = no
+					}
+					set_country_flag = SIA_independence_funded
+				}
+			}
+			hidden_effect = {
+				ENG = {
+					end_puppet = BUA
+				}
+				BUA = {
+					leave_faction = yes
+					set_cosmetic_tag = BRM_independence_movement
+				}
+			}
+		}
+	}
+	SIA_fund_independence_movements_in_MAL = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				is_puppet = yes
+			}
+		}
+		targets = {
+			MAL
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			FROM = {
+				add_stability = -0.3
+				add_war_support = -0.25
+			}
+			set_country_flag = SIA_funded_indep_MAL
+		}
+	}
+	SIA_send_arms_to_anti_colonial_forces_MAL = {
+		icon = generic_construction
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 1299
+			}
+			FROM = {
+				is_puppet = yes
+			}
+			
+		}
+		visible = {
+			has_country_flag = SIA_funded_indep_MAL
+		}
+		targets = {
+			MAL
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			
+			set_country_flag = SIA_sent_equip_MAL
+		}
+	}
+	SIA_agitate_an_anti_colonial_uprising_in_MAL = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				is_puppet = yes
+			}
+			
+		}
+		visible = {
+			has_country_flag = SIA_sent_equip_MAL
+		}
+		targets = {
+			MAL
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			FROM = {
+				
+				start_civil_war = {
+					ideology = democratic
+					size = 0.5
+					states = all
+					states_filter = {
+						is_on_continent = asia
+						is_capital = no
+					}
+					set_country_flag = SIA_independence_funded
+				}
+			}
+			hidden_effect = {
+				ENG = {
+					end_puppet = MLY
+				}
+				MLY = {
+					leave_faction = yes
+					set_cosmetic_tag = MAL
+				}
+			}
+		}
+	}
+	SIA_fund_independence_movements_in_INS = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				is_puppet = yes
+			}
+		}
+		targets = {
+			INS
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			FROM = {
+				add_stability = -0.3
+				add_war_support = -0.25
+			}
+			set_country_flag = SIA_funded_indep_INS
+		}
+	}
+	SIA_send_arms_to_anti_colonial_forces_INS = {
+		icon = generic_construction
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 1299
+			}
+			FROM = {
+				is_puppet = yes
+			}
+			
+		}
+		visible = {
+			has_country_flag = SIA_funded_indep_INS
+		}
+		targets = {
+			INS
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			
+			set_country_flag = SIA_sent_equip_INS
+		}
+	}
+	SIA_agitate_an_anti_colonial_uprising_in_INS = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				is_puppet = yes
+			}
+			
+		}
+		visible = {
+			has_country_flag = SIA_sent_equip_INS
+		}
+		targets = {
+			INS
+		}
+		target_trigger = {	
+			has_war = no
+		}
+		icon = generic_industry
+		
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			FROM = {
+				
+				start_civil_war = {
+					ideology = democratic
+					size = 0.5
+					states = all
+					states_filter = {
+						is_on_continent = asia
+						is_capital = no
+					}
+					set_country_flag = SIA_independence_funded
+				}
+			}
+			hidden_effect = {
+				HOL = {
+					end_puppet = IND
+				}
+				IND = {
+					leave_faction = yes
+					set_cosmetic_tag = INS_democratic
+				}
+			}
+		}
+	}
+	SIA_lobby_for_independence = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				is_puppet = yes
+				NOT = {
+					overlord = {
+						has_war_with = SIA
+					}
+				}
+			}
+		}
+		
+		target_trigger = {
+			
+			has_war = no
+		}
+		icon = generic_industry
+		
+		targets = {
+			BRM
+			MAL
+			INS
+			PHI
+		}
+		
+		fire_only_once = yes
+		days_remove = 0
+		cost = 350
+		remove_effect = {
+			FROM = {
+				overlord = {
+					country_event = sia_events.104
+				}
+			}
+		}
+	}
+	SIA_invite_nation_to_asean = {
+		icon = generic_construction
+		
+		available = {
+			FROM = {
+				NOT = {
+					has_war_with = SIA
+				}
+				is_in_faction = no
+			}
+		}
+		
+		target_trigger = {	
+			FROM = {
+				is_in_faction = no
+				is_subject = no
+			}
+		}
+		icon = generic_industry
+		
+		targets = {
+			PHI
+			BUA
+			MLY
+			IND
+			INS
+			BRM
+			MAL
+		}
+		
+		fire_only_once = yes
+		days_remove = 0
+		cost = 30
+		remove_effect = {
+			FROM = {
+				country_event = sia_events.107
+			}
+		}
+	}
+}
 SIA_towards_a_greater_thailand = {
 	SIA_secure_pivotal_territories_in_indochina = {
 		icon = GFX_decision_icon_default

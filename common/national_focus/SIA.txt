@@ -278,7 +278,8 @@ focus_tree = {
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_amend_the_constitution }
+		prerequisite = { focus =SIA_curtail_the_army }
+		prerequisite = { focus = SIA_align_with_navy }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
@@ -335,7 +336,13 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 10
-		completion_reward = { }
+		available = {
+			has_government = democratic
+		}
+		completion_reward = { 
+			custom_effect_tooltip = SIA_southeast_asian_self_determination_tt
+			
+		}
 		prerequisite = { focus =SIA_renegotiate_the_unequal_treaties }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -358,9 +365,16 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-		completion_reward = { }
-		prerequisite = { focus = SIA_strike_indochina }
-		prerequisite = { focus = SIA_back_the_viet_minh }
+		completion_reward = { 
+			create_faction_from_template = {
+			   template = faction_template_defensive_democratic
+			   name = SIA_ASEAN_Faction
+			   icon = GFX_faction_logo_generic_2
+			   color = { 255 205 79 }
+			}
+			custom_effect_tooltip = SIA_one_vision_one_identity_one_community_tt
+		}
+		prerequisite = { focus = SIA_strike_indochina focus = SIA_back_the_viet_minh }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
@@ -764,7 +778,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_purge }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
-		prerequisite = { focus = SIA_land_of_the_free }
 	}
 	focus = {
 		id = SIA_national_construction
@@ -1019,6 +1032,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
+		available = {
+			NOT = {
+				has_government = democratic
+			}
+		}
 		completion_reward = { 
 			1047 = {
 				add_claim_by = SIA
@@ -1077,8 +1095,7 @@ focus_tree = {
 				}
 			}
 		}
-		prerequisite = { focus = SIA_thai_irredentism }
-		prerequisite = { focus = SIA_southeast_asian_self_determination }
+		prerequisite = { focus = SIA_thai_irredentism focus = SIA_southeast_asian_self_determination }
 		mutually_exclusive = { focus = SIA_back_the_viet_minh }
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 	}
@@ -3550,7 +3567,7 @@ focus_tree = {
 		id = SIA_return_power_to_the_nobility #Boovaradet and the King Mother as regents
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_overthrow_khana_ratsadon
-		x = 0
+		x = 2
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -3562,7 +3579,7 @@ focus_tree = {
 		id = SIA_install_a_generic_prime_minister #Asian generic guy first PM of Siam
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_overthrow_khana_ratsadon
-		x = 2
+		x = 4
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -3574,7 +3591,7 @@ focus_tree = {
 		id = SIA_monarchist_military_rule
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_overthrow_khana_ratsadon
-		x = -2
+		x = 0
 		y = 2
 		cost = 10
 		completion_reward = { }
@@ -3641,7 +3658,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
-		id = SIA_may_I_forever_serve_your_majesty
+		id = SIA_add_something_here_7
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_coronate_king_rama_8
 		x = 1
@@ -3651,7 +3668,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_coronate_king_rama_8 }
 	}
 	focus = {
-		id = SIA_return_to_absolute_monarchy
+		id = SIA_add_something_here_8
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_coronate_king_rama_8
 		x = 0

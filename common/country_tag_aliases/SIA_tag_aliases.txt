@@ -1,0 +1,14 @@
+BUA = {
+	original_tag = BRM
+	has_country_flag = SIA_independence_funded
+}
+
+MLY = {
+	original_tag = MAL
+	has_country_flag = SIA_independence_funded
+}
+
+IND = {
+	original_tag = INS
+	has_country_flag = SIA_independence_funded
+}

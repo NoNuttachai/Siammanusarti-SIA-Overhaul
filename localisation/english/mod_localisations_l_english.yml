@@ -136,6 +136,12 @@ sia_unit_leader_event.1.t: "Songsuradet Rebellion Crushed"
 sia_unit_leader_event.1.d: "Accused of plotting a rebellion and attempting to assassinate Plaek Phibunsongkhram, Phraya Songsuradet, a long-time rival of Phibun, has been stripped of his military duties and forced into exile.\n\nPoliticians, military officers, and aristocrats accused of aiding or participating in the alleged rebellion have been arrested.\nAmong them are Rangsit Prayurasakdi, General Phraya Thephatsadin and both of his sons, Lieutenant Colonel Nor Nean Talaluk, Phraya Udomphongphensawat, and more than twenty other individuals.\n\nHowever, the legitimacy of the alleged plot has been widely questioned. There is little evidence proving that Songsuradet was truly planning a rebellion against Phibun, and many believe that the claim of the "Songsuradet Rebellion" was in fact a purge by Phibun against his political opponents and perceived enemies of Khana Ratsadon." \n\nA special tribunal has been convened for the trial of the alleged conspirators. Eighteen are expected to face the death penalty, while the remaining defendants will receive prison sentences."
 sia_unit_leader_event.1.a: "A Rebellion of the Eighteen Corpses"
 
+sia_events.104.t: "Siam lobbies for [?FROM.FROM.GetNameDef] Independence"
+sia_events.105.t: "They Accept our Request"
+sia_events.106.t: "They Refuse"
+sia_events.107.t: "[?SIA.GetName] Invites us to ASEAN"
+sia_events.108.t: "[?FROM.GetName] Accepts Invitation"
+sia_events.108.a: "okay"
 #World Tension
 SIA_pridi_elephant_movie: "Pridi Banomyong's film "The King of the White Elephant" "
 
@@ -204,13 +210,26 @@ SIA_send_advisers_to_china: "Send Advisers to China"
 SIA_send_weapons_to_china: "Send Weapons to China"
 SIA_send_volunteers_to_china: "Send Volunteers to China"
 
+SIA_SEA_self_determination: "Southeast Asia Self Determination"
+SIA_fund_independence_movements_in_BRM: "Fund Independence Movements in [BRM.GetNameDef]"
+SIA_send_arms_to_anti_colonial_forces_BRM: "Send Arms to Anti-Colonial Forces in [BRM.GetNameDef]"
+SIA_agitate_an_anti_colonial_uprising_in_BRM: "Agitate an Anti-Colonial Uprising in [BRM.GetNameDef]"
+SIA_fund_independence_movements_in_MAL: "Fund Independence Movements in [MAL.GetNameDef]"
+SIA_send_arms_to_anti_colonial_forces_MAL: "Send Arms to Anti-Colonial Forces in [MAL.GetNameDef]"
+SIA_agitate_an_anti_colonial_uprising_in_MAL: "Agitate an Anti-Colonial Uprising in [MAL.GetNameDef]"
+SIA_fund_independence_movements_in_INS: "Fund Independence Movements in [INS.GetNameDef]"
+SIA_send_arms_to_anti_colonial_forces_INS: "Send Arms to Anti-Colonial Forces in [INS.GetNameDef]"
+SIA_agitate_an_anti_colonial_uprising_in_INS: "Agitate an Anti-Colonial Uprising in [INS.GetNameDef]"
+SIA_lobby_for_independence: "Lobby for Independence"
+SIA_invite_nation_to_asean: "Invite to ASEAN"
 
 # Tooltip
 unlock_six_principles_tt: "Unlocks £decision_icon_small decisions to propagandized §YThe Six Principles§!"
 SIA_commission_an_indepedent_gov_investigation_done: "Has §YCommissioned an Independent Goverment Investigation§!"
 SIA_matchanu_class_sub_fulfill_Japan_requirement: "If §YJapan exists§! and §Yopinion of Japan§! is at least §G+10§!:"
 SIA_matchanu_class_sub_notfulfill_Japan_requirement: "Else we will receive:"
-
+SIA_southeast_asian_self_determination_tt: "§YWe will unlock decisions to help Indonesia, Burma, and Malaysia in getting independence.§!"
+SIA_one_vision_one_identity_one_community_tt: "§YWe can invite Independent Southeast Asian Nations to our faction.§!"
 #Dynamic Modifiers
 SIA_bangkok_floodings: "Bangkok Floodings"
 
@@ -970,3 +989,6 @@ cannot_be_completed_manually: "This focus cannot be completed manually."
  #Opinion Modifiers
  business_partners: "Business Partners"
  sent_aid: "Sent Aid"
+ 
+ #Faction
+ SIA_ASEAN_Faction: "Association of Southeast Asian Nations"
