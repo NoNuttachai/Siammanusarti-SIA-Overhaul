@@ -308,7 +308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_renegotiate_the_unequal_treaties
-		icon = gfx_goal_unknown
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		relative_position_id = SIA_legacy_of_revolution
 		x = 10
 		y = 1
@@ -365,6 +365,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		available = {
+			has_government = democratic
+		}
 		completion_reward = { 
 			create_faction_from_template = {
 			   template = faction_template_defensive_democratic
@@ -453,6 +456,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 4
+		available = {
+			NOT = {
+				has_government = fascism
+			}
+		}
 		completion_reward = { 
 			swap_ideas = {
 				remove_idea = SIA_chinese_immigration_influx
@@ -849,7 +857,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_install_pridi_as_economic_minister
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_concessions
 		relative_position_id = SIA_marshal_phibun_ascension
 		x = -5
 		y = 1
@@ -1044,7 +1052,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_an_unfortunate_incident
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_conspiracy
 		relative_position_id = SIA_songsuradet_leadership
 		x = -1
 		y = 1
@@ -1112,7 +1120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_cooperate_with_loyalists
-		icon = gfx_goal_unknown
+		icon = GFX_focus_generic_commission
 		relative_position_id = SIA_songsuradet_leadership
 		x = 4
 		y = 2
