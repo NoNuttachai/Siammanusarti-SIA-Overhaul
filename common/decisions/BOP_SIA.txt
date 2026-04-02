@@ -81,6 +81,10 @@ SIA_RH_CAT = {
 		cost = SIA_entice_the_masses_dec_cost
 
 		complete_effect = {
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.1
+			}
 			FIN_bop_medium_increase_effect = yes
 
 			#Increase cost

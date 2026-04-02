@@ -95,14 +95,8 @@ focus_tree = {
             }
 			hidden_effect = {
       			country_event = {
-<<<<<<< Updated upstream
 					Id = sia_events.1
 					days = 5
-=======
-            	Id = sia_events.1
-            	days = 30
-      		}
->>>>>>> Stashed changes
 				}
 			}
 		}

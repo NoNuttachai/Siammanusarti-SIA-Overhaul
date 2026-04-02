@@ -29,7 +29,6 @@ chemist_concern: "Chemist"
 locomotive_expert: "Locomotive Expert"
 silk_merchant: "Silk Merchant"
 
-<<<<<<< Updated upstream
 SIA_BOP: "Support for Khana Ratsadon"
 SIA_RH_BALANCE: "Medium Support"
 SIA_RH_KHANA_25_75: "High Support"
@@ -38,11 +37,6 @@ SIA_RH_KHANA: "Khana Ratsadon - Phraya Phahon Administration"
 SIA_RH_OPPOS_25_75: "Low Support"
 SIA_RH_OPPOS_75_100: "Very Low Support"
 SIA_RH_OPPOS: "Opposition"
-=======
-    sia_events.2.t:0 "An Incident at Parliment"
-    sia_events.2.d:0 "While opposition MP Lien Chaiyacharn was enjoying a drink following a parliamentary session, a group of government MPs surrounded him. They suddenly seized his chair, pinning him to it, while others began rhythmically beating pots and pans. In a mocking parade, they carried him outside the building and threw both him and his chair into the pool near Parliament. \n\nLien emerged from the water completely soaked. \n\nThis incident likely stemmed from the anger of certain Khana Ratsadon members regarding his recent parliamentary speech on corruption within the Crown Property Bureau, a session that had directly implicated many of the MPs involved."
-    sia_events.2.a:0 "Very unprofessional of the MPs"
->>>>>>> Stashed changes
 
 SIA_PHIBUN_BOP: "Phibun's Authority"
 SIA_phibun_weak: "Weak Authority"
