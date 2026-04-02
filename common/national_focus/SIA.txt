@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 47
+        x = 46
         y = 0
         cost = 5
         available = { }
@@ -153,7 +153,7 @@ focus_tree = {
 		id = SIA_pridi_premiership
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = -5
+		x = -4
 		y = 1
 		cost = 10
 		allow_branch = {
@@ -310,7 +310,7 @@ focus_tree = {
 		id = SIA_renegotiate_the_unequal_treaties
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 		relative_position_id = SIA_legacy_of_revolution
-		x = 10
+		x = 11
 		y = 1
 		cost = 10
 		completion_reward = { }
@@ -359,7 +359,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
-		id = SIA_one_vision_one_identity_one_community #Country becomes United States of Southeast Asian Nations #enable decisions to puppet SEA countries
+		id = SIA_bangkok_declaration
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_back_the_viet_minh
 		x = 1
@@ -375,7 +375,7 @@ focus_tree = {
 			   icon = GFX_faction_logo_generic_2
 			   color = { 255 205 79 }
 			}
-			custom_effect_tooltip = SIA_one_vision_one_identity_one_community_tt
+			custom_effect_tooltip = SIA_bangkok_declaration_tt
 		}
 		prerequisite = { focus = SIA_strike_indochina focus = SIA_back_the_viet_minh }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
@@ -708,7 +708,7 @@ focus_tree = {
 		id = SIA_marshal_phibun_ascension
 		icon = GFX_focus_SIA_marshal_phibun_ascension
 		relative_position_id = SIA_phraya_phanon_steps_down
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 		allow_branch = {
@@ -856,11 +856,11 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SIA_install_pridi_as_economic_minister
+		id = SIA_democracy_monument
 		icon = GFX_focus_generic_concessions
 		relative_position_id = SIA_marshal_phibun_ascension
-		x = -5
-		y = 1
+		x = -4
+		y = 2
 		cost = 10
 		completion_reward = { 
 			add_stability = 0.05
@@ -870,7 +870,7 @@ focus_tree = {
 				tooltip_side = SIA_phibun_weak
 			}
 		}
-		prerequisite = { focus = SIA_marshal_phibun_ascension }
+		prerequisite = { focus = SIA_land_of_the_free focus = SIA_promote_democratic_ideals }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
@@ -1032,109 +1032,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension focus = SIA_songsuradet_leadership }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
-	}
-	focus = {
-		id = SIA_songsuradet_leadership
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_phraya_phanon_steps_down
-		x = 10
-		y = 1
-		cost = 5
-		available = {
-			SIA_phraya_phahon = {
-				has_trait = crown_property_scandal
-			}
-		}
-		completion_reward = {
-			country_event = sia_events.4
-		}
-		prerequisite = { focus = SIA_phraya_phanon_steps_down }
-	}
-	focus = {
-		id = SIA_an_unfortunate_incident
-		icon = GFX_focus_generic_conspiracy
-		relative_position_id = SIA_songsuradet_leadership
-		x = -1
-		y = 1
-		cost = 5
-		available = {
-			SIA_phraya_phahon = {
-				has_trait = crown_property_scandal
-			}
-		}
-		completion_reward = {
-			country_event = sia_events.4
-		}
-		prerequisite = { focus = SIA_songsuradet_leadership }
-	}
-	focus = {
-		id = SIA_friend_of_khana_ratsadon
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_songsuradet_leadership
-		x = 1
-		y = 1
-		cost = 5
-		available = {
-			SIA_phraya_phahon = {
-				has_trait = crown_property_scandal
-			}
-		}
-		completion_reward = {
-			country_event = sia_events.4
-		}
-		prerequisite = { focus = SIA_songsuradet_leadership }
-	}
-	focus = {
-		id = SIA_force_pridi_in_to_exile
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_songsuradet_leadership
-		x = 3
-		y = 1
-		cost = 5
-		available = {
-			SIA_phraya_phahon = {
-				has_trait = crown_property_scandal
-			}
-		}
-		completion_reward = {
-			country_event = sia_events.4
-		}
-		prerequisite = { focus = SIA_songsuradet_leadership }
-	}
-	focus = {
-		id = SIA_roll_back_liberal_policies
-		icon = gfx_goal_unknown
-		relative_position_id = SIA_songsuradet_leadership
-		x = 0
-		y = 2
-		cost = 5
-		available = {
-			SIA_phraya_phahon = {
-				has_trait = crown_property_scandal
-			}
-		}
-		completion_reward = {
-			country_event = sia_events.4
-		}
-		prerequisite = { focus = SIA_songsuradet_leadership }
-	}
-	focus = {
-		id = SIA_cooperate_with_loyalists
-		icon = GFX_focus_generic_commission
-		relative_position_id = SIA_songsuradet_leadership
-		x = 4
-		y = 2
-		cost = 5
-		available = {
-			SIA_phraya_phahon = {
-				has_trait = crown_property_scandal
-			}
-		}
-		completion_reward = {
-			country_event = sia_events.4
-		}
-		prerequisite = { focus = SIA_force_pridi_in_to_exile }
-		prerequisite = { focus = SIA_monarchist_military_rule }
 	}
 	focus = {
 		id = SIA_thai_irredentism
@@ -3044,7 +2941,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = -12
+		x = -11
 		y = 0
 		
 		cost = 2
@@ -3518,7 +3415,7 @@ focus_tree = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_goal_unknown
-		x = 64
+		x = 65
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
@@ -3563,23 +3460,23 @@ focus_tree = {
 	focus = {
 		id = SIA_motion_of_no_confidence
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_exposed_crown_property_theft
+		relative_position_id = SIA_opposed_khana_ratsadon
 		x = -1
-		y = 1
+		y = 2
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_exposed_crown_property_theft}
+		prerequisite = { focus = SIA_opposed_khana_ratsadon }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}	
 	focus = {
 		id = SIA_plot_against_khana_ratsadon
 		icon = gfx_goal_unknown
-		relative_position_id = SIA_exposed_crown_property_theft
+		relative_position_id = SIA_opposed_khana_ratsadon
 		x = 1
-		y = 1
+		y = 2
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_exposed_crown_property_theft}
+		prerequisite = { focus = SIA_opposed_khana_ratsadon}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
