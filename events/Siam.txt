@@ -89,6 +89,7 @@ country_event = {
 	option = {
 		name = sia_events.1.a
 		add_trait = {
+<<<<<<< Updated upstream
 			character = SIA_phraya_phahon
 			ideology = moderatism
 			trait = crown_property_scandal
@@ -99,6 +100,17 @@ country_event = {
 			trait = siamese_revolutionary_leader
 		}
 		hidden_effect = { country_event = { id = sia_events.2 days = 17 } }
+=======
+     			character = SIA_phraya_phahon
+     			ideology = moderatism
+     			trait = crown_property_scandal
+					}
+		hidden_effect = {
+				country_event = { id = sia_events.2
+										days = 17 }
+				}
+            }
+>>>>>>> Stashed changes
 	}
 }
 
