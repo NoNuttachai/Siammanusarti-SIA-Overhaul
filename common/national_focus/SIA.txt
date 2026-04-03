@@ -303,7 +303,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
-		mutually_exclusive = { focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
+		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_continue_pridi_administration }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
@@ -544,7 +544,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
-		mutually_exclusive = { focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership }
+		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_thawan_thamrong_premiership }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
@@ -556,7 +556,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
-		mutually_exclusive = { focus = SIA_thawee_bunyaket_premiership focus = SIA_continue_pridi_administration }
+		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_continue_pridi_administration }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
@@ -580,6 +580,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_phrachatiphat_victory }
+		mutually_exclusive = { focus = SIA_khung_aphaiwong_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
@@ -591,6 +592,7 @@ focus_tree = {
 		cost = 10
 		completion_reward = { }
 		prerequisite = { focus = SIA_phrachatiphat_victory focus = SIA_khana_ratsadon_reelected}
+		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
