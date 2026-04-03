@@ -126,6 +126,13 @@ characters={
 			cost = 100
 			traits = {army_infantry_2}
 		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			traits = { }
+			id=-1
+		}
 	}
 	SIA_charun_rattanakun_seriroengrit = {
 		name="Charun Rattanakun Seriroengrit"
@@ -514,13 +521,6 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
-		}
-		country_leader={
-			ideology=despotism
-			traits={  }
-			expire="1965.1.1.1"
-			traits = { }
-			id=-1
 		}
 	}
 
