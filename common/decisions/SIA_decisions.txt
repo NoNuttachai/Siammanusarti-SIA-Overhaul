@@ -995,7 +995,7 @@ SIA_discontent_within_the_ranks = {
 		}
 		days_remove = 20
 			
-		cost = 50
+		cost = 75
 		remove_effect = {	
 			custom_effect_tooltip = SIA_neutral_leader_goes_supportive
 			hidden_effect = {
@@ -1016,6 +1016,78 @@ SIA_discontent_within_the_ranks = {
 			factor = 100			
 		}
 	}	
+
+	SIA_work_with_angered_commanders = {
+		icon = GFX_decision_icon_default
+		visible = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIA_any_hostile_leaders
+				any_character = {
+					has_character_flag = SIA_armed_forces_character
+					has_trait = SIA_general_hostile	
+				}
+			}			
+		}
+		days_remove = 20
+			
+		cost = 150
+		remove_effect = {	
+			custom_effect_tooltip = SIA_hostile_leader_goes_neutral
+			hidden_effect = {
+				random_character = {
+					limit = { 
+						has_character_flag = SIA_armed_forces_character
+						has_trait = SIA_general_hostile	
+					}
+					remove_unit_leader_trait = SIA_general_hostile
+				}
+				subtract_from_variable = { SIA_hostile_leaders = 1 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+
+	SIA_fire_plotting_generals = {
+		icon = GFX_decision_icon_default
+		visible = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIA_any_hostile_leaders
+				any_character = {
+					has_character_flag = SIA_armed_forces_character
+					has_trait = SIA_general_hostile	
+				}
+			}			
+		}
+		days_remove = 20
+			
+		cost = 0
+		remove_effect = {	
+			random_character = {
+				limit = { 
+					has_character_flag = SIA_armed_forces_character
+					has_trait = SIA_general_hostile	
+				}
+				ROOT = { retire_character = THIS } 
+			}
+			add_stability = -0.25
+			add_command_power = -50
+			army_experience = -50
+			hidden_effect = {
+				subtract_from_variable = { SIA_hostile_leaders = 1 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
 }
 form_rattanakosin_kingdom_category = {
 
