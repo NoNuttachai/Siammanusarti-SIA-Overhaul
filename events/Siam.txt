@@ -203,7 +203,7 @@ country_event = {
 			long_name = royal_siamese_armed_forces_party_long
 			name = royal_siamese_armed_forces_party
 		}
-		promote_character = SIA_phraya_songsuradet
+		promote_character = SIA_phin_choonhavan
 		complete_national_focus = SIA_pridi_premiership
     }
 }
@@ -316,10 +316,6 @@ country_event = {
 			SIA_thawan_thamrongnawasawat = {
 				add_unit_leader_trait = SIA_general_supportive
 				ROOT = { add_to_variable = { SIA_supportive_leaders = 1 } }
-			}
-			SIA_phraya_songsuradet = {
-				add_unit_leader_trait = SIA_general_hostile
-				ROOT = { add_to_variable = { SIA_hostile_leaders = 1 } }
 			}
 			SIA_phin_choonhavan = {
 				add_unit_leader_trait = SIA_general_hostile
