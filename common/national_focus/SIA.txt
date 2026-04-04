@@ -273,12 +273,13 @@ focus_tree = {
 	focus = {
 		id = SIA_organize_a_free_election
 		icon = GFX_focus_generic_election
-		relative_position_id = SIA_curtail_the_army
+		relative_position_id =SIA_curtail_the_army
 		x = 1
 		y = 1
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_amend_the_constitution }
+		prerequisite = { focus =SIA_curtail_the_army }
+		prerequisite = { focus = SIA_align_with_navy }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
@@ -1179,7 +1180,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_thai-japanese_aillance_shared_focus }
+		prerequisite = { focus = SIA_territorial_award_to_thailand }
 	}
 	focus = {
 		id = SIA_peg_the_baht_to_the_yen #during WW2 Japan print baht bills and force the exchange 1 to 1
@@ -1189,7 +1190,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		completion_reward = { }
-		prerequisite = { focus = SIA_thai-japanese_aillance_shared_focus }
+		prerequisite = { focus = SIA_territorial_award_to_thailand }
 	}
 	
 	focus = {

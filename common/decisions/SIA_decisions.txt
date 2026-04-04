@@ -727,6 +727,183 @@ SIA_SEA_self_determination = {
 			}
 		}
 	}
+	SIA_invite_to_asean_economic_bloc = {
+		priority = 5
+		icon = GFX_decision_gre_investment_decisions 
+
+		target_array = ROOT.allies
+
+		target_trigger = {
+			FROM = {
+				capital_scope = { is_on_continent = asia }
+				is_in_faction_with = ROOT
+				NOT = {
+					OR = {
+						has_idea = SIA_asean_member
+						has_idea = SIA_asean_integrated_member
+					}
+				}
+			}
+		}
+
+		available = {
+		}
+
+		visible = {	
+			has_completed_focus = SIA_bangkok_declaration
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+
+			FROM = {
+				add_ideas = SIA_asean_member
+			}
+		}
+	}
+		
+	SIA_further_integrate_to_asean_economic_bloc = {
+		priority = 3
+		icon = GFX_decision_eng_trade_unions_support 
+
+		target_array = ROOT.allies
+
+		target_trigger = {
+			FROM = {
+				capital_scope = { is_on_continent = asia }
+				is_in_faction_with = ROOT
+				has_idea = SIA_asean_member
+			}
+		}
+
+		available = {
+		}
+
+		visible = {	
+			has_completed_focus = SIA_bangkok_declaration
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+
+		complete_effect = {
+			FROM = {
+				swap_ideas = {
+						remove_idea = SIA_asean_member
+						add_idea = SIA_asean_integrated_member
+					}
+			}
+		}
+	}
+
+	SIA_integrate_to_asean_autonomous_state = {
+		icon = GFX_decision_eng_trade_unions_demand
+		priority = 2
+
+		ai_will_do = {
+			base = 50
+		}
+		
+		fire_only_once = yes
+
+		target_array = ROOT.allies
+
+		target_array = ROOT.allies
+
+		target_trigger = {
+			FROM = {
+				capital_scope = { is_on_continent = asia }
+				is_in_faction_with = ROOT
+				has_idea = SIA_asean_integrated_member
+			}
+		}
+
+		available = {
+		}
+
+		visible = {	
+			has_completed_focus = SIA_bangkok_declaration
+		}
+
+		available = {
+			is_subject = no
+			is_faction_leader = yes
+		}
+
+		days_remove = 1
+
+		cost = 50
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			SIA = {
+				puppet = FROM
+			}
+		}
+	}
+	SIA_annex_asean_autonomous_state = {
+		icon = GFX_decision_eng_trade_unions_demand
+		priority = 1
+
+		ai_will_do = {
+			base = 50
+		}
+		
+		fire_only_once = yes
+
+		target_array = ROOT.allies
+
+		target_trigger = {
+			FROM = {
+				capital_scope = { is_on_continent = asia }
+				is_in_faction_with = ROOT
+				is_puppet_of = SIA
+			}
+		}
+
+		available = {
+		}
+
+		visible = {	
+			has_completed_focus = SIA_bangkok_declaration
+		}
+		available = {
+			is_subject = no
+			is_faction_leader = yes
+		}
+
+		days_remove = 1
+
+		cost = 75
+
+		complete_effect = {
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				FROM = {
+					every_owned_state = {
+						limit = {
+							is_core_of = THIS
+						}
+						add_core_of = SIA
+					}
+				}
+			}
+			SIA = {
+				annex_country = {
+					target = FROM
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 }
 SIA_towards_a_greater_thailand = {
 	SIA_secure_pivotal_territories_in_indochina = {
