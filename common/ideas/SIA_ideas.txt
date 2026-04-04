@@ -727,7 +727,7 @@ ideas = {
 				production_speed_bunker_factor = 0.2
 			}
 		}
-		SIA_national_construction_idea = {
+		SIA_nation_building_program_idea = {
 			removal_cost = -1
 			
 			picture = ARG_construction_guilds
