@@ -901,9 +901,8 @@ focus_tree = {
 				add_idea = SIA_new_thai_society_1
 			}
 			country_event = {
-					Id = sia_events.10
-					days = 5
-				}
+				Id = sia_events.10
+			}
 		}
 		prerequisite = { focus = SIA_cultural_revolution }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
@@ -919,6 +918,9 @@ focus_tree = {
 			add_timed_idea = {
 				idea = SIA_new_anthem
 				days = 100
+			}
+			country_event = {
+				Id = sia_events.11
 			}
 		}
 		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
