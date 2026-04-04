@@ -1,7 +1,7 @@
 SIA_PHIBUN_BOP = {
 	left_side = SIA_phibun_weak
 	right_side = SIA_phibun_side 
-	decision_category = SIA_RH_CAT
+	decision_category = SIA_phibun_BOP_category
 
 	range = {
 		id = SIA_PHIBUN_BALANCE

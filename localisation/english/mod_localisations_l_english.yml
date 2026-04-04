@@ -38,16 +38,25 @@ SIA_RH_OPPOS_25_75: "Low Support"
 SIA_RH_OPPOS_75_100: "Very Low Support"
 SIA_RH_OPPOS: "Opposition"
 
-SIA_PHIBUN_BOP: "Phibun's Authority"
-SIA_phibun_weak: "Weak Authority"
-SIA_phibun_side: "Strong Authority"
+# Phibun Balance of Power
+SIA_PHIBUN_BOP: "Political Authority of Marshal Pleak"
+SIA_phibun_weak: "Political Opponents" #Later Free Thai Movement
+SIA_phibun_side: "Marshal Pleak's Authority"
+SIA_phibun_side_75_100: "Dictatorial Powers"
+SIA_phibun_side_25_75: "Strong Authoritarian Control"
+SIA_PHIBUN_BALANCE: "Stable Political Authority"
+SIA_phibun_weak_25_75: "Weak Political Authority"
+SIA_phibun_weak_75_100: "Mass Opposition to Phibun"
+SIA_phibun_weak_25_75: "Weak Political Control"
+
+SIA_bop_rattaniyom_decree_1: "Decree 1: On the name of the country, people and nationality"
 
 SIA_siamese_nation: "[SIA.GetAdjective] Nationalism"
 #SIA_siamese_nation_desc: ""
 SIA_absent_monarch_tt: "\n§YAbsent Monarch§!\n   §gKing Ananda Mahidol is currently residing and studying in§! @SWI [SWI.GetName]."
 SIA_king_ananda_mahidol: "King Ananda Mahidol (Rama VIII)"
 SIA_king_ananda_mahidol_desc: "Following the 1932 revolution, King Prajadhipok (Rama VII) abdicated due to disagreements with the Khana Ratsadon government. As the king did not have a son, Mom Chao (Prince) Ananda Mahidol was crowned king by the government through the line of succession. Because the new king is still a child and resided abroad, regents are appointed to carry out his duties."
-SIA_present_monarch_tt: "\n§YABrief Visit§!\n   §gThe king, with his mother and brother are currently briefly residing in§! @[SIA.GetTag] [SIA.GetName]."
+SIA_present_monarch_tt: "\n§YA Brief Visit§!\n   §gThe king, with his mother and brother are currently briefly residing in§! @[SIA.GetTag] [SIA.GetName]."
 SIA_king_ananda_mahidol_alt: "King Ananda Mahidol (Rama VIII)"
 SIA_king_ananda_mahidol_alt_desc: "Following the 1932 revolution, King Prajadhipok (Rama VII) abdicated due to disagreements with the Khana Ratsadon government. As the king did not have a son, Mom Chao (Prince) Ananda Mahidol was crowned king by the government through the line of succession. Because the new king is still a child and resided abroad, regents are appointed to carry out his duties."
 SIA_legacy_of_revolution: "Legacy of the Siamese Revolution"
@@ -696,8 +705,8 @@ SIA_the_red_white_and_blue_desc: "TBA"
 SIA_volunteers_to_china: "Volunteers to China"
 SIA_volunteers_to_china_desc: "TBA"
 
-SIA_economic_nationalism: "Economic Nationalism"
-SIA_economic_nationalism_desc: "Within Thailand, there is a sizable Sinitic population which forms a core piece of our economy. However, with our move towards self-reliance, we must now redetermine our economic ties with the Teochew."
+SIA_thai_use_thai_made_thai_prosper: "Thai Use, Thai Made, Thai Prosper"
+SIA_thai_use_thai_made_thai_prosper_desc: "Within Thailand, there is a sizable Sinitic population which forms a core piece of our economy. However, with our move towards self-reliance, we must now redetermine our economic ties with the Teochew."
 
 SIA_refine_our_rubber: "Alternative Oil Sources"
 SIA_refine_our_rubber_desc: "We can use our extensive rubber stockpile to create through artifical means a far larger oil stockpile than we would have otherwise. If we wish to fuel our industry internally, we must build on what we already have in this regard."
@@ -939,8 +948,8 @@ SIA_thammasat_university_natspirit_desc: ""I love Thammasat because Thammasat ma
 SIA_modify_air_force_modifier_tt: "Modify §Y$SIA_air_force_idea_base$§! by:"
 SIA_unlock_siamese_airways_company_limited: "Unlock the '§YSiamese Airways Company Limited§!' Industrial Concern."
 
-SIA_land_of_the_free: "The Land of the Free"
-SIA_land_of_the_free_desc: "TBA"
+SIA_country_rename: "Prathed Thai"
+SIA_country_rename_desc: "TBA"
 
 SIA_security_of_the_nation: "Security of the Nation"
 SIA_security_of_the_nation_desc: "TBA"

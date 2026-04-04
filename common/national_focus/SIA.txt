@@ -787,7 +787,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_purge }
-		prerequisite = { focus = SIA_land_of_the_free }
+		prerequisite = { focus = SIA_country_rename }
 	}
 	focus = {
 		id = SIA_national_construction
@@ -824,7 +824,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
-		id = SIA_land_of_the_free
+		id = SIA_country_rename
 		icon = gfx_goal_unknown
 		relative_position_id = SIA_marshal_phibun_ascension
 		x = -2
@@ -872,18 +872,18 @@ focus_tree = {
 				tooltip_side = SIA_phibun_weak
 			}
 		}
-		prerequisite = { focus = SIA_land_of_the_free focus = SIA_promote_democratic_ideals }
+		prerequisite = { focus = SIA_country_rename focus = SIA_promote_democratic_ideals }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {
-		id = SIA_economic_nationalism
+		id = SIA_thai_use_thai_made_thai_prosper
 		icon = GFX_focus_DEN_heavy_regulations
 		relative_position_id = SIA_cultural_revolution
 		x = 3
 		y = 1
 		cost = 10
 		completion_reward = { 
-			add_ideas = SIA_economic_nationalism_idea
+			add_ideas = SIA_thai_use_thai_made_thai_prosper_idea
 		}
 		prerequisite = { focus = SIA_cultural_revolution }
 		prerequisite = { focus = SIA_pan_thai_nationalism }

@@ -1,3 +1,85 @@
+SIA_phibun_BOP_category = {
+	SIA_Left_Side_Debug = {
+		name = "DEBUG - Add 20% to Phibun"
+		available = { is_debug = yes }
+		visible = { is_debug = yes }
+
+		fire_only_once = no
+		ai_will_do = { factor = 0 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = 0.20
+			}
+		}
+	}
+	SIA_Left_Side_Debug_Big = {
+		name = "DEBUG - Add 75% to Phibun"
+		available = { is_debug = yes }
+		visible = { is_debug = yes }
+
+		fire_only_once = no
+		ai_will_do = { factor = 0 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = 0.75
+			}
+		}
+	}
+	SIA_Right_Side_Debug = {
+		name = "DEBUG - Add 20% to Opposition"
+		available = { is_debug = yes }
+		visible = { is_debug = yes }
+
+		fire_only_once = no
+		ai_will_do = { factor = 0 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = -0.20
+			}
+		}
+	}
+	SIA_Right_Side_Debug_Big = {
+		name = "DEBUG - Add 75% to Opposition"
+		available = { is_debug = yes }
+		visible = { is_debug = yes }
+
+		fire_only_once = no
+		ai_will_do = { factor = 0 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = -0.75
+			}
+		}
+	}
+	SIA_bop_rattaniyom_decree_1 = {
+   		available = { }
+ 		cancel_trigger = { has_completed_focus = SIA_country_rename }
+    	icon = mission_icon     # For GFX_decision_mission_icon
+    	is_good = yes
+		days_mission_timeout = 120
+		complete_effect = {
+        	add_power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value = 0.05
+			}
+    	}
+		timeout_effect = {
+        	add_power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value = -0.05
+			}
+    }
+	}
+}
+
 SIA_six_principles = {
 	SIA_debug_67_tung_tung_sahur = {
 		icon = GFX_decision_icon_default

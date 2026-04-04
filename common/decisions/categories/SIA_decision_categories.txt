@@ -1,5 +1,5 @@
 
-SIA_RH_CAT = {
+SIA_phibun_BOP_category = {
 	priority = 10
 	allowed = { original_tag = SIA }
 }
