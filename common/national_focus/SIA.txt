@@ -1684,7 +1684,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_yuwachon_thahan
-		icon = GFX_focus_CHI_military_mission
+		icon = GFX_focus_Youth_Corps
 		relative_position_id = SIA_increase_the_reserve_force
 		x = 1
 		y = 1
@@ -1696,7 +1696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_yuwanaree
-		icon = gfx_goal_unknown
+		icon = GFX_focus_Female_Corps
 		relative_position_id = SIA_increase_the_reserve_force
 		x = -1
 		y = 1

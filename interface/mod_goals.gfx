@@ -111,4 +111,12 @@ spriteTypes = {
 		name = "GFX_focus_tiger_economy"
 		texturefile = "gfx/interface/goals/focus_tiger_economy.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_Youth_Corps"
+		texturefile = "gfx/interface/goals/Youth_Corps.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Female_Corps"
+		texturefile = "gfx/interface/goals/Female_Corps.dds"
+	}
 }
