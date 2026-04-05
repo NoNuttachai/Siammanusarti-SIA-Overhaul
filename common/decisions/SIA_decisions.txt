@@ -132,6 +132,21 @@ SIA_phibun_BOP_category = {
 			}
 		}
 	}
+	SIA_yuwachon_thahan_marching_parade = {
+		available = { has_completed_focus = SIA_yuwachon_thahan }
+		visible = always
+		fire_only_once = no
+		days_re_enable = 70
+		cost = 25
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = 0.05
+			}
+		}
+	}
 }
 
 SIA_six_principles = {
