@@ -1828,6 +1828,6 @@ JAP_pacific_union = {
 }
 
 SIA_asean = {
-	color = rgb { 255 205 79 } 
-	color_ui = rgb { 255 205 79 }
+	color = rgb { 0 50 160 } 
+	color_ui = rgb { 0 50 160 }
 }
