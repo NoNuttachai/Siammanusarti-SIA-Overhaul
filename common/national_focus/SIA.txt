@@ -14,7 +14,7 @@ focus_tree = {
     focus = {
         id = SIA_legacy_of_revolution
 		icon = GFX_focus_SIA_legacy_of_the_siamese_revolution
-        x = 46
+        x = 48
         y = 0
         cost = 5
         available = { }
@@ -2953,7 +2953,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = -11
+		x = -13
 		y = 0
 		
 		cost = 2
@@ -3226,7 +3226,7 @@ focus_tree = {
 	focus = {
 		id = SIA_chula_uni
 		icon = GFX_focus_Chulalongkorn_University
-		x = -4
+		x = -5
 		y = 1
 		prerequisite = { focus = SIA_revitalize_the_economy }
 		relative_position_id = SIA_revitalize_the_economy
@@ -3243,7 +3243,7 @@ focus_tree = {
 		id = SIA_education_for_all
 		icon = GFX_focus_Education_for_All
 		x = -1
-		y = 1
+		y = 2
 		prerequisite = { focus = SIA_chula_uni }
 		relative_position_id = SIA_chula_uni
 		
@@ -3254,7 +3254,21 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-	
+	focus = {
+		id = SIA_something_here
+		icon = GFX_focus_Education_for_All
+		x = 1
+		y = 2
+		prerequisite = { focus = SIA_chula_uni }
+		relative_position_id = SIA_chula_uni
+		
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = SIA_education_for_all
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
 	focus = {
 		id = SIA_rail_expansion
 		icon = GFX_focus_generic_railroad
@@ -3427,7 +3441,7 @@ focus_tree = {
 	focus = {
 		id = SIA_opposed_khana_ratsadon
 		icon = gfx_goal_unknown
-		x = 65
+		x = 67
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
