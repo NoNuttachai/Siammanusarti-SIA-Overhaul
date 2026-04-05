@@ -738,7 +738,7 @@ ideas = {
 				production_speed_buildings_factor = 0.2
 			}
 		}
-		SIA_economic_nationalism_idea = {
+		SIA_thai_use_thai_made_thai_prosper_idea = {
 			removal_cost = -1
 			
 			picture = generic_economic_increase
