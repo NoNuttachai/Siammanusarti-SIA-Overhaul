@@ -292,6 +292,7 @@ set_convoys = 15
 			early_ship_hull_submarine = 1
 			basic_ship_hull_submarine = 1
 			early_ship_hull_cruiser = 1
+			coastal_defense_ships = 1
 		}
 	}
 }
@@ -356,7 +357,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Rattanakosin class"				
+		name = "Rattanakosin Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = SIA_CL_HISTORICAL
 		parent_version = 0
