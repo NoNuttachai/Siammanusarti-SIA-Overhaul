@@ -78,6 +78,60 @@ SIA_phibun_BOP_category = {
 			}
     }
 	}
+	SIA_pad_thai_bop = {
+		available = { has_completed_focus = SIA_cultural_revolution }
+		visible = always
+		fire_only_once = yes
+		days_remove = 7
+		cost = 20
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = 0.05
+			}
+			country_event = {
+				id = sia_bop_event.1
+			}
+		}
+	}
+	SIA_the_overture_bop = {
+		available = { has_completed_focus = SIA_cultural_revolution }
+		visible = always
+		fire_only_once = yes
+		days_remove = 7
+		cost = 20
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = 0.05
+			}
+			country_event = {
+				id = sia_bop_event.2
+			}
+		}
+	}
+	SIA_ban_maak_chewing_bop = {
+		available = { has_completed_focus = SIA_cultural_revolution }
+		visible = always
+		fire_only_once = yes
+		days_remove = 7
+		cost = 20
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_BOP
+				value = 0.05
+			}
+			country_event = {
+				id = sia_bop_event.3
+			}
+		}
+	}
 }
 
 SIA_six_principles = {

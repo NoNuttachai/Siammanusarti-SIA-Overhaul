@@ -50,6 +50,9 @@ SIA_phibun_weak_75_100: "Mass Opposition to Phibun"
 SIA_phibun_weak_25_75: "Weak Political Control"
 
 SIA_bop_rattaniyom_decree_1: "Decree 1: On the name of the country, people and nationality"
+SIA_the_overture_bop: "Reforms to Traditional Thai Music"
+SIA_pad_thai_bop: "Promote the Consumption of Noodles"
+SIA_ban_maak_chewing_bop: "Ban the Practice of Maak Chewing"
 
 SIA_siamese_nation: "[SIA.GetAdjective] Nationalism"
 #SIA_siamese_nation_desc: ""
@@ -141,6 +144,18 @@ sia_events.11.t: "The National Anthem of Thailand"
 sia_events.11.d: "Prior to the Siamese Revolution, Siam did not officially have a national anthem. De facto, the royal anthem “Sansoen Phra Barami” (Glory to His Prestige) was played as the national anthem. \n\nWith the Siamese Revolution transitioning the nation from an absolute monarchy to a constitutional one, the government of Khana Ratsadon adopted a newly composed tune by Phra Chenduriyang, with lyrics penned by Khun Wichitmatra for “Phleng Chat Siam” (National Anthem of Siam). Additional changes to the lyrics were made by Chan Khamwilai in 1934. \n\nFollowing the change of the country’s name from Siam to Thailand under Marshal Plaek, a competition was launched to create a completely new set of lyrics, with those by Luang Saranupraphan winning. \n\nMarshal Plaek also announced policies ordering the anthem to be played twice daily in schools and government institutions, as well as broadcast over the radio at 8 AM and 6 PM. During these times, the populace is expected to stand and show respect to the nation."
 sia_events.11.a: "Thawee, Meechai, Chaiyo!"
 
+sia_bop_event.1.t: "Pad Thai"
+sia_bop_event.1.d: "Due to rice shortages, the government of Marshal Plaek promoted the consumption of rice noodles to reduce domestic rice consumption and provide cheap food to Thai citizens. Although noodles were already widely consumed by the Chinese community in Thailand, many ethnic Thais are more reluctant to eat them due to their watery texture. \n\nTo solve this, Marshal Plaek promoted a new dish called “Pad Thai,” meaning Thai stir-fry. The dish itself is based on Chinese stir-fried noodle dishes, but with ingredients more palatable to Thai people. \nIt is made with rice noodles stir-fried with eggs and chopped firm tofu, and flavored with tamarind juice, fish sauce, dried shrimp, garlic, shallots, and sometimes red chili pepper and palm sugar. It is served with lime wedges and often topped with crushed roasted peanuts. \nIt may also include other vegetables such as bean sprouts, green onions, garlic chives, preserved radish, and raw banana flowers. Additionally, it can contain fresh shrimp, crab, or squid."
+sia_bop_event.1.a: "Haiyaa!"
+
+sia_bop_event.2.t: "The Overture"
+sia_bop_event.2.d: "As part of broader cultural reforms led by the government of Marshal Plaek, the government enacted policies mandating permits for playing traditional instruments such as the ranat, as well as requiring instrumentalists to stand rather than sit while performing, in an effort to make the performance of traditional Thai instruments to be more in line with how Western musicians perform.\n\nMany traditional Thai musicians, however, opposed these new policies, believing that the government is actively suppressing, or even attempting to destroy traditional Thai music by failing to recognize its cultural value in its efforts to westernize the nation and prioritize Western music while disregarding Thailand's long musical tradition."
+sia_bop_event.2.a: " “To be civilized is to distain our roots, colonel?” "
+
+sia_bop_event.3.t: "Ban on Maak Chewing"
+sia_bop_event.3.d: "The practice of betel nut chewing is widespread across Southeast Asia. In Thailand, it is known as “maak chewing.” The wild spread practice is centuries old and can be traced back to a time even before the Kingdom of Sukhothai in the 12th century AD.\n\nAs part of government policies to westernize Thailand, a promotional campaign was launched to encourage citizens to quit the habit of chewing maak. \nMarshal Pleak also ordered the cutting down of maak trees throughout the country. Those who chewed maak could be stopped and fined by the police. These measures were intended to promote a modern society and clean up the cities, as people would spit red residue onto the streets, staining roads and buildings, which was seen as dirty and unhygienic.\n\nThe policy was met with mixed reactions and disapproval. Although many Thais eventually gave up the practice of maak chewing, the ban was not strictly enforced in rural areas, and many people there continued the habit."
+sia_bop_event.3.a: "Let chew “maak farang” instead"
+
 sia_global_events.1.t: "Siam Changes Name to Thailand"
 sia_global_events.1.d: "The Government of Siam, now Thailand, has announced the name change from Siam to Thailand (Prathet Thai), a decision made by the Plaek Phibunsongkhram administration to align with its nationalist policies aimed at promoting a Thai ethnic identity. \n\nThis change was part of a broader cultural reform known as Rattaniyom, which sought to modernize the nation and foster a unified national identity. With the term "Thai" meaning "Free," it symbolized the independence and sovereignty of Thailand."
 sia_global_events.1.a: "Even old New York was once New Amsterdam"
@@ -148,6 +163,10 @@ sia_global_events.1.a: "Even old New York was once New Amsterdam"
 sia_unit_leader_event.1.t: "Songsuradet Rebellion Crushed"
 sia_unit_leader_event.1.d: "Accused of plotting a rebellion and attempting to assassinate Plaek Phibunsongkhram, Phraya Songsuradet, a long-time rival of Phibun, has been stripped of his military duties and forced into exile.\n\nPoliticians, military officers, and aristocrats accused of aiding or participating in the alleged rebellion have been arrested.\nAmong them are Rangsit Prayurasakdi, General Phraya Thephatsadin and both of his sons, Lieutenant Colonel Nor Nean Talaluk, Phraya Udomphongphensawat, and more than twenty other individuals.\n\nHowever, the legitimacy of the alleged plot has been widely questioned. There is little evidence proving that Songsuradet was truly planning a rebellion against Phibun, and many believe that the claim of the "Songsuradet Rebellion" was in fact a purge by Phibun against his political opponents and perceived enemies of Khana Ratsadon." \n\nA special tribunal has been convened for the trial of the alleged conspirators. Eighteen are expected to face the death penalty, while the remaining defendants will receive prison sentences."
 sia_unit_leader_event.1.a: "A Rebellion of the Eighteen Corpses"
+
+sia_unit_leader_event.2.t: " "Rattaniyom" State Decrees"
+sia_unit_leader_event.2.d: "Our leader, Marshal Plaek Phibunsongkhram, wishes for Siam to become a uniform and civilized nation on the same level as other world powers. He and his government have proposed 12 mandates aimed at creating a unified and civilized Thai culture at a time when our nation is constantly facing the crises and wars of the world.\nThese 12 mandates will greatly reform our nation. Our country will change its name, customs will be reformed, and many other facets of life will evolve for the betterment of a new....."
+sia_unit_leader_event.2.a: "Thailand"
 
 sia_events.104.t: "Siam lobbies for [?FROM.FROM.GetNameDef] Independence"
 sia_events.105.t: "They Accept our Request"
@@ -390,8 +409,8 @@ SIA_establish_a_central_bank_desc: ""
 SIA_prioritized_road_expansion: "Prioritized Road Expansion"
 SIA_prioritized_road_expansion_desc: ""
 
-SIA_industrialized_the_nation: "Industrialize the Nation"
-SIA_industrialized_the_nation_desc: ""
+SIA_an_industrial_nation: "An Industrial the Nation"
+SIA_an_industrial_nation_desc: ""
 
 SIA_rail_expansion: "Rail Expansion"
 SIA_rail_expansion_desc: ""

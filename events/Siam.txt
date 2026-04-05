@@ -2,7 +2,7 @@ add_namespace = N_SIA
 add_namespace = N_SIA_NEWS
 add_namespace = sia_events
 add_namespace = sia_global_events
-add_namespace = sia_BOP_event
+add_namespace = sia_bop_event
 add_namespace = sia_unit_leader_event
 
 country_event = { # Japanese ultimatum to go through Siam
@@ -209,7 +209,7 @@ country_event = {
 }
 
 country_event = {
-    id = sia_events.6
+    id = sia_events.6 #Planting of Khana Ratsadon Plaque
     title = sia_events.6.t
     desc = sia_events.6.d
     picture = report_event_khana_ratsadon_plaque
@@ -380,7 +380,7 @@ country_event = {
 	}
 
 
-unit_leader_event = {
+unit_leader_event = { #Songsuradet Rebellion
 	id = sia_unit_leader_event.1
 	title = sia_unit_leader_event.1.t
 	desc = sia_unit_leader_event.1.d
@@ -393,6 +393,20 @@ unit_leader_event = {
         name = sia_unit_leader_event.1.a
 		retire_character = SIA_phraya_songsuradet
 		retire_character = SIA_phraya_thepahatsadin
+    }
+}
+
+unit_leader_event = { #Rattaniyom Introduction
+	id = sia_unit_leader_event.2
+	title = sia_unit_leader_event.2.t
+	desc = sia_unit_leader_event.2.d
+	picture = GFX_report_event_generic_mussolini
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = sia_unit_leader_event.2.a
     }
 }
 
@@ -960,14 +974,42 @@ country_event = { #yes
     }
 }
 country_event = {
-	id = sia_BOP_event.1
-	title = sia_BOP_event.1.t
-	desc = sia_BOP_event.1.d
-	picture = report_event_khana_ratsadon_plaque
+	id = sia_bop_event.1 #Pad Thai Event
+	title = sia_bop_event.1.t
+	desc = sia_bop_event.1.d
+	picture = report_event_pad_thai
 	
 	is_triggered_only = yes
 	option = {
-		name = sia_BOP_event.1.a
+		name = sia_bop_event.1.a
+			add_power_balance_value = {
+                id = SIA_BOP
+                value = 0.05
+                tooltip_side = SIA_RH_KHANA
+            }
+	}
+}
+country_event = {
+	id = sia_bop_event.2 #The Overture
+	title = sia_bop_event.2.t
+	desc = sia_bop_event.2.d
+	picture = report_event_the_overture
+	
+	is_triggered_only = yes
+	option = {
+		name = sia_bop_event.2.a
+		add_stability = -0.05
+	}
+}
+country_event = {
+	id = sia_bop_event.3 #Maak Chewing Ban
+	title = sia_bop_event.3.t
+	desc = sia_bop_event.3.d
+	picture = report_event_maak_chewing_ban
+	
+	is_triggered_only = yes
+	option = {
+		name = sia_bop_event.3.a
 		    add_power_balance_value = {
                 id = SIA_BOP
                 value = 0.05

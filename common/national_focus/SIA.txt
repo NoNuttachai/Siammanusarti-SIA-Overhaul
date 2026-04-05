@@ -745,7 +745,14 @@ focus_tree = {
 				right_side = SIA_phibun_side
 			}
 			mark_focus_tree_layout_dirty = yes
+			hidden_effect = {
+				SIA_plaek_phibunsongkhram = {
+					unit_leader_event = sia_unit_leader_event.2
+					days = 10
+				}
+			}
 		}
+
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
 		mutually_exclusive = { focus = SIA_pridi_premiership }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
@@ -805,6 +812,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = SIA_purge }
+		prerequisite = { focus = SIA_expand_the_special_branch }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
 	focus = {
@@ -3121,7 +3129,7 @@ focus_tree = {
 		relative_position_id = SIA_iron_buffalos
 		prerequisite = { focus = SIA_iron_buffalos }
 		prerequisite = { focus = SIA_rice_security }
-		mutually_exclusive = { focus = SIA_industrialized_the_nation }
+		mutually_exclusive = { focus = SIA_an_industrial_nation }
 		cost = 2
 		ai_will_do = { factor = 1 }
 
@@ -3134,7 +3142,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
 	focus = {
-		id = SIA_industrialized_the_nation
+		id = SIA_an_industrial_nation
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 5
 		y = 2
