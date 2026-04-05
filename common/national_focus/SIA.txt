@@ -744,12 +744,15 @@ focus_tree = {
 				right_side = SIA_phibun_side
 			}
 			mark_focus_tree_layout_dirty = yes
+			SIA_plaek_phibunsongkhram = {
+			  promote_leader = yes
+			}
 			hidden_effect = {
 				SIA_plaek_phibunsongkhram = {
-					unit_leader_event = sia_unit_leader_event.2
-					days = 10
+					unit_leader_event = { id = sia_unit_leader_event.2 days = 10 }
 				}
 			}
+			
 		}
 
 		prerequisite = { focus = SIA_phraya_phanon_steps_down }
@@ -843,6 +846,9 @@ focus_tree = {
 		cost = 10
 		completion_reward = { 
 			add_ideas = SIA_new_thai_society
+			unlock_decision_tooltip = SIA_pad_thai_bop
+			unlock_decision_tooltip = SIA_the_overture_bop
+			unlock_decision_tooltip = SIA_ban_maak_chewing_bop
 		}
 		prerequisite = { focus = SIA_believe_in_leader focus = SIA_mass_media_propaganda }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
@@ -1277,6 +1283,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			army_experience = 25
+			
+			
 		}
 	}
 	focus = {
@@ -1311,6 +1319,8 @@ focus_tree = {
                 folder = land
                 grand_doctrine = grand_battleplan
             }
+			unlock_decision_tooltip = SIA_promote_phin_field_marshal
+			unlock_decision_tooltip = SIA_promote_phraya_field_marshal
 		}
 	}
 	focus = {
@@ -1345,6 +1355,10 @@ focus_tree = {
                 folder = land
                 grand_doctrine = mass_assault
             }
+			
+			SIA_phraya_thepahatsadin = {
+				promote_leader = yes
+			}
 		}
 	}
 	focus = {
@@ -1691,7 +1705,14 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_increase_the_reserve_force }
-		completion_reward = { }
+		completion_reward = { 
+			if = {
+				limit = {
+					has_completed_focus = SIA_marshal_phibun_ascension
+				}
+				unlock_decision_tooltip = SIA_yuwachon_thahan_marching_parade
+			}
+		}
 	}
 	focus = {
 		id = SIA_yuwanaree

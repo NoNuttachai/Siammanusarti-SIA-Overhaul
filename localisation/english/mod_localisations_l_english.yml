@@ -50,9 +50,25 @@ SIA_phibun_weak_75_100: "Mass Opposition to Phibun"
 SIA_phibun_weak_25_75: "Weak Political Control"
 
 SIA_bop_rattaniyom_decree_1: "Decree 1: On the name of the country, people and nationality"
+SIA_bop_rattaniyom_decree_2: "Decree 2: On preventing danger to the nation"
+SIA_bop_rattaniyom_decree_3: "Decree 3: On referring to the Thai people"
+SIA_bop_rattaniyom_decree_4: "Decree 4: On honouring the national flag and national anthem"
+SIA_bop_rattaniyom_decree_5: "Decree 5: On using Thai products"
+SIA_bop_rattaniyom_decree_6: "Decree 6: On the music and lyrics of the national anthem"
+SIA_bop_rattaniyom_decree_7: "Decree 7: Urging the Thai people help build the nation"
+SIA_bop_rattaniyom_decree_8: "Decree 8: Shortening the royal anthem"
+SIA_bop_rattaniyom_decree_9: "Decree 9: On language and writing"
+SIA_bop_rattaniyom_decree_10: "Decree 10: Westernized dressing"
+SIA_bop_rattaniyom_decree_11: "Decree 11: On daily activities"
+SIA_bop_rattaniyom_decree_12: "Decree 12: On protecting children, the elderly and the handicapped"
 SIA_the_overture_bop: "Reforms to Traditional Thai Music"
 SIA_pad_thai_bop: "Promote the Consumption of Noodles"
 SIA_ban_maak_chewing_bop: "Ban the Practice of Maak Chewing"
+SIA_yuwachon_thahan_marching_parade: "Organize a Marching Parade"
+
+mandate_fail: "\n§RThis mission will repeat if we have failed to achieve the goal.§!"
+mandate_success: "\n§YWe will move on to the next mandate.§!"
+mandated_last: "\n§GThis is the last mandate§!"
 
 SIA_siamese_nation: "[SIA.GetAdjective] Nationalism"
 #SIA_siamese_nation_desc: ""
@@ -174,6 +190,9 @@ sia_events.106.t: "They Refuse"
 sia_events.107.t: "[?SIA.GetName] Invites us to ASEAN"
 sia_events.108.t: "[?FROM.GetName] Accepts Invitation"
 sia_events.108.a: "okay"
+
+N_SIA_NEWS.2.t: "A United ASEAN forms"
+
 #World Tension
 SIA_pridi_elephant_movie: "Pridi Banomyong's film "The King of the White Elephant" "
 
@@ -254,6 +273,20 @@ SIA_send_arms_to_anti_colonial_forces_INS: "Send Arms to Anti-Colonial Forces in
 SIA_agitate_an_anti_colonial_uprising_in_INS: "Agitate an Anti-Colonial Uprising in [INS.GetNameDef]"
 SIA_lobby_for_independence: "Lobby for Independence"
 SIA_invite_nation_to_asean: "Invite to ASEAN"
+form_asean: "Form a centralized ASEAN"
+
+form_country_thailand_required_states_tt: "Controls all §YThai§! states."
+form_country_malaysia_required_states_tt: "Controls all §YMalay§! states."
+form_country_philippines_required_states_tt: "Controls all §YFilipino§! states."
+form_country_indonesian_required_states_tt: "Controls all §YIndonesian§! states."
+
+form_country_malaysia_coring_states_tt:0 "Gain cores on all §YMalay§! states.\n"
+form_country_philippines_coring_states_tt:0 "Gain cores on all §YFilipino§! states.\n"
+form_country_indonesia_coring_states_tt:0 "Gain cores on all §YIndonesian§! states.\n"
+
+SIA_promote_phin_field_marshal: "Promote Phin Choonhaven to Field Marshal "
+SIA_promote_phraya_field_marshal: "Promote Phraya Phahon to Field Marshal "
+
 
 # Tooltip
 unlock_six_principles_tt: "Unlocks £decision_icon_small decisions to propagandized §YThe Six Principles§!"
@@ -1023,6 +1056,8 @@ cannot_be_completed_manually: "This focus cannot be completed manually."
  SIA_fascism_kot: "Kingdom of Thailand"
  SIA_fascism_kot_DEF: "the Kingdom of Thailand"
  
+ SIA_asean: "Association of Southeast Asian Nations"
+ SIA_asean_DEF: "the Association of Southeast Asian Nations"
  #Opinion Modifiers
  business_partners: "Business Partners"
  sent_aid: "Sent Aid"

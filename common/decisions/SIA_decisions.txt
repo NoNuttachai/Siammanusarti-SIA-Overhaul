@@ -1,154 +1,3 @@
-SIA_phibun_BOP_category = {
-	SIA_Left_Side_Debug = {
-		name = "DEBUG - Add 20% to Phibun"
-		available = { is_debug = yes }
-		visible = { is_debug = yes }
-
-		fire_only_once = no
-		ai_will_do = { factor = 0 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = 0.20
-			}
-		}
-	}
-	SIA_Left_Side_Debug_Big = {
-		name = "DEBUG - Add 75% to Phibun"
-		available = { is_debug = yes }
-		visible = { is_debug = yes }
-
-		fire_only_once = no
-		ai_will_do = { factor = 0 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = 0.75
-			}
-		}
-	}
-	SIA_Right_Side_Debug = {
-		name = "DEBUG - Add 20% to Opposition"
-		available = { is_debug = yes }
-		visible = { is_debug = yes }
-
-		fire_only_once = no
-		ai_will_do = { factor = 0 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = -0.20
-			}
-		}
-	}
-	SIA_Right_Side_Debug_Big = {
-		name = "DEBUG - Add 75% to Opposition"
-		available = { is_debug = yes }
-		visible = { is_debug = yes }
-
-		fire_only_once = no
-		ai_will_do = { factor = 0 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = -0.75
-			}
-		}
-	}
-	SIA_bop_rattaniyom_decree_1 = {
-   		available = { }
- 		cancel_trigger = { has_completed_focus = SIA_country_rename }
-    	icon = mission_icon     # For GFX_decision_mission_icon
-    	is_good = yes
-		days_mission_timeout = 120
-		complete_effect = {
-        	add_power_balance_value = {
-				id = SIA_PHIBUN_BOP
-				value = 0.05
-			}
-    	}
-		timeout_effect = {
-        	add_power_balance_value = {
-				id = SIA_PHIBUN_BOP
-				value = -0.05
-			}
-    }
-	}
-	SIA_pad_thai_bop = {
-		available = { has_completed_focus = SIA_cultural_revolution }
-		visible = always
-		fire_only_once = yes
-		days_remove = 7
-		cost = 20
-		ai_will_do = { factor = 1 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = 0.05
-			}
-			country_event = {
-				id = sia_bop_event.1
-			}
-		}
-	}
-	SIA_the_overture_bop = {
-		available = { has_completed_focus = SIA_cultural_revolution }
-		visible = always
-		fire_only_once = yes
-		days_remove = 7
-		cost = 20
-		ai_will_do = { factor = 1 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = 0.05
-			}
-			country_event = {
-				id = sia_bop_event.2
-			}
-		}
-	}
-	SIA_ban_maak_chewing_bop = {
-		available = { has_completed_focus = SIA_cultural_revolution }
-		visible = always
-		fire_only_once = yes
-		days_remove = 7
-		cost = 20
-		ai_will_do = { factor = 1 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = 0.05
-			}
-			country_event = {
-				id = sia_bop_event.3
-			}
-		}
-	}
-	SIA_yuwachon_thahan_marching_parade = {
-		available = { has_completed_focus = SIA_yuwachon_thahan }
-		visible = always
-		fire_only_once = no
-		days_re_enable = 70
-		cost = 25
-		ai_will_do = { factor = 1 }
-		
-		complete_effect = {
-			add_power_balance_value = {
-				id = SIA_BOP
-				value = 0.05
-			}
-		}
-	}
-}
-
 SIA_six_principles = {
 	SIA_debug_67_tung_tung_sahur = {
 		icon = GFX_decision_icon_default
@@ -1055,6 +904,102 @@ SIA_SEA_self_determination = {
 			}
 		}
 	}
+	form_asean = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+		}
+
+		available = {
+			is_subject = no
+			#Siam
+			custom_trigger_tooltip = {
+				tooltip = form_country_thailand_required_states_tt
+				controls_state = 869
+				controls_state = 289
+				controls_state = 868
+				controls_state = 724
+			}
+			#Malaysia
+			custom_trigger_tooltip = {
+				tooltip = form_country_malaysia_required_states_tt
+				controls_state = 1051
+				controls_state = 1050
+				controls_state = 336
+				controls_state = 333
+				controls_state = 1024
+				controls_state = 1023
+			}
+			#Indonesia
+			custom_trigger_tooltip = {
+				tooltip = form_country_indonesian_required_states_tt
+				controls_state = 672
+				controls_state = 335
+				controls_state = 334
+				controls_state = 667
+				controls_state = 673
+				controls_state = 668
+				controls_state = 738
+				controls_state = 669
+			}
+			#Philippines
+			custom_trigger_tooltip = {
+				tooltip = form_country_philippines_required_states_tt
+				controls_state = 623
+				controls_state = 1027
+				controls_state = 327
+				controls_state = 626
+				controls_state = 624
+				controls_state = 628
+				controls_state = 625
+				controls_state = 1026
+				controls_state = 1025
+				controls_state = 627
+			}
+		}
+
+		visible = {
+			original_tag = SIA
+			has_completed_focus = SIA_bangkok_declaration
+			NOT = { has_global_flag = form_asean_nation_flag }
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = SIA_asean
+			custom_effect_tooltip = form_country_malaysia_coring_states_tt
+			custom_effect_tooltip = form_country_philippines_coring_states_tt
+			custom_effect_tooltip = form_country_indonesia_coring_states_tt
+			hidden_effect = {
+				1051 = { add_core_of = ROOT }
+				1050 = { add_core_of = ROOT }
+				336 = { add_core_of = ROOT }
+				333 = { add_core_of = ROOT }
+				1024 = { add_core_of = ROOT }
+				1023 = { add_core_of = ROOT }
+				672 = { add_core_of = ROOT }
+				335 = { add_core_of = ROOT }
+				334 = { add_core_of = ROOT }
+				667 = { add_core_of = ROOT }
+				673 = { add_core_of = ROOT }
+				668 = { add_core_of = ROOT }
+				738 = { add_core_of = ROOT }
+				669 = { add_core_of = ROOT }
+				623 = { add_core_of = ROOT }
+				1027 = { add_core_of = ROOT }
+				327 = { add_core_of = ROOT }
+				626 = { add_core_of = ROOT }
+				624 = { add_core_of = ROOT }
+				628 = { add_core_of = ROOT }
+				625 = { add_core_of = ROOT }
+				1026 = { add_core_of = ROOT }
+				1025 = { add_core_of = ROOT }
+				627 = { add_core_of = ROOT }
+			}
+			news_event = N_SIA_NEWS.2
+		}
+	}
 }
 SIA_towards_a_greater_thailand = {
 	SIA_secure_pivotal_territories_in_indochina = {
@@ -1462,6 +1407,80 @@ form_rattanakosin_kingdom_category = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+political_actions = {
+	SIA_promote_phin_field_marshal  = {
+		fire_only_once = yes
+		priority = 50
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 250
+		}
+
+		allowed = {  
+			original_tag = SIA
+		}
+
+		visible = {
+			has_completed_focus = SIA_prussian_school_of_warfare
+		} 
+
+		available = {
+		}
+
+		custom_cost_trigger = {
+			command_power > 49
+		}
+
+		custom_cost_text = decision_cost_CP_50
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+			SIA_phin_choonhavan = {
+			   promote_leader = yes
+			}
+		}
+	}
+	SIA_promote_phraya_field_marshal  = {
+		fire_only_once = yes
+		priority = 50
+
+		icon = GFX_decision_generic_army_support
+
+		ai_will_do = {
+			base = 250
+		}
+
+		allowed = {  
+			original_tag = SIA
+		}
+
+		visible = {
+			has_completed_focus = SIA_prussian_school_of_warfare
+		} 
+
+		available = {
+		}
+
+		custom_cost_trigger = {
+			command_power > 49
+		}
+
+		custom_cost_text = decision_cost_CP_50
+
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+			SIA_phraya_phahon = {
+			  promote_leader = yes
 			}
 		}
 	}
