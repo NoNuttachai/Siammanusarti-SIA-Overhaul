@@ -581,7 +581,7 @@ characters={
 				original_tag = SIA
 			}
 			available = {
-				has_completed_focus = SIA_phraya_phanon_steps_down
+				has_completed_focus = SIA_promote_nationalism
 				NOT = { 
 					has_government = communism 
 					has_government = democratic 
