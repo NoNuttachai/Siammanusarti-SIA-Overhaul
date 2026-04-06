@@ -1429,7 +1429,10 @@ political_actions = {
 		}
 
 		visible = {
-			has_completed_focus = SIA_prussian_school_of_warfare
+			OR = {
+				has_completed_focus = SIA_prussian_school_of_warfare
+				has_completed_focus = SIA_doctrine_rooted_in_tradition
+			}
 		} 
 
 		available = {

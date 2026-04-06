@@ -26,6 +26,13 @@ leader_traits = {
 		political_power_gain = 0.1
 		stability_factor = 0.1
 	}
+	iron_bone_marshal = {
+		random = no
+		political_power_factor = 0.15
+		war_support_factor = 0.15
+		fascism_drift = 0.02
+		resistance_target = -0.1
+	}
 	#Full names and noble titles
 	phraya_phahon_full_name = {
 		random = no
