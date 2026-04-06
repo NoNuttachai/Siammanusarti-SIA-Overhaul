@@ -1693,6 +1693,21 @@ focus_tree = {
 				}
 				unlock_decision_tooltip = SIA_yuwachon_thahan_marching_parade
 			}
+			division_template = { 
+				name = "Yuwachon Thahan" 
+				division_names_group = SIA_INF_01 
+				is_locked = yes 
+				force_allow_recruiting = yes
+				regiments = { 
+					militia = { x = 0 y = 0 } 
+					militia = { x = 0 y = 1 } 
+				} 
+			}
+			random_owned_controlled_state = {limit = { is_coastal = yes } create_unit = { division = "name = \"1. Yuwachon Thahan\" division_template = \"Yuwachon Thahan\" start_experience_factor = 0"  owner = ROOT } }
+			random_owned_controlled_state = {limit = { is_coastal = yes } create_unit = { division = "name = \"1. Yuwachon Thahan\" division_template = \"Yuwachon Thahan\" start_experience_factor = 0"  owner = ROOT } }
+			random_owned_controlled_state = {limit = { is_coastal = yes } create_unit = { division = "name = \"1. Yuwachon Thahan\" division_template = \"Yuwachon Thahan\" start_experience_factor = 0"  owner = ROOT } }
+			random_owned_controlled_state = {limit = { is_coastal = yes } create_unit = { division = "name = \"1. Yuwachon Thahan\" division_template = \"Yuwachon Thahan\" start_experience_factor = 0"  owner = ROOT } }
+			random_owned_controlled_state = {limit = { is_coastal = yes } create_unit = { division = "name = \"1. Yuwachon Thahan\" division_template = \"Yuwachon Thahan\" start_experience_factor = 0"  owner = ROOT } }
 		}
 	}
 	focus = {
@@ -1727,6 +1742,18 @@ focus_tree = {
 						maximum_speed = 0.05
 					}
 				}
+			}
+			division_template = { 
+				name = "Yuwachon Thahan Cakrayarn" 
+				division_names_group = SIA_INF_01 
+				is_locked = no 
+				force_allow_recruiting = yes
+				regiments = { 
+					bicycle_battalion = { x = 0 y = 0 }
+					bicycle_battalion = { x = 0 y = 1 }
+					bicycle_battalion = { x = 1 y = 0 }
+					bicycle_battalion = { x = 1 y = 1 }
+				} 
 			}
 		}
 	}
