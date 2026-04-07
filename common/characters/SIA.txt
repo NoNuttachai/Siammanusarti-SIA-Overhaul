@@ -897,4 +897,114 @@ characters={
 			traits = {air_chief_reform_2}
 		}
 	}
+	SIA_Prayoon_Pamornmontri = {
+		name="Prayoon Pamornmontri"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/advisors/idea_Prayoon_Pamornmontri.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SIA_Prayoon_Pamornmontri
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_prussian_school_of_warfare
+			}
+			cost = 100
+			traits = { 
+				grand_battle_plan_expert
+			}
+		}
+	}
+	SIA_Phraya_Rit-akkhane = {
+		name="Phraya Rit-akkhane"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/advisors/idea_Phraya_Rit-akkhane.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SIA_Phraya_Rit-akkhane
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_prussian_school_of_warfare
+			}
+			cost = 100
+			traits = { 
+				superior_firepower_expert
+			}
+		}
+	}
+	SIA_Phraya_Chalerm_Arkart = {
+		name="Phraya Chalerm Arkart"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/advisors/idea_Phraya_Chalerm_Arkart.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SIA_Phraya_Chalerm_Arkart
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_western_aviation_studies
+			}
+			cost = 100
+			traits = { 
+				air_warfare_theorist
+			}
+		}
+	}
+	SIA_Luang_Suphachalasai = {
+		name="Luang Suphachalasai"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/advisors/idea_Luang_Suphachalasai.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SIA_Luang_Suphachalasai
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_coastal_defense_stratergy
+			}
+			cost = 100
+			traits = { 
+				naval_theorist
+			}
+		}
+	}
+	SIA_Kanok_Noppakun = {
+		name="Kanok Noppakun"
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/advisors/idea_Kanok_Noppakun.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_Kanok_Noppakun
+			allowed = {
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_matchanu_class_sub
+			}
+			cost = 100
+			traits = { 
+				navy_submarine_2
+			}
+		}
+	}
 }
