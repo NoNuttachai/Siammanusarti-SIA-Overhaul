@@ -41,6 +41,19 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
     }
 	focus = {
+		id = SIA_constitutionalism
+		icon = GFX_focus_SIA_constitutionalism
+		relative_position_id = SIA_legacy_of_revolution
+		x = 0
+		y = 1
+		cost = 5
+		completion_reward = { 
+			add_ideas = { SIA_constitutionalism_idea }
+		}
+		prerequisite = { focus = SIA_legacy_of_revolution }
+		search_filters = {FOCUS_FILTER_POLITICAL}
+	}
+	focus = {
 		id = SIA_crown_property_act
 		icon = GFX_focus_SIA_crown_property_act
 		relative_position_id = SIA_constitutionalism
@@ -91,15 +104,34 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_victory_monument
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_BEL_v_for_victory
 		relative_position_id = SIA_promote_nationalism
 		x = -1
 		y = 1
 		cost = 10
 		available = {
-			SIA_plaek_phibunsongkhram = { is_country_leader = yes }
-			SIA_pridi_banomyong = { is_country_leader = yes }
+			OR = {
+				SIA_plaek_phibunsongkhram = { is_country_leader = yes }
+				SIA_pridi_banomyong = { is_country_leader = yes }
+			}
+			OR = {
+				controls_state = 1048
+				controls_state = 670
+				controls_state = 671
+				controls_state = 1017
+				controls_state = 286
+				controls_state = 741
+				controls_state = 1049
+			}
 		}	
+		completion_reward = {
+			add_war_support = 0.15
+			add_manpower = 10000
+			289 = {
+				add_dynamic_modifier = { modifier = SIA_victory_monument_dyn_mod }
+			}
+			
+		}
 		prerequisite = { focus = SIA_promote_nationalism }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
@@ -123,31 +155,26 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_democracy_monument
-		icon = GFX_goal_support_democracy
+		icon = GFX_focus_ARG_defense_and_democracy
 		relative_position_id = SIA_promote_democratic_ideals
 		x = 1
 		y = 1
 		cost = 10
 		available = {
-			SIA_plaek_phibunsongkhram = { is_country_leader = yes }
-			SIA_pridi_banomyong = { is_country_leader = yes }
+			OR = {
+				SIA_plaek_phibunsongkhram = { is_country_leader = yes }
+				SIA_pridi_banomyong = { is_country_leader = yes }
+			}
 		}
 		completion_reward = { 
+			add_political_power = 150
+			add_stability = 0.1
+			289 = {
+				add_dynamic_modifier = { modifier = SIA_democracy_monument_dyn_mod }
+			}
+			
 		}	
 		prerequisite = { focus = SIA_promote_democratic_ideals }
-		search_filters = {FOCUS_FILTER_POLITICAL}
-	}
-	focus = {
-		id = SIA_constitutionalism
-		icon = GFX_focus_SIA_constitutionalism
-		relative_position_id = SIA_legacy_of_revolution
-		x = 0
-		y = 1
-		cost = 5
-		completion_reward = { 
-			add_ideas = { SIA_constitutionalism_idea }
-		}
-		prerequisite = { focus = SIA_legacy_of_revolution }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
 	focus = {

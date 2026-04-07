@@ -392,7 +392,24 @@ country_event = {
 		}
     }
 }
-
+country_event = {
+    id = sia_events.13 #King Prajadhipok (Rama VII), has passed away.
+    title = sia_events.13.t
+    desc = sia_events.13.d
+    picture = report_event_king_rama_7_passing
+	trigger = {
+		date > 1941.5.28
+		NOT = {
+			has_government = communism
+		}
+	}
+	fire_only_once = yes
+    
+    option = {
+        name = sia_events.13.a
+		
+    }
+}
 news_event = {
 	id = sia_global_events.1
 	title = sia_global_events.1.t

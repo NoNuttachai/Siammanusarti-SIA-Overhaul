@@ -3,17 +3,6 @@ SIA_phibun_BOP_category = {
 	priority = 10
 	allowed = { original_tag = SIA }
 }
-
-SIA_six_principles = {
-	icon = generic_propaganda
-	picture = GFX_category_the_six_principles
-	priority = 9
-	
-	visible = {
-  		has_completed_focus = SIA_propagandize_six_principles
-	}
-	allowed = { original_tag = SIA } 
-}
 SIA_diplomacy_with_the_chinese = {
 	icon = generic_propaganda
 	priority = 9

@@ -165,6 +165,10 @@ sia_events.12.t: "Marshal Pleak Survived Assassination Attempt"
 sia_events.12.d: "As Plaek Phibunsongkhram and his wife were preparing for a banquet at the Ministry of Defense at their residence, gunshots erupted from his dressing room. Phibun shouted for help as "Mr. Lee," his personal chauffeur, chased and fired at him, narrowly missing his wife and others. Phibun’s bodyguard, Lt. Phon, intervened, pushing him to safety and deflecting Mr. Lee’s aim, causing the final shot to graze Lee’s pants. \n\nOther officers subdued Lee and confiscated the gun, which was later identified as Phibun's personal firearm.Despite the incident, Phibun and his wife attended the party as planned, as if nothing had happened.Lee was arrested and interrogated by police; however, he stubbornly refused to reveal who had ordered him to kill Phibun\n\nThis marks the third failed attempt on Phibun’s life. A plot in 1933 by the Boworadet rebels sought to assassinate him, but it failed due to delays in the rebel troop movements. In 1934, another attempt was made when a gunman armed with a pistol attacked Phibun during an armed forces football match. As Phibun was leaving for his car after the event, the assailant, Phum Thapsaithong, opened fire and struck him. The shooter was swiftly subdued by Phibun’s bodyguards, and although Phibun was hit twice and rushed to the hospital, he ultimately survived his injuries."
 sia_events.12.a: "They call him the Iron Bone Marshal for a reason"
 
+sia_events.13.t: "King Prajadhipok (Rama VII), has passed away."
+sia_events.13.d: "His Majesty, former King Prajadhipok (Rama VII), has passed away from heart failure at his residence in Surrey, England.\n\nHe reigned during a turbulent period in Siamese history, witnessing the Great Depression and the Siamese Revolution of 1932, which ended absolute monarchy. Accepting the proposal of Khana Ratsadon, he granted Siam its first constitution.\n\nHowever, conflicts between the government of Khana Ratsadon and the monarchy led to his decision to abdicate the throne on March 2, 1935, while he was receiving medical treatment in England. After abdicating, he settled in Surrey with Queen Rambhai Barni, living a quiet life until his passing.\n\nHis cremation was held at Golders Green Crematorium in London. It was a simple affair, as there were no Thai Buddhist temples in the United Kingdom at the time. The ceremony was attended only by Queen Rambhai Barni and a handful of close royal relatives."
+sia_events.13.a: "May his majesty rest"
+
 sia_bop_event.1.t: "Pad Thai"
 sia_bop_event.1.d: "Due to rice shortages, the government of Marshal Plaek promoted the consumption of rice noodles to reduce domestic rice consumption and provide cheap food to Thai citizens. Although noodles were already widely consumed by the Chinese community in Thailand, many ethnic Thais are more reluctant to eat them due to their watery texture. \n\nTo solve this, Marshal Plaek promoted a new dish called “Pad Thai,” meaning Thai stir-fry. The dish itself is based on Chinese stir-fried noodle dishes, but with ingredients more palatable to Thai people. \nIt is made with rice noodles stir-fried with eggs and chopped firm tofu, and flavored with tamarind juice, fish sauce, dried shrimp, garlic, shallots, and sometimes red chili pepper and palm sugar. It is served with lime wedges and often topped with crushed roasted peanuts. \nIt may also include other vegetables such as bean sprouts, green onions, garlic chives, preserved radish, and raw banana flowers. Additionally, it can contain fresh shrimp, crab, or squid."
 sia_bop_event.1.a: "Haiyaa!"
@@ -241,9 +245,6 @@ N_SIA_NEWS.1.d: "Japanese forces have launched a swift invasion into Thailand, T
 N_SIA_NEWS.1.a: "Thailand has chosen survival over destruction"
 
 # Decision Tab
-SIA_six_principles: "The Six Principles"
-SIA_six_principles_desc: "Khana Ratsadon set out six national objectives aiming at developing the country and improving the welfare of the people. These objectives were announced to the public following the Siamese Revolution through Khana Ratsadon's Proclamation No.1. \n\nIt is of upmost importance that our government and party promote The Six Principles to the general public"
-
 # Decisions
 SIA_entice_masses_cost_tt: "The cost for §YEntice the Masses§! decisions will be §Rmultiplied§! by §Y[?SIA_bop_decision_cost_multiplier]§!"
 
@@ -251,12 +252,6 @@ SIA_transfer_phibun_crown_property_back: "Transfer Phibun Crown Property Back"
 SIA_commission_an_indepedent_gov_investigation: "Commission an Independent Government Investigation"
 SIA_fire_officials_involved: "Fire Officials Involved in the Scandal"
 
-SIA_principle_1_national_independence: "Promote Principle I: National Independence"
-SIA_principle_2_public_safety: "Promote Principle II: Public Safety"
-SIA_principle_3_economic_welfare: "Promote Principle III: Economic Welfare"
-SIA_principle_4_equality: "Promote Principle IV: Equality"
-SIA_principle_5_liberty: "Promote Principle V: Liberty"
-SIA_principle_6_freedom: "Promote Principle VI: Freedom"
 
 SIA_diplomacy_with_the_chinese: "Diplomatic Actions with China"
 SIA_attract_chinese_civilian_investment: "Attract Chinese Investment for Civilian Sector"
@@ -294,7 +289,6 @@ SIA_promote_phraya_field_marshal: "Promote Phraya Phahon to Field Marshal "
 
 
 # Tooltip
-unlock_six_principles_tt: "Unlocks £decision_icon_small decisions to propagandized §YThe Six Principles§!"
 SIA_commission_an_indepedent_gov_investigation_done: "Has §YCommissioned an Independent Goverment Investigation§!"
 SIA_matchanu_class_sub_fulfill_Japan_requirement: "If §YJapan exists§! and §Yopinion of Japan§! is at least §G+10§!:"
 SIA_matchanu_class_sub_notfulfill_Japan_requirement: "Else we will receive:"
@@ -302,7 +296,8 @@ SIA_southeast_asian_self_determination_tt: "§YWe will unlock decisions to help 
 SIA_bangkok_declaration_tt: "§YWe can invite Independent Southeast Asian Nations to our faction.§!"
 #Dynamic Modifiers
 SIA_bangkok_floodings: "Bangkok Floodings"
-
+SIA_victory_monument_dyn_mod: "Victory Monument"
+SIA_democracy_monument_dyn_mod: "Democracy Monument"
 #MIOS
 SIA_aeronautical_workshop_organization: "Thai Aeronautical Workshop"
 SIA_bangkok_dock_organization: "Bangkok Dock"
@@ -521,7 +516,6 @@ SIA_modernize_bang_sue_arsenal_desc: "The Bang Sue Arsenal is the heart of our m
 
 SIA_reform_the_sangha: "Reform The Sangha"
 SIA_khana_ratsadon_architecture: "Khana Ratsadon Architecture"
-SIA_propagandize_six_principles: "Propagandize Six Principles"
 SIA_civilian_faction_leadership: "Civilian Faction Leadership"
 SIA_a_democratic_constitution: "A Democratic Constitution"
 SIA_subdue_army: "Subdue Army"
@@ -643,7 +637,6 @@ SIA_invite_western_companies: "Invite Foreign Investment"
 SIA_rural_provincial_development: "Rural Provincial Development"
 SIA_reform_the_sangha_desc: ""
 SIA_khana_ratsadon_architecture_desc: ""
-SIA_propagandize_six_principles_desc: ""
 SIA_civilian_faction_leadership_desc: ""
 SIA_a_democratic_constitution_desc: ""
 SIA_subdue_army_desc: ""
@@ -984,6 +977,12 @@ SIA_construct_air_raid_shelters_desc: "TBA"
 
 SIA_phahonyothin_road: "Phahonyothin Road"
 SIA_phahonyothin_road_desc: "TBA"
+
+SIA_democracy_monument: "Construct a Democracy Monument"
+SIA_democracy_monument_desc: "TBA"
+
+SIA_victory_monument: "Construct a Victory Monument"
+SIA_victory_monument_desc: "TBA"
 
 #merf focuses :)
 SIA_increase_boripatra_production: "We have the Boripatra!"

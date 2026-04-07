@@ -189,10 +189,6 @@ SpriteTypes = {
 
 	#Decision Pictures
 	spriteType = {
-		name = "GFX_category_the_six_principles"
-		texturefile = "gfx/interface/decisions/GFX_decision_the_six_principles.dds"
-	}
-	spriteType = {
 		name = "GFX_category_phibun_vs_pridi"
 		texturefile = "gfx/interface/decisions/GFX_phibun_vs_pridi.dds"
 	}

@@ -6,6 +6,26 @@ SIA_bangkok_floodings = {
 	local_building_slots_factor = -0.1
 	state_production_speed_buildings_factor = -0.25
 }
+SIA_victory_monument_dyn_mod = {
+	icon = GFX_idea_generic_victors_of_ww1
+	enable = {
+		always = yes
+	}
+	recruitable_population_factor = 0.15
+	local_resources = 0.25
+	local_factory_energy_consumption = -0.25
+	state_production_speed_arms_factory_factor = 0.2
+}
+SIA_democracy_monument_dyn_mod = {
+	icon = GFX_idea_generic_victors_of_ww1
+	enable = {
+		always = yes
+	}
+	state_production_speed_industrial_complex_factor = 0.2
+	state_production_speed_infrastructure_factor = 0.2
+	local_building_slots = 3
+	enemy_attrition = 0.03
+}
 
 SIA_army_of_siam = {
 	icon = GFX_idea_SIA_royal_siamese_army_natspirit
