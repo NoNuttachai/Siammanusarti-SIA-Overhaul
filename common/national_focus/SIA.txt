@@ -3284,7 +3284,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
-		id = SIA_something_here
+		id = SIA_expand_royal_technical_schools
 		icon = GFX_focus_Education_for_All
 		x = 1
 		y = 2
@@ -3294,7 +3294,18 @@ focus_tree = {
 		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = SIA_education_for_all
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.5
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3476,17 +3487,20 @@ focus_tree = {
 		mutually_exclusive = { focus = SIA_legacy_of_revolution }
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = SIA_legacy_of_revolution
-				}
-			}
+			always = no
+			# For future update
+			
+			#if = {
+			#	limit = {
+			#		has_game_rule = {
+			#			rule = obsolete_focus_branches_visibility
+			#			option = HIDE
+			#		}
+			#	}
+			#	NOT = {
+			#		has_completed_focus = SIA_legacy_of_revolution
+			#	}
+			#}
 		}
 		offset = {
 			x = -18
