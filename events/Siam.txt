@@ -366,7 +366,7 @@ country_event = {
     id = sia_events.12 #Marshal Pleak Survived Assassination Attempt
     title = sia_events.12.t
     desc = sia_events.12.d
-    picture = report_event_national_anthem_of_thailand
+    picture = report_event_phibun_survived_assasination
 	trigger = {
 		fascism > party_popularity@democratic
 		date > 1938.11.01

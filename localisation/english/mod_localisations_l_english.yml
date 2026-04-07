@@ -706,7 +706,7 @@ SIA_develop_mobile_warfare_desc: ""
 SIA_special_branch_bureau_desc: ""
 SIA_establish_the_field_police_desc: ""
 SIA_increase_the_reserve_force_desc: ""
-SIA_yuwachon_thahan_desc: ""
+SIA_yuwachon_thahan_desc: "The Yuwachon Thahan (Youth Corps) was established in 1935. However, its expansion to a much larger scale is very much needed. While it is not ideal to train schoolboys for military duty, the global situation has forced our hand. All boys above the age of 15 will be required to undergo military training for the defense of the nation."
 SIA_yuwanaree_desc: ""
 SIA_bicycle_infantry_desc: ""
 SIA_import_foreign_tanks_desc: ""
@@ -978,10 +978,10 @@ SIA_construct_air_raid_shelters_desc: "TBA"
 SIA_phahonyothin_road: "Phahonyothin Road"
 SIA_phahonyothin_road_desc: "TBA"
 
-SIA_democracy_monument: "Construct a Democracy Monument"
+SIA_democracy_monument: "Construct the Democracy Monument"
 SIA_democracy_monument_desc: "TBA"
 
-SIA_victory_monument: "Construct a Victory Monument"
+SIA_victory_monument: "Construct the Victory Monument"
 SIA_victory_monument_desc: "TBA"
 
 #merf focuses :)

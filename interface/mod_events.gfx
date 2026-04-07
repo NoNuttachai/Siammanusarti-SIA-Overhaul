@@ -68,6 +68,10 @@ spriteTypes = {
 		texturefile = "gfx/events/report_event_king_rama_7_passing.dds"
 	}
 	SpriteType = {
+		name = "report_event_phibun_survived_assasination"
+		texturefile = "gfx/events/report_event_phibun_survived_assasination.dds"
+	}
+	SpriteType = {
 		name = "GFX_news_event_siam_to_thailand"
 		texturefile = "gfx/events/news_event_siam_to_thailand.dds"
 	}

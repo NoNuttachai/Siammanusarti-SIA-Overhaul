@@ -1427,16 +1427,16 @@ focus_tree = {
 	focus = {
 		id = SIA_anti_air_defences
 		icon = GFX_focus_PRC_anti_air_effort
-		relative_position_id = SIA_improve_army_logistics
-		x = 0
-		y = 2
+		relative_position_id = SIA_prepare_defensive_infrastructure
+		x = -1
+		y = 1
 		
 		available = {289 = {is_owned_and_controlled_by = ROOT}}
 		cancel_if_invalid = no
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_improve_army_logistics }
+		prerequisite = { focus = SIA_prepare_defensive_infrastructure }
 		completion_reward = {
 			289 = {
 				add_building_construction = {
@@ -1519,7 +1519,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_improve_army_logistics }
-		prerequisite = { focus = SIA_develop_combined_arms_warfare }
 		completion_reward = {
 			custom_effect_tooltip = SIA_army_tt
 			add_to_variable = { 
@@ -1567,7 +1566,7 @@ focus_tree = {
 		id = SIA_fortify_bangkok
 		icon = GFX_goal_generic_fortify_city
 		relative_position_id = SIA_prepare_defensive_infrastructure
-		x = 2
+		x = 1
 		y = 1
 		
 		cost = 10
@@ -1605,7 +1604,7 @@ focus_tree = {
 		id = SIA_paratroopers
 		icon = GFX_focus_generic_paratrooper
 		relative_position_id = SIA_prepare_defensive_infrastructure
-		x = -1
+		x = 3
 		y = 1
 		
 		cost = 10
@@ -1642,8 +1641,8 @@ focus_tree = {
 	focus = {
 		id = SIA_develop_combined_arms_warfare
 		icon = GFX_focus_generic_combined_arms
-		relative_position_id = SIA_prussian_school_of_warfare
-		x = 1
+		relative_position_id = SIA_motorized_infantry
+		x = 2
 		y = 1
 		
 		available = {  }
@@ -1651,7 +1650,9 @@ focus_tree = {
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_prussian_school_of_warfare focus = SIA_import_foreign_tanks }
+		prerequisite = { focus = SIA_motorized_infantry }
+		prerequisite = { focus = SIA_bicycle_infantry }
+		prerequisite = { focus = SIA_import_foreign_tanks }
 		completion_reward = {
 			custom_effect_tooltip = SIA_army_tt
 			add_to_variable = { 
@@ -1672,13 +1673,13 @@ focus_tree = {
 		id = SIA_increase_the_reserve_force
 		icon = GFX_focus_CHI_tongzi_jun
 		relative_position_id = SIA_army
-		x = 8
+		x = 4
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
-		prerequisite = { focus = SIA_police }
+		prerequisite = { focus = SIA_establish_the_field_police }
 		
 		completion_reward = { 
 			add_manpower = 50000
@@ -1707,7 +1708,7 @@ focus_tree = {
 		id = SIA_yuwachon_thahan
 		icon = GFX_focus_Youth_Corps
 		relative_position_id = SIA_increase_the_reserve_force
-		x = 1
+		x = -1
 		y = 1
 		
 		cost = 5
@@ -1741,7 +1742,7 @@ focus_tree = {
 		id = SIA_yuwanaree
 		icon = GFX_focus_Female_Corps
 		relative_position_id = SIA_increase_the_reserve_force
-		x = -1
+		x = 1
 		y = 1
 		
 		cost = 5
@@ -1753,12 +1754,12 @@ focus_tree = {
 		id = SIA_bicycle_infantry
 		icon = GFX_focus_SWE_bicycle
 		relative_position_id = SIA_yuwachon_thahan
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_yuwachon_thahan focus = SIA_develop_combined_arms_warfare }
+		prerequisite = { focus = SIA_yuwachon_thahan }
 		completion_reward = {
 			SIA = {
 				set_technology = {
@@ -1788,14 +1789,13 @@ focus_tree = {
 	focus = {
 		id = SIA_motorized_infantry
 		icon = GFX_goal_generic_army_motorized
-		relative_position_id = SIA_develop_combined_arms_warfare
-		x = 3
+		relative_position_id = SIA_prussian_school_of_warfare
+		x = 1
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus =  SIA_develop_combined_arms_warfare focus = SIA_founded_chaiseri }
-		mutually_exclusive = { focus = SIA_mechanized_infantry }
+		prerequisite = { focus =  SIA_prussian_school_of_warfare }
 		completion_reward = { 
 			if = {
 				limit = {
@@ -1842,84 +1842,17 @@ focus_tree = {
 				add_fuel = 500
 			}
 		}
-
-	
-	focus = {
-		id = SIA_mechanized_infantry
-		icon = GFX_SOV_pc_of_mechanical_engineering_ccp_2d_sov_compatibility
-		relative_position_id = SIA_develop_combined_arms_warfare
-		x = 1
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_develop_combined_arms_warfare }
-		mutually_exclusive = { focus = SIA_motorized_infantry }
-		completion_reward = {
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = SIA_adopt_japanese_aircraft
-						is_ally_with = JAP
-						gives_military_access_to = JAP
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = mechanized_equipment
-					amount = 200
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_destroyer_equipment_1
-					amount = 100
-				}
-			}
-			if = {
-				limit = {
-				OR = {
-					has_completed_focus = SIA_adopt_american_aircraft
-					is_ally_with = ENG
-					is_ally_with = USA
-					gives_military_access_to = USA
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = mechanized_equipment
-					amount = 100
-					producer = USA
-				}
-				add_equipment_to_stockpile = {
-					type = light_tank_aa_equipment_1
-					amount = 125
-					producer = USA
-				}
-				add_fuel = 1500
-				add_equipment_to_stockpile = {
-					type = mechanized_equipment
-					amount = 200
-				}
-				add_fuel = 500			
-			}
-			SIA = {
-				add_tech_bonus = {
-					bonus = 0.5
-					uses = 2 
-					category = cat_mechanized_equipment
-				}
-			}
-			
-		}
-	}
 	focus = {
 		id = SIA_purchase_new_arms
 		icon = GFX_focus_ETH_freedom_at_gunpoint
 		relative_position_id = SIA_army
-		x = 4
+		x = 7
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
-		prerequisite = { focus = SIA_police }
+		prerequisite = { focus = SIA_establish_the_field_police }
 		completion_reward = { 
 			add_political_power = -50
 			add_equipment_to_stockpile = {
@@ -1932,9 +1865,9 @@ focus_tree = {
 		id = SIA_import_foreign_tanks
 		icon = GFX_goal_generic_army_tanks
 		x = -1
-		y = 1
+		y = 2
 
-		prerequisite = { focus = SIA_purchase_new_arms focus = SIA_domestic_arms_production}
+		prerequisite = { focus = SIA_purchase_new_arms focus = SIA_domestic_arms_production }
 		relative_position_id = SIA_purchase_new_arms
 
 		cost = 2
@@ -2064,9 +1997,9 @@ focus_tree = {
 
 	#Police Branch
 	focus = {
-		id = SIA_police
+		id = SIA_establish_the_field_police
 		icon = GFX_focus_SIA_Police
-		x = 25
+		x = 18
 		y = 0
 		
 		cost = 5
@@ -2075,28 +2008,15 @@ focus_tree = {
 		completion_reward = { }
 	}
 	focus = {
-		id = SIA_establish_the_field_police
-		icon = GFX_focus_FIN_parmis_devils
-		relative_position_id = SIA_police
-		x = 2
-		y = 2
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_police }
-		prerequisite = { focus = SIA_increase_the_reserve_force }
-		completion_reward = { }
-	}
-	focus = {
 		id = SIA_special_branch_bureau
 		icon = GFX_focus_generic_whispers
-		relative_position_id = SIA_police
-		x = 1
+		relative_position_id = SIA_army
+		x = 2
 		y = 1
 		
 		cost = 5
 		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_police }
+		prerequisite = { focus = SIA_army }
 		completion_reward = {
 			create_intelligence_agency = {
 				name = "Special Branch Bureau"
@@ -3009,7 +2929,7 @@ focus_tree = {
 		id = SIA_revitalize_the_economy
 		icon = GFX_focus_Revitalized_the_Economy
 		relative_position_id = SIA_legacy_of_revolution
-		x = -13
+		x = -15
 		y = 0
 		
 		cost = 10
@@ -3298,8 +3218,9 @@ focus_tree = {
 	focus = {
 		id = SIA_education_for_all
 		icon = GFX_focus_Education_for_All
-		x = -1
+		x = 1
 		y = 2
+		prerequisite = { focus = SIA_rural_provincial_development }
 		prerequisite = { focus = SIA_chula_uni }
 		relative_position_id = SIA_chula_uni
 		
@@ -3307,32 +3228,6 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_ideas = SIA_education_for_all
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = SIA_expand_royal_technical_schools
-		icon = GFX_focus_Education_for_All
-		x = 1
-		y = 2
-		prerequisite = { focus = SIA_chula_uni }
-		relative_position_id = SIA_chula_uni
-		
-		cost = 2
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.5
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3396,11 +3291,11 @@ focus_tree = {
 	focus = {
 		id = SIA_domestic_arms_production
 		icon = GFX_focus_generic_reorient_production
-		x = 6	
+		x = 10
 		y = 1
 
 		prerequisite = { focus = SIA_army }
-		prerequisite = { focus = SIA_police }
+		prerequisite = { focus = SIA_establish_the_field_police }
 		relative_position_id = SIA_army
 
 		cost = 10
@@ -3415,7 +3310,7 @@ focus_tree = {
 		id = SIA_bofors_artillery
 		icon = GFX_focus_PER_swedish_artillery
 		x = -2
-		y = 2
+		y = 1
 
 		prerequisite = { focus = SIA_purchase_new_arms }
 		prerequisite = { focus = SIA_domestic_arms_production }
@@ -3440,11 +3335,11 @@ focus_tree = {
 	focus = {
 		id = SIA_incorporate_combat_engineers
 		icon = GFX_goal_generic_position_armies
-		x = 5	
-		y = 1
+		x = 0	
+		y = 2
 
-		prerequisite = { focus = SIA_develop_combined_arms_warfare } 
-		relative_position_id = SIA_develop_combined_arms_warfare
+		prerequisite = { focus = SIA_improve_army_logistics } 
+		relative_position_id = SIA_improve_army_logistics
 
 		cost = 5
 		ai_will_do = { factor = 1 }
@@ -3468,7 +3363,7 @@ focus_tree = {
 	focus = {
 		id = SIA_founded_chaiseri
 		icon = GFX_focus_sia_Founded_Chaiseri
-		x = -1	
+		x = 0	
 		y = 1
 
 		prerequisite = { focus = SIA_domestic_arms_production }
@@ -3487,10 +3382,11 @@ focus_tree = {
 	focus = {
 		id = SIA_army_science_department #extra research slot
 		icon = GFX_focus_research
-		x = 0	
+		x = 3
 		y = 2
 
 		prerequisite = { focus = SIA_domestic_arms_production }
+		prerequisite = { focus = SIA_chula_uni }
 		relative_position_id = SIA_domestic_arms_production
 
 		available = {
@@ -3501,6 +3397,18 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_research_slot = 1
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.5
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
 		}
 	}
 	
