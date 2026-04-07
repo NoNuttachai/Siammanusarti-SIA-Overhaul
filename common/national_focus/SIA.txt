@@ -1714,6 +1714,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_increase_the_reserve_force }
+		available = {
+			threat > 0.65
+		}
 		completion_reward = { 
 			if = {
 				limit = {
@@ -1721,6 +1724,7 @@ focus_tree = {
 				}
 				unlock_decision_tooltip = SIA_yuwachon_thahan_marching_parade
 			}
+			custom_effect_tooltip = SIA_unlock_yuwachon_thahan_template
 			division_template = { 
 				name = "Yuwachon Thahan" 
 				division_names_group = SIA_INF_01 
@@ -1771,6 +1775,7 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = SIA_unlock_bicycle_infantry_template
 			division_template = { 
 				name = "Yuwachon Thahan Cakrayarn" 
 				division_names_group = SIA_INF_01 
