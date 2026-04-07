@@ -68,6 +68,27 @@ SpriteTypes = {
 		name = "GFX_portrait_SIA_phraya_thepahatsadin"
 		texturefile = "gfx/leaders/SIA/Phraya_Thepahatsadin.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SIA_Prayoon_Pamornmontri_small"
+		texturefile = "gfx/ideas/advisors/idea_Prayoon_Pamornmontri.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SIA_Luang_Suphachalasai_small"
+		texturefile = "gfx/ideas/advisors/idea_Luang_Suphachalasai.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SIA_Phraya_Chalerm_Arkart_small"
+		texturefile = "gfx/ideas/advisors/idea_Phraya_Chalerm_Arkart.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SIA_Kanok_Noppakun_small"
+		texturefile = "gfx/ideas/advisors/idea_Kanok_Noppakun.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SIA_Phraya_Rit-akkhane_small"
+		texturefile = "gfx/ideas/advisors/idea_Phraya_Rit-akkhane.dds"
+	}
 
 	# Ideas
 	SpriteType = {
