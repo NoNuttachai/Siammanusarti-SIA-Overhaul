@@ -72,6 +72,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_siam_marshal_phibun_ascension.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_SIA_pridi_premiership"
+		texturefile = "gfx/interface/goals/focus_siam_pridi_premiership.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_sia_rural_provincial_development"
 		texturefile = "gfx/interface/goals/focus_siam_rural_provincial_development.dds"
 	}

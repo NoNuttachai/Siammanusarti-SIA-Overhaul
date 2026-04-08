@@ -197,7 +197,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_pridi_premiership
-		icon = gfx_goal_unknown
+		icon = GFX_focus_SIA_pridi_premiership
 		relative_position_id = SIA_phraya_phanon_steps_down
 		x = -5
 		y = 1
