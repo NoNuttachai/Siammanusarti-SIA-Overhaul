@@ -585,8 +585,10 @@ SIA_special_branch_bureau: "Special Branch Bureau"
 SIA_establish_the_field_police: "Establish The Field Police"
 SIA_increase_the_reserve_force: "Increase The Reserve Force"
 SIA_yuwachon_thahan: "Yuwachon Thahan"
+SIA_unlock_yuwachon_thahan_template: "Unlock '§YYuwachon Thahan§!' Militia template."
 SIA_yuwanaree: "Yuwanaree"
 SIA_bicycle_infantry: "Bicycle Infantry"
+SIA_unlock_bicycle_infantry_template: "Unlock '§YYuwachon Thahan Cakrayarn§!' Bicycle Battalion template."
 SIA_motorized_infantry: "Motorized Infantry"
 SIA_mechanized_infantry: "Mechanized Infantry Investments"
 SIA_import_foreign_tanks: "Import Foreign Tanks"
@@ -1055,7 +1057,14 @@ SIA_national_defense_industry_idea_desc: ""
 SIA_workshop_of_southeast_asia: "Workshop of Southeast Asia"
 SIA_workshop_of_southeast_asia_desc: ""
 
+SIA_asean_member: "ASEAN Member"
+SIA_asean_member_desc: ""
 
+SIA_asean_integrated_member: "Integrated ASEAN Member"
+SIA_asean_integrated_member_desc: ""
+
+SIA_labor_unions: "Labor Unions"
+SIA_labor_unions_desc: ""
 
 cannot_be_completed_manually: "This focus cannot be completed manually."
 

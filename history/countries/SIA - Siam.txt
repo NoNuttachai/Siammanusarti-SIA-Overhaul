@@ -144,6 +144,10 @@ recruit_character = SIA_Pun_Bunnag
 ## Theorists
 recruit_character = SIA_Phraya_Thephatsadin
 recruit_character = SIA_Phra_Prasatphitthayayut
+recruit_character = SIA_Prayoon_Pamornmontri
+recruit_character = SIA_Phraya_Rit-akkhane
+recruit_character = SIA_Phraya_Chalerm_Arkart
+recruit_character = SIA_Luang_Suphachalasai
 ## High Command
 recruit_character = SIA_Tasanai_Mitphakdee
 recruit_character = SIA_Thahan_Khamhiran
@@ -151,6 +155,7 @@ recruit_character = SIA_Fuen_Ronnapakak_Ritthakanee
 recruit_character = SIA_Luang_Athuekthewadet
 recruit_character = SIA_Luang_Tevaritpanluek
 recruit_character = SIA_sangad_chaloryu
+recruit_character = SIA_Kanok_Noppakun
 ## Air Chief
 recruit_character = SIA_Boonchu_Chandrubeksa
 recruit_character = SIA_Chalermkiat_Watanangura

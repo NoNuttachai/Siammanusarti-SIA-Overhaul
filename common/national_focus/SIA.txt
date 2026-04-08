@@ -702,7 +702,9 @@ focus_tree = {
 		x = 2
 		y = 2
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = SIA_labor_unions
+		}
 		prerequisite = { focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration}
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
@@ -1051,9 +1053,9 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SIA_phao_siyanon
 			custom_effect_tooltip = generic_skip_one_line_tt
-			upgrade_intelligence_agency = upgrade_passive_defense
-			upgrade_intelligence_agency = upgrade_crypto_strength
-			upgrade_intelligence_agency = upgrade_form_department
+			gain_random_agency_upgrade = yes
+			gain_random_agency_upgrade = yes
+			gain_random_agency_upgrade = yes
 			
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
@@ -1162,6 +1164,9 @@ focus_tree = {
 		x = 0
 		y = 6
 		cost = 10
+		available = {
+			is_in_faction_with = JAP
+		}
 		completion_reward = { }
 	}
 	focus = {
@@ -1425,29 +1430,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_anti_air_defences
-		icon = GFX_focus_PRC_anti_air_effort
-		relative_position_id = SIA_prepare_defensive_infrastructure
-		x = -1
-		y = 1
-		
-		available = {289 = {is_owned_and_controlled_by = ROOT}}
-		cancel_if_invalid = no
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus = SIA_prepare_defensive_infrastructure }
-		completion_reward = {
-			289 = {
-				add_building_construction = {
-                    type = anti_air_building
-                    level = 2
-                    instant_build = yes
-                }
-			}
-		}
-	}
-	focus = {
 		id = SIA_import_radio_technology
 		icon = GFX_focus_generic_radio_communication
 		relative_position_id = SIA_army
@@ -1503,6 +1485,29 @@ focus_tree = {
 			}
 			add_dynamic_modifier = {
 				modifier = FRA_maginot_line_dynamic_modifier
+			}
+		}
+	}
+	focus = {
+		id = SIA_anti_air_defences
+		icon = GFX_focus_PRC_anti_air_effort
+		relative_position_id = SIA_prepare_defensive_infrastructure
+		x = -1
+		y = 1
+		
+		available = {289 = {is_owned_and_controlled_by = ROOT}}
+		cancel_if_invalid = no
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = SIA_prepare_defensive_infrastructure }
+		completion_reward = {
+			289 = {
+				add_building_construction = {
+                    type = anti_air_building
+                    level = 2
+                    instant_build = yes
+                }
 			}
 		}
 	}
@@ -1638,6 +1643,63 @@ focus_tree = {
             }
 		}
 	}
+	
+	focus = {
+		id = SIA_motorized_infantry
+		icon = GFX_goal_generic_army_motorized
+		relative_position_id = SIA_prussian_school_of_warfare
+		x = 1
+		y = 1
+		
+		cost = 5
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus =  SIA_prussian_school_of_warfare }
+	completion_reward = { 
+		if = {
+			limit = {
+				OR = {
+					has_completed_focus = SIA_adopt_japanese_aircraft
+					is_ally_with = JAP
+					gives_military_access_to = JAP
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 600
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 300
+			}
+			set_country_flag = SIA_jap_alliance
+		}
+		if = {
+			limit = {
+			OR = {
+				has_completed_focus = SIA_adopt_american_aircraft
+				is_ally_with = ENG
+				is_ally_with = USA
+				gives_military_access_to = USA
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+			add_fuel = 1500
+			set_country_flag = SIA_wst_alliance
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 300
+			}
+			add_fuel = 500
+		}
+	}
 	focus = {
 		id = SIA_develop_combined_arms_warfare
 		icon = GFX_focus_generic_combined_arms
@@ -1680,7 +1742,9 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
 		prerequisite = { focus = SIA_establish_the_field_police }
-		
+		available = {
+			threat > 0.5
+		}
 		completion_reward = { 
 			add_manpower = 50000
 			add_unit_bonus = {
@@ -1702,6 +1766,7 @@ focus_tree = {
 				id = 1203
 				}	
 			}
+			add_ideas = extensive_conscription
 		}
 	}
 	focus = {
@@ -1714,6 +1779,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_increase_the_reserve_force }
+		available = {
+			threat > 0.65
+		}
 		completion_reward = { 
 			if = {
 				limit = {
@@ -1721,6 +1789,7 @@ focus_tree = {
 				}
 				unlock_decision_tooltip = SIA_yuwachon_thahan_marching_parade
 			}
+			custom_effect_tooltip = SIA_unlock_yuwachon_thahan_template
 			division_template = { 
 				name = "Yuwachon Thahan" 
 				division_names_group = SIA_INF_01 
@@ -1771,6 +1840,7 @@ focus_tree = {
 					}
 				}
 			}
+			custom_effect_tooltip = SIA_unlock_bicycle_infantry_template
 			division_template = { 
 				name = "Yuwachon Thahan Cakrayarn" 
 				division_names_group = SIA_INF_01 
@@ -1785,63 +1855,6 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = SIA_motorized_infantry
-		icon = GFX_goal_generic_army_motorized
-		relative_position_id = SIA_prussian_school_of_warfare
-		x = 1
-		y = 1
-		
-		cost = 5
-		ai_will_do = { factor = 1 }
-		prerequisite = { focus =  SIA_prussian_school_of_warfare }
-		completion_reward = { 
-			if = {
-				limit = {
-					OR = {
-						has_completed_focus = SIA_adopt_japanese_aircraft
-						is_ally_with = JAP
-						gives_military_access_to = JAP
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 600
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 300
-				}
-				set_country_flag = SIA_jap_alliance
-			}
-			if = {
-				limit = {
-				OR = {
-					has_completed_focus = SIA_adopt_american_aircraft
-					is_ally_with = ENG
-					is_ally_with = USA
-					gives_military_access_to = USA
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 250
-				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 500
-				}
-				add_fuel = 1500
-				set_country_flag = SIA_wst_alliance
-				}
-				add_equipment_to_stockpile = {
-					type = motorized_equipment
-					amount = 300
-				}
-				add_fuel = 500
-			}
-		}
 	focus = {
 		id = SIA_purchase_new_arms
 		icon = GFX_focus_ETH_freedom_at_gunpoint
@@ -3377,6 +3390,7 @@ focus_tree = {
                 uses = 1
                 category = mio_cat_tech_all_motorized_mechanized
             }
+			unlock_military_industrial_organization_tooltip = mio:SIA_chaiseri_organisation 
 		}
 	}
 	focus = {
