@@ -44,6 +44,7 @@ SIA_chaiseri_organisation = {
 	allowed = {
 		tag = SIA 
 	}
+	available = { SIA = { has_completed_focus = SIA_founded_chaiseri } }
 }
 #Material Equipment MIOs
 SIA_siamese_army_ordnance_department = {
