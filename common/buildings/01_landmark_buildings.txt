@@ -605,7 +605,7 @@ buildings = {
 		spawn_point = landmark_spawn
 		repair_speed_factor = @landmark_repair_speed_factor
 		only_display_if_exists = yes
-		special_icon = GFX_big_ben_icon_small
+		special_icon = GFX_wat_arun_icon_small
 		level_cap = {
 			province_max = 1
 		}
