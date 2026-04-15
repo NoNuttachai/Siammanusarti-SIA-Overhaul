@@ -221,7 +221,10 @@ SIA_sucession_phibun: "£GFX_fascism_texticon  §8Plaek Phibunsongkhram§!"
 sia_events.5.t: "Phraya Phahon Resigns at Last"
 sia_events.5.d: "TBA"
 sia_events.5.a: "The Marshal is ascendant."
-sia_events.5.b: "The regent wins out."
+
+sia_events.14.t: "Phraya Phahon Resigns at Last"
+sia_events.14.d: "TBA"
+sia_events.14.a: "The regent wins out."
 #Parties Name
 khana_ratsadon_main: "Khana Ratsadon"
 royal_siamese_armed_forces_party: "RSARF"

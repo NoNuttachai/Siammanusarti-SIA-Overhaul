@@ -1006,7 +1006,13 @@ SIA_succession_of_khana_ratsadon = {
 				promote_character = SIA_phraya_songsuradet
 				complete_national_focus = SIA_pridi_premiership					
 			}
-			hidden_effect = { country_event = sia_events.5 }
+			hidden_effect = { 
+				if = {
+					limit = { OR = { check_variable = { party_popularity@fascism > party_popularity@democratic } check_variable = { party_popularity@fascism = party_popularity@democratic } } }
+					country_event = sia_events.5 
+				}
+				else = { country_event = sia_events.14  }
+			}
 		}
 	}	
 	SIA_debug_dem_pop = {

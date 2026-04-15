@@ -185,37 +185,11 @@ country_event = {
 
     option = {
         name = sia_events.5.a # The Marshal is ascendant.
-		trigger = {
-			OR = { check_variable = { party_popularity@fascism > party_popularity@democratic } check_variable = { party_popularity@fascism = party_popularity@democratic } }
-		}
 		set_politics = {
 			ruling_party = fascism
 			elections_allowed = no
 		}	
 		complete_national_focus = SIA_marshal_phibun_ascension
-    }
-
-    option = {
-        name = sia_events.5.b # The regent wins out.
-		trigger = {
-			check_variable = { party_popularity@fascism < party_popularity@democratic }
-		}
-		set_politics = {
-			ruling_party = democratic
-			elections_allowed = yes
-		}
-		set_party_name = {
-			ideology = democratic
-			long_name = khana_ratsadon_main
-			name = khana_ratsadon_main
-		}
-		set_party_name = {
-			ideology = neutrality
-			long_name = royal_siamese_armed_forces_party_long
-			name = royal_siamese_armed_forces_party
-		}
-		promote_character = SIA_phin_choonhavan
-		complete_national_focus = SIA_pridi_premiership
     }
 }
 
@@ -410,6 +384,41 @@ country_event = {
 		
     }
 }
+country_event = {
+    id = sia_events.14
+    title = sia_events.14.t
+    desc = sia_events.14.d
+    picture = report_event_phraya_phahon_resigns
+
+    is_triggered_only = yes
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = SIA_phraya_declares_intent
+		}		
+	}
+
+    option = {
+        name = sia_events.14.a # The regent wins out.
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = khana_ratsadon_main
+			name = khana_ratsadon_main
+		}
+		set_party_name = {
+			ideology = neutrality
+			long_name = royal_siamese_armed_forces_party_long
+			name = royal_siamese_armed_forces_party
+		}
+		promote_character = SIA_phin_choonhavan
+		complete_national_focus = SIA_pridi_premiership
+    }
+}
+
 news_event = {
 	id = sia_global_events.1
 	title = sia_global_events.1.t
