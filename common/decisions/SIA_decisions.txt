@@ -909,6 +909,119 @@ SIA_towards_a_greater_thailand = {
 			factor = 100			
 		}
 	}	
+
+	SIA_secure_pivotal_territories_in_malaya = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1050
+				state = 1051
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				OR = {
+					owns_state = 1050
+					owns_state = 1051
+				}
+			}
+		}
+		available = {
+			controls_state = 1050
+			controls_state = 1051
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			1050 = { owner = { country_event = sia_events.101 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+
+	SIA_secure_pivotal_territories_in_burma = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 993
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				owns_state = 993
+			}
+		}
+		available = {
+			controls_state = 993
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			993 = { owner = { country_event = sia_events.102 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+
+	SIA_expel_the_colonizers_from_indochina = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 286
+				state = 670
+				#state = 671
+				state = 741
+				state = 1017
+				state = 1047
+				state = 1048
+				state = 1049
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				OR = {
+					owns_state = 1047
+					owns_state = 1048
+					owns_state = 1049
+				}
+			}
+		}
+		available = {
+			controls_state = 286
+			controls_state = 670
+			controls_state = 741
+			controls_state = 1017
+			controls_state = 1047
+			controls_state = 1048
+			controls_state = 1049
+			if = {
+				limit = { 
+					1047 = { 
+						owner = { 
+							has_civil_war = no
+						} 
+					}
+				}
+				controls_state = 671
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			1047 = { owner = { country_event = sia_events.103 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
 }
 
 foreign_politics = {

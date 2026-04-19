@@ -941,7 +941,6 @@ country_event = {
 		670 = { transfer_state_to = SIA }
 		671 = { transfer_state_to = SIA }
 		741 = { transfer_state_to = SIA }
-        993 = { transfer_state_to = SIA }
 		1017 = { transfer_state_to = SIA }
         1047 = { transfer_state_to = SIA }
 		1048 = { transfer_state_to = SIA }
