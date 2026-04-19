@@ -969,13 +969,89 @@ SIA_towards_a_greater_thailand = {
 		}
 	}
 
+	SIA_seize_tai_lands_in_indochina = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 670
+				state = 741
+				state = 1047
+				state = 1048
+				state = 1049
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				OR = {
+					owns_state = 1047
+					owns_state = 1048
+					owns_state = 1049
+				}
+			}
+		}
+		available = {
+			controls_state = 286
+			controls_state = 670
+			controls_state = 741
+			controls_state = 1047
+			controls_state = 1048
+			controls_state = 1049
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			1047 = { owner = { country_event = sia_events.111 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+
+	SIA_seize_tai_lands_in_burma = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 993
+				state = 994
+				state = 999
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				OR = {
+					owns_state = 993
+					owns_state = 994
+					owns_state = 999
+				}
+			}
+		}
+		available = {
+			controls_state = 993
+			controls_state = 994
+			controls_state = 995
+			controls_state = 999
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			993 = { owner = { country_event = sia_events.110 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+
 	SIA_expel_the_colonizers_from_indochina = {
 		icon = GFX_decision_icon_default
 		highlight_states = {
 			highlight_state_targets = {
 				state = 286
 				state = 670
-				#state = 671
+				state = 671
 				state = 741
 				state = 1017
 				state = 1047
@@ -995,21 +1071,12 @@ SIA_towards_a_greater_thailand = {
 		available = {
 			controls_state = 286
 			controls_state = 670
+			controls_state = 671
 			controls_state = 741
 			controls_state = 1017
 			controls_state = 1047
 			controls_state = 1048
 			controls_state = 1049
-			if = {
-				limit = { 
-					1047 = { 
-						owner = { 
-							has_civil_war = no
-						} 
-					}
-				}
-				controls_state = 671
-			}
 		}
 		fire_only_once = no
 		days_re_enable = 5
@@ -1017,6 +1084,97 @@ SIA_towards_a_greater_thailand = {
 		cost = 0
 		complete_effect = {	
 			1047 = { owner = { country_event = sia_events.103 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+
+	SIA_expel_the_colonizers_from_malaya = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 336
+				state = 1021
+				state = 1050
+				state = 1051
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				OR = {
+					owns_state = 336
+					owns_state = 1021
+					owns_state = 1050
+					owns_state = 1051
+				}
+			}
+		}
+		available = {
+			controls_state = 336
+			controls_state = 1021
+			controls_state = 1050
+			controls_state = 1051
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			1050 = { owner = { country_event = sia_events.109 } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+
+	SIA_expel_the_colonizers_from_burma = {
+		icon = GFX_decision_icon_default
+		highlight_states = {
+			highlight_state_targets = {
+				state = 288
+				state = 640
+				state = 993
+				state = 994
+				state = 995
+				state = 996
+				state = 997
+				state = 998
+				state = 999
+			}
+		}
+		visible = {
+			any_enemy_country = {
+				OR = {
+					owns_state = 288
+					owns_state = 640
+					owns_state = 993
+					owns_state = 994
+					owns_state = 995
+					owns_state = 996
+					owns_state = 997
+					owns_state = 998
+					owns_state = 999
+				}
+			}
+		}
+		available = {
+			controls_state = 288
+			controls_state = 640
+			controls_state = 993
+			controls_state = 994
+			controls_state = 995
+			controls_state = 996
+			controls_state = 997
+			controls_state = 998
+			controls_state = 999
+		}
+		fire_only_once = no
+		days_re_enable = 5
+			
+		cost = 0
+		complete_effect = {	
+			993 = { owner = { country_event = sia_events.112 } }
 		}
 		ai_will_do = {	
 			factor = 100			

@@ -877,6 +877,7 @@ country_event = {
         1047 = { transfer_state_to = SIA }
 		1048 = { transfer_state_to = SIA }
 		1049 = { transfer_state_to = SIA }
+		white_peace = SIA
 		FROM = {
 			every_enemy_country = {
 				limit = { is_in_faction_with = ROOT }
@@ -898,6 +899,7 @@ country_event = {
         name = sia_events.100.a # If we must...
         1050 = { transfer_state_to = SIA }
 		1051 = { transfer_state_to = SIA }
+		white_peace = SIA
 		FROM = {
 			every_enemy_country = {
 				limit = { is_in_faction_with = ROOT }
@@ -918,6 +920,7 @@ country_event = {
     option = {
         name = sia_events.100.a # If we must...
         993 = { transfer_state_to = SIA }
+		white_peace = SIA
 		FROM = {
 			every_enemy_country = {
 				limit = { is_in_faction_with = ROOT }
@@ -945,6 +948,7 @@ country_event = {
         1047 = { transfer_state_to = SIA }
 		1048 = { transfer_state_to = SIA }
 		1049 = { transfer_state_to = SIA }
+		white_peace = SIA
 		FROM = {
 			every_enemy_country = {
 				limit = { is_in_faction_with = ROOT }
@@ -1043,6 +1047,104 @@ country_event = { #yes
 		}
     }
 }
+country_event = {
+    id = sia_events.109
+    title = sia_events.100.t # A Peace Deal from [SIA.GetName]
+    desc = sia_events.100.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.100.a # If we must...
+		336 = { transfer_state_to = SIA }
+		1021 = { transfer_state_to = SIA }
+        1050 = { transfer_state_to = SIA }
+		1051 = { transfer_state_to = SIA }
+		white_peace = SIA
+		FROM = {
+			every_enemy_country = {
+				limit = { is_in_faction_with = ROOT }
+				white_peace = SIA
+			}
+		}
+    }
+}
+country_event = {
+    id = sia_events.110
+    title = sia_events.100.t # A Peace Deal from [SIA.GetName]
+    desc = sia_events.100.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.100.a # If we must...
+		993 = { transfer_state_to = SIA }
+		994 = { transfer_state_to = SIA }
+        999 = { transfer_state_to = SIA }
+		white_peace = SIA
+		FROM = {
+			every_enemy_country = {
+				limit = { is_in_faction_with = ROOT }
+				white_peace = SIA
+			}
+		}
+    }
+}
+country_event = {
+    id = sia_events.111
+    title = sia_events.100.t # A Peace Deal from [SIA.GetName]
+    desc = sia_events.100.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.100.a # If we must...
+		670 = { transfer_state_to = SIA }
+		741 = { transfer_state_to = SIA }
+        1047 = { transfer_state_to = SIA }
+		1048 = { transfer_state_to = SIA }
+		1049 = { transfer_state_to = SIA }
+		white_peace = SIA
+		FROM = {
+			every_enemy_country = {
+				limit = { is_in_faction_with = ROOT }
+				white_peace = SIA
+			}
+		}
+    }
+}
+country_event = {
+    id = sia_events.112
+    title = sia_events.100.t # A Peace Deal from [SIA.GetName]
+    desc = sia_events.100.d
+    picture = report_event_liean_chaiykharn_soaked
+
+    is_triggered_only = yes
+
+    option = {
+        name = sia_events.100.a # If we must...
+		288 = { transfer_state_to = SIA }
+		640 = { transfer_state_to = SIA }
+        993 = { transfer_state_to = SIA }
+		994 = { transfer_state_to = SIA }
+		995 = { transfer_state_to = SIA }
+		996 = { transfer_state_to = SIA }
+		995 = { transfer_state_to = SIA }
+		995 = { transfer_state_to = SIA }
+		995 = { transfer_state_to = SIA }
+		white_peace = SIA
+		FROM = {
+			every_enemy_country = {
+				limit = { is_in_faction_with = ROOT }
+				white_peace = SIA
+			}
+		}
+    }
+}
+
 country_event = {
 	id = sia_bop_event.1 #Pad Thai Event
 	title = sia_bop_event.1.t
