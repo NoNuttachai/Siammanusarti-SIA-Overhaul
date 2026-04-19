@@ -311,19 +311,19 @@ SIA_curtiss_aeroplane_organization: "Curtiss Aeroplane"
 #Scripted Peace Decisions
 SIA_towards_a_greater_thailand: "The Franco-[THIS.GetAdjective] War"
 SIA_towards_a_greater_thailand_desc: "TBA"
-SIA_secure_pivotal_territories_in_indochina: "Secure Pivotal Territories in Indochina"
+SIA_secure_pivotal_territories_in_indochina: "Limited Land Concessions in Indochina"
 
 sia_events.100.t: "A Peace Deal from the [SIA.GetName]"
 sia_events.100.d: "TBA"
 sia_events.100.a: "If we must..."
 
-SIA_secure_pivotal_territories_in_malaya: "Secure Pivotal Territories in Malaya"
-SIA_secure_pivotal_territories_in_burma: "Secure Pivotal Territories in Burma"
+SIA_secure_pivotal_territories_in_malaya: "Limited Land Concessions in Malaya"
+SIA_secure_pivotal_territories_in_burma: "Limited Land Concessions in Burma"
 SIA_seize_tai_lands_in_indochina: "Seize Tai Lands in Indochina"
 SIA_seize_tai_lands_in_burma: "Seize Tai Lands in Burma"
-SIA_expel_the_colonizers_from_indochina: "Expel the Colonizers from Indochina"
-SIA_expel_the_colonizers_from_malaya: "Expel the Colonizers from Malaya"
-SIA_expel_the_colonizers_from_burma: "Expel the Colonizers from Burma"
+SIA_expel_the_colonizers_from_indochina: "Total Annexation of Indochina"
+SIA_expel_the_colonizers_from_malaya: "Total Annexation of Malaya"
+SIA_expel_the_colonizers_from_burma: "Total Annexation of Burma"
 SIA_fortification_boon: "Fortification Projects"
 
 # Focuses
