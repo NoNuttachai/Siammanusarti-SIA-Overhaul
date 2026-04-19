@@ -1008,7 +1008,7 @@ SIA_towards_a_greater_thailand = {
 			}
 		}
 		fire_only_once = no
-		days_remove = 50
+		days_remove = 75
 		days_re_enable = 5
 			
 		cost = 0
@@ -1055,7 +1055,7 @@ SIA_towards_a_greater_thailand = {
 			}
 		}
 		fire_only_once = no
-		days_remove = 50
+		days_remove = 75
 		days_re_enable = 5
 			
 		cost = 0
@@ -1115,7 +1115,7 @@ SIA_towards_a_greater_thailand = {
 			}
 		}
 		fire_only_once = no
-		days_remove = 100
+		days_remove = 150
 		days_re_enable = 5
 			
 		cost = 0
@@ -1164,7 +1164,7 @@ SIA_towards_a_greater_thailand = {
 			}		
 		}
 		fire_only_once = no
-		days_remove = 100
+		days_remove = 150
 		days_re_enable = 5
 			
 		cost = 0
@@ -1233,7 +1233,7 @@ SIA_towards_a_greater_thailand = {
 			}			
 		}
 		fire_only_once = no
-		days_remove = 100
+		days_remove = 150
 		days_re_enable = 5
 			
 		cost = 0
