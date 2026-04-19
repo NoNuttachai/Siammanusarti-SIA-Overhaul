@@ -997,13 +997,26 @@ SIA_towards_a_greater_thailand = {
 			controls_state = 1048
 			controls_state = 1049
 		}
+		cancel_trigger = {
+			OR = {
+				NOT = { controls_state = 286 }
+				NOT = { controls_state = 670 }
+				NOT = { controls_state = 741 }
+				NOT = { controls_state = 1047 }
+				NOT = { controls_state = 1048 }
+				NOT = { controls_state = 1049 }			
+			}
+		}
 		fire_only_once = no
+		days_remove = 50
 		days_re_enable = 5
 			
 		cost = 0
-		complete_effect = {	
+		complete_effect = { }
+		remove_effect = {	
 			1047 = { owner = { country_event = sia_events.111 } }
 		}
+		cancel_effect = { }
 		ai_will_do = {	
 			factor = 100			
 		}
@@ -1033,13 +1046,24 @@ SIA_towards_a_greater_thailand = {
 			controls_state = 995
 			controls_state = 999
 		}
+		cancel_trigger = {
+			OR = {
+				NOT = { controls_state = 993 }
+				NOT = { controls_state = 994 }
+				NOT = { controls_state = 995 }
+				NOT = { controls_state = 999 }				
+			}
+		}
 		fire_only_once = no
+		days_remove = 50
 		days_re_enable = 5
 			
 		cost = 0
-		complete_effect = {	
+		complete_effect = { }
+		remove_effect = {	
 			993 = { owner = { country_event = sia_events.110 } }
 		}
+		cancel_effect = { }
 		ai_will_do = {	
 			factor = 100			
 		}
@@ -1078,13 +1102,28 @@ SIA_towards_a_greater_thailand = {
 			controls_state = 1048
 			controls_state = 1049
 		}
+		cancel_trigger = {
+			OR = {
+				NOT = { controls_state = 286 }
+				NOT = { controls_state = 670 }
+				NOT = { controls_state = 671 }
+				NOT = { controls_state = 741 }
+				NOT = { controls_state = 1017 }
+				NOT = { controls_state = 1047 }
+				NOT = { controls_state = 1048 }
+				NOT = { controls_state = 1049 }
+			}
+		}
 		fire_only_once = no
+		days_remove = 100
 		days_re_enable = 5
 			
 		cost = 0
-		complete_effect = {	
+		complete_effect = { }
+		remove_effect = {	
 			1047 = { owner = { country_event = sia_events.103 } }
 		}
+		cancel_effect = { }
 		ai_will_do = {	
 			factor = 100			
 		}
@@ -1116,13 +1155,24 @@ SIA_towards_a_greater_thailand = {
 			controls_state = 1050
 			controls_state = 1051
 		}
+		cancel_trigger = {
+			OR = {
+				NOT = { controls_state = 336 }
+				NOT = { controls_state = 1021 }
+				NOT = { controls_state = 1050 }
+				NOT = { controls_state = 1051 }			
+			}		
+		}
 		fire_only_once = no
+		days_remove = 100
 		days_re_enable = 5
 			
 		cost = 0
-		complete_effect = {	
+		complete_effect = { }
+		remove_effect = {	
 			1050 = { owner = { country_event = sia_events.109 } }
 		}
+		cancel_effect = { }
 		ai_will_do = {	
 			factor = 100			
 		}
@@ -1169,13 +1219,29 @@ SIA_towards_a_greater_thailand = {
 			controls_state = 998
 			controls_state = 999
 		}
+		cancel_trigger = {
+			OR = {
+				NOT = { controls_state = 288 }
+				NOT = { controls_state = 640 }
+				NOT = { controls_state = 993 }
+				NOT = { controls_state = 994 }
+				NOT = { controls_state = 995 }
+				NOT = { controls_state = 996 }
+				NOT = { controls_state = 997 }
+				NOT = { controls_state = 998 }
+				NOT = { controls_state = 999 }				
+			}			
+		}
 		fire_only_once = no
+		days_remove = 100
 		days_re_enable = 5
 			
 		cost = 0
-		complete_effect = {	
+		complete_effect = { }
+		remove_effect = {	
 			993 = { owner = { country_event = sia_events.112 } }
 		}
+		cancel_effect = { }
 		ai_will_do = {	
 			factor = 100			
 		}
