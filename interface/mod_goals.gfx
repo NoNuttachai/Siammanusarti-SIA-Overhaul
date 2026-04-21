@@ -120,7 +120,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Youth_Corps.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_Female_Corps"
-		texturefile = "gfx/interface/goals/Female_Corps.dds"
+		name = "GFX_focus_SIA_language_reform"
+		texturefile = "gfx/interface/goals/focus_language_reform.dds"
 	}
 }
