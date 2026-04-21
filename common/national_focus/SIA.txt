@@ -298,8 +298,18 @@ focus_tree = {
 				tooltip = SIA_has_75_dem_support
 				check_variable = { party_popularity@democratic > 0.745 }
 			}
+			custom_trigger_tooltip = {
+				tooltip = SIA_has_7_supporters
+				check_variable = { SIA_supportive_leaders > 6 }
+			}
+			has_government = democratic
 		}
-		completion_reward = { }
+		completion_reward = { 
+			custom_effect_tooltip = SIA_prevent_any_potential_coup
+			hidden_effect = {
+				clr_country_flag = SIA_military_discontent
+			}
+		}
 		prerequisite = { focus = SIA_amend_the_constitution }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
@@ -322,6 +332,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SIA_avoided_coup
+				has_completed_focus = SIA_curtail_the_army
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_amend_the_constitution }
 		search_filters = {FOCUS_FILTER_POLITICAL}

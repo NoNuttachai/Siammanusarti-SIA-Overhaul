@@ -1450,7 +1450,46 @@ SIA_discontent_within_the_ranks = {
 					add_unit_leader_trait = SIA_general_hostile
 				}
 				add_to_variable = { SIA_hostile_leaders = 1 }
+				activate_mission = SIA_hostile_generals_take_action
 			}
+		}
+	}
+
+	SIA_imminent_coup = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 50
+
+		fire_only_once = no
+
+		activation = {
+			check_variable = { SIA_hostile_leaders > 6 }
+			check_variable = { party_popularity@democratic < 0.745 }
+			hidden_trigger = { has_country_flag = SIA_military_discontent }
+		}
+
+		visible = {
+			hidden_trigger = {
+				tag = SIA
+				has_country_flag = SIA_military_discontent
+				check_variable = { SIA_hostile_leaders > 6 }
+				check_variable = { party_popularity@democratic < 0.745 }
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			country_event = sia_events.15
 		}
 	}
 	
@@ -1542,7 +1581,10 @@ SIA_discontent_within_the_ranks = {
 					has_character_flag = SIA_armed_forces_character
 					has_trait = SIA_general_hostile	
 				}
-			}			
+			}	
+			has_stability > 0
+			command_power > 0
+			has_army_experience > 0		
 		}
 		days_remove = 20
 			

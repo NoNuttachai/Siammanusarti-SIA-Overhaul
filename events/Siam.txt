@@ -418,6 +418,23 @@ country_event = {
 		complete_national_focus = SIA_pridi_premiership
     }
 }
+country_event = {
+    id = sia_events.15 # The Army Takes Control
+    title = sia_events.15.t
+    desc = sia_events.15.desc
+    picture = report_event_phraya_phahon_reelected
+
+	is_triggered_only = yes
+
+    option = {
+        name = sia_events.15.a # And so the republican experiment ends.
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		custom_effect_tooltip = SIA_content_warning
+    }
+}
 
 news_event = {
 	id = sia_global_events.1

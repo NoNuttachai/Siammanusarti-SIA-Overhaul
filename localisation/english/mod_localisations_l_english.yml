@@ -396,6 +396,8 @@ SIA_general_hostile: "Hostile Towards Government"
 SIA_hostile_generals_take_action: "Hostile Generals Take Action!"
 SIA_neutral_leader_goes_hostile: "One neutral General or Admiral will §Rdefect!§!"
 
+SIA_imminent_coup: "Imminent Coup!"
+
 SIA_appeal_to_the_unaligned: "Appeal to the Unaligned"
 SIA_any_neutral_leaders: "Any Generals or Admirals are §YNeutral§!."
 SIA_neutral_leader_goes_supportive: "One neutral General or Admiral will become §Gsupportive§!."
@@ -406,9 +408,17 @@ SIA_hostile_leader_goes_neutral: "One hostile General or Admiral will become §Y
 
 SIA_fire_plotting_generals: "Fire Plotting Generals"
 
+sia_events.15.t: "The Army Takes Control"
+sia_events.15.desc: "TBA"
+sia_events.15.desc: "And so the republican experiment ends."
+SIA_content_warning: "\n§RNOTE: The content for this path is not finished yet! Reload to before this point to continue playing the currently finished content.§!"
+
 SIA_curtail_the_army: "Curtail the Army"
 SIA_curtail_the_army_desc: ""
 SIA_has_75_dem_support: "Have at least §Y75%§! Democratic support"
+SIA_has_7_supporters: "Have at least §Y7§! §GSupportive§! commanding officers"
+SIA_prevent_any_potential_coup: "There will no longer be a risk of a coup d'etat by the military."
+SIA_avoided_coup: "We have successfully prevented any risk of a coup d'etat."
 
 SIA_reappoint_army_generals: "Reappoint Army Generals"
 SIA_reappoint_army_generals_desc: ""
