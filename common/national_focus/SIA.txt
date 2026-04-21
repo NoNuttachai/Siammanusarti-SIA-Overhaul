@@ -1763,12 +1763,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_manpower = 50000
-			add_unit_bonus = {
-				infantry = {
-					recovery = 0.08
-					casualty_trickleback = 0.05
-				}
-			}
+			add_ideas = SIA_increased_reserves
 			every_state = {
 				limit = {
 					is_core_of = SIA
@@ -1833,7 +1828,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_increase_the_reserve_force }
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = SIA_yuwanaree_idea
+		}
 	}
 	focus = {
 		id = SIA_bicycle_infantry

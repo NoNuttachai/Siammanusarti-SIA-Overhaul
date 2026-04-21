@@ -909,5 +909,29 @@ ideas = {
 				democratic_drift = 0.03
 			}
 		}
+		SIA_increased_reserves = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				mobilization_laws_cost_factor = -0.25
+			}
+		}
+		SIA_yuwanaree_idea = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				recruitable_population_factor = 0.05
+				mobilization_laws_cost_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
 	}
 }
