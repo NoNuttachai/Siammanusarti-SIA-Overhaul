@@ -431,6 +431,9 @@ characters={
 		}
 		name = "Thawan Thamrongnawasawat"
 		portraits = {
+			civilian = {
+				large = "GFX_portrait_thawan_thamrongnawasawat"
+			}
 			army = {
 				small= "GFX_idea_minister_thawan_thamrongnawasawat"
 				large = "GFX_portrait_thawan_thamrongnawasawat"
@@ -443,6 +446,12 @@ characters={
 			defense_skill = 2
 			maneuvering_skill = 3
 			coordination_skill = 3
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1965.1.1.1"
+			traits = { phraya_phahon_full_name siamese_revolutionary_leader }
+			id=-1
 		}			
 	}	
 	SIA_sangad_chaloryu = {

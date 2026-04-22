@@ -499,6 +499,7 @@ country_event = {
     option = {
         name = sia_events.19.b # Go with Thamrong.
 		complete_national_focus = SIA_thawan_thamrong_premiership
+		promote_character = SIA_thawan_thamrongnawasawat
     }
     option = {
         name = sia_events.19.c # Go with Bunyaket.
