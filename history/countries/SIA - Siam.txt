@@ -136,6 +136,9 @@ recruit_character = SIA_sayuan_chudatemi
 recruit_character = SIA_khun_wichitmatra
 recruit_character = SIA_kulap_saipradit
 recruit_character = SIA_phraya_songsuradet
+recruit_character = SIA_seni_pramoj
+recruit_character = SIA_thawi_bunyaket
+recruit_character = SIA_khuang_aphaiwong
 ## Scientists
 recruit_character = SIA_Muni_Mahasandhana
 recruit_character = SIA_Cang_Ratnarat

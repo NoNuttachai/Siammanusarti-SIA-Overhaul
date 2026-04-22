@@ -208,6 +208,48 @@ characters={
 			id=-1
 		}
 	}
+	SIA_seni_pramoj = {
+		name = "Seni Pramoj"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SIA_Seni_Pramoj"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			traits = { }
+			id=-1
+		}			
+	}
+	SIA_thawi_bunyaket = {
+		name = "Thawi Bunyaket"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SIA_Thawi_Bunyaket"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			traits = { }
+			id=-1
+		}			
+	}
+	SIA_khuang_aphaiwong = {
+		name = "Khuang Aphaiwong"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SIA_Khuang_Aphaiwong"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1965.1.1.1"
+			traits = { }
+			id=-1
+		}			
+	}
 	
 	#Scientists
 	SIA_Muni_Mahasandhana = {
@@ -448,7 +490,7 @@ characters={
 			coordination_skill = 3
 		}
 		country_leader={
-			ideology=moderatism
+			ideology=liberalism
 			expire="1965.1.1.1"
 			traits = { phraya_phahon_full_name siamese_revolutionary_leader }
 			id=-1

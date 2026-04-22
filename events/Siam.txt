@@ -504,6 +504,7 @@ country_event = {
     option = {
         name = sia_events.19.c # Go with Bunyaket.
 		complete_national_focus = SIA_thawee_bunyaket_premiership
+		promote_character = SIA_thawi_bunyaket
     }
 }
 country_event = {
@@ -517,10 +518,12 @@ country_event = {
     option = {
         name = sia_events.20.a # Go with Pramoj.
 		complete_national_focus = SIA_seni_pramoj_premiership
+		promote_character = SIA_seni_pramoj
     }
     option = {
         name = sia_events.20.b # Go with Aphaiwong.
 		complete_national_focus = SIA_khung_aphaiwong_premiership
+		recruit_character = SIA_khuang_aphaiwong
     }
 }
 

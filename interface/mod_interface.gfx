@@ -90,6 +90,19 @@ SpriteTypes = {
 		texturefile = "gfx/ideas/advisors/idea_Phraya_Rit-akkhane.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_portrait_SIA_Seni_Pramoj"
+		texturefile = "gfx/leaders/SIA/Seni_Pramoj.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SIA_Thawi_Bunyaket"
+		texturefile = "gfx/leaders/SIA/Thawi_Bunyaket.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SIA_Khuang_Aphaiwong"
+		texturefile = "gfx/leaders/SIA/Khuang_Aphaiwong.dds"
+	}
+
 	# Ideas
 	SpriteType = {
 		name = "GFX_idea_SIA_constitutionalism"
