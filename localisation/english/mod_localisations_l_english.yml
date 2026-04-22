@@ -540,7 +540,43 @@ SIA_bank_of_asia_for_industry_and_commerce: "Bank Of Asia For Industry And Comme
 SIA_enable_free_speech: "Enable Free Speech"
 SIA_align_with_navy: "Align With Navy"
 SIA_promote_democratic_ideals: "Promote Democratic Ideals"
+
 SIA_organize_a_free_election: "Organize A Free Election"
+sia_events.16.t: "Formation of the Phrayatiphat Party"
+sia_events.16.desc: "TBA"
+sia_events.16.a: "We will see how it goes."
+
+SIA_ELECTION_BOP: "Siamese Election"
+SIA_khana_ratsadon_side: "Khana Ratsadon"
+SIA_phrayatiphat_side: "Phrayatiphat"
+SIA_ELECTION_BALANCE: "Balanced Electoral Outcome"
+SIA_ratsadon_side_50_75: "Mild Khana Ratsadon Landslide"
+SIA_ratsadon_side_75_100: "Total Khana Ratsadon Landslide"
+SIA_phrayatiphat_side_50_75: "Mild Phrayatiphat Landslide"
+SIA_phrayatiphat_side_75_100: "Total Phrayatiphat Landslide"
+SIA_bonuses_after_election: "We will recieve bonuses after the election concludes."
+
+SIA_election_BOP_category: "Election Campaigning"
+SIA_results_of_the_election: "Results of the Election"
+sia_events.17.t: "Khana Ratsadon Victory"
+sia_events.17.desc: "TBA"
+sia_events.17.a: "Now to determine leadership..."
+
+sia_events.18.t: "Phrayatiphat Victory"
+sia_events.18.desc: "TBA"
+sia_events.18.a: "For a new Siam."
+
+sia_events.19.t: "Leadership of Khana Ratsadon"
+sia_events.19.desc: "TBA"
+sia_events.19.a: "Continue with Pridi."
+sia_events.19.b: "Go with Thamrong."
+sia_events.19.c: "Go with Bunyaket."
+
+sia_events.20.t: "Leadership of the Phrachatiphat Party"
+sia_events.20.desc: "TBA"
+sia_events.20.a: "Go with Pramoj."
+sia_events.20.b: "Go with Aphaiwong."
+
 SIA_independent_foreign_policy: "Independent Foreign Policy"
 SIA_rekindle_with_the_colonial_powers: "Rekindle With The Colonial Powers"
 SIA_anglo_thai_something: "Anglo-Thai Alliance"

@@ -435,6 +435,93 @@ country_event = {
 		custom_effect_tooltip = SIA_content_warning
     }
 }
+country_event = {
+    id = sia_events.16 # Formation of the Phrayatiphat Party
+    title = sia_events.16.t
+    desc = sia_events.16.desc
+    picture = report_event_phraya_phahon_reelected
+
+	is_triggered_only = yes
+
+    option = {
+        name = sia_events.16.a # We will see how it goes.
+		set_power_balance = {
+			id = SIA_ELECTION_BOP
+			set_value = -0.10
+		}
+		hidden_effect = {
+			#activate_mission = SIA_results_of_the_election
+		}
+    }
+}
+country_event = {
+    id = sia_events.17 # Khana Ratsadon Victory
+    title = sia_events.17.t
+    desc = sia_events.17.desc
+    picture = report_event_phraya_phahon_reelected
+
+	is_triggered_only = yes
+
+    option = {
+        name = sia_events.17.a # Now to determine leadership...
+		remove_power_balance = { id = SIA_ELECTION_BOP }
+		complete_national_focus = SIA_khana_ratsadon_reelected
+		country_event = sia_events.19
+    }
+}
+country_event = {
+    id = sia_events.18 # Phrachatiphat Victory
+    title = sia_events.18.t
+    desc = sia_events.18.desc
+    picture = report_event_phraya_phahon_reelected
+
+	is_triggered_only = yes
+
+    option = {
+        name = sia_events.18.a # For a new Siam.
+		remove_power_balance = { id = SIA_ELECTION_BOP }
+		complete_national_focus = SIA_phrachatiphat_victory
+		country_event = sia_events.20
+    }
+}
+country_event = {
+    id = sia_events.19 # Leadership of Khana Ratsadon
+    title = sia_events.19.t
+    desc = sia_events.19.desc
+    picture = report_event_phraya_phahon_reelected
+
+	is_triggered_only = yes
+
+    option = {
+        name = sia_events.19.a # Continue with Pridi.
+		complete_national_focus = SIA_continue_pridi_administration
+    }
+    option = {
+        name = sia_events.19.b # Go with Thamrong.
+		complete_national_focus = SIA_thawan_thamrong_premiership
+    }
+    option = {
+        name = sia_events.19.c # Go with Bunyaket.
+		complete_national_focus = SIA_thawee_bunyaket_premiership
+    }
+}
+country_event = {
+    id = sia_events.20 # Leadership of the Phrachatiphat Party
+    title = sia_events.20.t
+    desc = sia_events.20.desc
+    picture = report_event_phraya_phahon_reelected
+
+	is_triggered_only = yes
+
+    option = {
+        name = sia_events.20.a # Go with Pramoj.
+		complete_national_focus = SIA_seni_pramoj_premiership
+    }
+    option = {
+        name = sia_events.20.b # Go with Aphaiwong.
+		complete_national_focus = SIA_khung_aphaiwong_premiership
+    }
+}
 
 news_event = {
 	id = sia_global_events.1

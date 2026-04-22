@@ -338,7 +338,9 @@ focus_tree = {
 				has_completed_focus = SIA_curtail_the_army
 			}
 		}
-		completion_reward = { }
+		completion_reward = {
+			country_event = sia_events.16
+		}
 		prerequisite = { focus = SIA_amend_the_constitution }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}
@@ -349,6 +351,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_organize_a_free_election }
 		mutually_exclusive = { focus = SIA_phrachatiphat_victory }
@@ -361,6 +369,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
 		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_continue_pridi_administration }
@@ -602,6 +616,12 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
 		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_thawan_thamrong_premiership }
@@ -614,6 +634,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_khana_ratsadon_reelected }
 		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_khung_aphaiwong_premiership focus = SIA_continue_pridi_administration }
@@ -626,6 +652,12 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_organize_a_free_election }
 		mutually_exclusive = { focus = SIA_khana_ratsadon_reelected }
@@ -638,6 +670,12 @@ focus_tree = {
 		x = -3
 		y = 1
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
 		prerequisite = { focus = SIA_phrachatiphat_victory }
 		mutually_exclusive = { focus = SIA_khung_aphaiwong_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
@@ -650,8 +688,14 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = cannot_be_completed_manually
+				always = no
+			}
+		}
 		completion_reward = { }
-		prerequisite = { focus = SIA_phrachatiphat_victory focus = SIA_khana_ratsadon_reelected}
+		prerequisite = { focus = SIA_phrachatiphat_victory }
 		mutually_exclusive = { focus = SIA_seni_pramoj_premiership focus = SIA_thawee_bunyaket_premiership focus = SIA_thawan_thamrong_premiership focus = SIA_continue_pridi_administration }
 		search_filters = {FOCUS_FILTER_POLITICAL}
 	}

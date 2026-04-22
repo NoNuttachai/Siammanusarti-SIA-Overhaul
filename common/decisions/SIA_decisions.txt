@@ -1737,3 +1737,49 @@ political_actions = {
 		}
 	}
 }
+
+SIA_election_BOP_category = {
+	SIA_results_of_the_election = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 90
+
+		fire_only_once = yes
+
+		activation = {
+			tag = SIA
+		}
+
+		visible = {
+			hidden_trigger = {
+				tag = SIA
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			if = {
+				limit = { 
+					power_balance_value = {
+						id = SIA_ELECTION_BOP
+						value < 0
+					}
+				}
+				country_event = sia_events.17
+			}
+			else = {
+				country_event = sia_events.18
+			}
+		}
+	}	
+}

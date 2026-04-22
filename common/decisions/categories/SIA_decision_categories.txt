@@ -63,3 +63,8 @@ SIA_discontent_within_the_ranks = {
 	}
 	allowed = { original_tag = SIA } 
 }
+
+SIA_election_BOP_category = {
+	priority = 10
+	allowed = { original_tag = SIA }
+}

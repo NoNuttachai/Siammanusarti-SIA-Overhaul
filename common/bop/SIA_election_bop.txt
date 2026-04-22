@@ -1,0 +1,67 @@
+SIA_ELECTION_BOP = {
+	left_side = SIA_khana_ratsadon_side
+	right_side = SIA_phrayatiphat_side 
+	decision_category = SIA_election_BOP_category
+
+	range = {
+		id = SIA_ELECTION_BALANCE
+		min = -0.5
+		max = 0.5
+		modifier = {
+		}
+	}
+	
+	side = {
+		id = SIA_khana_ratsadon_side
+		
+		range = {
+			id = SIA_ratsadon_side_50_75
+			min = -0.75
+			max = -0.50
+			modifier = {
+				political_power_gain = 0.1
+			}
+			on_activate = {
+				custom_effect_tooltip = SIA_bonuses_after_election
+			}
+		}
+		range = {
+			id = SIA_ratsadon_side_75_100
+			min = -1.0
+			max = -0.75
+			modifier = {
+				political_power_gain = 0.2
+			}
+			on_activate = {
+				custom_effect_tooltip = SIA_bonuses_after_election
+			}
+		}
+	}
+
+	side = {
+		id = SIA_phrayatiphat_side
+		
+		range = {
+			id = SIA_phrayatiphat_side_50_75
+			min = 0.50
+			max = 0.75
+			modifier = {
+				stability_factor = 0.05
+			}
+			on_activate = {
+				custom_effect_tooltip = SIA_bonuses_after_election
+			}
+		}
+		range = {
+			id = SIA_phibun_side_75_100
+			min = 0.75
+			max = 1.0
+			modifier = {
+				stability_factor = 0.1
+			}
+			on_activate = {
+				custom_effect_tooltip = SIA_bonuses_after_election
+			}
+		}
+	}
+}
