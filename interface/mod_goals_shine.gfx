@@ -917,7 +917,7 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_focus_SIA_language_reform_shine"
-		texturefile = "gfx/interface/goals/focus_language_reform.dds.dds"			
+		texturefile = "gfx/interface/goals/focus_language_reform.dds"			
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/focus_language_reform.dds"			
