@@ -14,12 +14,12 @@ SIA_PHIBUN_BOP = {
 			set_power_balance_gfx = {
 				id = SIA_PHIBUN_BOP
 				side = SIA_phibun_weak
-				gfx = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
+				gfx = "GFX_bop_SIA_phibun_bad_side"
 			}
 			set_power_balance_gfx = {
 				id = SIA_PHIBUN_BOP
 				side = SIA_phibun_side
-				gfx = "GFX_SIA_KHA_RATSADON_SIDE"
+				gfx = "GFX_bop_SIA_phibun_good_side"
 			}
 		}
 	}
@@ -44,7 +44,7 @@ SIA_PHIBUN_BOP = {
 				set_power_balance_gfx = {
 					id = SIA_PHIBUN_BOP
 					side = SIA_phibun_side
-					gfx = "GFX_SIA_KHA_RATSADON_SIDE"
+					gfx = "GFX_bop_SIA_phibun_good_side"
 				}
 			}
 		}
@@ -65,7 +65,7 @@ SIA_PHIBUN_BOP = {
 				set_power_balance_gfx = {
 					id = SIA_PHIBUN_BOP
 					side = SIA_phibun_side
-					gfx = "GFX_SIA_KHA_RATSADON_IMPROVED_SIDE"
+					gfx = "GFX_bop_SIA_phibun_good_improved_side"
 				}
 			}
 		}
@@ -91,7 +91,7 @@ SIA_PHIBUN_BOP = {
 				set_power_balance_gfx = {
 					id = SIA_PHIBUN_BOP
 					side = SIA_phibun_weak
-					gfx = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
+					gfx = "GFX_bop_SIA_phibun_bad_side"
 				}
 			}
 		}
@@ -112,7 +112,7 @@ SIA_PHIBUN_BOP = {
 				set_power_balance_gfx = {
 					id = SIA_PHIBUN_BOP
 					side = SIA_phibun_weak
-					gfx = "GFX_SIA_KHA_RATSADON_VERY_BAD_SIDE"
+					gfx = "GFX_bop_SIA_phibun_bad_improved_side"
 				}
 			}
 		}
