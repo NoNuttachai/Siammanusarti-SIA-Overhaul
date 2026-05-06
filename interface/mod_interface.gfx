@@ -192,12 +192,29 @@ SpriteTypes = {
 		texturefile = "gfx/interface/bop/bop_SIA_khana_ratsadon_side.dds"
 	}
 	SpriteType = {
-		name = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
-		texturefile = "gfx/interface/bop/bop_SIA_khana_ratsadon_bad_side.dds"
+		name = "GFX_bop_SIA_phibun_good_side"
+		texturefile = "gfx/interface/bop/bop_SIA_phibun_good_side.dds"
 	}
 	SpriteType = {
 		name = "GFX_SIA_KHA_RATSADON_VERY_BAD_SIDE"
 		texturefile = "gfx/interface/bop/bop_SIA_khana_ratsadon_very_bad_side.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bop_SIA_phibun_bad_improved_side"
+		texturefile = "gfx/interface/bop/bop_SIA_phibun_bad_improved_side.dds"
+	}
+	SpriteType = {
+		name = "GFX_bop_SIA_phibun_bad_side"
+		texturefile = "gfx/interface/bop/bop_SIA_phibun_bad_side.dds"
+	}
+	SpriteType = {
+		name = "GFX_SIA_KHA_RATSADON_BAD_SIDE"
+		texturefile = "gfx/interface/bop/bop_SIA_khana_ratsadon_bad_side.dds"
+	}
+	SpriteType = {
+		name = "GFX_bop_SIA_phibun_good_improved_side"
+		texturefile = "gfx/interface/bop/bop_SIA_phibun_good_improved_side.dds"
 	}
 	
 	spriteType = {
