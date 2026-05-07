@@ -360,7 +360,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = 0.05
 			}
 			country_event = {
@@ -378,7 +378,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = 0.05
 			}
 			country_event = {
@@ -396,7 +396,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = 0.05
 			}
 			country_event = {
@@ -414,7 +414,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = 0.05
 			}
 		}
