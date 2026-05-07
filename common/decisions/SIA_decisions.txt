@@ -11,9 +11,9 @@ SIA_diplomacy_with_the_chinese = {
 			}
 		}
 		fire_only_once = no
-		days_re_enable = 5
-		days_remove = 40
-		cost = 20
+		days_re_enable = 1
+		days_remove = 75
+		cost = SIA_chinese_investment_cost_civ
 		complete_effect = {	
 			
 		}
@@ -28,6 +28,7 @@ SIA_diplomacy_with_the_chinese = {
 					instant_build = yes
 				}
 			}
+			multiply_variable = { SIA_chinese_investment_cost_civ = 2 }
 		}
 		ai_will_do = {	
 			factor = 0			
@@ -44,9 +45,9 @@ SIA_diplomacy_with_the_chinese = {
 				has_war_with = CHI
 			}
 		}
-		days_re_enable = 5
-		days_remove = 40
-		cost = 20
+		days_re_enable = 1
+		days_remove = 75
+		cost = SIA_chinese_investment_cost_mil
 		complete_effect = {	
 			
 		}
@@ -61,6 +62,7 @@ SIA_diplomacy_with_the_chinese = {
 					instant_build = yes
 				}
 			}
+			multiply_variable = { SIA_chinese_investment_cost_mil = 2 }
 		}
 		ai_will_do = {	
 			factor = 0			

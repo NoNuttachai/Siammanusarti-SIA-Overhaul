@@ -1,0 +1,17 @@
+GER_refuse_any_alignment_with_siam_for_axis = {
+	allowed = { 
+		original_tag = GER 
+		has_government = fascism
+	}
+	enable = { 
+		JAP = { 
+			has_government = fascism
+		} 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = alliance
+		id = SIA
+		value = -100
+	}
+}

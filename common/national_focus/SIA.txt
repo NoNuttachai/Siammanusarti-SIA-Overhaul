@@ -515,6 +515,8 @@ focus_tree = {
 				target = CHI
 				modifier = business_partners
 			}
+			set_variable = { SIA_chinese_investment_cost_civ = 10 }
+			set_variable = { SIA_chinese_investment_cost_mil = 10 }
 			unlock_decision_tooltip = SIA_attract_chinese_civilian_investment
 			unlock_decision_tooltip = SIA_attract_chinese_military_investment
 			
@@ -605,6 +607,12 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_send_advisers_to_china
 			unlock_decision_tooltip = SIA_send_weapons_to_china
 			unlock_decision_tooltip = SIA_send_volunteers_to_china
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			hidden_effect = {
+				add_ideas = SIA_allow_volunteers_no_matter_what_idea
+			}
 		}
 		prerequisite = { focus = SIA_the_siamese_melting_pot focus = SIA_chinese_assimilation_policy }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -831,6 +839,7 @@ focus_tree = {
 				id = SIA_PHIBUN_BOP
 				left_side = SIA_phibun_weak
 				right_side = SIA_phibun_side
+				set_value = -0.7
 			}
 			SIA_plaek_phibunsongkhram = {
 			  promote_leader = yes
@@ -861,6 +870,11 @@ focus_tree = {
 				}
 			}
 			add_stability = -0.1
+			add_power_balance_value = {
+				id = SIA_PHIBUN_BOP
+				value = 0.55
+				tooltip_side = SIA_phibun_side
+			}
 			effect_tooltip = {
 				country_event = sia_unit_leader_event.1
 			}
@@ -973,7 +987,6 @@ focus_tree = {
 		completion_reward = { 
 			add_ideas = SIA_thai_use_thai_made_thai_prosper_idea
 		}
-		prerequisite = { focus = SIA_language_reform }
 		prerequisite = { focus = SIA_pan_thai_nationalism }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	}
@@ -1154,28 +1167,9 @@ focus_tree = {
 		relative_position_id = SIA_southeast_asian_self_determination
 		x = 1
 		y = 1
-		cost = 10
+		cost = 2
 		available = {
-			OR = {
-				has_army_manpower = { size > 299999 }
-				AND = {
-					670 = {
-						is_controlled_by = FRA
-					}
-					OR = {
-						FRA = {
-							NOT = {
-								owns_state = 16
-							}
-						}
-						FRA = { 
-							has_war_with = GER
-							has_capitulated = yes
-						}
-					}
-				}
-				
-			}
+			threat > 0.85
 			
 		}
 		completion_reward = { 
@@ -1201,8 +1195,35 @@ focus_tree = {
 		relative_position_id = SIA_thai_irredentism
 		x = 1
 		y = 1
-		cost = 10
-		completion_reward = { }
+		cost = 2
+		available = {
+			threat > 0.85
+			
+		}
+		completion_reward = { 
+			995 = {
+				controller = {
+					SIA = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 995 994 996 997 288 640 999 993 998}
+						}
+					}
+				}
+			}
+			336 = {
+				controller = {
+					SIA = {
+						create_wargoal = {
+							target = PREV
+							type = take_state_focus
+							generator = { 336 1050 1051 }
+						}
+					}
+				}
+			}
+		}
 		prerequisite = { focus = SIA_thai_irredentism }
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 	}

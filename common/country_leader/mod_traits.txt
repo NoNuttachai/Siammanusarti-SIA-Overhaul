@@ -40,6 +40,12 @@ leader_traits = {
             base = 2
         }
     }
+	plaek_phibunsongkhram_full_name = {
+		random = no
+        ai_will_do = {
+            base = 2
+        }
+    }
 	pridi_noble_title = {
 		random = no
         ai_will_do = {

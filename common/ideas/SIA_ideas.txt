@@ -933,5 +933,20 @@ ideas = {
 				industrial_capacity_factory = -0.1
 			}
 		}
+		
+	}
+	hidden_ideas = {
+		SIA_allow_volunteers_no_matter_what_idea = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_divisions_required = -1
+			}
+		}
 	}
 }

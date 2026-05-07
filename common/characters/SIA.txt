@@ -45,7 +45,7 @@ characters={
 		country_leader={
 			ideology=fascism_ideology
 			expire="1964.1.1.1"
-			traits = {}
+			traits = { plaek_phibunsongkhram_full_name }
 			id=-1
 		}
 		corps_commander = {

@@ -4,6 +4,7 @@ SIA_GATHERING_STORM_DESC: "The only country in Southeast Asia to escape European
 # Leader Traits
 siamese_revolutionary_leader: "\nTiger Soldier of Khana Ratsadon"
 phraya_phahon_full_name: "§gPhraya Phahonphonphayuhasena\n(Phot Phahonyothin)§!"
+plaek_phibunsongkhram_full_name: "§g(Plaek Khittasangkha)§!"
 pridi_noble_title: "§gLuang Praditmanutham§!"
 
 crown_property_scandal: "§RCrown Property Scandal§!"
@@ -540,6 +541,7 @@ SIA_bank_of_asia_for_industry_and_commerce: "Bank Of Asia For Industry And Comme
 SIA_enable_free_speech: "Enable Free Speech"
 SIA_align_with_navy: "Align With Navy"
 SIA_promote_democratic_ideals: "Promote Democratic Ideals"
+SIA_promote_nationalism: "Promote Nationalism"
 
 SIA_organize_a_free_election: "Organize A Free Election"
 sia_events.16.t: "Formation of the Phrayatiphat Party"

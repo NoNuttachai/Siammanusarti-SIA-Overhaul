@@ -10,7 +10,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = 0.20
 			}
 		}
@@ -25,7 +25,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = 0.75
 			}
 		}
@@ -40,7 +40,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = -0.20
 			}
 		}
@@ -55,7 +55,7 @@ SIA_phibun_BOP_category = {
 		
 		complete_effect = {
 			add_power_balance_value = {
-				id = SIA_BOP
+				id = SIA_PHIBUN_BOP
 				value = -0.75
 			}
 		}
@@ -95,7 +95,7 @@ SIA_phibun_BOP_category = {
 		cancel_effect = {
         	add_power_balance_value = {
 				id = SIA_PHIBUN_BOP
-				value = 0.05
+				value = 0.075
 			}
 			custom_effect_tooltip = mandate_success
 			activate_mission = SIA_bop_rattaniyom_decree_3
