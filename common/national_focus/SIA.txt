@@ -427,7 +427,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		completion_reward = { }
+		completion_reward = { 
+			unlock_decision_tooltip = SIA_support_the_vietminh
+		}
 		prerequisite = { focus = SIA_southeast_asian_self_determination }
 		mutually_exclusive = { focus = SIA_strike_indochina }
 		search_filters = { FOCUS_FILTER_POLITICAL }

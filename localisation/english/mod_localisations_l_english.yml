@@ -278,6 +278,7 @@ SIA_agitate_an_anti_colonial_uprising_in_INS: "Agitate an Anti-Colonial Uprising
 SIA_lobby_for_independence: "Lobby for Independence"
 SIA_invite_nation_to_asean: "Invite to ASEAN"
 form_asean: "Form a centralized ASEAN"
+SIA_support_the_vietminh: "Support the Vietminh"
 
 form_country_thailand_required_states_tt: "Controls all §YThai§! states."
 form_country_malaysia_required_states_tt: "Controls all §YMalay§! states."
@@ -310,7 +311,7 @@ SIA_siamese_army_ordnance_department: "Siamese Army Ordnance Department"
 SIA_curtiss_aeroplane_organization: "Curtiss Aeroplane"
 
 #Scripted Peace Decisions
-SIA_towards_a_greater_thailand: "The Franco-[THIS.GetAdjective] War"
+SIA_towards_a_greater_thailand: "Siamese War with the West"
 SIA_towards_a_greater_thailand_desc: "TBA"
 SIA_secure_pivotal_territories_in_indochina: "Limited Land Concessions in Indochina"
 

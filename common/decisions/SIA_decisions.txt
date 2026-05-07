@@ -211,6 +211,58 @@ SIA_diplomacy_with_the_chinese = {
 	}
 }
 SIA_SEA_self_determination = {
+	SIA_support_the_vietminh = {
+		icon = generic_construction
+		
+		available = {
+		}
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 1
+		cost = 50
+		remove_effect = {
+			hidden_effect = {
+				VIN = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 13
+						neutrality = 5
+						communism = 82
+					}
+				}
+				
+			}
+			671 = {
+				transfer_state_to = VIN
+			}
+			VIN = {
+				division_template = {
+					name = "Vietcong Division"
+
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Vietcong Division\" division_template = \"Vietcong Division\" start_experience_factor = 0.2"
+						owner = VIN
+						count = 6
+					}
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}	
+		}
+	}
 	SIA_fund_independence_movements_in_BRM = {
 		icon = generic_construction
 		
@@ -1126,7 +1178,7 @@ SIA_towards_a_greater_thailand = {
 			}
 		}
 		fire_only_once = no
-		days_remove = 150
+		days_remove = 75
 		days_re_enable = 5
 			
 		cost = 0
@@ -1175,7 +1227,7 @@ SIA_towards_a_greater_thailand = {
 			}		
 		}
 		fire_only_once = no
-		days_remove = 150
+		days_remove = 75
 		days_re_enable = 5
 			
 		cost = 0
@@ -1244,7 +1296,7 @@ SIA_towards_a_greater_thailand = {
 			}			
 		}
 		fire_only_once = no
-		days_remove = 150
+		days_remove = 75
 		days_re_enable = 5
 			
 		cost = 0
