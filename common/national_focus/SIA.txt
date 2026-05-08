@@ -1129,10 +1129,24 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SIA_phao_siyanon
 			custom_effect_tooltip = generic_skip_one_line_tt
-			gain_random_agency_upgrade = yes
-			gain_random_agency_upgrade = yes
-			gain_random_agency_upgrade = yes
-			
+			if = {
+				limit = { has_dlc = "La Resistance"}
+				gain_random_agency_upgrade = yes
+				gain_random_agency_upgrade = yes
+				gain_random_agency_upgrade = yes
+			}
+			else = {
+				if = {
+					limit = { has_idea = SIA_special_branch }
+					swap_ideas = {
+						remove_idea = SIA_special_branch
+						add_idea = SIA_special_branch_1
+					}
+				}
+				else = {
+					add_ideas = SIA_special_branch
+				}
+			}
 		}
 		prerequisite = { focus = SIA_marshal_phibun_ascension }
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
@@ -2172,9 +2186,29 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = SIA_army }
 		completion_reward = {
-			create_intelligence_agency = {
-				name = "Special Branch Bureau"
-				icon = GFX_agency_special_branch_bureau
+			if = {
+				limit = { has_dlc = "La Resistance"}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = {
+						name = "Special Branch Bureau"
+						icon = GFX_agency_special_branch_bureau
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { has_idea = SIA_special_branch }
+					swap_ideas = {
+						remove_idea = SIA_special_branch
+						add_idea = SIA_special_branch_1
+					}
+				}
+				else = {
+					add_ideas = SIA_special_branch
+				}
 			}
 		}
 	}

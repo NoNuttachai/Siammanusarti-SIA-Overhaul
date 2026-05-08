@@ -933,7 +933,34 @@ ideas = {
 				industrial_capacity_factory = -0.1
 			}
 		}
-		
+		SIA_special_branch = {
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				decryption = 1
+				decryption_factor = 0.15
+				encryption_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		SIA_special_branch_1 = {
+			removal_cost = -1
+			name = SIA_special_branch
+			picture = generic_production_bonus
+			
+			allowed = { always = yes }
+			
+			modifier = {
+				decryption = 2
+				decryption_factor = 0.3
+				encryption_factor = 0.3
+				stability_factor = 0.1
+			}
+		}
 	}
 	hidden_ideas = {
 		SIA_allow_volunteers_no_matter_what_idea = {
